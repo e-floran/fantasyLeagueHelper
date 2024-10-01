@@ -49,3 +49,11 @@ th,
 td {
   width: 300px;
 }
+
+.buttonsGroup {
+  margin-bottom: 30px;
+}
+
+button {
+  margin: 5px;
+}

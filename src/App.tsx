@@ -30,10 +30,12 @@ function App() {
   const computeNewSalary = (
     keeperValue: number,
     keeperHistory: number,
-    raterDelta?: number
+    omitDelta: boolean,
+    raterDelta: number
   ) => {
-    const valueWithKeeps = keeperValue + keeperHistory * 5;
-    if (!raterDelta) {
+    const valueWithKeeps =
+      keeperHistory >= 3 ? keeperValue + (keeperHistory - 2) * 5 : keeperValue;
+    if (!raterDelta || omitDelta) {
       return valueWithKeeps;
     }
     if (raterDelta < -3) {
@@ -66,7 +68,7 @@ function App() {
       <h1>Fantasy league BBF</h1>
       <p>(site en cours de réalisation)</p>
       {/* <button onClick={cleanPlayers}>générer</button> */}
-      <div>
+      <div className="buttonsGroup">
         {teams.map((team) => (
           <button
             key={team.id}
@@ -78,14 +80,16 @@ function App() {
         ))}
       </div>
       <table>
-        <tr>
-          <th>{"Nom"}</th>
-          <th>{"Rater 2023"}</th>
-          <th>{"Rater 2024"}</th>
-          <th>{"Saisons keeper"}</th>
-          <th>Valeur 2024</th>
-          <th>Nouvelle valeur</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>{"Nom"}</th>
+            <th>{"Rater 2023"}</th>
+            <th>{"Rater 2024"}</th>
+            <th>{"Saisons keeper"}</th>
+            <th>Valeur 2024</th>
+            <th>Nouvelle valeur</th>
+          </tr>
+        </thead>
         {activeTeam?.roster.map((player) => {
           return (
             <tr>
@@ -98,6 +102,7 @@ function App() {
                 {computeNewSalary(
                   player.keeperValue,
                   player.keeperHistory.length,
+                  player.raters[2023] === 0,
                   player.raters[2024] - player.raters[2023]
                 )}
               </td>
