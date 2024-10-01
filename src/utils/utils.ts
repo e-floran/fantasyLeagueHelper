@@ -131,3 +131,59 @@
 //   });
 //   return { teams: newTeams };
 // };
+
+export const parseNegativeValue = (value: number, limit?: number): number => {
+  const trueLimit = limit ?? 0;
+  return value < trueLimit ? trueLimit : value;
+};
+
+export const computeNewSalary = (
+  keeperValue: number,
+  keeperHistory: number,
+  omitDelta: boolean,
+  raterDelta: number
+) => {
+  const valueWithKeeps =
+    keeperHistory >= 2 ? keeperValue + (keeperHistory - 1) * 5 : keeperValue;
+  if (!raterDelta || omitDelta) {
+    return valueWithKeeps;
+  }
+  if (raterDelta < -3) {
+    return valueWithKeeps - 5;
+  } else if (raterDelta < -2.5) {
+    return valueWithKeeps - 4;
+  } else if (raterDelta < -2) {
+    return valueWithKeeps - 3;
+  } else if (raterDelta < -1.5) {
+    return valueWithKeeps - 2;
+  } else if (raterDelta < -1) {
+    return valueWithKeeps - 1;
+  } else if (raterDelta < -0.5) {
+    return valueWithKeeps;
+  } else if (raterDelta < 0.5) {
+    return valueWithKeeps + 1;
+  } else if (raterDelta < 1.5) {
+    return valueWithKeeps + 2;
+  } else if (raterDelta < 2) {
+    return valueWithKeeps + 3;
+  } else if (raterDelta < 3) {
+    return valueWithKeeps + 4;
+  } else {
+    return valueWithKeeps + 5;
+  }
+};
+
+// const cleanPlayers = () => {
+//   // const cleanedRosters = cleanRosters();
+//   // const addedHistory = getKeeperHistory();
+//   // const added2024 = add2024RaterValue();
+//   const added2023 = add2023RaterValue();
+//   const element = document.createElement("a");
+//   const textFile = new Blob([JSON.stringify(added2023)], {
+//     type: "application/json",
+//   });
+//   element.href = URL.createObjectURL(textFile);
+//   element.download = "playersWithBothRaters.json";
+//   document.body.appendChild(element);
+//   element.click();
+// };

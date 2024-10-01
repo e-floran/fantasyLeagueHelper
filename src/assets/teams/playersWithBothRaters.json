@@ -1,7 +1,7 @@
 {
   "teams": [
     {
-      "abbrev": "OJM",
+      "abbrev": "ASBR",
       "currentProjectedRank": 0,
       "divisionId": 0,
       "draftDayProjectedRank": 0,
@@ -9,7 +9,7 @@
       "id": 1,
       "isActive": false,
       "logoType": "VECTOR",
-      "name": "ESPM Grizzlies",
+      "name": "ASBR Pirates",
       "owners": [
         "{D4FECFB1-F07A-4F75-BECF-B1F07A3F7549}",
         "{90996E98-4623-4E68-9AFE-EE2CDB96841E}"
@@ -10549,7 +10549,7 @@
       "waiverRank": 4
     },
     {
-      "abbrev": "GRUB",
+      "abbrev": "SHOO",
       "currentProjectedRank": 0,
       "divisionId": 0,
       "draftDayProjectedRank": 0,
@@ -10557,7 +10557,7 @@
       "id": 16,
       "isActive": false,
       "logoType": "VECTOR",
-      "name": "Team Gruber",
+      "name": "Shooters Alpins",
       "owners": ["{9E7C628C-D9AE-4B1D-BC62-8CD9AEBB1D6A}"],
       "playoffSeed": 0,
       "points": 0,
