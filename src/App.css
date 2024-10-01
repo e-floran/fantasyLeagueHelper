@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -43,6 +43,11 @@
 
 tr {
   height: 30px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+tr:hover {
+  background-color: #e45e04;
 }
 
 th,
@@ -56,4 +61,8 @@ td {
 
 button {
   margin: 5px;
+}
+
+header {
+  margin-bottom: 20px;
 }

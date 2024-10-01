@@ -1,10 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { TeamDetails } from "./pages/TeamDetails";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
-      <TeamDetails />
+      <Header />
+      <Routes>
+        <Route path="/" element={<TeamDetails />} />
+      </Routes>
     </>
   );
 }
