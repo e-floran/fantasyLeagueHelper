@@ -27,6 +27,11 @@ function App() {
     return teams.find((team) => team.id === activeTeamId);
   }, [activeTeamId, teams]);
 
+  const parseNegativeValue = (value: number, limit?: number): number => {
+    const trueLimit = limit ?? 0;
+    return value < trueLimit ? trueLimit : value;
+  };
+
   const computeNewSalary = (
     keeperValue: number,
     keeperHistory: number,
@@ -34,7 +39,7 @@ function App() {
     raterDelta: number
   ) => {
     const valueWithKeeps =
-      keeperHistory >= 3 ? keeperValue + (keeperHistory - 2) * 5 : keeperValue;
+      keeperHistory >= 2 ? keeperValue + (keeperHistory - 1) * 5 : keeperValue;
     if (!raterDelta || omitDelta) {
       return valueWithKeeps;
     }
@@ -94,16 +99,20 @@ function App() {
           return (
             <tr>
               <td>{player.fullName}</td>
-              <td>{player.raters[2023]}</td>
-              <td>{player.raters[2024]}</td>
+              <td>{player.raters[2023].toFixed(2)}</td>
+              <td>{player.raters[2024].toFixed(2)}</td>
               <td>{player.keeperHistory.length}</td>
               <td>{player.keeperValue}</td>
               <td>
-                {computeNewSalary(
-                  player.keeperValue,
-                  player.keeperHistory.length,
-                  player.raters[2023] === 0,
-                  player.raters[2024] - player.raters[2023]
+                {parseNegativeValue(
+                  computeNewSalary(
+                    player.keeperValue,
+                    player.keeperHistory.length,
+                    player.raters[2023] === 0,
+                    player.raters[2024] -
+                      parseNegativeValue(player.raters[2023])
+                  ),
+                  1
                 )}
               </td>
             </tr>
