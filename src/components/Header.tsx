@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 export const Header = (): ReactElement => {
   return (
     <header>
-      <h1>Fantasy league BBF</h1>
+      <h1>Assistant Fantasy league BBF</h1>
       <p>(site en cours de réalisation)</p>
       {/* <nav>
         <NavLink to="/home">Accueil</NavLink>
