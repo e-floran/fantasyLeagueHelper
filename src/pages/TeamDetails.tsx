@@ -1,6 +1,21 @@
-import { ReactElement, useMemo, useState } from "react";
+import { CSSProperties, ReactElement, useMemo, useState } from "react";
 import playersWithBothRaters from "../assets/teams/playersWithBothRaters.json";
 import { computeNewSalary, parseNegativeValue } from "../utils/utils";
+import { createStyles } from "../utils/style";
+import { CustomButton } from "../components/generic/CustomButton";
+
+const styles = createStyles<CSSProperties>()({
+  buttonsGroup: {
+    marginBottom: "1.5rem",
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "space-between",
+    alignItems: "start",
+  },
+  button: {
+    width: "45%",
+  },
+});
 
 export const TeamDetails = (): ReactElement => {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -90,23 +105,22 @@ export const TeamDetails = (): ReactElement => {
 
   return (
     <main>
-      <div className="buttonsGroup">
+      <div style={styles.buttonsGroup}>
         {teams.map((team) => (
-          <button
-            key={team.id}
-            onClick={() => {
+          <CustomButton
+            buttonKey={team.id.toString()}
+            buttonText={team.name}
+            isDisabled={activeTeamId === team.id}
+            onClickButton={() => {
               setActiveTeamId(team.id);
               setSelectedKeepers([]);
             }}
-            disabled={activeTeamId === team.id}
-          >
-            {team.name}
-          </button>
+            customStyle={styles.button}
+          />
         ))}
       </div>
       {activeTeam && (
         <>
-          {" "}
           <table>
             <thead>
               <tr>
@@ -121,7 +135,7 @@ export const TeamDetails = (): ReactElement => {
             </thead>
             {activeTeam?.roster.map((player) => {
               return (
-                <tr>
+                <tr style={styles.dataRow}>
                   <td>{player.fullName}</td>
                   <td>{player.raters[2023].toFixed(2)}</td>
                   <td>{player.raters[2024].toFixed(2)}</td>

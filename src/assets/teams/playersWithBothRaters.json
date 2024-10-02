@@ -8106,7 +8106,7 @@
       "waiverRank": 1
     },
     {
-      "abbrev": "GLC",
+      "abbrev": "DL",
       "currentProjectedRank": 0,
       "divisionId": 0,
       "draftDayProjectedRank": 0,
@@ -8114,7 +8114,7 @@
       "id": 12,
       "isActive": false,
       "logoType": "VECTOR",
-      "name": "Les Galactics",
+      "name": "Dusk Lions",
       "owners": ["{1AD77E1C-58E5-42B1-9B82-A909162D7193}"],
       "playoffSeed": 0,
       "points": 0,
