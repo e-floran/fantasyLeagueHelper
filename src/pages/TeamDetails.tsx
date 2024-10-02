@@ -83,7 +83,7 @@ export const TeamDetails = (): ReactElement => {
   const handleCheckboxClick = (playerId: number) => {
     if (selectedKeepers.includes(playerId)) {
       setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
-    } else {
+    } else if (selectedKeepers.length < 6) {
       setSelectedKeepers((prev) => [...prev, playerId]);
     }
   };
