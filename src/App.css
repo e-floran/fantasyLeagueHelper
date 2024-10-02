@@ -18,3 +18,7 @@ td {
   width: 20rem;
   text-align: center;
 }
+
+button:hover {
+  background-color: #e45e04;
+}

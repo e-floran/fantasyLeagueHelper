@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import { createStyles } from "../../utils/style";
+import { merge } from "lodash";
 
 const styles = createStyles<CSSProperties>()({
   button: {
@@ -10,35 +11,30 @@ const styles = createStyles<CSSProperties>()({
     fontWeight: 500,
     fontFamily: "inherit",
     cursor: "pointer",
-    transition: "border-color 0.25s",
     margin: "0.5rem",
     maxWidth: "15rem",
     maxHeight: "2.5rem",
     lineBreak: "auto",
     whiteSpace: "nowrap",
+    transition: "all 0.5s",
   },
 });
 
 interface ButtonProps {
   buttonText: string;
   isDisabled?: boolean;
-  buttonKey: string;
   onClickButton: () => void;
   customStyle?: CSSProperties;
 }
 export const CustomButton = ({
   buttonText,
   isDisabled,
-  buttonKey,
   onClickButton,
   customStyle,
 }: ButtonProps) => {
   return (
     <button
-      style={
-        customStyle ? Object.assign(styles.button, customStyle) : styles.button
-      }
-      key={buttonKey}
+      style={merge(styles.button, customStyle)}
       disabled={isDisabled}
       onClick={onClickButton}
     >

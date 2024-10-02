@@ -108,7 +108,7 @@ export const TeamDetails = (): ReactElement => {
       <div style={styles.buttonsGroup}>
         {teams.map((team) => (
           <CustomButton
-            buttonKey={team.id.toString()}
+            key={team.id}
             buttonText={team.name}
             isDisabled={activeTeamId === team.id}
             onClickButton={() => {
