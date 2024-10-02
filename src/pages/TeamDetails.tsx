@@ -10,23 +10,75 @@ export const TeamDetails = (): ReactElement => {
     return teams.find((team) => team.id === activeTeamId);
   }, [activeTeamId, teams]);
 
-  const totalSalary = useMemo(() => {
-    const salaries = activeTeam?.roster.map((player) => player.keeperValue);
-    if (!salaries) {
-      return 0;
-    }
-    return salaries.reduce((partialSum, a) => partialSum + a, 0);
+  const newSalariesByPlayerId = useMemo(() => {
+    const salariesMap = new Map<number, number>();
+    activeTeam?.roster.forEach((player) => {
+      salariesMap.set(
+        player.id,
+        parseNegativeValue(
+          computeNewSalary(
+            player.keeperValue,
+            player.keeperHistory.length,
+            player.raters[2023] === 0,
+            player.raters[2024] - parseNegativeValue(player.raters[2023])
+          ),
+          1
+        )
+      );
+    });
+    return salariesMap;
   }, [activeTeam?.roster]);
 
-  const keepersSalaries = useMemo(() => {
-    const salaries = activeTeam?.roster
-      .filter((player) => selectedKeepers.includes(player.id))
-      .map((player) => player.keeperValue);
-    if (!salaries) {
+  const totalProjectedSalary = useMemo(() => {
+    const salaries: number[] = [];
+    newSalariesByPlayerId.forEach((value) => {
+      salaries.push(value);
+    });
+    if (!salaries.length) {
       return 0;
     }
     return salaries.reduce((partialSum, a) => partialSum + a, 0);
-  }, [activeTeam?.roster, selectedKeepers]);
+  }, [newSalariesByPlayerId]);
+
+  const keepersSalaries = useMemo(() => {
+    const salaries: number[] = [];
+    if (!selectedKeepers || selectedKeepers.length === 0) {
+      return 0;
+    }
+    selectedKeepers.forEach((id) => {
+      const value = newSalariesByPlayerId.get(id);
+      if (value) {
+        salaries.push(value);
+      }
+    });
+    if (salaries.length === 0) {
+      return 0;
+    }
+    return salaries.reduce((partialSum, a) => partialSum + a, 0);
+  }, [newSalariesByPlayerId, selectedKeepers]);
+
+  const totals = useMemo(() => {
+    if (!activeTeam) {
+      return undefined;
+    }
+    const rater2023 = activeTeam.roster
+      .map((player) => player.raters[2023])
+      .reduce((partialSum, a) => partialSum + a, 0);
+    const rater2024 = activeTeam.roster
+      .map((player) => player.raters[2024])
+      .reduce((partialSum, a) => partialSum + a, 0);
+    const currentSalary = activeTeam.roster
+      .map((player) => player.keeperValue)
+      .reduce((partialSum, a) => partialSum + a, 0);
+
+    return {
+      rater2023,
+      rater2024,
+      currentSalary,
+      projectedSalary: totalProjectedSalary,
+      projectedKeepersSalaries: keepersSalaries,
+    };
+  }, [activeTeam, keepersSalaries, totalProjectedSalary]);
 
   const handleCheckboxClick = (playerId: number) => {
     if (selectedKeepers.includes(playerId)) {
@@ -75,40 +127,32 @@ export const TeamDetails = (): ReactElement => {
                   <td>{player.raters[2024].toFixed(2)}</td>
                   <td>{player.keeperHistory.length}</td>
                   <td>{player.keeperValue}</td>
-                  <td>
-                    {parseNegativeValue(
-                      computeNewSalary(
-                        player.keeperValue,
-                        player.keeperHistory.length,
-                        player.raters[2023] === 0,
-                        player.raters[2024] -
-                          parseNegativeValue(player.raters[2023])
-                      ),
-                      1
-                    )}
-                  </td>
+                  <td>{newSalariesByPlayerId.get(player.id)}</td>
                   <td>
                     <input
                       type="checkbox"
                       checked={selectedKeepers.includes(player.id)}
-                      onClick={() => handleCheckboxClick(player.id)}
+                      onChange={() => handleCheckboxClick(player.id)}
                     />
                   </td>
                 </tr>
               );
             })}
+            <tr>
+              <td>Totaux</td>
+              <td>{totals?.rater2023.toFixed(2)}</td>
+              <td>{totals?.rater2024.toFixed(2)}</td>
+              <td>-</td>
+              <td>{totals?.currentSalary}</td>
+              <td>{totals?.projectedSalary}</td>
+              <td>{totals?.projectedKeepersSalaries}</td>
+            </tr>
           </table>
-          <div>
-            <p>Total salaires : {totalSalary}$</p>
-            {!!selectedKeepers.length && (
-              <>
-                <p>Salaires des keepers potentiels : {keepersSalaries}$</p>
-                <button onClick={() => setSelectedKeepers([])}>
-                  Déselectionner les keepers
-                </button>
-              </>
-            )}
-          </div>
+          {!!selectedKeepers.length && (
+            <button onClick={() => setSelectedKeepers([])}>
+              Déselectionner les keepers
+            </button>
+          )}
         </>
       )}
     </main>
