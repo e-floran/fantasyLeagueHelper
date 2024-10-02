@@ -135,7 +135,7 @@ export const TeamDetails = (): ReactElement => {
             </thead>
             {activeTeam?.roster.map((player) => {
               return (
-                <tr style={styles.dataRow}>
+                <tr>
                   <td>{player.fullName}</td>
                   <td>{player.raters[2023].toFixed(2)}</td>
                   <td>{player.raters[2024].toFixed(2)}</td>

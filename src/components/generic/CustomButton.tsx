@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import { createStyles, mergeStyles } from "../../utils/style";
+import { createStyles } from "../../utils/style";
 
 const styles = createStyles<CSSProperties>()({
   button: {
@@ -35,7 +35,9 @@ export const CustomButton = ({
 }: ButtonProps) => {
   return (
     <button
-      style={mergeStyles(styles.button, customStyle)}
+      style={
+        customStyle ? Object.assign(styles.button, customStyle) : styles.button
+      }
       key={buttonKey}
       disabled={isDisabled}
       onClick={onClickButton}
