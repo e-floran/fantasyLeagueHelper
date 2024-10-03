@@ -1,15 +1,15 @@
-import { CSSProperties, Dispatch, ReactElement, SetStateAction } from "react";
+import { CSSProperties, ReactElement } from "react";
 import { createStyles, rootColors } from "../utils/style";
-import { useNavigate } from "react-router-dom";
-import { NavButton } from "./NavButton";
-import GroupsIcon from "@mui/icons-material/Groups";
-import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
+// import { useNavigate } from "react-router-dom";
+// import { NavButton } from "./NavButton";
+// import GroupsIcon from "@mui/icons-material/Groups";
+// import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 
-interface HeaderProps {
-  setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
-}
+// interface HeaderProps {
+//   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
+// }
 
-export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
+export const Header = (): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     header: {
       marginBottom: "1rem",
@@ -31,7 +31,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     },
   });
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <header style={styles.header}>

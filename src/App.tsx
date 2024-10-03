@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Header setSelectedKeepers={setSelectedKeepers} />
+      <Header />
       <Routes>
         <Route
           path="/"
