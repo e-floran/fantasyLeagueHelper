@@ -8,6 +8,8 @@
 // import playersWith2024Rater from "../assets/teams/playersWith2024Rater.json";
 // import rater2023 from "../assets/rater/rater2023.json";
 
+import { Team } from "./types";
+
 // type PlayerBase =
 //   (typeof cleanedPlayers2024)["teams"][number]["roster"][number];
 // type PlayerWithHistory = PlayerBase & { keeperHistory: string[] };
@@ -187,3 +189,85 @@ export const computeNewSalary = (
 //   document.body.appendChild(element);
 //   element.click();
 // };
+
+export const getNewSalariesByPlayerId = (team?: Team) => {
+  const salariesMap = new Map<number, number>();
+  team?.roster.forEach((player) => {
+    salariesMap.set(
+      player.id,
+      parseNegativeValue(
+        computeNewSalary(
+          player.keeperValue,
+          player.keeperHistory.length,
+          player.raters[2023] === 0,
+          player.raters[2024] - parseNegativeValue(player.raters[2023])
+        ),
+        1
+      )
+    );
+  });
+  return salariesMap;
+};
+
+const getTeamTotalProjectedSalary = (
+  newSalariesByPlayerId: Map<number, number>
+) => {
+  const salaries: number[] = [];
+  newSalariesByPlayerId.forEach((value) => {
+    salaries.push(value);
+  });
+  if (!salaries.length) {
+    return 0;
+  }
+  return salaries.reduce((partialSum, a) => partialSum + a, 0);
+};
+
+const getTeamKeepersSalaries = (
+  newSalariesByPlayerId: Map<number, number>,
+  keepers?: number[]
+) => {
+  const salaries: number[] = [];
+  if (!keepers || keepers.length === 0) {
+    return 0;
+  }
+  keepers.forEach((id) => {
+    const value = newSalariesByPlayerId.get(id);
+    if (value) {
+      salaries.push(value);
+    }
+  });
+  if (salaries.length === 0) {
+    return 0;
+  }
+  return salaries.reduce((partialSum, a) => partialSum + a, 0);
+};
+
+export const getTeamTotals = (
+  team: Team,
+  newSalariesByPlayerId: Map<number, number>,
+  keepers: number[]
+) => {
+  const rater2023 = team.roster
+    .map((player) => player.raters[2023])
+    .reduce((partialSum, a) => partialSum + a, 0);
+  const rater2024 = team.roster
+    .map((player) => player.raters[2024])
+    .reduce((partialSum, a) => partialSum + a, 0);
+  const currentSalary = team.roster
+    .map((player) => player.keeperValue)
+    .reduce((partialSum, a) => partialSum + a, 0);
+
+  const projectedSalary = getTeamTotalProjectedSalary(newSalariesByPlayerId);
+  const projectedKeepersSalaries = getTeamKeepersSalaries(
+    newSalariesByPlayerId,
+    keepers
+  );
+
+  return {
+    rater2023,
+    rater2024,
+    currentSalary,
+    projectedSalary,
+    projectedKeepersSalaries,
+  };
+};

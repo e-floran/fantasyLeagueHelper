@@ -4,14 +4,13 @@ import { merge } from "lodash";
 
 const styles = createStyles<CSSProperties>()({
   button: {
-    borderRadius: "8px",
+    borderRadius: "0.75rem",
     border: "1px solid transparent",
     padding: "0.5rem 1rem",
-    fontSize: "1em",
+    fontSize: "1rem",
     fontWeight: 500,
     fontFamily: "inherit",
     cursor: "pointer",
-    margin: "0.5rem",
     maxWidth: "15rem",
     maxHeight: "2.5rem",
     lineBreak: "auto",
