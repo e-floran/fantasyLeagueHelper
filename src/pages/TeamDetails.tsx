@@ -151,6 +151,7 @@ export const TeamDetails = ({
   };
 
   useEffect(() => {
+    setSortColumn('')
     setSortedPlayers(activeTeamData?.team.roster)
   },[activeTeamData])
 
