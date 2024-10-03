@@ -75,7 +75,7 @@ export const TeamDetails = ({
         />
       );
     });
-    return <div style={styles.buttonsGroup}>{buttons}</div>;
+    return <section style={styles.buttonsGroup}>{buttons}</section>;
   }, [
     activeTeamId,
     setActiveTeamId,
@@ -101,36 +101,40 @@ export const TeamDetails = ({
                 <th>Test keepers</th>
               </tr>
             </thead>
-            {activeTeamData?.team.roster.map((player) => {
-              return (
-                <tr>
-                  <td>{player.fullName}</td>
-                  <td>{player.raters[2023].toFixed(2)}</td>
-                  <td>{player.raters[2024].toFixed(2)}</td>
-                  <td>{player.keeperHistory.length}</td>
-                  <td>{player.keeperValue}</td>
-                  <td>
-                    {activeTeamData?.newSalariesByPlayerId.get(player.id)}
-                  </td>
-                  <td>
-                    <input
-                      type="checkbox"
-                      checked={selectedKeepers.includes(player.id)}
-                      onChange={() => handleCheckboxClick(player.id)}
-                    />
-                  </td>
-                </tr>
-              );
-            })}
-            <tr>
-              <td>Totaux</td>
-              <td>{activeTeamData?.totals?.rater2023.toFixed(2)}</td>
-              <td>{activeTeamData?.totals?.rater2024.toFixed(2)}</td>
-              <td>-</td>
-              <td>{activeTeamData?.totals?.currentSalary}</td>
-              <td>{activeTeamData?.totals?.projectedSalary}</td>
-              <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td>
-            </tr>
+            <tbody>
+              {activeTeamData?.team.roster.map((player) => {
+                return (
+                  <tr>
+                    <td>{player.fullName}</td>
+                    <td>{player.raters[2023].toFixed(2)}</td>
+                    <td>{player.raters[2024].toFixed(2)}</td>
+                    <td>{player.keeperHistory.length}</td>
+                    <td>{player.keeperValue}</td>
+                    <td>
+                      {activeTeamData?.newSalariesByPlayerId.get(player.id)}
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked={selectedKeepers.includes(player.id)}
+                        onChange={() => handleCheckboxClick(player.id)}
+                      />
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Totaux</td>
+                <td>{activeTeamData?.totals?.rater2023.toFixed(2)}</td>
+                <td>{activeTeamData?.totals?.rater2024.toFixed(2)}</td>
+                <td>-</td>
+                <td>{activeTeamData?.totals?.currentSalary}</td>
+                <td>{activeTeamData?.totals?.projectedSalary}</td>
+                <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td>
+              </tr>
+            </tfoot>
           </table>
           {!!selectedKeepers.length && (
             <button onClick={() => setSelectedKeepers([])}>

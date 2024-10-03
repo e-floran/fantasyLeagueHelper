@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header setSelectedKeepers={setSelectedKeepers} />
       <Routes>
         <Route
           path="/"
@@ -45,7 +45,10 @@ function App() {
         />
       </Routes>
       <Routes>
-        <Route path="/teams" element={<TeamsSummary />} />
+        <Route
+          path="/teams"
+          element={<TeamsSummary dataByTeamId={dataByTeamId} />}
+        />
       </Routes>
     </>
   );

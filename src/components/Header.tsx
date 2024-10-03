@@ -1,15 +1,15 @@
-import { CSSProperties, ReactElement } from "react";
+import { CSSProperties, Dispatch, ReactElement, SetStateAction } from "react";
 import { createStyles, rootColors } from "../utils/style";
-// import { useNavigate } from "react-router-dom";
-// import { NavButton } from "./NavButton";
-// import GroupsIcon from "@mui/icons-material/Groups";
-// import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
+import { useNavigate } from "react-router-dom";
+import { NavButton } from "./NavButton";
+import GroupsIcon from "@mui/icons-material/Groups";
+import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 
-// interface HeaderProps {
-//   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
-// }
+interface HeaderProps {
+  setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
+}
 
-export const Header = (): ReactElement => {
+export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     header: {
       marginBottom: "1rem",
@@ -31,12 +31,12 @@ export const Header = (): ReactElement => {
     },
   });
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <header style={styles.header}>
       <h1 style={styles.h1}>🏀 Fantasy league BBF 🏀</h1>
-      {/* <nav style={styles.nav}>
+      <nav style={styles.nav}>
         <NavButton
           buttonIcon={
             window.location.pathname === "/" ? CompareArrowsIcon : GroupsIcon
@@ -46,7 +46,7 @@ export const Header = (): ReactElement => {
             navigate(window.location.pathname === "/" ? "/teams" : "/");
           }}
         />
-      </nav> */}
+      </nav>
     </header>
   );
 };
