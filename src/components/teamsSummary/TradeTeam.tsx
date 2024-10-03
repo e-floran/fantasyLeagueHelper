@@ -4,7 +4,6 @@ import {
   ReactElement,
   SetStateAction,
   useMemo,
-  useState,
 } from "react";
 import { createStyles } from "../../utils/style";
 import { TeamDetailsData } from "../../utils/types";
