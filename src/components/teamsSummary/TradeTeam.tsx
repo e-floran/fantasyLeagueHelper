@@ -13,12 +13,20 @@ interface TradeTeamProps {
   dataByTeamId: Map<number, TeamDetailsData>;
   setTeam: Dispatch<SetStateAction<number>>;
   teamId: number;
+  title: string;
+  selectedPlayers: number[];
+  setSelectedPlayers: Dispatch<SetStateAction<number[]>>;
+  salariesAfterTrade?: number;
 }
 
 export const TradeTeam = ({
   dataByTeamId,
   setTeam,
   teamId,
+  title,
+  selectedPlayers,
+  setSelectedPlayers,
+  salariesAfterTrade,
 }: TradeTeamProps): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     article: {
@@ -29,7 +37,6 @@ export const TradeTeam = ({
       alignItems: "center",
     },
   });
-  const [selectedPlayers, setSleectedPlayers] = useState<number[]>([]);
 
   const selectOptionsRendering = () => {
     const options: ReactElement[] = [
@@ -54,15 +61,15 @@ export const TradeTeam = ({
 
   const handleCheckboxClick = (playerId: number) => {
     if (selectedPlayers.includes(playerId)) {
-      setSleectedPlayers((prev) => prev.filter((id) => id !== playerId));
+      setSelectedPlayers((prev) => prev.filter((id) => id !== playerId));
     } else if (selectedPlayers.length < 6) {
-      setSleectedPlayers((prev) => [...prev, playerId]);
+      setSelectedPlayers((prev) => [...prev, playerId]);
     }
   };
 
   return (
     <article style={styles.article}>
-      <h2>Équipe 1</h2>
+      <h3>{title}</h3>
       <select
         name="equipe_1"
         onChange={(event) => setTeam(Number(event.target.value))}
@@ -95,6 +102,13 @@ export const TradeTeam = ({
             );
           })}
         </tbody>
+        {salariesAfterTrade !== undefined && (
+          <tfoot>
+            <td>Résultat</td>
+            <td>{salariesAfterTrade}</td>
+            <td> - </td>
+          </tfoot>
+        )}
       </table>
     </article>
   );
