@@ -6,7 +6,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
     const rows: ReactElement[] = [];
     dataByTeamId.forEach((value) => {
       const row = (
-        <tr>
+        <tr key={value.team.id}>
           <td>{value.team.name}</td>
           <td>{value.totals.currentSalary}</td>
           <td>{220 - value.totals.currentSalary}</td>
