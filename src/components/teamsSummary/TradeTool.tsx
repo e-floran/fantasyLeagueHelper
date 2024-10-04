@@ -9,9 +9,6 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
       width: "100%",
       marginTop: "3rem",
     },
-    h2: {
-      textAlign: "center",
-    },
     container: {
       display: "flex",
       flexFlow: "row nowrap",

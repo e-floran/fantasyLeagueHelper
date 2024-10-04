@@ -19,16 +19,19 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
   }, [dataByTeamId]);
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Équipe</th>
-          <th>Salaires actuels</th>
-          <th>Marge actuelle</th>
-          <th>Salaires à venir</th>
-        </tr>
-      </thead>
-      <tbody>{tableContent}</tbody>
-    </table>
+    <section>
+      <h2>Masses salariales</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Équipe</th>
+            <th>Salaires actuels</th>
+            <th>Marge actuelle</th>
+            <th>Salaires à venir</th>
+          </tr>
+        </thead>
+        <tbody>{tableContent}</tbody>
+      </table>
+    </section>
   );
 };

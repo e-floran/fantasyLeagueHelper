@@ -35,6 +35,9 @@ export const TradeTeam = ({
       justifyContent: "start",
       alignItems: "center",
     },
+    select: {
+      maxWidth: "80%",
+    },
   });
 
   const selectOptionsRendering = () => {
@@ -73,6 +76,7 @@ export const TradeTeam = ({
         name="equipe_1"
         onChange={(event) => setTeam(Number(event.target.value))}
         value={teamId}
+        style={styles.select}
       >
         {selectOptionsRendering()}
       </select>

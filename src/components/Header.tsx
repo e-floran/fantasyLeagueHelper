@@ -18,18 +18,25 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
       fontSize: "2rem",
       textAlign: "center",
       color: rootColors.primary,
+      marginBottom: "0.5rem",
     },
     nav: {
       width: "100%",
       height: "2rem",
-      position: "fixed",
-      top: "0.75rem",
-      left: "0",
+      // position: "fixed",
+      // top: "0.75rem",
+      // left: "0",
       padding: "0 0.5rem",
       display: "flex",
-      justifyContent: window.location.pathname === "/" ? "end" : "start",
+      flexFlow: "row nowrap",
+      justifyContent: "space-evenly",
     },
   });
+
+  const navButtonsProps = [
+    { icon: GroupsIcon, navigateTo: "/" },
+    { icon: CompareArrowsIcon, navigateTo: "/teams" },
+  ];
 
   const navigate = useNavigate();
 
@@ -37,15 +44,15 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     <header style={styles.header}>
       <h1 style={styles.h1}>🏀 Fantasy league BBF 🏀</h1>
       <nav style={styles.nav}>
-        <NavButton
-          buttonIcon={
-            window.location.pathname === "/" ? CompareArrowsIcon : GroupsIcon
-          }
-          onClickButton={() => {
-            setSelectedKeepers([]);
-            navigate(window.location.pathname === "/" ? "/teams" : "/");
-          }}
-        />
+        {navButtonsProps.map((navButton) => (
+          <NavButton
+            buttonIcon={navButton.icon}
+            onClickButton={() => {
+              setSelectedKeepers([]);
+              navigate(navButton.navigateTo);
+            }}
+          />
+        ))}
       </nav>
     </header>
   );
