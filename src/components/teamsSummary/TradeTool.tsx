@@ -70,7 +70,7 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
 
   return (
     <section style={styles.section}>
-      <h2 style={styles.h2}>Test de transfert</h2>
+      <h2>Test de transfert</h2>
       <div style={styles.container}>
         <TradeTeam
           dataByTeamId={dataByTeamId}
