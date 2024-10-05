@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { NavButton } from "./NavButton";
 import GroupsIcon from "@mui/icons-material/Groups";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
+import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
 
 interface HeaderProps {
   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
@@ -36,6 +37,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
   const navButtonsProps = [
     { icon: GroupsIcon, navigateTo: "/" },
     { icon: CompareArrowsIcon, navigateTo: "/teams" },
+    { icon: AssistWalkerIcon, navigateTo: "/injuries" },
   ];
 
   const navigate = useNavigate();

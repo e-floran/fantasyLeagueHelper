@@ -1,9 +1,15 @@
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 tr {
   height: 2rem;
   background-color: transparent;
   transition: background-color 0.5s;
 }
-table > tr:hover {
+table > tbody > tr:hover {
   background-color: #e45e04;
 }
 

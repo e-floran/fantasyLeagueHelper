@@ -7,6 +7,7 @@ import { useMemo, useState } from "react";
 import { getNewSalariesByPlayerId, getTeamTotals } from "./utils/utils";
 import playersWithBothRaters from "./assets/teams/playersWithBothRaters.json";
 import { TeamDetailsData } from "./utils/types";
+import { InjuryReport } from "./pages/InjuryReport";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -43,12 +44,11 @@ function App() {
             />
           }
         />
-      </Routes>
-      <Routes>
         <Route
           path="/teams"
           element={<TeamsSummary dataByTeamId={dataByTeamId} />}
         />
+        <Route path="/injuries" element={<InjuryReport />} />
       </Routes>
     </>
   );
