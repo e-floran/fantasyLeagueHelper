@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import playersWithBothRaters from "../assets/teams/playersWithBothRaters.json";
-import rostersBefore20242025draft from "../assets/teams/rostersBefore20242025draft.json";
-import { Team, Player } from "./types";
-import { computeNewSalary, parseNegativeValue } from "./utils";
+// import playersWithBothRaters from "../assets/teams/playersWithBothRaters.json";
+// import rostersBefore20242025draft from "../assets/teams/rostersBefore20242025draft.json";
+// import { Team, Player } from "./types";
+// import { computeNewSalary, parseNegativeValue } from "./utils";
 
-type RawTeam = (typeof playersWithBothRaters)["teams"][number];
-type RawPlayer = RawTeam["roster"][number];
+// type RawTeam = (typeof playersWithBothRaters)["teams"][number];
+// type RawPlayer = RawTeam["roster"][number];
 
 // export const cleanPlayers = () => {
 //   const keepers2024 = filterTeamKeys(playersWithBothRaters);
@@ -19,26 +19,26 @@ type RawPlayer = RawTeam["roster"][number];
 //   element.click();
 // };
 
-const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
-  return {
-    id: rawPlayer.id,
-    fullName: rawPlayer.fullName,
-    keeperHistory: rawPlayer.keeperHistory,
-    keeperValue: rawPlayer.keeperValue,
-    raters: rawPlayer.raters,
-  };
-};
+// const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
+//   return {
+//     id: rawPlayer.id,
+//     fullName: rawPlayer.fullName,
+//     keeperHistory: rawPlayer.keeperHistory,
+//     keeperValue: rawPlayer.keeperValue,
+//     raters: rawPlayer.raters,
+//   };
+// };
 
-const filterTeamKeys = (rawTeam: RawTeam): Team => {
-  const cleanedPlayers = rawTeam.roster.map((player) =>
-    filterPlayerKeys(player)
-  );
-  return {
-    id: rawTeam.id,
-    name: rawTeam.name,
-    roster: cleanedPlayers,
-  };
-};
+// const filterTeamKeys = (rawTeam: RawTeam): Team => {
+//   const cleanedPlayers = rawTeam.roster.map((player) =>
+//     filterPlayerKeys(player)
+//   );
+//   return {
+//     id: rawTeam.id,
+//     name: rawTeam.name,
+//     roster: cleanedPlayers,
+//   };
+// };
 
 // const updatePlayerValue = (player: Player): NewPlayer => {
 //   return {
