@@ -5,14 +5,14 @@ import { Header } from "./components/Header";
 import { TeamsSummary } from "./pages/TeamsSummary";
 import { useMemo, useState } from "react";
 import { getNewSalariesByPlayerId, getTeamTotals } from "./utils/utils";
-import playersWithBothRaters from "./assets/teams/playersWithBothRaters.json";
 import { TeamDetailsData } from "./utils/types";
 import { InjuryReport } from "./pages/InjuryReport";
+import rosters from "./assets/teams/rosters.json";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
   const [selectedKeepers, setSelectedKeepers] = useState<number[]>([]);
-  const { teams } = playersWithBothRaters;
+  const teams = rosters;
 
   const dataByTeamId = useMemo(() => {
     const dataMap = new Map<number, TeamDetailsData>();

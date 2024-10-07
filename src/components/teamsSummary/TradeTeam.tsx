@@ -93,7 +93,7 @@ export const TradeTeam = ({
             return (
               <tr>
                 <td>{player.fullName}</td>
-                <td>{player.keeperValue}</td>
+                <td>{player.salary}</td>
                 <td>
                   <input
                     type="checkbox"

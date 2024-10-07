@@ -40,13 +40,13 @@ export const RosterTable = ({
     activeTeamData.team.roster
   );
 
-  const handleCheckboxClick = (playerId: number) => {
-    if (selectedKeepers.includes(playerId)) {
-      setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
-    } else if (selectedKeepers.length < 6) {
-      setSelectedKeepers((prev) => [...prev, playerId]);
-    }
-  };
+  // const handleCheckboxClick = (playerId: number) => {
+  //   if (selectedKeepers.includes(playerId)) {
+  //     setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
+  //   } else if (selectedKeepers.length < 6) {
+  //     setSelectedKeepers((prev) => [...prev, playerId]);
+  //   }
+  // };
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -65,12 +65,12 @@ export const RosterTable = ({
             } else {
               return b.fullName.localeCompare(a.fullName);
             }
-          case "rater2023":
-            if (sortOrder === "asc") {
-              return a.raters[2023] - b.raters[2023];
-            } else {
-              return b.raters[2023] - a.raters[2023];
-            }
+          // case "rater2025":
+          //   if (sortOrder === "asc") {
+          //     return a.raters[2025] - b.raters[2025];
+          //   } else {
+          //     return b.raters[2025] - a.raters[2025];
+          //   }
           case "rater2024":
             if (sortOrder === "asc") {
               return a.raters[2024] - b.raters[2024];
@@ -83,24 +83,24 @@ export const RosterTable = ({
             } else {
               return b.keeperHistory.length - a.keeperHistory.length;
             }
-          case "keeperValue":
+          case "salary":
             if (sortOrder === "asc") {
-              return a.keeperValue - b.keeperValue;
+              return a.salary - b.salary;
             } else {
-              return b.keeperValue - a.keeperValue;
+              return b.salary - a.salary;
             }
-          case "newValue":
-            if (sortOrder === "asc") {
-              return (
-                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0) -
-                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0)
-              );
-            } else {
-              return (
-                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0) -
-                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0)
-              );
-            }
+          // case "newValue":
+          //   if (sortOrder === "asc") {
+          //     return (
+          //       (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0) -
+          //       (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0)
+          //     );
+          //   } else {
+          //     return (
+          //       (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0) -
+          //       (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0)
+          //     );
+          //   }
           default:
             return 0;
         }
@@ -125,12 +125,12 @@ export const RosterTable = ({
             >
               {"Nom"} {sortColumn === "name" ? columnIcon : null}
             </th>
-            <th
+            {/* <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("rater2023")}
             >
               {"Rater 2023"} {sortColumn === "rater2023" ? columnIcon : null}
-            </th>
+            </th> */}
             <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("rater2024")}
@@ -146,36 +146,36 @@ export const RosterTable = ({
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("keeperValue")}
+              onClick={() => sortColumnByArgument("salary")}
             >
-              Valeur 2024 {sortColumn === "keeperValue" ? columnIcon : null}
+              Salaire {sortColumn === "salary" ? columnIcon : null}
             </th>
-            <th
+            {/* <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("newValue")}
             >
               Nouvelle valeur {sortColumn === "newValue" ? columnIcon : null}
-            </th>
-            <th>Test keepers</th>
+            </th> */}
+            {/* <th>Test keepers</th> */}
           </tr>
         </thead>
         <tbody>
           {sortedPlayers.map((player) => {
             return (
-              <tr>
+              <tr key={player.id}>
                 <td>{player.fullName}</td>
-                <td>{player.raters[2023].toFixed(2)}</td>
+                {/* <td>{player.raters[2025].toFixed(2)}</td> */}
                 <td>{player.raters[2024].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
-                <td>{player.keeperValue}</td>
-                <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
-                <td>
+                <td>{player.salary}</td>
+                {/* <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td> */}
+                {/* <td>
                   <input
                     type="checkbox"
                     checked={selectedKeepers.includes(player.id)}
                     onChange={() => handleCheckboxClick(player.id)}
                   />
-                </td>
+                </td> */}
               </tr>
             );
           })}
@@ -183,12 +183,12 @@ export const RosterTable = ({
         <tfoot>
           <tr>
             <td>Totaux</td>
-            <td>{activeTeamData?.totals?.rater2023.toFixed(2)}</td>
             <td>{activeTeamData?.totals?.rater2024.toFixed(2)}</td>
+            {/* <td>{activeTeamData?.totals?.rater2025.toFixed(2)}</td> */}
             <td>-</td>
             <td>{activeTeamData?.totals?.currentSalary}</td>
-            <td>{activeTeamData?.totals?.projectedSalary}</td>
-            <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td>
+            {/* <td>{activeTeamData?.totals?.projectedSalary}</td> */}
+            {/* <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td> */}
           </tr>
         </tfoot>
       </table>

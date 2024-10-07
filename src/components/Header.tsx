@@ -24,9 +24,6 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     nav: {
       width: "100%",
       height: "2rem",
-      // position: "fixed",
-      // top: "0.75rem",
-      // left: "0",
       padding: "0 0.5rem",
       display: "flex",
       flexFlow: "row nowrap",
@@ -46,13 +43,14 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     <header style={styles.header}>
       <h1 style={styles.h1}>🏀 Fantasy league BBF 🏀</h1>
       <nav style={styles.nav}>
-        {navButtonsProps.map((navButton) => (
+        {navButtonsProps.map((navButton, index) => (
           <NavButton
             buttonIcon={navButton.icon}
             onClickButton={() => {
               setSelectedKeepers([]);
               navigate(navButton.navigateTo);
             }}
+            key={index}
           />
         ))}
       </nav>

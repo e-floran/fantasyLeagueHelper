@@ -40,18 +40,18 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
     }
 
     const firstTeamSalaries = firstTeamBeforeTrade?.team.roster
-      .map((player) => player.keeperValue)
+      .map((player) => player.salary)
       .reduce((partialSum, a) => partialSum + a, 0);
     const secondTeamSalaries = secondTeamBeforeTrade?.team.roster
-      .map((player) => player.keeperValue)
+      .map((player) => player.salary)
       .reduce((partialSum, a) => partialSum + a, 0);
     const firstTeamOutSalaries = firstTeamBeforeTrade?.team.roster
       .filter((player) => selectedFirstTeamPlayers.includes(player.id))
-      .map((player) => player.keeperValue)
+      .map((player) => player.salary)
       .reduce((partialSum, a) => partialSum + a, 0);
     const secondTeamOutSalaries = secondTeamBeforeTrade?.team.roster
       .filter((player) => selectedSecondTeamPlayers.includes(player.id))
-      .map((player) => player.keeperValue)
+      .map((player) => player.salary)
       .reduce((partialSum, a) => partialSum + a, 0);
 
     return {
