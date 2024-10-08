@@ -6,12 +6,14 @@ export const InjuryReport = (): ReactElement => {
       name: "Saddiq Bey",
     },
     { name: "Devin Carter" },
-    { name: "DanteExum" },
+    { name: "Dante Exum" },
     { name: "DaRon Holmes" },
     { name: "GG Jackson" },
     { name: "Kristaps Porzingis" },
     { name: "Mitchell Robinson" },
     { name: "Nikola Topic" },
+    { name: "Emoni Bates" },
+    { name: "Nikola Djurisic" },
   ];
   return (
     <main>
