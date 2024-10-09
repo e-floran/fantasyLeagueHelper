@@ -40,13 +40,13 @@ export const RosterTable = ({
     activeTeamData.team.roster
   );
 
-  // const handleCheckboxClick = (playerId: number) => {
-  //   if (selectedKeepers.includes(playerId)) {
-  //     setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
-  //   } else if (selectedKeepers.length < 6) {
-  //     setSelectedKeepers((prev) => [...prev, playerId]);
-  //   }
-  // };
+  const handleCheckboxClick = (playerId: number) => {
+    if (selectedKeepers.includes(playerId)) {
+      setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
+    } else if (selectedKeepers.length < 6) {
+      setSelectedKeepers((prev) => [...prev, playerId]);
+    }
+  };
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -125,17 +125,17 @@ export const RosterTable = ({
             >
               {"Nom"} {sortColumn === "name" ? columnIcon : null}
             </th>
-            {/* <th
-              style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("rater2023")}
-            >
-              {"Rater 2023"} {sortColumn === "rater2023" ? columnIcon : null}
-            </th> */}
             <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("rater2024")}
             >
               {"Rater 2024"} {sortColumn === "rater2024" ? columnIcon : null}
+            </th>
+            <th
+              style={styles.columnHeader}
+              onClick={() => sortColumnByArgument("rater2025")}
+            >
+              {"Rater 2025"} {sortColumn === "rater2025" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
@@ -150,13 +150,13 @@ export const RosterTable = ({
             >
               Salaire {sortColumn === "salary" ? columnIcon : null}
             </th>
-            {/* <th
+            <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("newValue")}
             >
               Nouvelle valeur {sortColumn === "newValue" ? columnIcon : null}
-            </th> */}
-            {/* <th>Test keepers</th> */}
+            </th>
+            <th>Test keepers</th>
           </tr>
         </thead>
         <tbody>
@@ -164,18 +164,18 @@ export const RosterTable = ({
             return (
               <tr key={player.id}>
                 <td>{player.fullName}</td>
-                {/* <td>{player.raters[2025].toFixed(2)}</td> */}
                 <td>{player.raters[2024].toFixed(2)}</td>
+                <td>{player.raters[2025].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
                 <td>{player.salary}</td>
-                {/* <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td> */}
-                {/* <td>
+                <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
+                <td>
                   <input
                     type="checkbox"
                     checked={selectedKeepers.includes(player.id)}
                     onChange={() => handleCheckboxClick(player.id)}
                   />
-                </td> */}
+                </td>
               </tr>
             );
           })}
@@ -184,11 +184,11 @@ export const RosterTable = ({
           <tr>
             <td>Totaux</td>
             <td>{activeTeamData?.totals?.rater2024.toFixed(2)}</td>
-            {/* <td>{activeTeamData?.totals?.rater2025.toFixed(2)}</td> */}
+            <td>{activeTeamData?.totals?.rater2025.toFixed(2)}</td>
             <td>-</td>
             <td>{activeTeamData?.totals?.currentSalary}</td>
-            {/* <td>{activeTeamData?.totals?.projectedSalary}</td> */}
-            {/* <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td> */}
+            <td>{activeTeamData?.totals?.projectedSalary}</td>
+            <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td>
           </tr>
         </tfoot>
       </table>
