@@ -12,7 +12,7 @@ import rosters from "./assets/teams/rosters.json";
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
   const [selectedKeepers, setSelectedKeepers] = useState<number[]>([]);
-  const teams = rosters;
+  const teams = rosters.teams;
 
   const dataByTeamId = useMemo(() => {
     const dataMap = new Map<number, TeamDetailsData>();
