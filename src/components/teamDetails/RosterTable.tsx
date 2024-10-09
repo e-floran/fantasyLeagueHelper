@@ -9,6 +9,7 @@ import {
 import { createStyles } from "../../utils/style";
 import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
+import { parseNegativeValue } from "../../utils/utils";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
@@ -164,7 +165,7 @@ export const RosterTable = ({
             return (
               <tr key={player.id}>
                 <td>{player.fullName}</td>
-                <td>{player.raters[2024].toFixed(2)}</td>
+                <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
                 <td>{player.raters[2025].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
                 <td>{player.salary}</td>
