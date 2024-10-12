@@ -8,6 +8,7 @@ import { getNewSalariesByPlayerId, getTeamTotals } from "./utils/utils";
 import { TeamDetailsData } from "./utils/types";
 import { InjuryReport } from "./pages/InjuryReport";
 import rosters from "./assets/teams/rosters.json";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -50,6 +51,7 @@ function App() {
         />
         <Route path="/injuries" element={<InjuryReport />} />
       </Routes>
+      <Footer lastUpdate={new Date(rosters.lastUpdate)} />
     </>
   );
 }

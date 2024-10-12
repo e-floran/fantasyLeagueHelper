@@ -222,18 +222,18 @@
           "raters": { "2024": 0.94968665, "2025": 0 }
         },
         {
-          "id": 4065670,
-          "fullName": "Bruce Brown",
+          "id": 4869342,
+          "fullName": "Dyson Daniels",
           "keeperHistory": [],
-          "salary": 1,
-          "raters": { "2024": 2.0184913, "2025": 0 }
+          "salary": 3,
+          "raters": { "2024": 0.59118277, "2025": 0 }
         },
         {
-          "id": 4066211,
-          "fullName": "Robert Williams III",
+          "id": 4431687,
+          "fullName": "Patrick Williams",
           "keeperHistory": [],
-          "salary": 1,
-          "raters": { "2024": 0, "2025": 0 }
+          "salary": 4,
+          "raters": { "2024": -0.652148, "2025": 0 }
         }
       ]
     },
@@ -319,13 +319,6 @@
           "raters": { "2024": 0, "2025": 0 }
         },
         {
-          "id": 4431687,
-          "fullName": "Patrick Williams",
-          "keeperHistory": [],
-          "salary": 2,
-          "raters": { "2024": -0.652148, "2025": 0 }
-        },
-        {
           "id": 2530530,
           "fullName": "T.J. McConnell",
           "keeperHistory": [],
@@ -352,6 +345,13 @@
           "keeperHistory": [],
           "salary": 1,
           "raters": { "2024": 1.400619, "2025": 0 }
+        },
+        {
+          "id": 4395626,
+          "fullName": "Tre Jones",
+          "keeperHistory": [],
+          "salary": 7,
+          "raters": { "2024": 5.1578264, "2025": 0 }
         }
       ]
     },
@@ -706,6 +706,13 @@
           "keeperHistory": [],
           "salary": 6,
           "raters": { "2024": 5.9002447, "2025": 0 }
+        },
+        {
+          "id": 4066421,
+          "fullName": "Lonzo Ball",
+          "keeperHistory": [],
+          "salary": 1,
+          "raters": { "2024": 0, "2025": 0 }
         }
       ]
     },
@@ -1171,6 +1178,13 @@
           "keeperHistory": [],
           "salary": 1,
           "raters": { "2024": 0, "2025": 0 }
+        },
+        {
+          "id": 4278076,
+          "fullName": "Nick Richards",
+          "keeperHistory": [],
+          "salary": 1,
+          "raters": { "2024": 4.1021223, "2025": 0 }
         }
       ]
     },
@@ -1388,13 +1402,6 @@
           "raters": { "2024": -0.96071887, "2025": 0 }
         },
         {
-          "id": 3593,
-          "fullName": "Bojan Bogdanovic",
-          "keeperHistory": [],
-          "salary": 1,
-          "raters": { "2024": -0.63809425, "2025": 0 }
-        },
-        {
           "id": 4432165,
           "fullName": "Jalen Suggs",
           "keeperHistory": [],
@@ -1407,6 +1414,20 @@
           "keeperHistory": [],
           "salary": 4,
           "raters": { "2024": 1.3477879, "2025": 0 }
+        },
+        {
+          "id": 4683771,
+          "fullName": "Ron Holland II",
+          "keeperHistory": [],
+          "salary": 2,
+          "raters": { "2024": 0, "2025": 0 }
+        },
+        {
+          "id": 4065804,
+          "fullName": "Sam Hauser",
+          "keeperHistory": [],
+          "salary": 1,
+          "raters": { "2024": 2.9896474, "2025": 0 }
         }
       ]
     },
