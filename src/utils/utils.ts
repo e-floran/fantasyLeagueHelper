@@ -105,6 +105,7 @@ export const getTeamTotals = (
     .map((player) => player.raters[2025])
     .reduce((partialSum, a) => partialSum + a, 0);
   const currentSalary = team.roster
+    .filter((player) => !player.injuredSpot)
     .map((player) => player.salary)
     .reduce((partialSum, a) => partialSum + a, 0);
 

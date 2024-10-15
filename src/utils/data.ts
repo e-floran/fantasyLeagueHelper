@@ -1,38 +1,19 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// import playersWithBothRaters from "../assets/teams/playersWithBothRaters.json";
-// import rostersBefore20242025draft from "../assets/teams/rostersBefore20242025draft.json";
-// import { Team, Player } from "./types";
-// import { computeNewSalary, parseNegativeValue } from "./utils";
-// import postDraft from "../assets/teams/postDraft.json";
-// import rosters from "../assets/teams/rosters.json";
-// import rater2024 from "../assets/teams/rater2024.json";
+import { Player, RatedRawPlayer, RawPlayer, RawTeam, Team } from "./types";
 
-// type RawTeam = (typeof postDraft)["teams"][number];
-// type RawPlayer = RawTeam["roster"]["entries"][number]["playerPoolEntry"];
-// interface RatedPlayer {
-//   id: number;
-//   ratings: {
-//     "0": {
-//       totalRating: number;
-//     };
-//   };
-// }
-// interface RawRater {
-//   players: RatedPlayer[];
-// }
-
-// const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
-//   return {
-//     id: rawPlayer.id,
-//     fullName: rawPlayer.player.fullName,
-//     keeperHistory: [],
-//     salary: rawPlayer.keeperValueFuture,
-//     raters: { "2024": 0, "2025": 0 },
-//   };
-// };
+const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
+  return {
+    id: rawPlayer.playerId,
+    fullName: rawPlayer.playerPoolEntry.player.fullName,
+    keeperHistory: [],
+    salary: rawPlayer.playerPoolEntry.keeperValueFuture,
+    raters: { "2024": 0, "2025": 0 },
+    injuredSpot: rawPlayer.lineupSlotId === 13,
+  };
+};
 
 // const filterTeamKeys = (rawTeam: RawTeam): Team => {
-//   const cleanedPlayers = rawTeam.roster.map((player) =>
+//   const cleanedPlayers = rawTeam.roster.entries.map((player) =>
 //     filterPlayerKeys(player)
 //   );
 //   return {
@@ -68,46 +49,48 @@
 //   return teams;
 // };
 
-// export const addNewPlayersAfterDraft = (): void => {
-//   const keeperRosters: Team[] = rosters;
-//   const postDraftRosters: RawTeam[] = postDraft.teams;
-//   const lastSeasonRaters = (rater2024 as unknown as RawRater).players;
+export const addNewPlayers = (
+  previousRosters: Team[],
+  newRosters: RawTeam[],
+  lastSeasonRaters: RatedRawPlayer[]
+): Team[] => {
+  const outputRosters: Team[] = [];
 
-//   const outputRosters: Team[] = [];
+  newRosters.forEach((newTeam) => {
+    const newRoster = newTeam.roster.entries;
+    const oldTeam: Team | undefined = previousRosters.find(
+      (team) => team.id === newTeam.id
+    );
+    if (!oldTeam) {
+      return;
+    }
+    const rosterToBuild: Player[] = [];
 
-//   postDraftRosters.forEach((newTeam) => {
-//     const newRoster = newTeam.roster.entries;
-//     const oldTeam: Team | undefined = keeperRosters.find(
-//       (team) => team.id === newTeam.id
-//     );
-//     if (!oldTeam) {
-//       return;
-//     }
-//     const rosterToBuild: Player[] = oldTeam.roster;
-
-//     newRoster.forEach((newPlayer) => {
-//       if (
-//         !rosterToBuild.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
-//       ) {
-//         const parsedPlayer = filterPlayerKeys(newPlayer.playerPoolEntry);
-//         const lastRater = lastSeasonRaters.find(
-//           (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
-//         )?.ratings["0"].totalRating;
-//         if (typeof lastRater === "number") {
-//           parsedPlayer.raters = { "2024": lastRater, "2025": 0 };
-//         }
-//         rosterToBuild.push(parsedPlayer);
-//       }
-//     });
-//     outputRosters.push({ ...oldTeam, roster: rosterToBuild });
-//   });
-//   const output = { lastUpdate: new Date(), teams: outputRosters };
-//   const element = document.createElement("a");
-//   const textFile = new Blob([JSON.stringify(output)], {
-//     type: "application/json",
-//   });
-//   element.href = URL.createObjectURL(textFile);
-//   element.download = "rostersNew.json";
-//   document.body.appendChild(element);
-//   element.click();
-// };
+    newRoster.forEach((newPlayer) => {
+      if (
+        !oldTeam.roster.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
+      ) {
+        const parsedPlayer = filterPlayerKeys(newPlayer);
+        const lastRater = lastSeasonRaters.find(
+          (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
+        )?.ratings["0"].totalRating;
+        if (typeof lastRater === "number") {
+          parsedPlayer.raters = { "2024": lastRater, "2025": 0 };
+        }
+        rosterToBuild.push(parsedPlayer);
+      } else {
+        const previousPlayer = oldTeam.roster.find(
+          (oldPlayer) => oldPlayer.id === newPlayer.playerId
+        );
+        if (previousPlayer) {
+          rosterToBuild.push({
+            ...previousPlayer,
+            injuredSpot: newPlayer.lineupSlotId === 13,
+          });
+        }
+      }
+    });
+    outputRosters.push({ ...oldTeam, roster: rosterToBuild });
+  });
+  return outputRosters;
+};

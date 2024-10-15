@@ -1,14 +1,3 @@
-export interface OldPlayer {
-  id: number;
-  fullName: string;
-  keeperValue: number;
-  keeperHistory: string[];
-  raters: {
-    "2023": number;
-    "2024": number;
-  };
-}
-
 export interface Player {
   id: number;
   fullName: string;
@@ -18,6 +7,7 @@ export interface Player {
     "2025": number;
     "2024": number;
   };
+  injuredSpot?: boolean;
 }
 
 export interface Team {
@@ -36,4 +26,32 @@ export interface TeamDetailsData {
     projectedSalary: number;
     projectedKeepersSalaries: number;
   };
+}
+
+export interface RatedRawPlayer {
+  id: number;
+  keeperValue: number;
+  keeperValueFuture: number;
+  onteamId: number;
+  ratings: {
+    "0": {
+      totalRating: number;
+    };
+  };
+  player: {
+    fullName: string;
+    id: number;
+  };
+}
+
+export interface RawPlayer {
+  lineupSlotId: number;
+  playerId: number;
+  playerPoolEntry: Omit<RatedRawPlayer, "ratings">;
+}
+
+export interface RawTeam {
+  id: number;
+  name: string;
+  roster: { entries: RawPlayer[] };
 }

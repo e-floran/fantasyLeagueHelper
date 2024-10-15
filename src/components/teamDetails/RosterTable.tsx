@@ -10,6 +10,7 @@ import { createStyles } from "../../utils/style";
 import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
+import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
@@ -31,6 +32,9 @@ export const RosterTable = ({
     },
     columnHeader: {
       cursor: "pointer",
+    },
+    injuredPlayer: {
+      backgroundColor: "red",
     },
   });
 
@@ -164,11 +168,27 @@ export const RosterTable = ({
           {sortedPlayers.map((player) => {
             return (
               <tr key={player.id}>
-                <td>{player.fullName}</td>
+                {player.injuredSpot ? (
+                  <td style={{ position: "relative" }}>
+                    <LocalHospitalIcon
+                      sx={{
+                        color: "red",
+                        position: "absolute",
+                        bottom: "0.25rem",
+                        left: "0",
+                      }}
+                    />{" "}
+                    {player.fullName}
+                  </td>
+                ) : (
+                  <td>{player.fullName}</td>
+                )}
                 <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
                 <td>{player.raters[2025].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
-                <td>{player.salary}</td>
+                <td style={player.injuredSpot ? { color: "red" } : undefined}>
+                  {player.salary}
+                </td>
                 <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
                 <td>
                   <input
