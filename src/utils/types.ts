@@ -1,3 +1,8 @@
+export enum AcquisitionTypeEnum {
+  DRAFT = "DRAFT",
+  ADD = "ADD",
+  TRADE = "TRADE",
+}
 export interface Player {
   id: number;
   fullName: string;
@@ -47,6 +52,7 @@ export interface RatedRawPlayer {
 export interface RawPlayer {
   lineupSlotId: number;
   playerId: number;
+  acquisitionType: AcquisitionTypeEnum;
   playerPoolEntry: Omit<RatedRawPlayer, "ratings">;
 }
 

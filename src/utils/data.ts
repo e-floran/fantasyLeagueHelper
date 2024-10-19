@@ -1,5 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Player, RatedRawPlayer, RawPlayer, RawTeam, Team } from "./types";
+import {
+  AcquisitionTypeEnum,
+  Player,
+  RatedRawPlayer,
+  RawPlayer,
+  RawTeam,
+  Team,
+} from "./types";
 
 const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
   return {
@@ -49,12 +56,56 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
 //   return teams;
 // };
 
+const addFreeAgent = (
+  newPlayer: RawPlayer,
+  lastSeasonRaters: RatedRawPlayer[],
+  rosterToBuild: Player[]
+) => {
+  const parsedPlayer = filterPlayerKeys(newPlayer);
+  const lastRater = lastSeasonRaters.find(
+    (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
+  )?.ratings["0"].totalRating;
+  if (typeof lastRater === "number") {
+    parsedPlayer.raters = { "2024": lastRater, "2025": 0 };
+  }
+  rosterToBuild.push(parsedPlayer);
+};
+
+const initPlayersMap = (
+  playersByPlayerId: Map<number, Player>,
+  previousRosters: Team[]
+) => {
+  previousRosters.forEach((team) => {
+    team.roster.forEach((player) => {
+      playersByPlayerId.set(player.id, player);
+    });
+  });
+};
+
+const addTradedPlayer = (
+  newPlayer: RawPlayer,
+  playersByPlayerId: Map<number, Player>,
+  previousRosters: Team[],
+  rosterToBuild: Player[]
+) => {
+  if (playersByPlayerId.size === 0) {
+    initPlayersMap(playersByPlayerId, previousRosters);
+  }
+  const playerToAdd = playersByPlayerId.get(newPlayer.playerId);
+  if (!playerToAdd) {
+    return;
+  }
+  rosterToBuild.push(playerToAdd);
+};
+
 export const addNewPlayers = (
   previousRosters: Team[],
   newRosters: RawTeam[],
   lastSeasonRaters: RatedRawPlayer[]
 ): Team[] => {
   const outputRosters: Team[] = [];
+
+  const playersByPlayerId: Map<number, Player> = new Map();
 
   newRosters.forEach((newTeam) => {
     const newRoster = newTeam.roster.entries;
@@ -70,14 +121,25 @@ export const addNewPlayers = (
       if (
         !oldTeam.roster.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
       ) {
-        const parsedPlayer = filterPlayerKeys(newPlayer);
-        const lastRater = lastSeasonRaters.find(
-          (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
-        )?.ratings["0"].totalRating;
-        if (typeof lastRater === "number") {
-          parsedPlayer.raters = { "2024": lastRater, "2025": 0 };
+        if (newPlayer.acquisitionType === AcquisitionTypeEnum.ADD) {
+          addFreeAgent(newPlayer, lastSeasonRaters, rosterToBuild);
         }
-        rosterToBuild.push(parsedPlayer);
+        if (newPlayer.acquisitionType === AcquisitionTypeEnum.TRADE) {
+          addTradedPlayer(
+            newPlayer,
+            playersByPlayerId,
+            previousRosters,
+            rosterToBuild
+          );
+        }
+        // const parsedPlayer = filterPlayerKeys(newPlayer);
+        // const lastRater = lastSeasonRaters.find(
+        //   (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
+        // )?.ratings["0"].totalRating;
+        // if (typeof lastRater === "number") {
+        //   parsedPlayer.raters = { "2024": lastRater, "2025": 0 };
+        // }
+        // rosterToBuild.push(parsedPlayer);
       } else {
         const previousPlayer = oldTeam.roster.find(
           (oldPlayer) => oldPlayer.id === newPlayer.playerId

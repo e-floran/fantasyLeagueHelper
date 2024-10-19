@@ -9,6 +9,8 @@ import { TeamDetailsData } from "./utils/types";
 import { InjuryReport } from "./pages/InjuryReport";
 import rosters from "./assets/teams/rosters.json";
 import { Footer } from "./components/Footer";
+import { Trade } from "./pages/Trade";
+// import { dailyUpdate } from "./scripts/dailyUpdate";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -32,6 +34,7 @@ function App() {
   return (
     <>
       <Header setSelectedKeepers={setSelectedKeepers} />
+      {/* <button onClick={dailyUpdate}>Queries</button> */}
       <Routes>
         <Route
           path="/"
@@ -49,6 +52,7 @@ function App() {
           path="/teams"
           element={<TeamsSummary dataByTeamId={dataByTeamId} />}
         />
+        <Route path="/trade" element={<Trade dataByTeamId={dataByTeamId} />} />
         <Route path="/injuries" element={<InjuryReport />} />
       </Routes>
       <Footer lastUpdate={new Date(rosters.lastUpdate)} />

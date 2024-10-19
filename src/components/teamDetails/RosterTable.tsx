@@ -34,7 +34,8 @@ export const RosterTable = ({
       cursor: "pointer",
     },
     injuredPlayer: {
-      backgroundColor: "red",
+      position: "relative",
+      top: "0.25rem",
     },
   });
 
@@ -159,7 +160,7 @@ export const RosterTable = ({
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("newValue")}
             >
-              Nouvelle valeur {sortColumn === "newValue" ? columnIcon : null}
+              Saison prochaine {sortColumn === "newValue" ? columnIcon : null}
             </th>
             <th>Test keepers</th>
           </tr>
@@ -167,28 +168,21 @@ export const RosterTable = ({
         <tbody>
           {sortedPlayers.map((player) => {
             return (
-              <tr key={player.id}>
+              <tr
+                style={player.injuredSpot ? { color: "red" } : undefined}
+                key={player.id}
+              >
+                <td>{player.fullName}</td>
                 {player.injuredSpot ? (
                   <td style={{ position: "relative" }}>
-                    <LocalHospitalIcon
-                      sx={{
-                        color: "red",
-                        position: "absolute",
-                        bottom: "0.25rem",
-                        left: "0",
-                      }}
-                    />{" "}
-                    {player.fullName}
+                    <LocalHospitalIcon sx={styles.injuredPlayer} />
                   </td>
                 ) : (
-                  <td>{player.fullName}</td>
+                  <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
                 )}
-                <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
                 <td>{player.raters[2025].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
-                <td style={player.injuredSpot ? { color: "red" } : undefined}>
-                  {player.salary}
-                </td>
+                <td>{player.salary}</td>
                 <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
                 <td>
                   <input

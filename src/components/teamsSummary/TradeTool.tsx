@@ -7,7 +7,6 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     section: {
       width: "100%",
-      marginTop: "3rem",
     },
     container: {
       display: "flex",
