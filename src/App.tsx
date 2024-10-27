@@ -8,6 +8,7 @@ import { getNewSalariesByPlayerId, getTeamTotals } from "./utils/utils";
 import { TeamDetailsData } from "./utils/types";
 import { InjuryReport } from "./pages/InjuryReport";
 import rosters from "./assets/teams/rosters.json";
+// import rostersNew from "./assets/teams/rostersNew.json";
 import { Footer } from "./components/Footer";
 import { Trade } from "./pages/Trade";
 // import { dailyUpdate } from "./scripts/dailyUpdate";
