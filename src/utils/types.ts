@@ -13,6 +13,7 @@ export interface Player {
     "2024": number;
   };
   injuredSpot?: boolean;
+  gamesPlayed: number;
 }
 
 export interface Team {
@@ -46,6 +47,7 @@ export interface RatedRawPlayer {
   player: {
     fullName: string;
     id: number;
+    stats: { id: string; stats: { "42": number } }[];
   };
 }
 

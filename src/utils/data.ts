@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   AcquisitionTypeEnum,
   Player,
@@ -19,59 +18,22 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
   };
 };
 
-// const filterTeamKeys = (rawTeam: RawTeam): Team => {
-//   const cleanedPlayers = rawTeam.roster.entries.map((player) =>
-//     filterPlayerKeys(player)
-//   );
-//   return {
-//     id: rawTeam.id,
-//     name: rawTeam.name,
-//     roster: cleanedPlayers,
-//   };
-// };
-
-// const updatePlayerValue = (player: Player): NewPlayer => {
-//   return {
-//     id: player.id,
-//     fullName: player.fullName,
-//     keeperHistory: [...player.keeperHistory, "2025"],
-//     raters: { "2024": player.raters[2024], "2025": 0 },
-//     salary: parseNegativeValue(
-//       computeNewSalary(
-//         player.keeperValue,
-//         player.keeperHistory.length,
-//         player.raters[2023] === 0,
-//         player.raters[2024] - parseNegativeValue(player.raters[2023])
-//       ),
-//       1
-//     ),
-//   };
-// };
-
-// const updateTeamsBeforeDraft = () => {
-//   const teams = rostersBefore20242025draft.map((team) => {
-//     const roster = team.roster.map((player) => updatePlayerValue(player));
-//     return { ...team, roster };
-//   });
-//   return teams;
-// };
-
 const addFreeAgent = (
   newPlayer: RawPlayer,
   lastSeasonRaters: RatedRawPlayer[],
   rosterToBuild: Player[],
-  currentRater: number
+  currentRater: number,
+  gamesPlayed: number
 ) => {
   const parsedPlayer = filterPlayerKeys(newPlayer);
   const lastRater = lastSeasonRaters.find(
     (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
   )?.ratings["0"].totalRating;
-  // if (typeof lastRater === "number") {
   parsedPlayer.raters = {
     "2024": typeof lastRater === "number" ? lastRater : 0,
     "2025": currentRater,
   };
-  // }
+  parsedPlayer.gamesPlayed = gamesPlayed;
   rosterToBuild.push(parsedPlayer);
 };
 
@@ -92,20 +54,28 @@ const addTradedPlayer = (
   previousRosters: Team[],
   rosterToBuild: Player[],
   lastSeasonRaters: RatedRawPlayer[],
-  currentRater: number
+  currentRater: number,
+  gamesPlayed: number
 ) => {
   if (playersByPlayerId.size === 0) {
     initPlayersMap(playersByPlayerId, previousRosters);
   }
   const playerToAdd = playersByPlayerId.get(newPlayer.playerId);
   if (!playerToAdd) {
-    addFreeAgent(newPlayer, lastSeasonRaters, rosterToBuild, currentRater);
+    addFreeAgent(
+      newPlayer,
+      lastSeasonRaters,
+      rosterToBuild,
+      currentRater,
+      gamesPlayed
+    );
     return;
   }
   rosterToBuild.push({
     ...playerToAdd,
     injuredSpot: newPlayer.lineupSlotId === 13,
     raters: { "2024": playerToAdd.raters[2024], "2025": currentRater },
+    gamesPlayed,
   });
 };
 
@@ -134,12 +104,10 @@ export const addNewPlayers = (
         currentRaters.find(
           (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
         )?.ratings["0"].totalRating ?? 0;
-      if (newPlayer.playerId === 3112335) {
-        const ratedPlayer = currentRaters.find(
-          (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
-        );
-        console.log("JOKIC", newPlayer, ratedPlayer);
-      }
+      const gamesPlayed =
+        newPlayer.playerPoolEntry.player.stats.find(
+          (statsEntry) => statsEntry.id === "002025"
+        )?.stats[42] ?? 0;
       if (
         !oldTeam.roster.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
       ) {
@@ -148,7 +116,8 @@ export const addNewPlayers = (
             newPlayer,
             lastSeasonRaters,
             rosterToBuild,
-            currentRater
+            currentRater,
+            gamesPlayed
           );
         }
         if (newPlayer.acquisitionType === AcquisitionTypeEnum.TRADE) {
@@ -158,7 +127,8 @@ export const addNewPlayers = (
             previousRosters,
             rosterToBuild,
             lastSeasonRaters,
-            currentRater
+            currentRater,
+            gamesPlayed
           );
         }
       } else {
@@ -173,6 +143,7 @@ export const addNewPlayers = (
               "2024": previousPlayer.raters[2024],
               "2025": currentRater,
             },
+            gamesPlayed,
           });
         }
       }

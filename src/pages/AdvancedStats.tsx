@@ -1,10 +1,12 @@
 import { CSSProperties, ReactElement, useMemo, useState } from "react";
 import rosters from "../assets/teams/rosters.json";
+// import rostersNew from "../assets/teams/rostersNew.json";
 import { Player } from "../utils/types";
 import { createStyles } from "../utils/style";
 
-interface PlayerWithRaterBySalary extends Player {
+interface PlayerWithAdvancedStats extends Player {
   raterBySalary: number;
+  raterByGames: number;
 }
 
 export const AdvancedStats = (): ReactElement => {
@@ -14,6 +16,14 @@ export const AdvancedStats = (): ReactElement => {
     },
   });
 
+  const averageGamesPlayed = useMemo(() => {
+    const gamesPlayed = rosters.teams
+      .map((team) => team.roster)
+      .flat()
+      .map((player) => player.gamesPlayed);
+    return gamesPlayed.reduce((a, b) => a + b) / gamesPlayed.length;
+  }, []);
+
   const flatPlayers = useMemo(() => {
     return rosters.teams
       .map((team) => team.roster)
@@ -22,6 +32,8 @@ export const AdvancedStats = (): ReactElement => {
         return {
           ...player,
           raterBySalary: player.raters[2025] / player.salary,
+          raterByGames:
+            (player.raters[2025] / player.gamesPlayed) * averageGamesPlayed,
         };
       });
   }, []);
@@ -30,7 +42,7 @@ export const AdvancedStats = (): ReactElement => {
   const [columnIcon, setColumnIcon] = useState("");
   const [sortColumn, setSortColumn] = useState("");
   const [sortedPlayers, setSortedPlayers] =
-    useState<PlayerWithRaterBySalary[]>(flatPlayers);
+    useState<PlayerWithAdvancedStats[]>(flatPlayers);
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -65,6 +77,18 @@ export const AdvancedStats = (): ReactElement => {
             return a.salary - b.salary;
           } else {
             return b.salary - a.salary;
+          }
+        case "gamesPlayed":
+          if (sortOrder === "asc") {
+            return a.gamesPlayed - b.gamesPlayed;
+          } else {
+            return b.gamesPlayed - a.gamesPlayed;
+          }
+        case "raterByGames":
+          if (sortOrder === "asc") {
+            return a.raterByGames - b.raterByGames;
+          } else {
+            return b.raterByGames - a.raterByGames;
           }
         default:
           return 0;
@@ -102,6 +126,18 @@ export const AdvancedStats = (): ReactElement => {
           >
             Rater/salaire {sortColumn === "raterBySalary" ? columnIcon : null}
           </th>
+          <th
+            style={styles.columnHeader}
+            onClick={() => sortColumnByArgument("gamesPlayed")}
+          >
+            Matchs joués
+          </th>
+          <th
+            style={styles.columnHeader}
+            onClick={() => sortColumnByArgument("raterByGames")}
+          >
+            Rater/matchs joués
+          </th>
         </thead>
         <tbody>
           {sortedPlayers.map((player) => {
@@ -110,7 +146,9 @@ export const AdvancedStats = (): ReactElement => {
                 <td>{player.fullName}</td>
                 <td>{player.raters[2025]}</td>
                 <td>{player.salary}</td>
-                <td>{(player.raters[2025] / player.salary).toFixed(2)}</td>
+                <td>{player.raterBySalary.toFixed(2)}</td>
+                <td>{player.gamesPlayed}</td>
+                <td>{player.raterByGames}</td>
               </tr>
             );
           })}
