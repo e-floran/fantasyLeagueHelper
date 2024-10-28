@@ -13,7 +13,7 @@ export interface Player {
     "2024": number;
   };
   injuredSpot?: boolean;
-  gamesPlayed: number;
+  gamesPlayed?: number;
 }
 
 export interface Team {
