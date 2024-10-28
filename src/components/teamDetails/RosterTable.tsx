@@ -38,7 +38,7 @@ export const RosterTable = ({
     },
   });
 
-  const [sortOrder, setSortOrder] = useState("asc");
+  const [sortOrder, setSortOrder] = useState("desc");
   const [columnIcon, setColumnIcon] = useState("");
   const [sortColumn, setSortColumn] = useState("");
   const [sortedPlayers, setSortedPlayers] = useState<Player[]>(
@@ -55,7 +55,7 @@ export const RosterTable = ({
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    setColumnIcon(columnIcon === "↑" ? "↓" : "↑");
+    setColumnIcon(columnIcon === "↓" ? "↑" : "↓");
   };
 
   const sortColumnByArgument = (column: string) => {

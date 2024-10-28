@@ -14,6 +14,7 @@ import { Trade } from "./pages/Trade";
 import { dailyUpdate } from "./scripts/dailyUpdate";
 import { CustomButton } from "./components/generic/CustomButton";
 import { LeagueRules } from "./pages/LeagueRules";
+import { AdvancedStats } from "./pages/AdvancedStats";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -62,6 +63,7 @@ function App() {
         <Route path="/trade" element={<Trade dataByTeamId={dataByTeamId} />} />
         <Route path="/injuries" element={<InjuryReport />} />
         <Route path="/rules" element={<LeagueRules />} />
+        <Route path="/advanced" element={<AdvancedStats />} />
       </Routes>
       <Footer lastUpdate={new Date(rosters.lastUpdate)} />
     </>
