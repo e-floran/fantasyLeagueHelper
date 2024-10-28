@@ -6,6 +6,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
+import GavelIcon from "@mui/icons-material/Gavel";
 
 interface HeaderProps {
   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
@@ -37,6 +38,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     { icon: CompareArrowsIcon, navigateTo: "/trade" },
     { icon: LeaderboardIcon, navigateTo: "/teams" },
     { icon: AssistWalkerIcon, navigateTo: "/injuries" },
+    { icon: GavelIcon, navigateTo: "/rules" },
   ];
 
   const navigate = useNavigate();

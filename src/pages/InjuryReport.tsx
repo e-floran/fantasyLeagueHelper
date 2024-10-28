@@ -7,31 +7,42 @@ export const InjuryReport = (): ReactElement => {
     },
     { name: "Devin Carter" },
     { name: "Dante Exum" },
-    { name: "DaRon Holmes" },
+    { name: "DaRon Holmes", outForSeason: true },
     { name: "GG Jackson" },
     { name: "Kristaps Porzingis" },
     { name: "Mitchell Robinson" },
     { name: "Nikola Topic" },
     { name: "Emoni Bates" },
-    { name: "Nikola Djurisic" },
+    { name: "James Wiseman", outForSeason: true },
+    { name: "Steven Adams" },
+    { name: "Precious Achiuwa" },
+    { name: "Bojan Bogdanovic" },
+    { name: "Robert Williams" },
+    { name: "Isaiah Hartenstein" },
+    { name: "Kawhi Leonard" },
+    { name: "Dejounte Murray" },
+    { name: "Max Strus" },
+    { name: "PJ Tucker" },
   ];
   return (
     <main>
-      <h2>Joueurs blessés à ne pas drafter/pick</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom</th>
-          </tr>
-        </thead>
-        <tbody>
-          {injuredPlayers.map((player) => (
-            <tr key={player.name}>
-              <td>{player.name}</td>
+      <section>
+        <h2>Joueurs blessés à ne pas drafter/pick</h2>
+        <table style={{ width: "100%" }}>
+          <thead>
+            <tr>
+              <th>Nom</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {injuredPlayers.map((player) => (
+              <tr key={player.name}>
+                <td>{player.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
     </main>
   );
 };

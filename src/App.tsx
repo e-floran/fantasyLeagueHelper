@@ -11,7 +11,9 @@ import rosters from "./assets/teams/rosters.json";
 // import rostersNew from "./assets/teams/rostersNew.json";
 import { Footer } from "./components/Footer";
 import { Trade } from "./pages/Trade";
-// import { dailyUpdate } from "./scripts/dailyUpdate";
+import { dailyUpdate } from "./scripts/dailyUpdate";
+import { CustomButton } from "./components/generic/CustomButton";
+import { LeagueRules } from "./pages/LeagueRules";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -32,10 +34,14 @@ function App() {
     return dataMap;
   }, [selectedKeepers, teams]);
 
+  const isLocal = location.hostname === "localhost";
+
   return (
     <>
       <Header setSelectedKeepers={setSelectedKeepers} />
-      {/* <button onClick={dailyUpdate}>Queries</button> */}
+      {isLocal && (
+        <CustomButton buttonText="Mettre à jour" onClickButton={dailyUpdate} />
+      )}
       <Routes>
         <Route
           path="/"
@@ -55,6 +61,7 @@ function App() {
         />
         <Route path="/trade" element={<Trade dataByTeamId={dataByTeamId} />} />
         <Route path="/injuries" element={<InjuryReport />} />
+        <Route path="/rules" element={<LeagueRules />} />
       </Routes>
       <Footer lastUpdate={new Date(rosters.lastUpdate)} />
     </>

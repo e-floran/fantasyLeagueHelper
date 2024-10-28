@@ -10,7 +10,6 @@ import { createStyles } from "../../utils/style";
 import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
@@ -71,12 +70,12 @@ export const RosterTable = ({
             } else {
               return b.fullName.localeCompare(a.fullName);
             }
-          // case "rater2025":
-          //   if (sortOrder === "asc") {
-          //     return a.raters[2025] - b.raters[2025];
-          //   } else {
-          //     return b.raters[2025] - a.raters[2025];
-          //   }
+          case "rater2025":
+            if (sortOrder === "asc") {
+              return a.raters[2025] - b.raters[2025];
+            } else {
+              return b.raters[2025] - a.raters[2025];
+            }
           case "rater2024":
             if (sortOrder === "asc") {
               return a.raters[2024] - b.raters[2024];
@@ -95,18 +94,18 @@ export const RosterTable = ({
             } else {
               return b.salary - a.salary;
             }
-          // case "newValue":
-          //   if (sortOrder === "asc") {
-          //     return (
-          //       (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0) -
-          //       (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0)
-          //     );
-          //   } else {
-          //     return (
-          //       (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0) -
-          //       (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0)
-          //     );
-          //   }
+          case "newValue":
+            if (sortOrder === "asc") {
+              return (
+                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0) -
+                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0)
+              );
+            } else {
+              return (
+                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0) -
+                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0)
+              );
+            }
           default:
             return 0;
         }
@@ -173,13 +172,7 @@ export const RosterTable = ({
                 key={player.id}
               >
                 <td>{player.fullName}</td>
-                {player.injuredSpot ? (
-                  <td style={{ position: "relative" }}>
-                    <LocalHospitalIcon sx={styles.injuredPlayer} />
-                  </td>
-                ) : (
-                  <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
-                )}
+                <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
                 <td>{player.raters[2025].toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
                 <td>{player.salary}</td>
