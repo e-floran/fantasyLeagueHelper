@@ -38,12 +38,8 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
       return undefined;
     }
 
-    const firstTeamSalaries = firstTeamBeforeTrade?.team.roster
-      .map((player) => player.salary)
-      .reduce((partialSum, a) => partialSum + a, 0);
-    const secondTeamSalaries = secondTeamBeforeTrade?.team.roster
-      .map((player) => player.salary)
-      .reduce((partialSum, a) => partialSum + a, 0);
+    const firstTeamSalaries = firstTeamBeforeTrade?.totals.currentSalary;
+    const secondTeamSalaries = secondTeamBeforeTrade?.totals.currentSalary;
     const firstTeamOutSalaries = firstTeamBeforeTrade?.team.roster
       .filter((player) => selectedFirstTeamPlayers.includes(player.id))
       .map((player) => player.salary)

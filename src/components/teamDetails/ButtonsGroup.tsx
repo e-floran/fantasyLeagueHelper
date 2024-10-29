@@ -11,7 +11,6 @@ export const ButtonsGroup = ({
 }: Omit<DetailsProps, "selectedKeepers">): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     buttonsGroup: {
-      marginBottom: "1.5rem",
       display: "flex",
       flexFlow: "row wrap",
       justifyContent: "space-between",

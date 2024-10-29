@@ -7,6 +7,7 @@ import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GavelIcon from "@mui/icons-material/Gavel";
+import QueryStatsIcon from "@mui/icons-material/QueryStats";
 
 interface HeaderProps {
   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
@@ -15,7 +16,7 @@ interface HeaderProps {
 export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     header: {
-      marginBottom: "1rem",
+      height: "5.5rem",
     },
     h1: {
       fontSize: "2rem",
@@ -38,6 +39,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     { icon: CompareArrowsIcon, navigateTo: "/trade" },
     { icon: LeaderboardIcon, navigateTo: "/teams" },
     { icon: AssistWalkerIcon, navigateTo: "/injuries" },
+    { icon: QueryStatsIcon, navigateTo: "/advanced" },
     { icon: GavelIcon, navigateTo: "/rules" },
   ];
 

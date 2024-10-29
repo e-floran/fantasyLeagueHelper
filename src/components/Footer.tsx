@@ -11,9 +11,10 @@ export const Footer = ({ lastUpdate }: FooterProps): ReactElement => {
       flexFlow: "row nowrap",
       justifyContent: "space-between",
       alignItems: "center",
-      padding: "1rem",
+      paddingTop: "1rem",
       width: "100%",
       fontSize: "0.75rem",
+      height: "2.5rem",
     },
   });
 

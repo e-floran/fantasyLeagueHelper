@@ -32,5 +32,5 @@ export const LeagueRules = (): ReactElement => {
     });
   };
 
-  return <main style={styles.rulesText}>{renderSection()}</main>;
+  return <main>{renderSection()}</main>;
 };

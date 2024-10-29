@@ -14,7 +14,6 @@ export const InjuryReport = (): ReactElement => {
     { name: "Nikola Topic" },
     { name: "Emoni Bates" },
     { name: "James Wiseman", outForSeason: true },
-    { name: "Steven Adams" },
     { name: "Precious Achiuwa" },
     { name: "Bojan Bogdanovic" },
     { name: "Robert Williams" },

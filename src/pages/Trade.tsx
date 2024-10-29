@@ -1,4 +1,4 @@
-import { TradeTool } from "../components/teamsSummary/TradeTool";
+import { TradeTool } from "../components/trade/TradeTool";
 import { TeamDetailsData } from "../utils/types";
 
 export interface SummaryProps {

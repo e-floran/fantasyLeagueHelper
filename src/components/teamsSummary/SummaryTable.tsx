@@ -10,7 +10,8 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
           <td>{value.team.name}</td>
           <td>{value.totals.currentSalary}</td>
           <td>{220 - value.totals.currentSalary}</td>
-          <td>{value.totals.projectedSalary}</td>
+          <td>{value.totals.rater2024.toFixed(2)}</td>
+          <td>{value.totals.rater2025.toFixed(2)}</td>
         </tr>
       );
       rows.push(row);
@@ -25,9 +26,10 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
         <thead>
           <tr>
             <th>Équipe</th>
-            <th>Salaires actuels</th>
-            <th>Marge actuelle</th>
-            <th>Salaires à venir</th>
+            <th>Salaires</th>
+            <th>Marge</th>
+            <th>PR passé</th>
+            <th>PR actuel</th>
           </tr>
         </thead>
         <tbody>{tableContent}</tbody>
