@@ -1,15 +1,9 @@
-import {
-  CSSProperties,
-  Dispatch,
-  ReactElement,
-  SetStateAction,
-  useEffect,
-  useState,
-} from "react";
+import { CSSProperties, Dispatch, ReactElement, SetStateAction } from "react";
 import { createStyles } from "../../utils/style";
-import { Player, TeamDetailsData } from "../../utils/types";
+import { TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
+import { useSortColumns } from "../../hooks/useSortColumns";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
@@ -38,13 +32,6 @@ export const RosterTable = ({
     },
   });
 
-  const [sortOrder, setSortOrder] = useState("desc");
-  const [columnIcon, setColumnIcon] = useState("");
-  const [sortColumn, setSortColumn] = useState("");
-  const [sortedPlayers, setSortedPlayers] = useState<Player[]>(
-    activeTeamData.team.roster
-  );
-
   const handleCheckboxClick = (playerId: number) => {
     if (selectedKeepers.includes(playerId)) {
       setSelectedKeepers((prev) => prev.filter((id) => id !== playerId));
@@ -53,71 +40,8 @@ export const RosterTable = ({
     }
   };
 
-  const toggleSortOrder = () => {
-    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    setColumnIcon(columnIcon === "↓" ? "↑" : "↓");
-  };
-
-  const sortColumnByArgument = (column: string) => {
-    toggleSortOrder();
-    setSortColumn(column);
-    const sortedPlayersList = [...(activeTeamData?.team.roster ?? [])].sort(
-      (a, b) => {
-        switch (column) {
-          case "name":
-            if (sortOrder === "asc") {
-              return a.fullName.localeCompare(b.fullName);
-            } else {
-              return b.fullName.localeCompare(a.fullName);
-            }
-          case "rater2025":
-            if (sortOrder === "asc") {
-              return a.raters[2025] - b.raters[2025];
-            } else {
-              return b.raters[2025] - a.raters[2025];
-            }
-          case "rater2024":
-            if (sortOrder === "asc") {
-              return a.raters[2024] - b.raters[2024];
-            } else {
-              return b.raters[2024] - a.raters[2024];
-            }
-          case "seasonsKeeper":
-            if (sortOrder === "asc") {
-              return a.keeperHistory.length - b.keeperHistory.length;
-            } else {
-              return b.keeperHistory.length - a.keeperHistory.length;
-            }
-          case "salary":
-            if (sortOrder === "asc") {
-              return a.salary - b.salary;
-            } else {
-              return b.salary - a.salary;
-            }
-          case "newValue":
-            if (sortOrder === "asc") {
-              return (
-                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0) -
-                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0)
-              );
-            } else {
-              return (
-                (activeTeamData?.newSalariesByPlayerId.get(b.id) ?? 0) -
-                (activeTeamData?.newSalariesByPlayerId.get(a.id) ?? 0)
-              );
-            }
-          default:
-            return 0;
-        }
-      }
-    );
-    setSortedPlayers(sortedPlayersList);
-  };
-
-  useEffect(() => {
-    setSortColumn("");
-    setSortedPlayers(activeTeamData?.team.roster);
-  }, [activeTeamData]);
+  const { columnIcon, sortColumn, sortedPlayers, sortColumnByArgument } =
+    useSortColumns({ players: activeTeamData.team.roster });
 
   return (
     <section style={styles.section}>
@@ -126,28 +50,29 @@ export const RosterTable = ({
           <tr>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("name")}
+              onClick={() => sortColumnByArgument("fullName")}
             >
-              {"Nom"} {sortColumn === "name" ? columnIcon : null}
+              {"Nom"} {sortColumn === "fullName" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("rater2024")}
+              onClick={() => sortColumnByArgument("previousRater")}
             >
-              {"Rater 2024"} {sortColumn === "rater2024" ? columnIcon : null}
+              {"Rater 2024"}{" "}
+              {sortColumn === "previousRater" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("rater2025")}
+              onClick={() => sortColumnByArgument("currentRater")}
             >
-              {"Rater 2025"} {sortColumn === "rater2025" ? columnIcon : null}
+              {"Rater 2025"} {sortColumn === "currentRater" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("seasonsKeeper")}
+              onClick={() => sortColumnByArgument("keeperHistory")}
             >
-              {"Saisons keeper"}{" "}
-              {sortColumn === "seasonsKeeper" ? columnIcon : null}
+              {"Saisons keeper"}
+              {sortColumn === "keeperHistory" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
@@ -157,9 +82,10 @@ export const RosterTable = ({
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("newValue")}
+              // onClick={() => sortColumnByArgument("newValue")}
             >
-              Saison prochaine {sortColumn === "newValue" ? columnIcon : null}
+              {/* Saison prochaine {sortColumn === "newValue" ? columnIcon : null} */}
+              Saison prochaine
             </th>
             <th>Test keepers</th>
           </tr>
@@ -172,8 +98,8 @@ export const RosterTable = ({
                 key={player.id}
               >
                 <td>{player.fullName}</td>
-                <td>{parseNegativeValue(player.raters[2024]).toFixed(2)}</td>
-                <td>{player.raters[2025].toFixed(2)}</td>
+                <td>{parseNegativeValue(player.previousRater).toFixed(2)}</td>
+                <td>{player.currentRater.toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
                 <td>{player.salary}</td>
                 <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>

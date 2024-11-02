@@ -1,28 +1,11 @@
 import { ReactElement } from "react";
+import { UnpickablePlayer } from "../utils/types";
 
-export const InjuryReport = (): ReactElement => {
-  const injuredPlayers = [
-    {
-      name: "Saddiq Bey",
-    },
-    { name: "Devin Carter" },
-    { name: "Dante Exum" },
-    { name: "DaRon Holmes", outForSeason: true },
-    { name: "GG Jackson" },
-    { name: "Kristaps Porzingis" },
-    { name: "Mitchell Robinson" },
-    { name: "Nikola Topic" },
-    { name: "Emoni Bates" },
-    { name: "James Wiseman", outForSeason: true },
-    { name: "Precious Achiuwa" },
-    { name: "Bojan Bogdanovic" },
-    { name: "Robert Williams" },
-    { name: "Isaiah Hartenstein" },
-    { name: "Kawhi Leonard" },
-    { name: "Dejounte Murray" },
-    { name: "Max Strus" },
-    { name: "PJ Tucker" },
-  ];
+export const InjuryReport = ({
+  injuredPlayers,
+}: {
+  injuredPlayers: UnpickablePlayer[];
+}): ReactElement => {
   return (
     <main>
       <section>
@@ -35,7 +18,7 @@ export const InjuryReport = (): ReactElement => {
           </thead>
           <tbody>
             {injuredPlayers.map((player) => (
-              <tr key={player.name}>
+              <tr key={player.id}>
                 <td>{player.name}</td>
               </tr>
             ))}

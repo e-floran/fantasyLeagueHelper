@@ -5,6 +5,7 @@ import {
   RawPlayer,
   RawTeam,
   Team,
+  UnpickablePlayer,
 } from "./types";
 
 const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
@@ -74,7 +75,7 @@ const addTradedPlayer = (
   rosterToBuild.push({
     ...playerToAdd,
     injuredSpot: newPlayer.lineupSlotId === 13,
-    raters: { "2024": playerToAdd.raters[2024], "2025": currentRater },
+    currentRater,
     gamesPlayed,
   });
 };
@@ -139,10 +140,7 @@ export const addNewPlayers = (
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,
-            raters: {
-              "2024": previousPlayer.raters[2024],
-              "2025": currentRater,
-            },
+            currentRater,
             gamesPlayed,
           });
         }
@@ -151,4 +149,51 @@ export const addNewPlayers = (
     outputRosters.push({ ...oldTeam, roster: rosterToBuild });
   });
   return outputRosters;
+};
+
+export const checkUnpickablePlayersStatus = async (
+  players: UnpickablePlayer[]
+) => {
+  let outputPlayers = [...players];
+  const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?scoringPeriodId=12&view=kona_playercard`;
+  for (const player of outputPlayers) {
+    if (player.outForSeason) {
+      continue;
+    }
+    const ratersHeaders = {
+      "X-Fantasy-Filter": {
+        players: {
+          filterIds: { value: [player.id] },
+          filterStatsForTopScoringPeriodIds: {
+            value: 82,
+            additionalValue: [
+              "002025",
+              "102025",
+              "002024",
+              "012025",
+              "022025",
+              "032025",
+              "042025",
+            ],
+          },
+        },
+      },
+    };
+    const req = new Request(url);
+    req.headers.set(
+      "X-Fantasy-Filter",
+      JSON.stringify(ratersHeaders["X-Fantasy-Filter"])
+    );
+    await fetch(req)
+      .then((response) => response.json())
+      .then((json: { players: RatedRawPlayer[] }) => {
+        if (!json.players[0].player.injured) {
+          outputPlayers = outputPlayers.filter(
+            (injuredPlayer) => injuredPlayer.id !== player.id
+          );
+        }
+      })
+      .catch((error) => console.log(error));
+  }
+  return outputPlayers;
 };

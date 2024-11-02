@@ -50,8 +50,8 @@ export const getNewSalariesByPlayerId = (team?: Team) => {
         computeNewSalary(
           player.salary,
           player.keeperHistory.length,
-          player.raters[2024] === 0,
-          player.raters[2025] - parseNegativeValue(player.raters[2024])
+          player.previousRater === 0,
+          player.currentRater - parseNegativeValue(player.previousRater)
         ),
         1
       )
@@ -99,10 +99,10 @@ export const getTeamTotals = (
   keepers: number[]
 ) => {
   const rater2024 = team.roster
-    .map((player) => player.raters[2024])
+    .map((player) => player.previousRater)
     .reduce((partialSum, a) => partialSum + a, 0);
   const rater2025 = team.roster
-    .map((player) => player.raters[2025])
+    .map((player) => player.currentRater)
     .reduce((partialSum, a) => partialSum + a, 0);
   const currentSalary = team.roster
     .filter((player) => !player.injuredSpot)

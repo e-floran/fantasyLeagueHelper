@@ -1,4 +1,4 @@
-import { addNewPlayers } from "../utils/data";
+import { addNewPlayers, checkUnpickablePlayersStatus } from "../utils/data";
 import { RatedRawPlayer, RawTeam } from "../utils/types";
 import rosters from "../assets/teams/rosters.json";
 import rater2024 from "../assets/rater/rater2024.json";
@@ -8,49 +8,50 @@ const raterUrl =
 
 export async function dailyUpdate() {
   const newRosters: RawTeam[] = [];
-  const newRaters: RatedRawPlayer[] = [];
-  for (let i = 0; i < 15; i++) {
-    const ratersHeaders = {
-      "X-Fantasy-Filter": {
-        players: {
-          filterSlotIds: { value: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
-          limit: 50,
-          offset: 50 * i,
-          sortRating: {
-            additionalValue: null,
-            sortAsc: false,
-            sortPriority: 1,
-            value: 0,
-          },
-          filterRanksForScoringPeriodIds: { value: [7] },
-          filterRanksForRankTypes: { value: ["STANDARD"] },
-          filterStatsForTopScoringPeriodIds: {
-            value: 5,
-            additionalValue: [
-              "002025",
-              "102025",
-              "002024",
-              "012025",
-              "022025",
-              "032025",
-              "042025",
-            ],
-          },
+  let newRaters: RatedRawPlayer[] = [];
+  // for (let i = 0; i < 15; i++) {
+  const ratersHeaders = {
+    "X-Fantasy-Filter": {
+      players: {
+        filterSlotIds: { value: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
+        limit: 750,
+        offset: 0,
+        sortRating: {
+          additionalValue: null,
+          sortAsc: false,
+          sortPriority: 1,
+          value: 0,
+        },
+        filterRanksForScoringPeriodIds: { value: [7] },
+        filterRanksForRankTypes: { value: ["STANDARD"] },
+        filterStatsForTopScoringPeriodIds: {
+          value: 5,
+          additionalValue: [
+            "002025",
+            "102025",
+            "002024",
+            "012025",
+            "022025",
+            "032025",
+            "042025",
+          ],
         },
       },
-    };
-    const req = new Request(raterUrl);
-    req.headers.set(
-      "X-Fantasy-Filter",
-      JSON.stringify(ratersHeaders["X-Fantasy-Filter"])
-    );
-    await fetch(req)
-      .then((response) => response.json())
-      .then((json: { players: RatedRawPlayer[] }) => {
-        newRaters.push(...json.players);
-      })
-      .catch((error) => console.log(error));
-  }
+    },
+  };
+  const req = new Request(raterUrl);
+  req.headers.set(
+    "X-Fantasy-Filter",
+    JSON.stringify(ratersHeaders["X-Fantasy-Filter"])
+  );
+  await fetch(req)
+    .then((response) => response.json())
+    .then((json: { players: RatedRawPlayer[] }) => {
+      // newRaters.push(...json.players);
+      newRaters = [...json.players];
+    })
+    .catch((error) => console.log(error));
+  // }
 
   for (let i = 1; i < 17; i++) {
     const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?rosterForTeamId=${i}&view=mRoster`;
@@ -70,7 +71,14 @@ export async function dailyUpdate() {
     ratedPlayers,
     newRaters
   );
-  const output = { lastUpdate: new Date(), teams: outputRosters };
+  const unpickablePlayers = await checkUnpickablePlayersStatus(
+    rosters.unpickablePlayers
+  );
+  const output = {
+    lastUpdate: new Date(),
+    teams: outputRosters,
+    unpickablePlayers,
+  };
   const element = document.createElement("a");
   const textFile = new Blob([JSON.stringify(output)], {
     type: "application/json",

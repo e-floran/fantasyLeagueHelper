@@ -1,10 +1,10 @@
-import { CSSProperties, ReactElement, useMemo, useState } from "react";
+import { CSSProperties, ReactElement, useMemo } from "react";
 import rosters from "../assets/teams/rosters.json";
-// import rostersNew from "../assets/teams/rostersNew.json";
 import { Player } from "../utils/types";
 import { createStyles } from "../utils/style";
+import { useSortColumns } from "../hooks/useSortColumns";
 
-interface PlayerWithAdvancedStats extends Player {
+export interface PlayerWithAdvancedStats extends Player {
   raterBySalary: number;
   oldRaterBySalary: number;
   raterByGames: number;
@@ -32,87 +32,19 @@ export const AdvancedStats = (): ReactElement => {
       .map((player) => {
         return {
           ...player,
-          raterBySalary: player.raters[2025] / player.salary,
-          oldRaterBySalary: player.raters[2024] / player.salary,
+          raterBySalary: player.currentRater / player.salary,
+          oldRaterBySalary: player.previousRater / player.salary,
           raterByGames: player.gamesPlayed
-            ? (player.raters[2025] / player.gamesPlayed) * averageGamesPlayed
+            ? (player.currentRater / player.gamesPlayed) * averageGamesPlayed
             : 0,
         };
       });
   }, [averageGamesPlayed]);
 
-  const [sortOrder, setSortOrder] = useState("desc");
-  const [columnIcon, setColumnIcon] = useState("");
-  const [sortColumn, setSortColumn] = useState("");
-  const [sortedPlayers, setSortedPlayers] =
-    useState<PlayerWithAdvancedStats[]>(flatPlayers);
-
   const isLocal = location.hostname === "localhost";
 
-  const toggleSortOrder = () => {
-    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    setColumnIcon(columnIcon === "↓" ? "↑" : "↓");
-  };
-
-  const sortColumnByArgument = (column: string) => {
-    toggleSortOrder();
-    setSortColumn(column);
-    const sortedPlayersList = [...(flatPlayers ?? [])].sort((a, b) => {
-      switch (column) {
-        case "name":
-          if (sortOrder === "asc") {
-            return a.fullName.localeCompare(b.fullName);
-          } else {
-            return b.fullName.localeCompare(a.fullName);
-          }
-        case "rater":
-          if (sortOrder === "asc") {
-            return a.raters[2025] - b.raters[2025];
-          } else {
-            return b.raters[2025] - a.raters[2025];
-          }
-        case "oldRater":
-          if (sortOrder === "asc") {
-            return a.raters[2024] - b.raters[2024];
-          } else {
-            return b.raters[2024] - a.raters[2024];
-          }
-        case "raterBySalary":
-          if (sortOrder === "asc") {
-            return a.raterBySalary - b.raterBySalary;
-          } else {
-            return b.raterBySalary - a.raterBySalary;
-          }
-        case "oldRaterBySalary":
-          if (sortOrder === "asc") {
-            return a.oldRaterBySalary - b.oldRaterBySalary;
-          } else {
-            return b.oldRaterBySalary - a.oldRaterBySalary;
-          }
-        case "salary":
-          if (sortOrder === "asc") {
-            return a.salary - b.salary;
-          } else {
-            return b.salary - a.salary;
-          }
-        case "gamesPlayed":
-          if (sortOrder === "asc") {
-            return a.gamesPlayed - b.gamesPlayed;
-          } else {
-            return b.gamesPlayed - a.gamesPlayed;
-          }
-        case "raterByGames":
-          if (sortOrder === "asc") {
-            return a.raterByGames - b.raterByGames;
-          } else {
-            return b.raterByGames - a.raterByGames;
-          }
-        default:
-          return 0;
-      }
-    });
-    setSortedPlayers(sortedPlayersList);
-  };
+  const { columnIcon, sortColumn, sortedPlayers, sortColumnByArgument } =
+    useSortColumns({ players: flatPlayers });
 
   return (
     <main>
@@ -122,15 +54,15 @@ export const AdvancedStats = (): ReactElement => {
           <thead>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("name")}
+              onClick={() => sortColumnByArgument("fullName")}
             >
-              Nom {sortColumn === "name" ? columnIcon : null}
+              Nom {sortColumn === "fullName" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
-              onClick={() => sortColumnByArgument("rater")}
+              onClick={() => sortColumnByArgument("currentRater")}
             >
-              Rater {sortColumn === "rater" ? columnIcon : null}
+              Rater {sortColumn === "currentRater" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
@@ -148,9 +80,10 @@ export const AdvancedStats = (): ReactElement => {
               <>
                 <th
                   style={styles.columnHeader}
-                  onClick={() => sortColumnByArgument("oldRater")}
+                  onClick={() => sortColumnByArgument("previousRater")}
                 >
-                  Ancien rater {sortColumn === "oldRater" ? columnIcon : null}
+                  Ancien rater{" "}
+                  {sortColumn === "previousRater" ? columnIcon : null}
                 </th>
                 <th
                   style={styles.columnHeader}
@@ -179,12 +112,12 @@ export const AdvancedStats = (): ReactElement => {
               return (
                 <tr>
                   <td>{player.fullName}</td>
-                  <td>{player.raters[2025].toFixed(2)}</td>
+                  <td>{player.currentRater.toFixed(2)}</td>
                   <td>{player.salary}</td>
                   <td>{player.raterBySalary.toFixed(2)}</td>
                   {isLocal && (
                     <>
-                      <td>{player.raters[2024].toFixed(2)}</td>
+                      <td>{player.previousRater.toFixed(2)}</td>
                       <td>{player.oldRaterBySalary.toFixed(2)}</td>
                     </>
                   )}

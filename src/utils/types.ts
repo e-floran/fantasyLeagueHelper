@@ -3,17 +3,16 @@ export enum AcquisitionTypeEnum {
   ADD = "ADD",
   TRADE = "TRADE",
 }
+
 export interface Player {
   id: number;
   fullName: string;
   salary: number;
   keeperHistory: string[];
-  raters: {
-    "2025": number;
-    "2024": number;
-  };
-  injuredSpot?: boolean;
-  gamesPlayed?: number;
+  previousRater: number;
+  currentRater: number;
+  injuredSpot: boolean;
+  gamesPlayed: number;
 }
 
 export interface Team {
@@ -48,6 +47,7 @@ export interface RatedRawPlayer {
     fullName: string;
     id: number;
     stats: { id: string; stats: { "42": number } }[];
+    injured: boolean;
   };
 }
 
@@ -62,4 +62,10 @@ export interface RawTeam {
   id: number;
   name: string;
   roster: { entries: RawPlayer[] };
+}
+
+export interface UnpickablePlayer {
+  name: string;
+  id: number;
+  outForSeason?: boolean | undefined;
 }

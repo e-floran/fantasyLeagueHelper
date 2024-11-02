@@ -19,7 +19,7 @@ import { AdvancedStats } from "./pages/AdvancedStats";
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
   const [selectedKeepers, setSelectedKeepers] = useState<number[]>([]);
-  const teams = rosters.teams;
+  const { teams, unpickablePlayers } = rosters;
 
   const dataByTeamId = useMemo(() => {
     const dataMap = new Map<number, TeamDetailsData>();
@@ -61,7 +61,10 @@ function App() {
           element={<TeamsSummary dataByTeamId={dataByTeamId} />}
         />
         <Route path="/trade" element={<Trade dataByTeamId={dataByTeamId} />} />
-        <Route path="/injuries" element={<InjuryReport />} />
+        <Route
+          path="/injuries"
+          element={<InjuryReport injuredPlayers={unpickablePlayers} />}
+        />
         <Route path="/rules" element={<LeagueRules />} />
         <Route path="/advanced" element={<AdvancedStats />} />
       </Routes>
