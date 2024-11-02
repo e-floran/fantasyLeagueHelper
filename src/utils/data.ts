@@ -14,7 +14,9 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
     fullName: rawPlayer.playerPoolEntry.player.fullName,
     keeperHistory: [],
     salary: rawPlayer.playerPoolEntry.keeperValueFuture,
-    raters: { "2024": 0, "2025": 0 },
+    previousRater: 0,
+    currentRater: 0,
+    gamesPlayed: 0,
     injuredSpot: rawPlayer.lineupSlotId === 13,
   };
 };
@@ -30,10 +32,8 @@ const addFreeAgent = (
   const lastRater = lastSeasonRaters.find(
     (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
   )?.ratings["0"].totalRating;
-  parsedPlayer.raters = {
-    "2024": typeof lastRater === "number" ? lastRater : 0,
-    "2025": currentRater,
-  };
+  parsedPlayer.previousRater = typeof lastRater === "number" ? lastRater : 0;
+  parsedPlayer.currentRater = currentRater;
   parsedPlayer.gamesPlayed = gamesPlayed;
   rosterToBuild.push(parsedPlayer);
 };
