@@ -1,18 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { PlayerWithAdvancedStats } from "../pages/AdvancedStats";
 import { Player } from "../utils/types";
 
-export const useSortColumns = ({
-  players,
-}: {
-  players: (PlayerWithAdvancedStats | Player)[];
-}) => {
+export const useSortColumns = ({ players }: { players: any[] }) => {
   const [sortOrder, setSortOrder] = useState("desc");
   const [columnIcon, setColumnIcon] = useState("");
-  const [sortColumn, setSortColumn] =
-    useState<keyof (PlayerWithAdvancedStats | Player)>("fullName");
-  const [sortedPlayers, setSortedPlayers] =
-    useState<(PlayerWithAdvancedStats | Player)[]>(players);
+  const [sortColumn, setSortColumn] = useState<
+    keyof PlayerWithAdvancedStats | keyof Player
+  >("fullName");
+  const [sortedPlayers, setSortedPlayers] = useState<any[]>(players);
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -20,7 +17,7 @@ export const useSortColumns = ({
   };
 
   const sortColumnByArgument = (
-    column: keyof (PlayerWithAdvancedStats | Player)
+    column: keyof PlayerWithAdvancedStats | keyof Player
   ) => {
     toggleSortOrder();
     setSortColumn(column);
