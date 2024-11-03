@@ -43,8 +43,8 @@ export const AdvancedStats = (): ReactElement => {
 
   const isLocal = location.hostname === "localhost";
 
-  const { columnIcon, sortColumn, sortedPlayers, sortColumnByArgument } =
-    useSortColumns({ players: flatPlayers });
+  const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
+    useSortColumns({ options: flatPlayers });
 
   return (
     <main>
@@ -104,11 +104,11 @@ export const AdvancedStats = (): ReactElement => {
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("raterByGames")}
             >
-              Rater/matchs joués *
+              Rater/matchs *
             </th>
           </thead>
           <tbody>
-            {sortedPlayers.map((player) => {
+            {sortedOptions.map((player) => {
               return (
                 <tr>
                   <td>{player.fullName}</td>

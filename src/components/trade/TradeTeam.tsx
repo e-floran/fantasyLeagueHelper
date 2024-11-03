@@ -46,10 +46,14 @@ export const TradeTeam = ({
         Choisissez
       </option>,
     ];
-    dataByTeamId.forEach((value) => {
+    const sortedTeams: { id: number; name: string }[] = [];
+    dataByTeamId.forEach((team) => {
+      sortedTeams.push({ id: team.team.id, name: team.team.name });
+    });
+    sortedTeams.forEach((team) => {
       const option = (
-        <option key={value.team.id} value={value.team.id}>
-          {value.team.name}
+        <option key={team.id} value={team.id}>
+          {team.name}
         </option>
       );
       options.push(option);

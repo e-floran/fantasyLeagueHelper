@@ -40,9 +40,6 @@ function App() {
   return (
     <>
       <Header setSelectedKeepers={setSelectedKeepers} />
-      {isLocal && (
-        <CustomButton buttonText="Mettre à jour" onClickButton={dailyUpdate} />
-      )}
       <Routes>
         <Route
           path="/"
@@ -68,6 +65,9 @@ function App() {
         <Route path="/rules" element={<LeagueRules />} />
         <Route path="/advanced" element={<AdvancedStats />} />
       </Routes>
+      {isLocal && (
+        <CustomButton buttonText="Mettre à jour" onClickButton={dailyUpdate} />
+      )}
       <Footer lastUpdate={new Date(rosters.lastUpdate)} />
     </>
   );

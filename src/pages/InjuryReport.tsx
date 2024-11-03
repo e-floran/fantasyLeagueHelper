@@ -17,11 +17,15 @@ export const InjuryReport = ({
             </tr>
           </thead>
           <tbody>
-            {injuredPlayers.map((player) => (
-              <tr key={player.id}>
-                <td>{player.name}</td>
-              </tr>
-            ))}
+            {injuredPlayers
+              .sort((a, b) => {
+                return a.name.localeCompare(b.name);
+              })
+              .map((player) => (
+                <tr key={player.id}>
+                  <td>{player.name}</td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </section>

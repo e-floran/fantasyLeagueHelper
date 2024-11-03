@@ -1,6 +1,12 @@
-import { CSSProperties, Dispatch, ReactElement, SetStateAction } from "react";
+import {
+  CSSProperties,
+  Dispatch,
+  ReactElement,
+  SetStateAction,
+  useMemo,
+} from "react";
 import { createStyles } from "../../utils/style";
-import { TeamDetailsData } from "../../utils/types";
+import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
 import { useSortColumns } from "../../hooks/useSortColumns";
@@ -9,6 +15,10 @@ interface RosterTableProps {
   activeTeamData: TeamDetailsData;
   selectedKeepers: number[];
   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
+}
+
+export interface PlayerWithProjection extends Player {
+  projectedSalary: number;
 }
 
 export const RosterTable = ({
@@ -40,8 +50,20 @@ export const RosterTable = ({
     }
   };
 
-  const { columnIcon, sortColumn, sortedPlayers, sortColumnByArgument } =
-    useSortColumns({ players: activeTeamData.team.roster });
+  const players = useMemo(() => {
+    const playersWithProjection: PlayerWithProjection[] =
+      activeTeamData.team.roster.map((player) => {
+        return {
+          ...player,
+          projectedSalary:
+            activeTeamData.newSalariesByPlayerId.get(player.id) || 0,
+        };
+      });
+    return playersWithProjection;
+  }, [activeTeamData.newSalariesByPlayerId, activeTeamData.team.roster]);
+
+  const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
+    useSortColumns({ options: players });
 
   return (
     <section style={styles.section}>
@@ -82,16 +104,16 @@ export const RosterTable = ({
             </th>
             <th
               style={styles.columnHeader}
-              // onClick={() => sortColumnByArgument("newValue")}
+              onClick={() => sortColumnByArgument("projectedSalary")}
             >
-              {/* Saison prochaine {sortColumn === "newValue" ? columnIcon : null} */}
-              Saison prochaine
+              Saison prochaine{" "}
+              {sortColumn === "projectedSalary" ? columnIcon : null}
             </th>
             <th>Test keepers</th>
           </tr>
         </thead>
         <tbody>
-          {sortedPlayers.map((player) => {
+          {sortedOptions.map((player) => {
             return (
               <tr
                 style={player.injuredSpot ? { color: "red" } : undefined}

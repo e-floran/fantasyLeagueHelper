@@ -1,27 +1,32 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { PlayerWithAdvancedStats } from "../pages/AdvancedStats";
-import { Player } from "../utils/types";
+import { PlayerWithProjection } from "../components/teamDetails/RosterTable";
+import { TeamSortableData } from "../components/teamsSummary/SummaryTable";
 
-export const useSortColumns = ({ players }: { players: any[] }) => {
+export function useSortColumns<T>({ options }: { options: T[] }) {
   const [sortOrder, setSortOrder] = useState("desc");
   const [columnIcon, setColumnIcon] = useState("");
   const [sortColumn, setSortColumn] = useState<
-    keyof PlayerWithAdvancedStats | keyof Player
+    | keyof PlayerWithAdvancedStats
+    | keyof PlayerWithProjection
+    | keyof TeamSortableData
   >("fullName");
-  const [sortedPlayers, setSortedPlayers] = useState<any[]>(players);
+  const [sortedOptions, setSortedOptions] = useState<T[]>(options);
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     setColumnIcon(columnIcon === "↓" ? "↑" : "↓");
   };
 
-  const sortColumnByArgument = (
-    column: keyof PlayerWithAdvancedStats | keyof Player
-  ) => {
+  const sortColumnByArgument = (column: keyof T) => {
     toggleSortOrder();
-    setSortColumn(column);
-    const sortedPlayersList = [...(players ?? [])].sort((a, b) => {
+    setSortColumn(
+      column as
+        | keyof PlayerWithAdvancedStats
+        | keyof PlayerWithProjection
+        | keyof TeamSortableData
+    );
+    const sortedOptionsList = [...(options ?? [])].sort((a, b) => {
       if (typeof a[column] === "string" && typeof b[column] === "string") {
         if (sortOrder === "asc") {
           return a[column].localeCompare(b[column]);
@@ -47,13 +52,13 @@ export const useSortColumns = ({ players }: { players: any[] }) => {
         return 0;
       }
     });
-    setSortedPlayers(sortedPlayersList);
+    setSortedOptions(sortedOptionsList);
   };
 
   useEffect(() => {
     setSortColumn("fullName");
-    setSortedPlayers(players);
-  }, [players]);
+    setSortedOptions(options);
+  }, [options]);
 
   return {
     sortOrder,
@@ -62,9 +67,9 @@ export const useSortColumns = ({ players }: { players: any[] }) => {
     setColumnIcon,
     sortColumn,
     setSortColumn,
-    sortedPlayers,
-    setSortedPlayers,
+    sortedOptions,
+    setSortedOptions,
     toggleSortOrder,
     sortColumnByArgument,
   };
-};
+}

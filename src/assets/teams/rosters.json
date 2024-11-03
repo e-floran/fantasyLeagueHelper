@@ -1,1 +1,2460 @@
-{"lastUpdate":"2024-11-02T21:34:48.981Z","teams":[{"id":1,"name":"ASBR Pirates","roster":[{"id":5104157,"fullName":"Victor Wembanyama","salary":59,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":13.3701105,"currentRater":8.965118,"injuredSpot":false},{"id":3907497,"fullName":"Dejounte Murray","salary":36,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":1,"previousRater":8.4051695,"currentRater":-3.5571642,"injuredSpot":false},{"id":4433136,"fullName":"Walker Kessler","salary":1,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":5.062066,"currentRater":5.2652483,"injuredSpot":false},{"id":4701230,"fullName":"Jalen Johnson","salary":11,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":4.400893,"currentRater":3.2532246,"injuredSpot":false},{"id":4683021,"fullName":"Deni Avdija","salary":7,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":3.992394,"currentRater":2.34497,"injuredSpot":false},{"id":4437244,"fullName":"Jalen Green","salary":16,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":4.226827,"currentRater":4.9263983,"injuredSpot":false},{"id":3135046,"fullName":"Tyus Jones","salary":11,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.181599,"currentRater":4.468947,"injuredSpot":false},{"id":3064514,"fullName":"Julius Randle","salary":18,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.7622183,"currentRater":5.2372904,"injuredSpot":false},{"id":6589,"fullName":"Draymond Green","salary":10,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.475297,"currentRater":3.4486878,"injuredSpot":false},{"id":6609,"fullName":"Khris Middleton","salary":7,"keeperHistory":[],"gamesPlayed":0,"previousRater":2.772905,"currentRater":0,"injuredSpot":false},{"id":4222252,"fullName":"Isaiah Hartenstein","salary":9,"keeperHistory":[],"gamesPlayed":0,"previousRater":6.505367,"currentRater":0,"injuredSpot":true},{"id":2991043,"fullName":"Caris LeVert","salary":5,"keeperHistory":[],"gamesPlayed":6,"previousRater":2.6611452,"currentRater":4.384235,"injuredSpot":false},{"id":4683688,"fullName":"Dereck Lively II","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.3102992,"currentRater":3.4092164,"injuredSpot":false},{"id":4066354,"fullName":"Payton Pritchard","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":2.97742,"currentRater":6.4296575,"injuredSpot":false},{"id":3907387,"fullName":"Ben Simmons","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":-3.521191,"currentRater":1.0885963,"injuredSpot":false},{"id":4431767,"fullName":"Christian Braun","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.1331586,"currentRater":4.5480933,"injuredSpot":false},{"id":4997528,"fullName":"Nikola Jovic","salary":7,"keeperHistory":[],"gamesPlayed":4,"previousRater":-1.5561801,"currentRater":-1.2606968,"injuredSpot":false}]},{"id":2,"name":"Oberthur Ducks","roster":[{"id":4396993,"fullName":"Tyrese Haliburton","salary":27,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":6,"previousRater":11.151643,"currentRater":3.910225,"injuredSpot":false},{"id":3908809,"fullName":"Donovan Mitchell","salary":30,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":8.36131,"currentRater":6.8762245,"injuredSpot":false},{"id":4433255,"fullName":"Chet Holmgren","salary":26,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":12.723011,"currentRater":10.812383,"injuredSpot":false},{"id":3147657,"fullName":"Mikal Bridges","salary":23,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":5,"previousRater":6.1546717,"currentRater":5.464446,"injuredSpot":false},{"id":3078576,"fullName":"Derrick White","salary":13,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":9.719748,"currentRater":10.674573,"injuredSpot":false},{"id":3138160,"fullName":"Caleb Martin","salary":1,"keeperHistory":["2025"],"gamesPlayed":4,"previousRater":0.55833143,"currentRater":-4.246398,"injuredSpot":false},{"id":3213,"fullName":"Al Horford","salary":4,"keeperHistory":[],"gamesPlayed":5,"previousRater":4.7588844,"currentRater":3.5930243,"injuredSpot":false},{"id":4395712,"fullName":"Andrew Nembhard","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.2897692,"currentRater":-1.7337193,"injuredSpot":false},{"id":4397189,"fullName":"Jalen Smith","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.3906679,"currentRater":0.10354715,"injuredSpot":false},{"id":4396909,"fullName":"Aaron Nesmith","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.519699,"currentRater":1.9285146,"injuredSpot":false},{"id":4869342,"fullName":"Dyson Daniels","salary":3,"keeperHistory":[],"gamesPlayed":4,"previousRater":0.59118277,"currentRater":2.1965604,"injuredSpot":false},{"id":3995,"fullName":"Jrue Holiday","salary":16,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":5.711561,"currentRater":2.1058722,"injuredSpot":false},{"id":3136193,"fullName":"Devin Booker","salary":47,"keeperHistory":["2024","2023","2025"],"gamesPlayed":5,"previousRater":10.241108,"currentRater":8.0778265,"injuredSpot":false},{"id":4432819,"fullName":"Tre Mann","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":-0.9854613,"currentRater":5.2512245,"injuredSpot":false},{"id":4702177,"fullName":"Keon Ellis","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":-0.072213694,"currentRater":0.63235193,"injuredSpot":false},{"id":4432170,"fullName":"Isaiah Jackson","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.1079605,"currentRater":-0.16123508,"injuredSpot":false}]},{"id":3,"name":"Cergy SlowMo","roster":[{"id":4684742,"fullName":"Ausar Thompson","salary":9,"keeperHistory":["2025"],"gamesPlayed":0,"previousRater":0.4793809,"currentRater":0,"injuredSpot":true},{"id":6583,"fullName":"Anthony Davis","salary":40,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":17.135033,"currentRater":15.142653,"injuredSpot":false},{"id":4432158,"fullName":"Evan Mobley","salary":15,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":4.198726,"currentRater":10.553931,"injuredSpot":false},{"id":3032977,"fullName":"Giannis Antetokounmpo","salary":64,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":9.31461,"currentRater":2.0987484,"injuredSpot":false},{"id":4433192,"fullName":"Tari Eason","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":-2.4029863,"currentRater":3.423744,"injuredSpot":false},{"id":4845374,"fullName":"Bub Carrington","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":0,"currentRater":0.1614641,"injuredSpot":false},{"id":4065654,"fullName":"Jonathan Isaac","salary":1,"keeperHistory":[],"gamesPlayed":3,"previousRater":1.400619,"currentRater":-2.2915263,"injuredSpot":false},{"id":4395626,"fullName":"Tre Jones","salary":7,"keeperHistory":[],"gamesPlayed":1,"previousRater":5.1578264,"currentRater":-4.623198,"injuredSpot":false},{"id":4888725,"fullName":"Ryan Dunn","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":0,"currentRater":0.7752527,"injuredSpot":false},{"id":4279888,"fullName":"Ja Morant","salary":39,"keeperHistory":[],"gamesPlayed":5,"previousRater":-3.3493001,"currentRater":2.8047535,"injuredSpot":false},{"id":3155535,"fullName":"Kevon Looney","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.2507735,"currentRater":0.6422802,"injuredSpot":false},{"id":3468,"fullName":"Russell Westbrook","salary":2,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":0.2909972,"currentRater":-0.63344777,"injuredSpot":false},{"id":3936099,"fullName":"Derrick Jones Jr.","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.2249113,"currentRater":2.9997196,"injuredSpot":false},{"id":4278053,"fullName":"Davion Mitchell","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.435835,"currentRater":0.089542985,"injuredSpot":false},{"id":4432822,"fullName":"Isaac Okoro","salary":2,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":0.87106735,"currentRater":-2.1583614,"injuredSpot":false},{"id":4395628,"fullName":"Zion Williamson","salary":31,"keeperHistory":[],"gamesPlayed":5,"previousRater":4.4643006,"currentRater":-0.56575835,"injuredSpot":false},{"id":3062679,"fullName":"Josh Hart","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":4.3790774,"currentRater":4.4215035,"injuredSpot":false}]},{"id":4,"name":"Anaheim Ducks","roster":[{"id":4395651,"fullName":"Coby White","salary":7,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":6.015134,"currentRater":5.088849,"injuredSpot":false},{"id":4433627,"fullName":"Keyonte George","salary":3,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":0.084922545,"currentRater":-4.1115365,"injuredSpot":false},{"id":4396971,"fullName":"Naz Reid","salary":6,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":5.1100225,"currentRater":4.557824,"injuredSpot":false},{"id":4251,"fullName":"Paul George","salary":33,"keeperHistory":["2025"],"gamesPlayed":0,"previousRater":11.578929,"currentRater":0,"injuredSpot":true},{"id":4066259,"fullName":"De'Aaron Fox","salary":25,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":8.273686,"currentRater":6.834698,"injuredSpot":false},{"id":4395725,"fullName":"Tyler Herro","salary":10,"keeperHistory":["2025"],"gamesPlayed":4,"previousRater":0.93437636,"currentRater":4.5680785,"injuredSpot":false},{"id":3202,"fullName":"Kevin Durant","salary":47,"keeperHistory":[],"gamesPlayed":5,"previousRater":12.627656,"currentRater":7.9641128,"injuredSpot":false},{"id":6430,"fullName":"Jimmy Butler","salary":30,"keeperHistory":[],"gamesPlayed":4,"previousRater":7.0158935,"currentRater":2.1635747,"injuredSpot":false},{"id":4066262,"fullName":"Malik Monk","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.6229782,"currentRater":0.7956913,"injuredSpot":false},{"id":4277956,"fullName":"Jordan Poole","salary":8,"keeperHistory":[],"gamesPlayed":4,"previousRater":4.404041,"currentRater":7.372341,"injuredSpot":false},{"id":3195,"fullName":"Mike Conley","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":6.9266763,"currentRater":0.7738531,"injuredSpot":false},{"id":2489663,"fullName":"Kelly Olynyk","salary":7,"keeperHistory":[],"gamesPlayed":0,"previousRater":5.5106435,"currentRater":0,"injuredSpot":false},{"id":4277843,"fullName":"Gary Trent Jr.","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.3764958,"currentRater":-0.2489605,"injuredSpot":false},{"id":4593125,"fullName":"Santi Aldama","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":0.82060504,"currentRater":6.0036,"injuredSpot":false},{"id":3913180,"fullName":"Garrison Mathews","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":-1.6052599,"currentRater":3.3247585,"injuredSpot":false},{"id":4431687,"fullName":"Patrick Williams","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":-0.652148,"currentRater":-0.603225,"injuredSpot":false},{"id":4433076,"fullName":"Ben Sheppard","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.2768085,"currentRater":1.0140202,"injuredSpot":false}]},{"id":5,"name":"Almr","roster":[{"id":4432816,"fullName":"LaMelo Ball","salary":24,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":5,"previousRater":-0.58396065,"currentRater":6.7579894,"injuredSpot":false},{"id":4683678,"fullName":"Scoot Henderson","salary":17,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":-1.6513587,"currentRater":0.73750633,"injuredSpot":false},{"id":4395625,"fullName":"RJ Barrett","salary":11,"keeperHistory":["2025"],"gamesPlayed":3,"previousRater":0.48542106,"currentRater":0.82898563,"injuredSpot":false},{"id":4432174,"fullName":"Cam Thomas","salary":11,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":3.5078602,"currentRater":7.535751,"injuredSpot":false},{"id":3155942,"fullName":"Domantas Sabonis","salary":50,"keeperHistory":[],"gamesPlayed":5,"previousRater":10.719338,"currentRater":7.553351,"injuredSpot":false},{"id":3133603,"fullName":"Kelly Oubre Jr.","salary":5,"keeperHistory":[],"gamesPlayed":4,"previousRater":2.3969343,"currentRater":-1.7384807,"injuredSpot":false},{"id":5211175,"fullName":"Zaccharie Risacher","salary":8,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":-2.395852,"injuredSpot":false},{"id":3064290,"fullName":"Aaron Gordon","salary":4,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.93571,"currentRater":5.962314,"injuredSpot":false},{"id":4914336,"fullName":"Shaedon Sharpe","salary":1,"keeperHistory":[],"gamesPlayed":0,"previousRater":-1.9515059,"currentRater":0,"injuredSpot":true},{"id":2583632,"fullName":"Royce O'Neale","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.766145,"currentRater":4.969858,"injuredSpot":false},{"id":4397227,"fullName":"Vince Williams Jr.","salary":1,"keeperHistory":[],"gamesPlayed":0,"previousRater":1.1723232,"currentRater":0,"injuredSpot":false},{"id":4431785,"fullName":"Scotty Pippen Jr.","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.2910628,"currentRater":4.1593485,"injuredSpot":false},{"id":4397140,"fullName":"Kevin Porter Jr.","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":0,"currentRater":-3.2767477,"injuredSpot":false},{"id":3149673,"fullName":"Pascal Siakam","salary":31,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":6.810149,"currentRater":7.0495615,"injuredSpot":false},{"id":4871145,"fullName":"Josh Giddey","salary":19,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":4.6076508,"currentRater":1.0860695,"injuredSpot":false},{"id":4592691,"fullName":"Jake LaRavia","salary":4,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.139473,"currentRater":-1.8768916,"injuredSpot":false}]},{"id":6,"name":"Atlantic Titans","roster":[{"id":4066457,"fullName":"Austin Reaves","salary":10,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":7.338732,"currentRater":6.447148,"injuredSpot":false},{"id":4397688,"fullName":"Trey Murphy III","salary":4,"keeperHistory":["2024","2025"],"gamesPlayed":0,"previousRater":3.708579,"currentRater":0,"injuredSpot":false},{"id":3934672,"fullName":"Jalen Brunson","salary":17,"keeperHistory":["2024","2023","2025"],"gamesPlayed":5,"previousRater":10.104794,"currentRater":3.2395346,"injuredSpot":false},{"id":6477,"fullName":"Jonas Valanciunas","salary":17,"keeperHistory":["2024","2025"],"gamesPlayed":4,"previousRater":6.466126,"currentRater":0.7654495,"injuredSpot":false},{"id":4066336,"fullName":"Lauri Markkanen","salary":17,"keeperHistory":["2024","2023","2025"],"gamesPlayed":4,"previousRater":7.681113,"currentRater":-0.0020123797,"injuredSpot":false},{"id":4278104,"fullName":"Michael Porter Jr.","salary":16,"keeperHistory":[],"gamesPlayed":5,"previousRater":7.645083,"currentRater":2.605233,"injuredSpot":false},{"id":6440,"fullName":"Tobias Harris","salary":12,"keeperHistory":[],"gamesPlayed":6,"previousRater":7.434708,"currentRater":4.7306113,"injuredSpot":false},{"id":4277813,"fullName":"Herbert Jones","salary":8,"keeperHistory":[],"gamesPlayed":4,"previousRater":7.322351,"currentRater":-1.4069065,"injuredSpot":true},{"id":3908845,"fullName":"John Collins","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.4962487,"currentRater":3.7885115,"injuredSpot":false},{"id":3064482,"fullName":"Bobby Portis","salary":6,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.9002447,"currentRater":1.2185829,"injuredSpot":false},{"id":3112335,"fullName":"Nikola Jokic","salary":81,"keeperHistory":[],"gamesPlayed":5,"previousRater":18.39955,"currentRater":14.051477,"injuredSpot":false},{"id":4395630,"fullName":"Devin Vassell","salary":12,"keeperHistory":[],"gamesPlayed":0,"previousRater":5.3595777,"currentRater":0,"injuredSpot":false},{"id":3155526,"fullName":"Dillon Brooks","salary":5,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.8327911,"currentRater":0.9366652,"injuredSpot":false},{"id":4065733,"fullName":"Ty Jerome","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":4.6623774,"injuredSpot":false},{"id":2530530,"fullName":"T.J. McConnell","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":3.3638518,"currentRater":0.21463725,"injuredSpot":false},{"id":4397002,"fullName":"Ayo Dosunmu","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.4111323,"currentRater":-0.45556092,"injuredSpot":false},{"id":4593041,"fullName":"David Roddy","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":-3.0264041,"currentRater":1.4621346,"injuredSpot":false}]},{"id":7,"name":"Les Lents Béarnais","roster":[{"id":4871144,"fullName":"Alperen Sengun","salary":13,"keeperHistory":["2024","2023","2025"],"gamesPlayed":5,"previousRater":4.579932,"currentRater":2.8409872,"injuredSpot":false},{"id":4684740,"fullName":"Amen Thompson","salary":10,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":1.8106452,"currentRater":-2.400571,"injuredSpot":false},{"id":3133628,"fullName":"Myles Turner","salary":29,"keeperHistory":["2024","2023","2025"],"gamesPlayed":5,"previousRater":8.659089,"currentRater":0.9834882,"injuredSpot":false},{"id":3992,"fullName":"James Harden","salary":36,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":9.548785,"currentRater":5.6380134,"injuredSpot":false},{"id":4351851,"fullName":"Anfernee Simons","salary":10,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":2.0517962,"currentRater":2.9017932,"injuredSpot":false},{"id":4065648,"fullName":"Jayson Tatum","salary":45,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":10.859564,"currentRater":13.523408,"injuredSpot":false},{"id":5160992,"fullName":"Alex Sarr","salary":16,"keeperHistory":[],"gamesPlayed":4,"previousRater":0,"currentRater":1.6396543,"injuredSpot":false},{"id":3136776,"fullName":"D'Angelo Russell","salary":14,"keeperHistory":[],"gamesPlayed":6,"previousRater":7.1330457,"currentRater":3.9943538,"injuredSpot":false},{"id":3074752,"fullName":"Terry Rozier","salary":9,"keeperHistory":[],"gamesPlayed":4,"previousRater":5.1706367,"currentRater":3.43177,"injuredSpot":false},{"id":3138196,"fullName":"Cameron Johnson","salary":7,"keeperHistory":[],"gamesPlayed":6,"previousRater":1.7739931,"currentRater":5.6254764,"injuredSpot":false},{"id":3059319,"fullName":"Andrew Wiggins","salary":5,"keeperHistory":[],"gamesPlayed":3,"previousRater":1.1420395,"currentRater":2.2511919,"injuredSpot":false},{"id":4066218,"fullName":"Grant Williams","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.7837996,"currentRater":1.8548018,"injuredSpot":false},{"id":4017844,"fullName":"Guerschon Yabusele","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":0,"currentRater":-1.1902244,"injuredSpot":false},{"id":5105623,"fullName":"Kel'el Ware","salary":2,"keeperHistory":[],"gamesPlayed":1,"previousRater":0,"currentRater":-5.2778244,"injuredSpot":true},{"id":4066372,"fullName":"Kevin Huerter","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.4170865,"currentRater":3.378625,"injuredSpot":false},{"id":4712849,"fullName":"Anthony Black","salary":5,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.8277874,"currentRater":1.8435409,"injuredSpot":false},{"id":4397018,"fullName":"Ochai Agbaji","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":-0.9981958,"currentRater":3.7006583,"injuredSpot":false}]},{"id":8,"name":"Seattle Old Stringers","roster":[{"id":3907823,"fullName":"Terance Mann","salary":2,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":2.1226,"currentRater":-4.146709,"injuredSpot":false},{"id":4566434,"fullName":"Franz Wagner","salary":11,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":6.54141,"currentRater":5.6425533,"injuredSpot":false},{"id":3448,"fullName":"Brook Lopez","salary":7,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":9.79071,"currentRater":4.311077,"injuredSpot":false},{"id":3032976,"fullName":"Rudy Gobert","salary":23,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":8.274922,"currentRater":3.8770885,"injuredSpot":false},{"id":4395724,"fullName":"Immanuel Quickley","salary":5,"keeperHistory":["2025"],"gamesPlayed":1,"previousRater":4.470139,"currentRater":-3.9882894,"injuredSpot":true},{"id":4066261,"fullName":"Bam Adebayo","salary":33,"keeperHistory":[],"gamesPlayed":4,"previousRater":6.905771,"currentRater":-0.30224672,"injuredSpot":false},{"id":3917376,"fullName":"Jaylen Brown","salary":23,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.6339407,"currentRater":6.595303,"injuredSpot":false},{"id":2990984,"fullName":"Buddy Hield","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.272933,"currentRater":7.1457233,"injuredSpot":false},{"id":3135045,"fullName":"Grayson Allen","salary":8,"keeperHistory":[],"gamesPlayed":3,"previousRater":7.6780252,"currentRater":-2.0541222,"injuredSpot":false},{"id":2595516,"fullName":"Norman Powell","salary":11,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.5397873,"currentRater":4.8439174,"injuredSpot":false},{"id":4683750,"fullName":"Jordan Hawkins","salary":6,"keeperHistory":[],"gamesPlayed":6,"previousRater":-1.804651,"currentRater":3.2413478,"injuredSpot":false},{"id":5107897,"fullName":"Jonathan Mogbo","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":3.3029485,"injuredSpot":false},{"id":4684793,"fullName":"Kyle Filipowski","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":0,"currentRater":-3.4778304,"injuredSpot":false},{"id":4600663,"fullName":"Zach Edey","salary":6,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":-1.8113678,"injuredSpot":false},{"id":4433287,"fullName":"Brandon Miller","salary":17,"keeperHistory":["2025"],"gamesPlayed":1,"previousRater":4.4045095,"currentRater":-4.175301,"injuredSpot":false},{"id":6580,"fullName":"Bradley Beal","salary":12,"keeperHistory":[],"gamesPlayed":3,"previousRater":3.573586,"currentRater":2.1563578,"injuredSpot":false},{"id":4397020,"fullName":"Luguentz Dort","salary":5,"keeperHistory":[],"gamesPlayed":5,"previousRater":4.1295004,"currentRater":5.47136,"injuredSpot":false}]},{"id":10,"name":"Chauvigny Eagles","roster":[{"id":4432166,"fullName":"Cade Cunningham","salary":21,"keeperHistory":["2024","2023","2025"],"gamesPlayed":6,"previousRater":4.623802,"currentRater":8.219228,"injuredSpot":false},{"id":3936299,"fullName":"Jamal Murray","salary":19,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":6.4711785,"currentRater":2.6059484,"injuredSpot":false},{"id":3136195,"fullName":"Karl-Anthony Towns","salary":35,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":6.910035,"currentRater":9.48371,"injuredSpot":false},{"id":4593803,"fullName":"Jalen Williams","salary":5,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":8.144674,"currentRater":4.163912,"injuredSpot":false},{"id":6475,"fullName":"Klay Thompson","salary":9,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.8999224,"currentRater":3.438398,"injuredSpot":false},{"id":3102529,"fullName":"Clint Capela","salary":7,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.672139,"currentRater":4.1782722,"injuredSpot":false},{"id":4433247,"fullName":"Jonathan Kuminga","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.9801219,"currentRater":-1.1297488,"injuredSpot":false},{"id":5105565,"fullName":"Donovan Clingan","salary":7,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":2.0565495,"injuredSpot":false},{"id":4278078,"fullName":"P.J. Washington","salary":7,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.6510022,"currentRater":3.3872426,"injuredSpot":false},{"id":2566769,"fullName":"Malcolm Brogdon","salary":6,"keeperHistory":[],"gamesPlayed":0,"previousRater":-0.13772796,"currentRater":0,"injuredSpot":true},{"id":3032979,"fullName":"Dennis Schroder","salary":6,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.208451,"currentRater":9.461594,"injuredSpot":false},{"id":4594327,"fullName":"Keegan Murray","salary":12,"keeperHistory":[],"gamesPlayed":5,"previousRater":7.0203934,"currentRater":3.6807003,"injuredSpot":false},{"id":4066383,"fullName":"Miles Bridges","salary":22,"keeperHistory":[],"gamesPlayed":5,"previousRater":6.0647264,"currentRater":0.7434863,"injuredSpot":false},{"id":4277961,"fullName":"Jaren Jackson Jr.","salary":27,"keeperHistory":[],"gamesPlayed":4,"previousRater":6.1879773,"currentRater":-0.17455369,"injuredSpot":false},{"id":2990962,"fullName":"Taurean Prince","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.7411413,"currentRater":1.6945653,"injuredSpot":false},{"id":4683692,"fullName":"Cason Wallace","salary":5,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.0049543,"currentRater":2.0962381,"injuredSpot":false},{"id":4433137,"fullName":"Ziaire Williams","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":-2.0315893,"currentRater":3.6481452,"injuredSpot":false}]},{"id":11,"name":"Antigua  Boyz ","roster":[{"id":4277905,"fullName":"Trae Young","salary":49,"keeperHistory":[],"gamesPlayed":6,"previousRater":5.1133237,"currentRater":9.490845,"injuredSpot":false},{"id":2528210,"fullName":"Tim Hardaway Jr.","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":2.2198954,"currentRater":2.2136326,"injuredSpot":false},{"id":4278129,"fullName":"Deandre Ayton","salary":15,"keeperHistory":[],"gamesPlayed":6,"previousRater":5.2521267,"currentRater":5.2180734,"injuredSpot":false},{"id":4431680,"fullName":"Onyeka Okongwu","salary":11,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.247119,"currentRater":3.5416722,"injuredSpot":false},{"id":4431736,"fullName":"Toumani Camara","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":0.813281,"currentRater":3.984782,"injuredSpot":false},{"id":4277869,"fullName":"Jose Alvarado","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":-0.92370147,"currentRater":3.103483,"injuredSpot":false},{"id":2578185,"fullName":"Dorian Finney-Smith","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":1.4403853,"currentRater":2.0328314,"injuredSpot":false},{"id":3948153,"fullName":"Chris Boucher","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":-1.5472887,"currentRater":0.6034456,"injuredSpot":false},{"id":3907822,"fullName":"Malik Beasley","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":3.0577474,"currentRater":-1.8584391,"injuredSpot":false},{"id":3059318,"fullName":"Joel Embiid","salary":54,"keeperHistory":[],"gamesPlayed":0,"previousRater":8.461831,"currentRater":0,"injuredSpot":true},{"id":4066328,"fullName":"Jarrett Allen","salary":19,"keeperHistory":[],"gamesPlayed":6,"previousRater":9.274776,"currentRater":10.679628,"injuredSpot":false},{"id":3913176,"fullName":"Brandon Ingram","salary":20,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.692515,"currentRater":8.57392,"injuredSpot":false},{"id":4711272,"fullName":"Reed Sheppard","salary":10,"keeperHistory":[],"gamesPlayed":5,"previousRater":0,"currentRater":-3.7751048,"injuredSpot":false},{"id":4291678,"fullName":"Haywood Highsmith","salary":1,"keeperHistory":[],"gamesPlayed":2,"previousRater":0.31092903,"currentRater":-2.5437815,"injuredSpot":false},{"id":2326307,"fullName":"Seth Curry","salary":4,"keeperHistory":[],"gamesPlayed":5,"previousRater":-2.8502133,"currentRater":0.33914027,"injuredSpot":false},{"id":3012,"fullName":"Kyle Lowry","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":1.6041324,"currentRater":1.3461989,"injuredSpot":false},{"id":5174563,"fullName":"Kyshawn George","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":0,"currentRater":-1.6865861,"injuredSpot":false}]},{"id":12,"name":"Dusk Lions","roster":[{"id":4278049,"fullName":"Daniel Gafford","salary":6,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":9.425298,"currentRater":2.7385893,"injuredSpot":false},{"id":4277811,"fullName":"Collin Sexton","salary":12,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":6.376208,"currentRater":-0.806798,"injuredSpot":false},{"id":4432848,"fullName":"Jaime Jaquez Jr.","salary":2,"keeperHistory":["2025"],"gamesPlayed":4,"previousRater":3.1034884,"currentRater":-2.802672,"injuredSpot":false},{"id":3945274,"fullName":"Luka Doncic","salary":58,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":13.208813,"currentRater":4.721235,"injuredSpot":false},{"id":2779,"fullName":"Chris Paul","salary":7,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":2.484436,"currentRater":4.3051825,"injuredSpot":false},{"id":4066320,"fullName":"Desmond Bane","salary":3,"keeperHistory":["2024","2023","2025"],"gamesPlayed":5,"previousRater":3.2097073,"currentRater":5.298252,"injuredSpot":false},{"id":3975,"fullName":"Stephen Curry","salary":42,"keeperHistory":[],"gamesPlayed":3,"previousRater":10.762677,"currentRater":2.4785128,"injuredSpot":false},{"id":4432573,"fullName":"Paolo Banchero","salary":23,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.379199,"currentRater":4.004597,"injuredSpot":false},{"id":5211176,"fullName":"Tidjane Salaun","salary":8,"keeperHistory":[],"gamesPlayed":3,"previousRater":0,"currentRater":-3.1317015,"injuredSpot":false},{"id":3134907,"fullName":"Kyle Kuzma","salary":7,"keeperHistory":[],"gamesPlayed":3,"previousRater":4.118329,"currentRater":-3.1440496,"injuredSpot":false},{"id":3102530,"fullName":"Jusuf Nurkic","salary":10,"keeperHistory":[],"gamesPlayed":5,"previousRater":3.880816,"currentRater":-3.003261,"injuredSpot":false},{"id":4845367,"fullName":"Stephon Castle","salary":10,"keeperHistory":[],"gamesPlayed":5,"previousRater":0,"currentRater":-3.8203406,"injuredSpot":false},{"id":4432808,"fullName":"James Wiseman","salary":2,"keeperHistory":[],"gamesPlayed":1,"previousRater":-0.42406824,"currentRater":-4.4403243,"injuredSpot":false},{"id":6585,"fullName":"Andre Drummond","salary":3,"keeperHistory":[],"gamesPlayed":4,"previousRater":0.9707323,"currentRater":-0.8263067,"injuredSpot":false},{"id":2581018,"fullName":"Kentavious Caldwell-Pope","salary":2,"keeperHistory":[],"gamesPlayed":6,"previousRater":5.336248,"currentRater":1.4241842,"injuredSpot":false},{"id":4065732,"fullName":"De'Andre Hunter","salary":1,"keeperHistory":[],"gamesPlayed":2,"previousRater":1.7142538,"currentRater":-0.29313782,"injuredSpot":false}]},{"id":14,"name":"Venomous Vicious Vipers","roster":[{"id":4709138,"fullName":"Brandin Podziemski","salary":1,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":1.5849606,"currentRater":0.027882768,"injuredSpot":false},{"id":4433621,"fullName":"Jalen Duren","salary":8,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":5.184985,"currentRater":2.3238046,"injuredSpot":false},{"id":4701232,"fullName":"Mark Williams","salary":1,"keeperHistory":["2024","2025"],"gamesPlayed":0,"previousRater":-1.6940684,"currentRater":0,"injuredSpot":false},{"id":4594268,"fullName":"Anthony Edwards","salary":29,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":5,"previousRater":9.365874,"currentRater":4.233275,"injuredSpot":false},{"id":4431678,"fullName":"Tyrese Maxey","salary":11,"keeperHistory":["2024","2023","2025"],"gamesPlayed":4,"previousRater":9.459175,"currentRater":2.6829016,"injuredSpot":false},{"id":4433134,"fullName":"Scottie Barnes","salary":18,"keeperHistory":["2024","2023","2025"],"gamesPlayed":4,"previousRater":7.053764,"currentRater":1.5774199,"injuredSpot":true},{"id":6442,"fullName":"Kyrie Irving","salary":34,"keeperHistory":[],"gamesPlayed":5,"previousRater":9.180393,"currentRater":7.9687486,"injuredSpot":false},{"id":3064440,"fullName":"Zach LaVine","salary":16,"keeperHistory":[],"gamesPlayed":6,"previousRater":-1.137019,"currentRater":5.9499,"injuredSpot":false},{"id":2991230,"fullName":"Fred VanVleet","salary":27,"keeperHistory":[],"gamesPlayed":5,"previousRater":9.891808,"currentRater":1.854751,"injuredSpot":false},{"id":3934719,"fullName":"OG Anunoby","salary":9,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.2123053,"currentRater":2.3967812,"injuredSpot":false},{"id":3978,"fullName":"DeMar DeRozan","salary":20,"keeperHistory":[],"gamesPlayed":5,"previousRater":10.10147,"currentRater":7.630968,"injuredSpot":false},{"id":4017837,"fullName":"Ivica Zubac","salary":11,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.233062,"currentRater":3.8962123,"injuredSpot":false},{"id":4432165,"fullName":"Jalen Suggs","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.567406,"currentRater":11.076986,"injuredSpot":false},{"id":4431684,"fullName":"Trayce Jackson-Davis","salary":4,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.3477879,"currentRater":1.6303058,"injuredSpot":false},{"id":4431823,"fullName":"Miles McBride","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.7399621,"currentRater":2.0821037,"injuredSpot":false},{"id":2991139,"fullName":"Kris Dunn","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.8801882,"currentRater":1.0432186,"injuredSpot":false},{"id":5061589,"fullName":"Yves Missi","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":1.2907197,"injuredSpot":false}]},{"id":15,"name":"Me Makun and I","roster":[{"id":4278067,"fullName":"Nic Claxton","salary":10,"keeperHistory":["2024","2025"],"gamesPlayed":5,"previousRater":5.7031436,"currentRater":4.0805793,"injuredSpot":false},{"id":5104155,"fullName":"Bilal Coulibaly","salary":8,"keeperHistory":["2025"],"gamesPlayed":4,"previousRater":-0.2063028,"currentRater":3.5053093,"injuredSpot":false},{"id":5106258,"fullName":"Gradey Dick","salary":1,"keeperHistory":["2025"],"gamesPlayed":6,"previousRater":-1.3110998,"currentRater":6.5848193,"injuredSpot":false},{"id":6606,"fullName":"Damian Lillard","salary":40,"keeperHistory":[],"gamesPlayed":5,"previousRater":10.030919,"currentRater":5.3721933,"injuredSpot":false},{"id":2490149,"fullName":"CJ McCollum","salary":17,"keeperHistory":[],"gamesPlayed":4,"previousRater":6.8701167,"currentRater":3.8565109,"injuredSpot":true},{"id":6478,"fullName":"Nikola Vucevic","salary":26,"keeperHistory":[],"gamesPlayed":6,"previousRater":7.887913,"currentRater":10.996326,"injuredSpot":false},{"id":3134908,"fullName":"Jakob Poeltl","salary":11,"keeperHistory":[],"gamesPlayed":6,"previousRater":1.9916596,"currentRater":7.3220015,"injuredSpot":false},{"id":4433218,"fullName":"Jaden Ivey","salary":6,"keeperHistory":[],"gamesPlayed":6,"previousRater":0.7026336,"currentRater":2.9250374,"injuredSpot":false},{"id":4395723,"fullName":"Keldon Johnson","salary":6,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.9143193,"currentRater":-2.274215,"injuredSpot":false},{"id":2528426,"fullName":"Jordan Clarkson","salary":4,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.3294963,"currentRater":-2.6142328,"injuredSpot":false},{"id":4280151,"fullName":"Corey Kispert","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":2.164531,"currentRater":-0.8864289,"injuredSpot":false},{"id":4683634,"fullName":"Bennedict Mathurin","salary":6,"keeperHistory":[],"gamesPlayed":6,"previousRater":0.22632624,"currentRater":1.4031029,"injuredSpot":false},{"id":4610139,"fullName":"Jeremy Sochan","salary":5,"keeperHistory":[],"gamesPlayed":5,"previousRater":2.2075045,"currentRater":0.92359567,"injuredSpot":false},{"id":1966,"fullName":"LeBron James","salary":40,"keeperHistory":[],"gamesPlayed":6,"previousRater":9.6989155,"currentRater":6.517821,"injuredSpot":false},{"id":4278076,"fullName":"Nick Richards","salary":1,"keeperHistory":[],"gamesPlayed":5,"previousRater":4.1021223,"currentRater":3.6425405,"injuredSpot":false},{"id":3138161,"fullName":"Cody Martin","salary":5,"keeperHistory":[],"gamesPlayed":5,"previousRater":-3.183707,"currentRater":1.5861614,"injuredSpot":false},{"id":5112087,"fullName":"Jaylen Wells","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":-1.9547621,"injuredSpot":false}]},{"id":16,"name":"Shooters Alpins","roster":[{"id":6450,"fullName":"Kawhi Leonard","salary":32,"keeperHistory":["2025"],"gamesPlayed":0,"previousRater":12.531162,"currentRater":0,"injuredSpot":true},{"id":6578,"fullName":"Harrison Barnes","salary":1,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":3.0405242,"currentRater":1.4420977,"injuredSpot":false},{"id":2991070,"fullName":"Jerami Grant","salary":26,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":6,"previousRater":2.0807712,"currentRater":5.150871,"injuredSpot":false},{"id":4066648,"fullName":"Rui Hachimura","salary":9,"keeperHistory":["2024","2025"],"gamesPlayed":6,"previousRater":3.0146215,"currentRater":3.3496888,"injuredSpot":false},{"id":4278073,"fullName":"Shai Gilgeous-Alexander","salary":57,"keeperHistory":["2024","2023","2022","2025"],"gamesPlayed":5,"previousRater":17.61896,"currentRater":11.494801,"injuredSpot":false},{"id":3934673,"fullName":"Donte DiVincenzo","salary":6,"keeperHistory":["2025"],"gamesPlayed":5,"previousRater":6.8553,"currentRater":-1.7995539,"injuredSpot":false},{"id":4396907,"fullName":"Darius Garland","salary":25,"keeperHistory":[],"gamesPlayed":6,"previousRater":2.4838128,"currentRater":8.133628,"injuredSpot":false},{"id":4432639,"fullName":"Jabari Smith Jr.","salary":18,"keeperHistory":[],"gamesPlayed":5,"previousRater":5.693314,"currentRater":1.5090435,"injuredSpot":false},{"id":2991350,"fullName":"Alex Caruso","salary":3,"keeperHistory":[],"gamesPlayed":5,"previousRater":6.3458743,"currentRater":-0.57869786,"injuredSpot":false},{"id":2990992,"fullName":"Marcus Smart","salary":8,"keeperHistory":[],"gamesPlayed":5,"previousRater":-2.7570124,"currentRater":-1.759687,"injuredSpot":false},{"id":4277847,"fullName":"Wendell Carter Jr.","salary":7,"keeperHistory":[],"gamesPlayed":5,"previousRater":0.62633663,"currentRater":2.7262297,"injuredSpot":false},{"id":4431671,"fullName":"Jaden McDaniels","salary":2,"keeperHistory":[],"gamesPlayed":5,"previousRater":1.7844776,"currentRater":0.40298814,"injuredSpot":false},{"id":4432810,"fullName":"Isaiah Stewart","salary":3,"keeperHistory":[],"gamesPlayed":6,"previousRater":-0.06964228,"currentRater":2.6691523,"injuredSpot":false},{"id":3913174,"fullName":"Luke Kennard","salary":1,"keeperHistory":[],"gamesPlayed":0,"previousRater":-0.80187356,"currentRater":0,"injuredSpot":false},{"id":4897943,"fullName":"Dalton Knecht","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":0,"currentRater":-0.5729191,"injuredSpot":false},{"id":4278355,"fullName":"Obi Toppin","salary":1,"keeperHistory":[],"gamesPlayed":6,"previousRater":4.783956,"currentRater":2.2739155,"injuredSpot":false},{"id":4396991,"fullName":"Talen Horton-Tucker","salary":1,"keeperHistory":[],"gamesPlayed":4,"previousRater":-1.0238394,"currentRater":-5.6898565,"injuredSpot":false}]}],"unpickablePlayers":[{"name":"Saddiq Bey","id":4397136},{"name":"Devin Carter","id":4433188},{"name":"Dante Exum","id":3102528},{"name":"DaRon Holmes","id":4433607,"outForSeason":true},{"name":"GG Jackson","id":5105550},{"name":"Kristaps Porzingis","id":3102531},{"name":"Mitchell Robinson","id":4351852},{"name":"Nikola Topic","id":5159925},{"name":"Emoni Bates","id":4433620},{"name":"James Wiseman","id":4432808,"outForSeason":true},{"name":"Precious Achiuwa","id":4431679},{"name":"Bojan Bogdanovic","id":3593},{"name":"Bogdan Bogdanovic","id":3037789},{"name":"Robert Williams","id":4066211},{"name":"Isaiah Hartenstein","id":4222252},{"name":"Kawhi Leonard","id":6450},{"name":"Dejounte Murray","id":3907497},{"name":"Max Strus","id":4065778},{"name":"P.J. Tucker","id":3033}]}
+{
+  "lastUpdate": "2024-11-03T23:30:37.110Z",
+  "teams": [
+    {
+      "id": 5,
+      "name": "Almr",
+      "roster": [
+        {
+          "id": 4432816,
+          "fullName": "LaMelo Ball",
+          "salary": 24,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": -0.58396065,
+          "currentRater": 8.852595,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683678,
+          "fullName": "Scoot Henderson",
+          "salary": 17,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": -1.6513587,
+          "currentRater": 0.18834674,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395625,
+          "fullName": "RJ Barrett",
+          "salary": 11,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 4,
+          "previousRater": 0.48542106,
+          "currentRater": 1.8467374,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432174,
+          "fullName": "Cam Thomas",
+          "salary": 11,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 3.5078602,
+          "currentRater": 6.9114947,
+          "injuredSpot": false
+        },
+        {
+          "id": 3155942,
+          "fullName": "Domantas Sabonis",
+          "salary": 50,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.719338,
+          "currentRater": 9.111463,
+          "injuredSpot": false
+        },
+        {
+          "id": 3133603,
+          "fullName": "Kelly Oubre Jr.",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.3969343,
+          "currentRater": -0.2967236,
+          "injuredSpot": false
+        },
+        {
+          "id": 5211175,
+          "fullName": "Zaccharie Risacher",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -2.6801963,
+          "injuredSpot": false
+        },
+        {
+          "id": 3064290,
+          "fullName": "Aaron Gordon",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.93571,
+          "currentRater": 6.6006126,
+          "injuredSpot": false
+        },
+        {
+          "id": 4914336,
+          "fullName": "Shaedon Sharpe",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": -1.9515059,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 2583632,
+          "fullName": "Royce O'Neale",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.766145,
+          "currentRater": 5.0235014,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397227,
+          "fullName": "Vince Williams Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 1.1723232,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431785,
+          "fullName": "Scotty Pippen Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.2910628,
+          "currentRater": 5.4455867,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397140,
+          "fullName": "Kevin Porter Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -3.3658493,
+          "injuredSpot": false
+        },
+        {
+          "id": 3149673,
+          "fullName": "Pascal Siakam",
+          "salary": 31,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.810149,
+          "currentRater": 5.967336,
+          "injuredSpot": false
+        },
+        {
+          "id": 4871145,
+          "fullName": "Josh Giddey",
+          "salary": 19,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 4.6076508,
+          "currentRater": 0.39554557,
+          "injuredSpot": false
+        },
+        {
+          "id": 4592691,
+          "fullName": "Jake LaRavia",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.139473,
+          "currentRater": -1.785486,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Anaheim Ducks",
+      "roster": [
+        {
+          "id": 4395651,
+          "fullName": "Coby White",
+          "salary": 7,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.015134,
+          "currentRater": 4.187998,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433627,
+          "fullName": "Keyonte George",
+          "salary": 3,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 0.084922545,
+          "currentRater": -2.8045857,
+          "injuredSpot": false
+        },
+        {
+          "id": 4396971,
+          "fullName": "Naz Reid",
+          "salary": 6,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 5.1100225,
+          "currentRater": 4.510067,
+          "injuredSpot": false
+        },
+        {
+          "id": 4251,
+          "fullName": "Paul George",
+          "salary": 33,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 0,
+          "previousRater": 11.578929,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 4066259,
+          "fullName": "De'Aaron Fox",
+          "salary": 25,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 8.273686,
+          "currentRater": 7.095849,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395725,
+          "fullName": "Tyler Herro",
+          "salary": 10,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 0.93437636,
+          "currentRater": 3.76479,
+          "injuredSpot": false
+        },
+        {
+          "id": 3202,
+          "fullName": "Kevin Durant",
+          "salary": 47,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 12.627656,
+          "currentRater": 7.987302,
+          "injuredSpot": false
+        },
+        {
+          "id": 6430,
+          "fullName": "Jimmy Butler",
+          "salary": 30,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 7.0158935,
+          "currentRater": 2.0831976,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066262,
+          "fullName": "Malik Monk",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.6229782,
+          "currentRater": 2.673843,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277956,
+          "fullName": "Jordan Poole",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 4.404041,
+          "currentRater": 7.859319,
+          "injuredSpot": false
+        },
+        {
+          "id": 3195,
+          "fullName": "Mike Conley",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 6.9266763,
+          "currentRater": 1.6300917,
+          "injuredSpot": false
+        },
+        {
+          "id": 2489663,
+          "fullName": "Kelly Olynyk",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 5.5106435,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277843,
+          "fullName": "Gary Trent Jr.",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.3764958,
+          "currentRater": -1.2793796,
+          "injuredSpot": false
+        },
+        {
+          "id": 4593125,
+          "fullName": "Santi Aldama",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0.82060504,
+          "currentRater": 6.707787,
+          "injuredSpot": false
+        },
+        {
+          "id": 3913180,
+          "fullName": "Garrison Mathews",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -1.6052599,
+          "currentRater": 2.6454022,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431687,
+          "fullName": "Patrick Williams",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -0.652148,
+          "currentRater": -1.0665603,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433076,
+          "fullName": "Ben Sheppard",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -2.2768085,
+          "currentRater": 0.5402817,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Antigua  Boyz ",
+      "roster": [
+        {
+          "id": 4277905,
+          "fullName": "Trae Young",
+          "salary": 49,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.1133237,
+          "currentRater": 8.329664,
+          "injuredSpot": false
+        },
+        {
+          "id": 2528210,
+          "fullName": "Tim Hardaway Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 2.2198954,
+          "currentRater": 2.9576554,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278129,
+          "fullName": "Deandre Ayton",
+          "salary": 15,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 5.2521267,
+          "currentRater": 5.3156877,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431680,
+          "fullName": "Onyeka Okongwu",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 3.247119,
+          "currentRater": 2.914512,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431736,
+          "fullName": "Toumani Camara",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0.813281,
+          "currentRater": 4.473875,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277869,
+          "fullName": "Jose Alvarado",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -0.92370147,
+          "currentRater": 2.3837445,
+          "injuredSpot": false
+        },
+        {
+          "id": 2578185,
+          "fullName": "Dorian Finney-Smith",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 1.4403853,
+          "currentRater": 2.9746222,
+          "injuredSpot": false
+        },
+        {
+          "id": 3948153,
+          "fullName": "Chris Boucher",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -1.5472887,
+          "currentRater": 2.2504451,
+          "injuredSpot": false
+        },
+        {
+          "id": 3907822,
+          "fullName": "Malik Beasley",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 3.0577474,
+          "currentRater": -0.7200962,
+          "injuredSpot": false
+        },
+        {
+          "id": 3059318,
+          "fullName": "Joel Embiid",
+          "salary": 54,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 8.461831,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 4066328,
+          "fullName": "Jarrett Allen",
+          "salary": 19,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 9.274776,
+          "currentRater": 9.922561,
+          "injuredSpot": false
+        },
+        {
+          "id": 3913176,
+          "fullName": "Brandon Ingram",
+          "salary": 20,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.692515,
+          "currentRater": 7.431146,
+          "injuredSpot": false
+        },
+        {
+          "id": 4711272,
+          "fullName": "Reed Sheppard",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -3.4788046,
+          "injuredSpot": false
+        },
+        {
+          "id": 2326307,
+          "fullName": "Seth Curry",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -2.8502133,
+          "currentRater": -0.10113734,
+          "injuredSpot": false
+        },
+        {
+          "id": 3012,
+          "fullName": "Kyle Lowry",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 1.6041324,
+          "currentRater": 2.2205532,
+          "injuredSpot": false
+        },
+        {
+          "id": 5174563,
+          "fullName": "Kyshawn George",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": -0.5318219,
+          "injuredSpot": false
+        },
+        {
+          "id": 2596112,
+          "fullName": "Javonte Green",
+          "keeperHistory": [],
+          "salary": 5,
+          "previousRater": -3.2878149,
+          "currentRater": 3.0322719,
+          "gamesPlayed": 6,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "ASBR Pirates",
+      "roster": [
+        {
+          "id": 5104157,
+          "fullName": "Victor Wembanyama",
+          "salary": 59,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 13.3701105,
+          "currentRater": 9.650923,
+          "injuredSpot": false
+        },
+        {
+          "id": 3907497,
+          "fullName": "Dejounte Murray",
+          "salary": 36,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 1,
+          "previousRater": 8.4051695,
+          "currentRater": -3.6086967,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433136,
+          "fullName": "Walker Kessler",
+          "salary": 1,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 5.062066,
+          "currentRater": 6.8868036,
+          "injuredSpot": false
+        },
+        {
+          "id": 4701230,
+          "fullName": "Jalen Johnson",
+          "salary": 11,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 4.400893,
+          "currentRater": 2.3472703,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683021,
+          "fullName": "Deni Avdija",
+          "salary": 7,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 3.992394,
+          "currentRater": 3.9705648,
+          "injuredSpot": false
+        },
+        {
+          "id": 4437244,
+          "fullName": "Jalen Green",
+          "salary": 16,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 4.226827,
+          "currentRater": 4.574124,
+          "injuredSpot": false
+        },
+        {
+          "id": 3135046,
+          "fullName": "Tyus Jones",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.181599,
+          "currentRater": 5.7384925,
+          "injuredSpot": false
+        },
+        {
+          "id": 3064514,
+          "fullName": "Julius Randle",
+          "salary": 18,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.7622183,
+          "currentRater": 5.5396285,
+          "injuredSpot": false
+        },
+        {
+          "id": 6589,
+          "fullName": "Draymond Green",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.475297,
+          "currentRater": 2.85068,
+          "injuredSpot": false
+        },
+        {
+          "id": 6609,
+          "fullName": "Khris Middleton",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 2.772905,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 4222252,
+          "fullName": "Isaiah Hartenstein",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 6.505367,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 2991043,
+          "fullName": "Caris LeVert",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.6611452,
+          "currentRater": 3.5928032,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683688,
+          "fullName": "Dereck Lively II",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.3102992,
+          "currentRater": 2.7002041,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066354,
+          "fullName": "Payton Pritchard",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 2.97742,
+          "currentRater": 7.3001823,
+          "injuredSpot": false
+        },
+        {
+          "id": 3907387,
+          "fullName": "Ben Simmons",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -3.521191,
+          "currentRater": 1.3857718,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431767,
+          "fullName": "Christian Braun",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.1331586,
+          "currentRater": 5.9048896,
+          "injuredSpot": false
+        },
+        {
+          "id": 4997528,
+          "fullName": "Nikola Jovic",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -1.5561801,
+          "currentRater": -0.76023513,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Atlantic Titans",
+      "roster": [
+        {
+          "id": 4066457,
+          "fullName": "Austin Reaves",
+          "salary": 10,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 7.338732,
+          "currentRater": 5.4884477,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397688,
+          "fullName": "Trey Murphy III",
+          "salary": 4,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 0,
+          "previousRater": 3.708579,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 3934672,
+          "fullName": "Jalen Brunson",
+          "salary": 17,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 10.104794,
+          "currentRater": 2.5928862,
+          "injuredSpot": false
+        },
+        {
+          "id": 6477,
+          "fullName": "Jonas Valanciunas",
+          "salary": 17,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.466126,
+          "currentRater": 0.3565576,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066336,
+          "fullName": "Lauri Markkanen",
+          "salary": 17,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 4,
+          "previousRater": 7.681113,
+          "currentRater": -0.3590817,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278104,
+          "fullName": "Michael Porter Jr.",
+          "salary": 16,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.645083,
+          "currentRater": 4.0449724,
+          "injuredSpot": false
+        },
+        {
+          "id": 6440,
+          "fullName": "Tobias Harris",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 7.434708,
+          "currentRater": 5.671636,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277813,
+          "fullName": "Herbert Jones",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 7.322351,
+          "currentRater": -1.6635435,
+          "injuredSpot": false
+        },
+        {
+          "id": 3908845,
+          "fullName": "John Collins",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.4962487,
+          "currentRater": 4.8073497,
+          "injuredSpot": false
+        },
+        {
+          "id": 3064482,
+          "fullName": "Bobby Portis",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.9002447,
+          "currentRater": 1.1494322,
+          "injuredSpot": false
+        },
+        {
+          "id": 3112335,
+          "fullName": "Nikola Jokic",
+          "salary": 81,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 18.39955,
+          "currentRater": 15.309468,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395630,
+          "fullName": "Devin Vassell",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 5.3595777,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 3155526,
+          "fullName": "Dillon Brooks",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.8327911,
+          "currentRater": 0.9524049,
+          "injuredSpot": false
+        },
+        {
+          "id": 2530530,
+          "fullName": "T.J. McConnell",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.3638518,
+          "currentRater": -0.17253852,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397002,
+          "fullName": "Ayo Dosunmu",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.4111323,
+          "currentRater": -0.90209395,
+          "injuredSpot": false
+        },
+        {
+          "id": 4593041,
+          "fullName": "David Roddy",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": -3.0264041,
+          "currentRater": 0.96212864,
+          "injuredSpot": false
+        },
+        {
+          "id": 4702382,
+          "fullName": "Tristan da Silva",
+          "keeperHistory": [],
+          "salary": 1,
+          "previousRater": 0,
+          "currentRater": -3.4601176,
+          "gamesPlayed": 2,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Cambrai City",
+      "roster": [
+        {
+          "id": 4278067,
+          "fullName": "Nic Claxton",
+          "salary": 10,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 5.7031436,
+          "currentRater": 0.9886685,
+          "injuredSpot": false
+        },
+        {
+          "id": 5104155,
+          "fullName": "Bilal Coulibaly",
+          "salary": 8,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": -0.2063028,
+          "currentRater": 4.502823,
+          "injuredSpot": false
+        },
+        {
+          "id": 5106258,
+          "fullName": "Gradey Dick",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": -1.3110998,
+          "currentRater": 7.550871,
+          "injuredSpot": false
+        },
+        {
+          "id": 6606,
+          "fullName": "Damian Lillard",
+          "salary": 40,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.030919,
+          "currentRater": 8.029185,
+          "injuredSpot": false
+        },
+        {
+          "id": 2490149,
+          "fullName": "CJ McCollum",
+          "salary": 17,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 6.8701167,
+          "currentRater": 3.0724013,
+          "injuredSpot": true
+        },
+        {
+          "id": 6478,
+          "fullName": "Nikola Vucevic",
+          "salary": 26,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.887913,
+          "currentRater": 9.681503,
+          "injuredSpot": false
+        },
+        {
+          "id": 3134908,
+          "fullName": "Jakob Poeltl",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 1.9916596,
+          "currentRater": 7.7678633,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433218,
+          "fullName": "Jaden Ivey",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0.7026336,
+          "currentRater": 3.1244752,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395723,
+          "fullName": "Keldon Johnson",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.9143193,
+          "currentRater": 0.4272075,
+          "injuredSpot": false
+        },
+        {
+          "id": 2528426,
+          "fullName": "Jordan Clarkson",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.3294963,
+          "currentRater": -2.8141787,
+          "injuredSpot": false
+        },
+        {
+          "id": 4280151,
+          "fullName": "Corey Kispert",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.164531,
+          "currentRater": -1.31465,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683634,
+          "fullName": "Bennedict Mathurin",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.22632624,
+          "currentRater": 0.9685234,
+          "injuredSpot": false
+        },
+        {
+          "id": 4610139,
+          "fullName": "Jeremy Sochan",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.2075045,
+          "currentRater": 2.7114043,
+          "injuredSpot": false
+        },
+        {
+          "id": 1966,
+          "fullName": "LeBron James",
+          "salary": 40,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 9.6989155,
+          "currentRater": 5.508478,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278076,
+          "fullName": "Nick Richards",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 4.1021223,
+          "currentRater": 2.8519013,
+          "injuredSpot": false
+        },
+        {
+          "id": 3138161,
+          "fullName": "Cody Martin",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -3.183707,
+          "currentRater": 2.0920713,
+          "injuredSpot": false
+        },
+        {
+          "id": 5112087,
+          "fullName": "Jaylen Wells",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": -0.9058761,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cergy SlowMo",
+      "roster": [
+        {
+          "id": 4684742,
+          "fullName": "Ausar Thompson",
+          "salary": 9,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 0,
+          "previousRater": 0.4793809,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 6583,
+          "fullName": "Anthony Davis",
+          "salary": 40,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 17.135033,
+          "currentRater": 13.492614,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432158,
+          "fullName": "Evan Mobley",
+          "salary": 15,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 4.198726,
+          "currentRater": 10.426052,
+          "injuredSpot": false
+        },
+        {
+          "id": 3032977,
+          "fullName": "Giannis Antetokounmpo",
+          "salary": 64,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.31461,
+          "currentRater": 4.0676923,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433192,
+          "fullName": "Tari Eason",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -2.4029863,
+          "currentRater": 6.00354,
+          "injuredSpot": false
+        },
+        {
+          "id": 4845374,
+          "fullName": "Bub Carrington",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": 1.4507753,
+          "injuredSpot": false
+        },
+        {
+          "id": 4065654,
+          "fullName": "Jonathan Isaac",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 3,
+          "previousRater": 1.400619,
+          "currentRater": -2.4997463,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395626,
+          "fullName": "Tre Jones",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 1,
+          "previousRater": 5.1578264,
+          "currentRater": -4.5624537,
+          "injuredSpot": true
+        },
+        {
+          "id": 4888725,
+          "fullName": "Ryan Dunn",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": 0.26208776,
+          "injuredSpot": false
+        },
+        {
+          "id": 4279888,
+          "fullName": "Ja Morant",
+          "salary": 39,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -3.3493001,
+          "currentRater": 3.4741135,
+          "injuredSpot": false
+        },
+        {
+          "id": 3468,
+          "fullName": "Russell Westbrook",
+          "salary": 2,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 0.2909972,
+          "currentRater": -1.3958247,
+          "injuredSpot": false
+        },
+        {
+          "id": 3936099,
+          "fullName": "Derrick Jones Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.2249113,
+          "currentRater": 1.4409862,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278053,
+          "fullName": "Davion Mitchell",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.435835,
+          "currentRater": 1.0908421,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432822,
+          "fullName": "Isaac Okoro",
+          "salary": 2,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 0.87106735,
+          "currentRater": -0.03136591,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395628,
+          "fullName": "Zion Williamson",
+          "salary": 31,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 4.4643006,
+          "currentRater": -1.0867308,
+          "injuredSpot": false
+        },
+        {
+          "id": 3062679,
+          "fullName": "Josh Hart",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 4.3790774,
+          "currentRater": 3.6331623,
+          "injuredSpot": false
+        },
+        {
+          "id": 3150844,
+          "fullName": "Moritz Wagner",
+          "keeperHistory": [],
+          "salary": 1,
+          "previousRater": 3.395651,
+          "currentRater": 0.23947044,
+          "gamesPlayed": 6,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chauvigny Eagles",
+      "roster": [
+        {
+          "id": 4432166,
+          "fullName": "Cade Cunningham",
+          "salary": 21,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 4.623802,
+          "currentRater": 7.5372524,
+          "injuredSpot": false
+        },
+        {
+          "id": 3936299,
+          "fullName": "Jamal Murray",
+          "salary": 19,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.4711785,
+          "currentRater": 1.9843531,
+          "injuredSpot": false
+        },
+        {
+          "id": 3136195,
+          "fullName": "Karl-Anthony Towns",
+          "salary": 35,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.910035,
+          "currentRater": 8.314971,
+          "injuredSpot": false
+        },
+        {
+          "id": 4593803,
+          "fullName": "Jalen Williams",
+          "salary": 5,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 8.144674,
+          "currentRater": 4.545389,
+          "injuredSpot": false
+        },
+        {
+          "id": 6475,
+          "fullName": "Klay Thompson",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 5.8999224,
+          "currentRater": 2.7029877,
+          "injuredSpot": false
+        },
+        {
+          "id": 3102529,
+          "fullName": "Clint Capela",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.672139,
+          "currentRater": 3.4580288,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433247,
+          "fullName": "Jonathan Kuminga",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.9801219,
+          "currentRater": -0.74072975,
+          "injuredSpot": false
+        },
+        {
+          "id": 5105565,
+          "fullName": "Donovan Clingan",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": 1.5014683,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278078,
+          "fullName": "P.J. Washington",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.6510022,
+          "currentRater": 2.5733402,
+          "injuredSpot": false
+        },
+        {
+          "id": 2566769,
+          "fullName": "Malcolm Brogdon",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": -0.13772796,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 3032979,
+          "fullName": "Dennis Schroder",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 4.208451,
+          "currentRater": 9.725063,
+          "injuredSpot": false
+        },
+        {
+          "id": 4594327,
+          "fullName": "Keegan Murray",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.0203934,
+          "currentRater": 4.2387624,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066383,
+          "fullName": "Miles Bridges",
+          "salary": 22,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 6.0647264,
+          "currentRater": 1.0617672,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277961,
+          "fullName": "Jaren Jackson Jr.",
+          "salary": 27,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 6.1879773,
+          "currentRater": 3.1357172,
+          "injuredSpot": false
+        },
+        {
+          "id": 2990962,
+          "fullName": "Taurean Prince",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.7411413,
+          "currentRater": 3.4563282,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683692,
+          "fullName": "Cason Wallace",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.0049543,
+          "currentRater": 2.7448053,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433137,
+          "fullName": "Ziaire Williams",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.0315893,
+          "currentRater": 3.0589259,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Dusk Lions",
+      "roster": [
+        {
+          "id": 4278049,
+          "fullName": "Daniel Gafford",
+          "salary": 6,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 9.425298,
+          "currentRater": 2.1357064,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277811,
+          "fullName": "Collin Sexton",
+          "salary": 12,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.376208,
+          "currentRater": -0.24576454,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432848,
+          "fullName": "Jaime Jaquez Jr.",
+          "salary": 2,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 3.1034884,
+          "currentRater": -2.7330403,
+          "injuredSpot": false
+        },
+        {
+          "id": 3945274,
+          "fullName": "Luka Doncic",
+          "salary": 58,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 13.208813,
+          "currentRater": 3.760261,
+          "injuredSpot": false
+        },
+        {
+          "id": 2779,
+          "fullName": "Chris Paul",
+          "salary": 7,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 2.484436,
+          "currentRater": 5.9271736,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066320,
+          "fullName": "Desmond Bane",
+          "salary": 3,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 3.2097073,
+          "currentRater": 4.460836,
+          "injuredSpot": false
+        },
+        {
+          "id": 3975,
+          "fullName": "Stephen Curry",
+          "salary": 42,
+          "keeperHistory": [],
+          "gamesPlayed": 3,
+          "previousRater": 10.762677,
+          "currentRater": 1.8890867,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432573,
+          "fullName": "Paolo Banchero",
+          "salary": 23,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 3.379199,
+          "currentRater": 3.085468,
+          "injuredSpot": false
+        },
+        {
+          "id": 5211176,
+          "fullName": "Tidjane Salaun",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 0,
+          "currentRater": -3.5699105,
+          "injuredSpot": false
+        },
+        {
+          "id": 3134907,
+          "fullName": "Kyle Kuzma",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 3,
+          "previousRater": 4.118329,
+          "currentRater": -3.3028805,
+          "injuredSpot": false
+        },
+        {
+          "id": 3102530,
+          "fullName": "Jusuf Nurkic",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.880816,
+          "currentRater": -2.8471537,
+          "injuredSpot": false
+        },
+        {
+          "id": 4845367,
+          "fullName": "Stephon Castle",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -4.7322807,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432808,
+          "fullName": "James Wiseman",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 1,
+          "previousRater": -0.42406824,
+          "currentRater": -4.375952,
+          "injuredSpot": false
+        },
+        {
+          "id": 6585,
+          "fullName": "Andre Drummond",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.9707323,
+          "currentRater": -1.1090873,
+          "injuredSpot": false
+        },
+        {
+          "id": 2581018,
+          "fullName": "Kentavious Caldwell-Pope",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.336248,
+          "currentRater": 0.9162933,
+          "injuredSpot": false
+        },
+        {
+          "id": 4065732,
+          "fullName": "De'Andre Hunter",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 2,
+          "previousRater": 1.7142538,
+          "currentRater": -0.59627205,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Les Lents Béarnais",
+      "roster": [
+        {
+          "id": 4871144,
+          "fullName": "Alperen Sengun",
+          "salary": 13,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 4.579932,
+          "currentRater": 3.1158066,
+          "injuredSpot": false
+        },
+        {
+          "id": 4684740,
+          "fullName": "Amen Thompson",
+          "salary": 10,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 1.8106452,
+          "currentRater": -1.1943077,
+          "injuredSpot": false
+        },
+        {
+          "id": 3133628,
+          "fullName": "Myles Turner",
+          "salary": 29,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 8.659089,
+          "currentRater": 0.45719817,
+          "injuredSpot": false
+        },
+        {
+          "id": 3992,
+          "fullName": "James Harden",
+          "salary": 36,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.548785,
+          "currentRater": 8.012414,
+          "injuredSpot": false
+        },
+        {
+          "id": 4351851,
+          "fullName": "Anfernee Simons",
+          "salary": 10,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 2.0517962,
+          "currentRater": 3.7505825,
+          "injuredSpot": false
+        },
+        {
+          "id": 4065648,
+          "fullName": "Jayson Tatum",
+          "salary": 45,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 10.859564,
+          "currentRater": 12.853339,
+          "injuredSpot": false
+        },
+        {
+          "id": 5160992,
+          "fullName": "Alex Sarr",
+          "salary": 16,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": 4.171719,
+          "injuredSpot": false
+        },
+        {
+          "id": 3136776,
+          "fullName": "D'Angelo Russell",
+          "salary": 14,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.1330457,
+          "currentRater": 3.2579155,
+          "injuredSpot": false
+        },
+        {
+          "id": 3074752,
+          "fullName": "Terry Rozier",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 5.1706367,
+          "currentRater": 3.1845055,
+          "injuredSpot": false
+        },
+        {
+          "id": 3138196,
+          "fullName": "Cameron Johnson",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 1.7739931,
+          "currentRater": 6.9229846,
+          "injuredSpot": false
+        },
+        {
+          "id": 3059319,
+          "fullName": "Andrew Wiggins",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 1.1420395,
+          "currentRater": 1.913305,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066218,
+          "fullName": "Grant Williams",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.7837996,
+          "currentRater": 1.6890686,
+          "injuredSpot": false
+        },
+        {
+          "id": 4017844,
+          "fullName": "Guerschon Yabusele",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": -0.27638927,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066372,
+          "fullName": "Kevin Huerter",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 1.4170865,
+          "currentRater": 2.6663306,
+          "injuredSpot": true
+        },
+        {
+          "id": 4712849,
+          "fullName": "Anthony Black",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -2.8277874,
+          "currentRater": 1.2572291,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397018,
+          "fullName": "Ochai Agbaji",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -0.9981958,
+          "currentRater": 6.137671,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431714,
+          "fullName": "Jalen Wilson",
+          "keeperHistory": [],
+          "salary": 5,
+          "previousRater": -3.0532713,
+          "currentRater": 0.6399883,
+          "gamesPlayed": 7,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Oberthur Ducks",
+      "roster": [
+        {
+          "id": 4396993,
+          "fullName": "Tyrese Haliburton",
+          "salary": 27,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 11.151643,
+          "currentRater": 3.009928,
+          "injuredSpot": false
+        },
+        {
+          "id": 3908809,
+          "fullName": "Donovan Mitchell",
+          "salary": 30,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 8.36131,
+          "currentRater": 7.840711,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433255,
+          "fullName": "Chet Holmgren",
+          "salary": 26,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 12.723011,
+          "currentRater": 10.789375,
+          "injuredSpot": false
+        },
+        {
+          "id": 3147657,
+          "fullName": "Mikal Bridges",
+          "salary": 23,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.1546717,
+          "currentRater": 4.558301,
+          "injuredSpot": false
+        },
+        {
+          "id": 3078576,
+          "fullName": "Derrick White",
+          "salary": 13,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 9.719748,
+          "currentRater": 11.281905,
+          "injuredSpot": false
+        },
+        {
+          "id": 3138160,
+          "fullName": "Caleb Martin",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 0.55833143,
+          "currentRater": -4.1682014,
+          "injuredSpot": false
+        },
+        {
+          "id": 3213,
+          "fullName": "Al Horford",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.7588844,
+          "currentRater": 3.264404,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395712,
+          "fullName": "Andrew Nembhard",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 1.2897692,
+          "currentRater": -1.9754385,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397189,
+          "fullName": "Jalen Smith",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 1.3906679,
+          "currentRater": -0.31864083,
+          "injuredSpot": false
+        },
+        {
+          "id": 4396909,
+          "fullName": "Aaron Nesmith",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.519699,
+          "currentRater": 1.4087927,
+          "injuredSpot": false
+        },
+        {
+          "id": 4869342,
+          "fullName": "Dyson Daniels",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 0.59118277,
+          "currentRater": 1.539034,
+          "injuredSpot": false
+        },
+        {
+          "id": 3995,
+          "fullName": "Jrue Holiday",
+          "salary": 16,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 5.711561,
+          "currentRater": 2.449389,
+          "injuredSpot": false
+        },
+        {
+          "id": 3136193,
+          "fullName": "Devin Booker",
+          "salary": 47,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 10.241108,
+          "currentRater": 9.072926,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432819,
+          "fullName": "Tre Mann",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -0.9854613,
+          "currentRater": 5.0481677,
+          "injuredSpot": false
+        },
+        {
+          "id": 4702177,
+          "fullName": "Keon Ellis",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -0.072213694,
+          "currentRater": 2.0926225,
+          "injuredSpot": false
+        },
+        {
+          "id": 4592479,
+          "fullName": "Julian Champagnie",
+          "keeperHistory": [],
+          "salary": 1,
+          "previousRater": 0.91583204,
+          "currentRater": 1.903326,
+          "gamesPlayed": 6,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Seattle Old Stringers",
+      "roster": [
+        {
+          "id": 3907823,
+          "fullName": "Terance Mann",
+          "salary": 2,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 2.1226,
+          "currentRater": -2.4208083,
+          "injuredSpot": false
+        },
+        {
+          "id": 4566434,
+          "fullName": "Franz Wagner",
+          "salary": 11,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.54141,
+          "currentRater": 4.7563295,
+          "injuredSpot": false
+        },
+        {
+          "id": 3448,
+          "fullName": "Brook Lopez",
+          "salary": 7,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.79071,
+          "currentRater": 4.3592234,
+          "injuredSpot": false
+        },
+        {
+          "id": 3032976,
+          "fullName": "Rudy Gobert",
+          "salary": 23,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 8.274922,
+          "currentRater": 3.8912647,
+          "injuredSpot": false
+        },
+        {
+          "id": 4395724,
+          "fullName": "Immanuel Quickley",
+          "salary": 5,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 1,
+          "previousRater": 4.470139,
+          "currentRater": -3.9821236,
+          "injuredSpot": true
+        },
+        {
+          "id": 4066261,
+          "fullName": "Bam Adebayo",
+          "salary": 33,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 6.905771,
+          "currentRater": 2.4124393,
+          "injuredSpot": false
+        },
+        {
+          "id": 3917376,
+          "fullName": "Jaylen Brown",
+          "salary": 23,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.6339407,
+          "currentRater": 5.543361,
+          "injuredSpot": false
+        },
+        {
+          "id": 2990984,
+          "fullName": "Buddy Hield",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.272933,
+          "currentRater": 8.841055,
+          "injuredSpot": false
+        },
+        {
+          "id": 3135045,
+          "fullName": "Grayson Allen",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 7.6780252,
+          "currentRater": -0.012048725,
+          "injuredSpot": false
+        },
+        {
+          "id": 2595516,
+          "fullName": "Norman Powell",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.5397873,
+          "currentRater": 6.2112813,
+          "injuredSpot": false
+        },
+        {
+          "id": 4683750,
+          "fullName": "Jordan Hawkins",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -1.804651,
+          "currentRater": 2.6183603,
+          "injuredSpot": false
+        },
+        {
+          "id": 5107897,
+          "fullName": "Jonathan Mogbo",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": 2.9191823,
+          "injuredSpot": false
+        },
+        {
+          "id": 4684793,
+          "fullName": "Kyle Filipowski",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": -3.6033223,
+          "injuredSpot": false
+        },
+        {
+          "id": 4600663,
+          "fullName": "Zach Edey",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": -0.5556001,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433287,
+          "fullName": "Brandon Miller",
+          "salary": 17,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 2,
+          "previousRater": 4.4045095,
+          "currentRater": -2.6413586,
+          "injuredSpot": false
+        },
+        {
+          "id": 6580,
+          "fullName": "Bradley Beal",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 3.573586,
+          "currentRater": 2.8455882,
+          "injuredSpot": false
+        },
+        {
+          "id": 4397020,
+          "fullName": "Luguentz Dort",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.1295004,
+          "currentRater": 5.6117067,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Shooters Alpins",
+      "roster": [
+        {
+          "id": 6450,
+          "fullName": "Kawhi Leonard",
+          "salary": 32,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 0,
+          "previousRater": 12.531162,
+          "currentRater": 0,
+          "injuredSpot": true
+        },
+        {
+          "id": 6578,
+          "fullName": "Harrison Barnes",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 3.0405242,
+          "currentRater": 2.6740837,
+          "injuredSpot": false
+        },
+        {
+          "id": 2991070,
+          "fullName": "Jerami Grant",
+          "salary": 26,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 2.0807712,
+          "currentRater": 5.7902284,
+          "injuredSpot": false
+        },
+        {
+          "id": 4066648,
+          "fullName": "Rui Hachimura",
+          "salary": 9,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 3.0146215,
+          "currentRater": 2.6069393,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278073,
+          "fullName": "Shai Gilgeous-Alexander",
+          "salary": 57,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 17.61896,
+          "currentRater": 12.7068615,
+          "injuredSpot": false
+        },
+        {
+          "id": 3934673,
+          "fullName": "Donte DiVincenzo",
+          "salary": 6,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.8553,
+          "currentRater": -0.6127387,
+          "injuredSpot": false
+        },
+        {
+          "id": 4396907,
+          "fullName": "Darius Garland",
+          "salary": 25,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 2.4838128,
+          "currentRater": 8.231628,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432639,
+          "fullName": "Jabari Smith Jr.",
+          "salary": 18,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.693314,
+          "currentRater": 2.860748,
+          "injuredSpot": false
+        },
+        {
+          "id": 2991350,
+          "fullName": "Alex Caruso",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 6.3458743,
+          "currentRater": -0.17832388,
+          "injuredSpot": false
+        },
+        {
+          "id": 2990992,
+          "fullName": "Marcus Smart",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -2.7570124,
+          "currentRater": -2.0269701,
+          "injuredSpot": false
+        },
+        {
+          "id": 4277847,
+          "fullName": "Wendell Carter Jr.",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.62633663,
+          "currentRater": 2.0232852,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431671,
+          "fullName": "Jaden McDaniels",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.7844776,
+          "currentRater": 0.9123949,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432810,
+          "fullName": "Isaiah Stewart",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -0.06964228,
+          "currentRater": 3.1381495,
+          "injuredSpot": false
+        },
+        {
+          "id": 3913174,
+          "fullName": "Luke Kennard",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": -0.80187356,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 4897943,
+          "fullName": "Dalton Knecht",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -0.87136155,
+          "injuredSpot": false
+        },
+        {
+          "id": 4278355,
+          "fullName": "Obi Toppin",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.783956,
+          "currentRater": 1.7353327,
+          "injuredSpot": false
+        },
+        {
+          "id": 4396991,
+          "fullName": "Talen Horton-Tucker",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": -1.0238394,
+          "currentRater": -5.547612,
+          "injuredSpot": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Venomous Vicious Vipers",
+      "roster": [
+        {
+          "id": 4709138,
+          "fullName": "Brandin Podziemski",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 1.5849606,
+          "currentRater": -0.20723577,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433621,
+          "fullName": "Jalen Duren",
+          "salary": 8,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 5.184985,
+          "currentRater": 4.6627374,
+          "injuredSpot": false
+        },
+        {
+          "id": 4701232,
+          "fullName": "Mark Williams",
+          "salary": 1,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 0,
+          "previousRater": -1.6940684,
+          "currentRater": 0,
+          "injuredSpot": false
+        },
+        {
+          "id": 4594268,
+          "fullName": "Anthony Edwards",
+          "salary": 29,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.365874,
+          "currentRater": 4.4082975,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431678,
+          "fullName": "Tyrese Maxey",
+          "salary": 11,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 9.459175,
+          "currentRater": 4.4244504,
+          "injuredSpot": false
+        },
+        {
+          "id": 4433134,
+          "fullName": "Scottie Barnes",
+          "salary": 18,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 4,
+          "previousRater": 7.053764,
+          "currentRater": 1.0271605,
+          "injuredSpot": true
+        },
+        {
+          "id": 6442,
+          "fullName": "Kyrie Irving",
+          "salary": 34,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 9.180393,
+          "currentRater": 6.854735,
+          "injuredSpot": false
+        },
+        {
+          "id": 3064440,
+          "fullName": "Zach LaVine",
+          "salary": 16,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -1.137019,
+          "currentRater": 5.070933,
+          "injuredSpot": false
+        },
+        {
+          "id": 2991230,
+          "fullName": "Fred VanVleet",
+          "salary": 27,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 9.891808,
+          "currentRater": 2.8073688,
+          "injuredSpot": false
+        },
+        {
+          "id": 3934719,
+          "fullName": "OG Anunoby",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.2123053,
+          "currentRater": 1.7861339,
+          "injuredSpot": false
+        },
+        {
+          "id": 3978,
+          "fullName": "DeMar DeRozan",
+          "salary": 20,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.10147,
+          "currentRater": 8.628811,
+          "injuredSpot": false
+        },
+        {
+          "id": 4017837,
+          "fullName": "Ivica Zubac",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.233062,
+          "currentRater": 2.9288623,
+          "injuredSpot": false
+        },
+        {
+          "id": 4432165,
+          "fullName": "Jalen Suggs",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 4.567406,
+          "currentRater": 9.702466,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431684,
+          "fullName": "Trayce Jackson-Davis",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.3477879,
+          "currentRater": 2.1057885,
+          "injuredSpot": false
+        },
+        {
+          "id": 4431823,
+          "fullName": "Miles McBride",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.7399621,
+          "currentRater": 1.509665,
+          "injuredSpot": false
+        },
+        {
+          "id": 2991139,
+          "fullName": "Kris Dunn",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.8801882,
+          "currentRater": 0.86449903,
+          "injuredSpot": false
+        },
+        {
+          "id": 5061589,
+          "fullName": "Yves Missi",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": 0.7015945,
+          "injuredSpot": false
+        }
+      ]
+    }
+  ],
+  "unpickablePlayers": [
+    { "name": "Saddiq Bey", "id": 4397136 },
+    { "name": "Devin Carter", "id": 4433188 },
+    { "name": "Dante Exum", "id": 3102528 },
+    { "name": "DaRon Holmes", "id": 4433607, "outForSeason": true },
+    { "name": "GG Jackson", "id": 5105550 },
+    { "name": "Kristaps Porzingis", "id": 3102531 },
+    { "name": "Mitchell Robinson", "id": 4351852 },
+    { "name": "Nikola Topic", "id": 5159925 },
+    { "name": "Emoni Bates", "id": 4433620 },
+    { "name": "James Wiseman", "id": 4432808, "outForSeason": true },
+    { "name": "Precious Achiuwa", "id": 4431679 },
+    { "name": "Bojan Bogdanovic", "id": 3593 },
+    { "name": "Bogdan Bogdanovic", "id": 3037789 },
+    { "name": "Robert Williams", "id": 4066211 },
+    { "name": "Isaiah Hartenstein", "id": 4222252 },
+    { "name": "Kawhi Leonard", "id": 6450 },
+    { "name": "Dejounte Murray", "id": 3907497 },
+    { "name": "Max Strus", "id": 4065778 },
+    { "name": "P.J. Tucker", "id": 3033 }
+  ]
+}
