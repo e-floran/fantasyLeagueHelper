@@ -9,7 +9,6 @@ const raterUrl =
 export async function dailyUpdate() {
   const newRosters: RawTeam[] = [];
   let newRaters: RatedRawPlayer[] = [];
-  // for (let i = 0; i < 15; i++) {
   const ratersHeaders = {
     "X-Fantasy-Filter": {
       players: {
@@ -47,11 +46,9 @@ export async function dailyUpdate() {
   await fetch(req)
     .then((response) => response.json())
     .then((json: { players: RatedRawPlayer[] }) => {
-      // newRaters.push(...json.players);
       newRaters = [...json.players];
     })
     .catch((error) => console.log(error));
-  // }
 
   for (let i = 1; i < 17; i++) {
     const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?rosterForTeamId=${i}&view=mRoster`;

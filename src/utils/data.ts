@@ -1,12 +1,39 @@
 import {
   AcquisitionTypeEnum,
   Player,
+  PlayerCategoriesRaters,
+  PlayerRatings,
   RatedRawPlayer,
   RawPlayer,
   RawTeam,
+  StatsCategories,
   Team,
   UnpickablePlayer,
 } from "./types";
+
+const RaterCategories = new Map([
+  [19, StatsCategories.FG],
+  [20, StatsCategories.FT],
+  [17, StatsCategories["3PM"]],
+  [6, StatsCategories.REB],
+  [3, StatsCategories.AST],
+  [2, StatsCategories.STL],
+  [1, StatsCategories.BLK],
+  [11, StatsCategories.TO],
+  [0, StatsCategories.PTS],
+]);
+
+const basePlayerRaters: PlayerCategoriesRaters = {
+  [StatsCategories.FG]: 0,
+  [StatsCategories.FT]: 0,
+  [StatsCategories["3PM"]]: 0,
+  [StatsCategories.REB]: 0,
+  [StatsCategories.AST]: 0,
+  [StatsCategories.STL]: 0,
+  [StatsCategories.BLK]: 0,
+  [StatsCategories.TO]: 0,
+  [StatsCategories.PTS]: 0,
+};
 
 const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
   return {
@@ -18,14 +45,30 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
     currentRater: 0,
     gamesPlayed: 0,
     injuredSpot: rawPlayer.lineupSlotId === 13,
+    categoriesRaters: basePlayerRaters,
   };
+};
+
+const buildPlayerRaters = (
+  rawRater: PlayerRatings | undefined
+): PlayerCategoriesRaters => {
+  const output = basePlayerRaters;
+  if (rawRater) {
+    rawRater.statRankings.forEach((value) => {
+      const key = RaterCategories.get(value.forStat);
+      if (key) {
+        output[key] = value.rating;
+      }
+    });
+  }
+  return { ...output };
 };
 
 const addFreeAgent = (
   newPlayer: RawPlayer,
   lastSeasonRaters: RatedRawPlayer[],
   rosterToBuild: Player[],
-  currentRater: number,
+  currentRater: PlayerRatings | undefined,
   gamesPlayed: number
 ) => {
   const parsedPlayer = filterPlayerKeys(newPlayer);
@@ -33,8 +76,9 @@ const addFreeAgent = (
     (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
   )?.ratings["0"].totalRating;
   parsedPlayer.previousRater = typeof lastRater === "number" ? lastRater : 0;
-  parsedPlayer.currentRater = currentRater;
+  parsedPlayer.currentRater = currentRater?.totalRating ?? 0;
   parsedPlayer.gamesPlayed = gamesPlayed;
+  parsedPlayer.categoriesRaters = buildPlayerRaters(currentRater);
   rosterToBuild.push(parsedPlayer);
 };
 
@@ -55,7 +99,7 @@ const addTradedPlayer = (
   previousRosters: Team[],
   rosterToBuild: Player[],
   lastSeasonRaters: RatedRawPlayer[],
-  currentRater: number,
+  currentRater: PlayerRatings | undefined,
   gamesPlayed: number
 ) => {
   if (playersByPlayerId.size === 0) {
@@ -75,8 +119,9 @@ const addTradedPlayer = (
   rosterToBuild.push({
     ...playerToAdd,
     injuredSpot: newPlayer.lineupSlotId === 13,
-    currentRater,
+    currentRater: currentRater?.totalRating ?? 0,
     gamesPlayed,
+    categoriesRaters: buildPlayerRaters(currentRater),
   });
 };
 
@@ -101,10 +146,12 @@ export const addNewPlayers = (
     const rosterToBuild: Player[] = [];
 
     newRoster.forEach((newPlayer) => {
-      const currentRater =
-        currentRaters.find(
-          (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
-        )?.ratings["0"].totalRating ?? 0;
+      const currentRater = currentRaters.find(
+        (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
+      );
+      if (newPlayer.playerId === 3112335) {
+        console.log(newPlayer, currentRater);
+      }
       const gamesPlayed =
         newPlayer.playerPoolEntry.player.stats.find(
           (statsEntry) => statsEntry.id === "002025"
@@ -117,7 +164,7 @@ export const addNewPlayers = (
             newPlayer,
             lastSeasonRaters,
             rosterToBuild,
-            currentRater,
+            currentRater?.ratings[0],
             gamesPlayed
           );
         }
@@ -128,7 +175,7 @@ export const addNewPlayers = (
             previousRosters,
             rosterToBuild,
             lastSeasonRaters,
-            currentRater,
+            currentRater?.ratings[0],
             gamesPlayed
           );
         }
@@ -140,8 +187,9 @@ export const addNewPlayers = (
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,
-            currentRater,
+            currentRater: currentRater?.ratings[0].totalRating ?? 0,
             gamesPlayed,
+            categoriesRaters: buildPlayerRaters(currentRater?.ratings[0]),
           });
         }
       }

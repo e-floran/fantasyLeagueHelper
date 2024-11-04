@@ -1,524 +1,6 @@
 {
-  "lastUpdate": "2024-11-03T23:30:37.110Z",
+  "lastUpdate": "2024-11-04T22:53:11.484Z",
   "teams": [
-    {
-      "id": 5,
-      "name": "Almr",
-      "roster": [
-        {
-          "id": 4432816,
-          "fullName": "LaMelo Ball",
-          "salary": 24,
-          "keeperHistory": ["2024", "2023", "2022", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": -0.58396065,
-          "currentRater": 8.852595,
-          "injuredSpot": false
-        },
-        {
-          "id": 4683678,
-          "fullName": "Scoot Henderson",
-          "salary": 17,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 7,
-          "previousRater": -1.6513587,
-          "currentRater": 0.18834674,
-          "injuredSpot": false
-        },
-        {
-          "id": 4395625,
-          "fullName": "RJ Barrett",
-          "salary": 11,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 4,
-          "previousRater": 0.48542106,
-          "currentRater": 1.8467374,
-          "injuredSpot": false
-        },
-        {
-          "id": 4432174,
-          "fullName": "Cam Thomas",
-          "salary": 11,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 7,
-          "previousRater": 3.5078602,
-          "currentRater": 6.9114947,
-          "injuredSpot": false
-        },
-        {
-          "id": 3155942,
-          "fullName": "Domantas Sabonis",
-          "salary": 50,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 10.719338,
-          "currentRater": 9.111463,
-          "injuredSpot": false
-        },
-        {
-          "id": 3133603,
-          "fullName": "Kelly Oubre Jr.",
-          "salary": 5,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 2.3969343,
-          "currentRater": -0.2967236,
-          "injuredSpot": false
-        },
-        {
-          "id": 5211175,
-          "fullName": "Zaccharie Risacher",
-          "salary": 8,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0,
-          "currentRater": -2.6801963,
-          "injuredSpot": false
-        },
-        {
-          "id": 3064290,
-          "fullName": "Aaron Gordon",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 2.93571,
-          "currentRater": 6.6006126,
-          "injuredSpot": false
-        },
-        {
-          "id": 4914336,
-          "fullName": "Shaedon Sharpe",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": -1.9515059,
-          "currentRater": 0,
-          "injuredSpot": true
-        },
-        {
-          "id": 2583632,
-          "fullName": "Royce O'Neale",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 2.766145,
-          "currentRater": 5.0235014,
-          "injuredSpot": false
-        },
-        {
-          "id": 4397227,
-          "fullName": "Vince Williams Jr.",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": 1.1723232,
-          "currentRater": 0,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431785,
-          "fullName": "Scotty Pippen Jr.",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": -2.2910628,
-          "currentRater": 5.4455867,
-          "injuredSpot": false
-        },
-        {
-          "id": 4397140,
-          "fullName": "Kevin Porter Jr.",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0,
-          "currentRater": -3.3658493,
-          "injuredSpot": false
-        },
-        {
-          "id": 3149673,
-          "fullName": "Pascal Siakam",
-          "salary": 31,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 6.810149,
-          "currentRater": 5.967336,
-          "injuredSpot": false
-        },
-        {
-          "id": 4871145,
-          "fullName": "Josh Giddey",
-          "salary": 19,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 4.6076508,
-          "currentRater": 0.39554557,
-          "injuredSpot": false
-        },
-        {
-          "id": 4592691,
-          "fullName": "Jake LaRavia",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": -2.139473,
-          "currentRater": -1.785486,
-          "injuredSpot": false
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Anaheim Ducks",
-      "roster": [
-        {
-          "id": 4395651,
-          "fullName": "Coby White",
-          "salary": 7,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 6.015134,
-          "currentRater": 4.187998,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433627,
-          "fullName": "Keyonte George",
-          "salary": 3,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 6,
-          "previousRater": 0.084922545,
-          "currentRater": -2.8045857,
-          "injuredSpot": false
-        },
-        {
-          "id": 4396971,
-          "fullName": "Naz Reid",
-          "salary": 6,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 5.1100225,
-          "currentRater": 4.510067,
-          "injuredSpot": false
-        },
-        {
-          "id": 4251,
-          "fullName": "Paul George",
-          "salary": 33,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 0,
-          "previousRater": 11.578929,
-          "currentRater": 0,
-          "injuredSpot": true
-        },
-        {
-          "id": 4066259,
-          "fullName": "De'Aaron Fox",
-          "salary": 25,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 8.273686,
-          "currentRater": 7.095849,
-          "injuredSpot": false
-        },
-        {
-          "id": 4395725,
-          "fullName": "Tyler Herro",
-          "salary": 10,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 5,
-          "previousRater": 0.93437636,
-          "currentRater": 3.76479,
-          "injuredSpot": false
-        },
-        {
-          "id": 3202,
-          "fullName": "Kevin Durant",
-          "salary": 47,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 12.627656,
-          "currentRater": 7.987302,
-          "injuredSpot": false
-        },
-        {
-          "id": 6430,
-          "fullName": "Jimmy Butler",
-          "salary": 30,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 7.0158935,
-          "currentRater": 2.0831976,
-          "injuredSpot": false
-        },
-        {
-          "id": 4066262,
-          "fullName": "Malik Monk",
-          "salary": 8,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 3.6229782,
-          "currentRater": 2.673843,
-          "injuredSpot": false
-        },
-        {
-          "id": 4277956,
-          "fullName": "Jordan Poole",
-          "salary": 8,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 4.404041,
-          "currentRater": 7.859319,
-          "injuredSpot": false
-        },
-        {
-          "id": 3195,
-          "fullName": "Mike Conley",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 6.9266763,
-          "currentRater": 1.6300917,
-          "injuredSpot": false
-        },
-        {
-          "id": 2489663,
-          "fullName": "Kelly Olynyk",
-          "salary": 7,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": 5.5106435,
-          "currentRater": 0,
-          "injuredSpot": false
-        },
-        {
-          "id": 4277843,
-          "fullName": "Gary Trent Jr.",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 2.3764958,
-          "currentRater": -1.2793796,
-          "injuredSpot": false
-        },
-        {
-          "id": 4593125,
-          "fullName": "Santi Aldama",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 0.82060504,
-          "currentRater": 6.707787,
-          "injuredSpot": false
-        },
-        {
-          "id": 3913180,
-          "fullName": "Garrison Mathews",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": -1.6052599,
-          "currentRater": 2.6454022,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431687,
-          "fullName": "Patrick Williams",
-          "salary": 2,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -0.652148,
-          "currentRater": -1.0665603,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433076,
-          "fullName": "Ben Sheppard",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -2.2768085,
-          "currentRater": 0.5402817,
-          "injuredSpot": false
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Antigua  Boyz ",
-      "roster": [
-        {
-          "id": 4277905,
-          "fullName": "Trae Young",
-          "salary": 49,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 5.1133237,
-          "currentRater": 8.329664,
-          "injuredSpot": false
-        },
-        {
-          "id": 2528210,
-          "fullName": "Tim Hardaway Jr.",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 2.2198954,
-          "currentRater": 2.9576554,
-          "injuredSpot": false
-        },
-        {
-          "id": 4278129,
-          "fullName": "Deandre Ayton",
-          "salary": 15,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 5.2521267,
-          "currentRater": 5.3156877,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431680,
-          "fullName": "Onyeka Okongwu",
-          "salary": 11,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 3.247119,
-          "currentRater": 2.914512,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431736,
-          "fullName": "Toumani Camara",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 0.813281,
-          "currentRater": 4.473875,
-          "injuredSpot": false
-        },
-        {
-          "id": 4277869,
-          "fullName": "Jose Alvarado",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -0.92370147,
-          "currentRater": 2.3837445,
-          "injuredSpot": false
-        },
-        {
-          "id": 2578185,
-          "fullName": "Dorian Finney-Smith",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 1.4403853,
-          "currentRater": 2.9746222,
-          "injuredSpot": false
-        },
-        {
-          "id": 3948153,
-          "fullName": "Chris Boucher",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": -1.5472887,
-          "currentRater": 2.2504451,
-          "injuredSpot": false
-        },
-        {
-          "id": 3907822,
-          "fullName": "Malik Beasley",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 3.0577474,
-          "currentRater": -0.7200962,
-          "injuredSpot": false
-        },
-        {
-          "id": 3059318,
-          "fullName": "Joel Embiid",
-          "salary": 54,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": 8.461831,
-          "currentRater": 0,
-          "injuredSpot": true
-        },
-        {
-          "id": 4066328,
-          "fullName": "Jarrett Allen",
-          "salary": 19,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 9.274776,
-          "currentRater": 9.922561,
-          "injuredSpot": false
-        },
-        {
-          "id": 3913176,
-          "fullName": "Brandon Ingram",
-          "salary": 20,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.692515,
-          "currentRater": 7.431146,
-          "injuredSpot": false
-        },
-        {
-          "id": 4711272,
-          "fullName": "Reed Sheppard",
-          "salary": 10,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0,
-          "currentRater": -3.4788046,
-          "injuredSpot": false
-        },
-        {
-          "id": 2326307,
-          "fullName": "Seth Curry",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": -2.8502133,
-          "currentRater": -0.10113734,
-          "injuredSpot": false
-        },
-        {
-          "id": 3012,
-          "fullName": "Kyle Lowry",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 1.6041324,
-          "currentRater": 2.2205532,
-          "injuredSpot": false
-        },
-        {
-          "id": 5174563,
-          "fullName": "Kyshawn George",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 0,
-          "currentRater": -0.5318219,
-          "injuredSpot": false
-        },
-        {
-          "id": 2596112,
-          "fullName": "Javonte Green",
-          "keeperHistory": [],
-          "salary": 5,
-          "previousRater": -3.2878149,
-          "currentRater": 3.0322719,
-          "gamesPlayed": 6,
-          "injuredSpot": false
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "ASBR Pirates",
@@ -530,8 +12,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 13.3701105,
-          "currentRater": 9.650923,
-          "injuredSpot": false
+          "currentRater": 9.516814,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.6271985,
+            "FT": 1.9690337,
+            "3PM": 0.4703171,
+            "REB": 2.2045388,
+            "AST": 0.60792977,
+            "STL": 0.69646895,
+            "BLK": 5.265513,
+            "TO": -2.2992876,
+            "PTS": 1.2294978
+          }
         },
         {
           "id": 3907497,
@@ -540,8 +33,19 @@
           "keeperHistory": ["2024", "2023", "2022", "2025"],
           "gamesPlayed": 1,
           "previousRater": 8.4051695,
-          "currentRater": -3.6086967,
-          "injuredSpot": false
+          "currentRater": -3.6277585,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.7939623,
+            "FT": 0.3827908,
+            "3PM": -0.9031265,
+            "REB": -0.6692641,
+            "AST": -0.11890048,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.83954245,
+            "PTS": -0.7828673
+          }
         },
         {
           "id": 4433136,
@@ -550,18 +54,40 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 5.062066,
-          "currentRater": 6.8868036,
-          "injuredSpot": false
+          "currentRater": 6.774538,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.5683664,
+            "FT": -1.4509329,
+            "3PM": -0.9031265,
+            "REB": 2.6553314,
+            "AST": -0.36117724,
+            "STL": 0.10052129,
+            "BLK": 5.265513,
+            "TO": -0.259048,
+            "PTS": 0.15909085
+          }
         },
         {
           "id": 4701230,
           "fullName": "Jalen Johnson",
           "salary": 11,
           "keeperHistory": ["2025"],
-          "gamesPlayed": 6,
+          "gamesPlayed": 7,
           "previousRater": 4.400893,
-          "currentRater": 2.3472703,
-          "injuredSpot": false
+          "currentRater": 5.574859,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.24020448,
+            "FT": -2.084339,
+            "3PM": 0.012502565,
+            "REB": 2.7680295,
+            "AST": 2.0615904,
+            "STL": 2.7822857,
+            "BLK": 1.5657952,
+            "TO": -2.9270535,
+            "PTS": 1.6362525
+          }
         },
         {
           "id": 4683021,
@@ -570,8 +96,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 7,
           "previousRater": 3.992394,
-          "currentRater": 3.9705648,
-          "injuredSpot": false
+          "currentRater": 3.867152,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.9438568,
+            "FT": 1.5521625,
+            "3PM": -0.14010228,
+            "REB": 1.2466044,
+            "AST": 0.6886887,
+            "STL": 1.8883643,
+            "BLK": 1.9021332,
+            "TO": -1.828463,
+            "PTS": 0.50162107
+          }
         },
         {
           "id": 4437244,
@@ -580,8 +117,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 4.226827,
-          "currentRater": 4.574124,
-          "injuredSpot": false
+          "currentRater": 4.4405675,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.4412802,
+            "FT": 0.8503342,
+            "3PM": 2.6067848,
+            "REB": 0.45771745,
+            "AST": 0.5271709,
+            "STL": 0.3984951,
+            "BLK": 0.22044322,
+            "TO": -1.200697,
+            "PTS": 2.021599
+          }
         },
         {
           "id": 3135046,
@@ -590,8 +138,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 5.181599,
-          "currentRater": 5.7384925,
-          "injuredSpot": false
+          "currentRater": 5.569619,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.15840062,
+            "FT": 0.5946768,
+            "3PM": 0.62292194,
+            "REB": 0.17597206,
+            "AST": 2.384626,
+            "STL": 1.2924166,
+            "BLK": -0.11589478,
+            "TO": 0.21177648,
+            "PTS": 0.24472341
+          }
         },
         {
           "id": 3064514,
@@ -600,8 +159,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 0.7622183,
-          "currentRater": 5.5396285,
-          "injuredSpot": false
+          "currentRater": 5.390067,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.6362476,
+            "FT": 0.18406583,
+            "3PM": 0.92813164,
+            "REB": 1.1902554,
+            "AST": 1.415519,
+            "STL": -0.19745255,
+            "BLK": -0.78857076,
+            "TO": -1.828463,
+            "PTS": 1.8503339
+          }
         },
         {
           "id": 6589,
@@ -610,8 +180,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 2.475297,
-          "currentRater": 2.85068,
-          "injuredSpot": false
+          "currentRater": 2.7445219,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.17366467,
+            "FT": -1.0306134,
+            "3PM": 0.16510741,
+            "REB": 0.62676466,
+            "AST": 1.0924833,
+            "STL": 0.69646895,
+            "BLK": 2.2384713,
+            "TO": -0.7298725,
+            "PTS": -0.14062311
+          }
         },
         {
           "id": 6609,
@@ -621,7 +202,18 @@
           "gamesPlayed": 0,
           "previousRater": 2.772905,
           "currentRater": 0,
-          "injuredSpot": false
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.17366467,
+            "FT": -1.0306134,
+            "3PM": 0.16510741,
+            "REB": 0.62676466,
+            "AST": 1.0924833,
+            "STL": 0.69646895,
+            "BLK": 2.2384713,
+            "TO": -0.7298725,
+            "PTS": -0.14062311
+          }
         },
         {
           "id": 4222252,
@@ -631,7 +223,18 @@
           "gamesPlayed": 0,
           "previousRater": 6.505367,
           "currentRater": 0,
-          "injuredSpot": true
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -0.17366467,
+            "FT": -1.0306134,
+            "3PM": 0.16510741,
+            "REB": 0.62676466,
+            "AST": 1.0924833,
+            "STL": 0.69646895,
+            "BLK": 2.2384713,
+            "TO": -0.7298725,
+            "PTS": -0.14062311
+          }
         },
         {
           "id": 2991043,
@@ -640,18 +243,40 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 2.6611452,
-          "currentRater": 3.5928032,
-          "injuredSpot": false
+          "currentRater": 3.4509323,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.7396127,
+            "FT": -1.324726,
+            "3PM": 0.77552676,
+            "REB": -0.50021684,
+            "AST": 1.1732422,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": 0.21177648,
+            "PTS": 0.45880482
+          }
         },
         {
           "id": 4683688,
           "fullName": "Dereck Lively II",
           "salary": 3,
           "keeperHistory": [],
-          "gamesPlayed": 5,
+          "gamesPlayed": 6,
           "previousRater": 2.3102992,
-          "currentRater": 2.7002041,
-          "injuredSpot": false
+          "currentRater": 2.9196928,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.2026505,
+            "FT": -1.6115557,
+            "3PM": -0.9031265,
+            "REB": 1.6410481,
+            "AST": 0.2848941,
+            "STL": 0.3984951,
+            "BLK": 0.8931192,
+            "TO": -0.10210652,
+            "PTS": 0.11627457
+          }
         },
         {
           "id": 4066354,
@@ -660,8 +285,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": 2.97742,
-          "currentRater": 7.3001823,
-          "injuredSpot": false
+          "currentRater": 7.1173863,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.17070794,
+            "FT": 1.0462672,
+            "3PM": 3.522414,
+            "REB": 0.0632739,
+            "AST": 0.5271709,
+            "STL": 1.5903904,
+            "BLK": -0.78857076,
+            "TO": 0.05483498,
+            "PTS": 1.2723141
+          }
         },
         {
           "id": 3907387,
@@ -670,8 +306,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": -3.521191,
-          "currentRater": 1.3857718,
-          "injuredSpot": false
+          "currentRater": 1.2921379,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0940198,
+            "FT": -0.05051591,
+            "3PM": -0.9031265,
+            "REB": 0.90851,
+            "AST": 2.0615904,
+            "STL": 0.10052129,
+            "BLK": 0.55678123,
+            "TO": -2.142346,
+            "PTS": -0.33329636
+          }
         },
         {
           "id": 4431767,
@@ -680,8 +327,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 0.1331586,
-          "currentRater": 5.9048896,
-          "injuredSpot": false
+          "currentRater": 5.779739,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.9843524,
+            "FT": 1.0814985,
+            "3PM": 0.31771225,
+            "REB": 0.5704156,
+            "AST": 0.04261736,
+            "STL": 0.69646895,
+            "BLK": 1.5657952,
+            "TO": -0.259048,
+            "PTS": 0.7799269
+          }
         },
         {
           "id": 4997528,
@@ -690,360 +348,361 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": -1.5561801,
-          "currentRater": -0.76023513,
-          "injuredSpot": false
+          "currentRater": -0.83359665,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.45727775,
+            "FT": -1.1791905,
+            "3PM": 0.31771225,
+            "REB": 0.2886702,
+            "AST": -0.11890048,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": 0.21177648,
+            "PTS": -0.14062311
+          }
         }
       ]
     },
     {
-      "id": 6,
-      "name": "Atlantic Titans",
+      "id": 2,
+      "name": "Oberthur Ducks",
       "roster": [
         {
-          "id": 4066457,
-          "fullName": "Austin Reaves",
-          "salary": 10,
-          "keeperHistory": ["2024", "2025"],
+          "id": 4396993,
+          "fullName": "Tyrese Haliburton",
+          "salary": 27,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
           "gamesPlayed": 6,
-          "previousRater": 7.338732,
-          "currentRater": 5.4884477,
-          "injuredSpot": false
+          "previousRater": 11.151643,
+          "currentRater": 2.870847,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.3687723,
+            "FT": 0.0825008,
+            "3PM": 0.92813164,
+            "REB": 0.40136835,
+            "AST": 2.6269028,
+            "STL": 0.99444276,
+            "BLK": 0.22044322,
+            "TO": -0.7298725,
+            "PTS": 0.7157025
+          }
         },
         {
-          "id": 4397688,
-          "fullName": "Trey Murphy III",
-          "salary": 4,
+          "id": 3908809,
+          "fullName": "Donovan Mitchell",
+          "salary": 30,
           "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 0,
-          "previousRater": 3.708579,
-          "currentRater": 0,
-          "injuredSpot": false
-        },
-        {
-          "id": 3934672,
-          "fullName": "Jalen Brunson",
-          "salary": 17,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 10.104794,
-          "currentRater": 2.5928862,
-          "injuredSpot": false
-        },
-        {
-          "id": 6477,
-          "fullName": "Jonas Valanciunas",
-          "salary": 17,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 6.466126,
-          "currentRater": 0.3565576,
-          "injuredSpot": false
-        },
-        {
-          "id": 4066336,
-          "fullName": "Lauri Markkanen",
-          "salary": 17,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 4,
-          "previousRater": 7.681113,
-          "currentRater": -0.3590817,
-          "injuredSpot": false
-        },
-        {
-          "id": 4278104,
-          "fullName": "Michael Porter Jr.",
-          "salary": 16,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 7.645083,
-          "currentRater": 4.0449724,
-          "injuredSpot": false
-        },
-        {
-          "id": 6440,
-          "fullName": "Tobias Harris",
-          "salary": 12,
-          "keeperHistory": [],
           "gamesPlayed": 7,
-          "previousRater": 7.434708,
-          "currentRater": 5.671636,
-          "injuredSpot": false
+          "previousRater": 8.36131,
+          "currentRater": 7.641659,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1176709,
+            "FT": 0.2801337,
+            "3PM": 2.45418,
+            "REB": -0.04942425,
+            "AST": 1.4962779,
+            "STL": 1.8883643,
+            "BLK": -0.45223278,
+            "TO": -1.6715215,
+            "PTS": 2.5782106
+          }
         },
         {
-          "id": 4277813,
-          "fullName": "Herbert Jones",
-          "salary": 8,
-          "keeperHistory": [],
-          "gamesPlayed": 4,
-          "previousRater": 7.322351,
-          "currentRater": -1.6635435,
-          "injuredSpot": false
+          "id": 4433255,
+          "fullName": "Chet Holmgren",
+          "salary": 26,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 12.723011,
+          "currentRater": 10.623518,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.4066178,
+            "FT": -0.4256837,
+            "3PM": 0.16510741,
+            "REB": 2.2045388,
+            "AST": 0.5271709,
+            "STL": 1.2924166,
+            "BLK": 5.938189,
+            "TO": -1.6715215,
+            "PTS": 1.1866815
+          }
         },
         {
-          "id": 3908845,
-          "fullName": "John Collins",
-          "salary": 8,
+          "id": 3147657,
+          "fullName": "Mikal Bridges",
+          "salary": 23,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.1546717,
+          "currentRater": 4.4136996,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0436074,
+            "FT": -0.86615604,
+            "3PM": 0.92813164,
+            "REB": -0.1621224,
+            "AST": 0.60792977,
+            "STL": 1.2924166,
+            "BLK": 0.55678123,
+            "TO": 0.21177648,
+            "PTS": 0.80133504
+          }
+        },
+        {
+          "id": 3078576,
+          "fullName": "Derrick White",
+          "salary": 13,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 9.719748,
+          "currentRater": 11.079802,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.31195694,
+            "FT": 1.8693997,
+            "3PM": 2.9119945,
+            "REB": 0.5140665,
+            "AST": 1.2540011,
+            "STL": 0.69646895,
+            "BLK": 1.9021332,
+            "TO": -0.10210652,
+            "PTS": 1.7218851
+          }
+        },
+        {
+          "id": 3138160,
+          "fullName": "Caleb Martin",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 0.55833143,
+          "currentRater": -4.1868987,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.6172155,
+            "FT": -1.2938483,
+            "3PM": -0.5979168,
+            "REB": 0.7958119,
+            "AST": 0.04261736,
+            "STL": -0.49542636,
+            "BLK": 0.22044322,
+            "TO": -1.3576385,
+            "PTS": 0.11627457
+          }
+        },
+        {
+          "id": 3213,
+          "fullName": "Al Horford",
+          "salary": 4,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 5.4962487,
-          "currentRater": 4.8073497,
-          "injuredSpot": false
+          "previousRater": 4.7588844,
+          "currentRater": 3.1500106,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.37220302,
+            "FT": 0,
+            "3PM": 0.92813164,
+            "REB": 0.45771745,
+            "AST": 0.2041352,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": 0.36871797,
+            "PTS": -0.097806826
+          }
         },
         {
-          "id": 3064482,
-          "fullName": "Bobby Portis",
-          "salary": 6,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 5.9002447,
-          "currentRater": 1.1494322,
-          "injuredSpot": false
-        },
-        {
-          "id": 3112335,
-          "fullName": "Nikola Jokic",
-          "salary": 81,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 18.39955,
-          "currentRater": 15.309468,
-          "injuredSpot": false
-        },
-        {
-          "id": 4395630,
-          "fullName": "Devin Vassell",
-          "salary": 12,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": 5.3595777,
-          "currentRater": 0,
-          "injuredSpot": true
-        },
-        {
-          "id": 3155526,
-          "fullName": "Dillon Brooks",
-          "salary": 5,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 1.8327911,
-          "currentRater": 0.9524049,
-          "injuredSpot": false
-        },
-        {
-          "id": 2530530,
-          "fullName": "T.J. McConnell",
-          "salary": 2,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 3.3638518,
-          "currentRater": -0.17253852,
-          "injuredSpot": false
-        },
-        {
-          "id": 4397002,
-          "fullName": "Ayo Dosunmu",
+          "id": 4395712,
+          "fullName": "Andrew Nembhard",
           "salary": 3,
           "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.4111323,
-          "currentRater": -0.90209395,
-          "injuredSpot": false
+          "gamesPlayed": 5,
+          "previousRater": 1.2897692,
+          "currentRater": -2.0376287,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.5305623,
+            "FT": -0.09675157,
+            "3PM": -0.75052166,
+            "REB": -0.61291504,
+            "AST": 1.0924833,
+            "STL": 0.3984951,
+            "BLK": -0.78857076,
+            "TO": -0.41598952,
+            "PTS": -0.33329636
+          }
         },
         {
-          "id": 4593041,
-          "fullName": "David Roddy",
+          "id": 4397189,
+          "fullName": "Jalen Smith",
           "salary": 1,
           "keeperHistory": [],
-          "gamesPlayed": 4,
-          "previousRater": -3.0264041,
-          "currentRater": 0.96212864,
-          "injuredSpot": false
+          "gamesPlayed": 5,
+          "previousRater": 1.3906679,
+          "currentRater": -0.38396582,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.5967026,
+            "FT": -0.88790673,
+            "3PM": 0.4703171,
+            "REB": 0.45771745,
+            "AST": -0.76497185,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": 0.682601,
+            "PTS": 0.009233872
+          }
         },
         {
-          "id": 4702382,
-          "fullName": "Tristan da Silva",
-          "keeperHistory": [],
+          "id": 4396909,
+          "fullName": "Aaron Nesmith",
           "salary": 1,
-          "previousRater": 0,
-          "currentRater": -3.4601176,
-          "gamesPlayed": 2,
-          "injuredSpot": false
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Cambrai City",
-      "roster": [
-        {
-          "id": 4278067,
-          "fullName": "Nic Claxton",
-          "salary": 10,
-          "keeperHistory": ["2024", "2025"],
+          "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 5.7031436,
-          "currentRater": 0.9886685,
-          "injuredSpot": false
+          "previousRater": 4.519699,
+          "currentRater": 1.330203,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.65187836,
+            "FT": 0.5841678,
+            "3PM": 0.012502565,
+            "REB": 0.23232113,
+            "AST": -0.44193617,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": 0.21177648,
+            "PTS": 0.09486643
+          }
         },
         {
-          "id": 5104155,
-          "fullName": "Bilal Coulibaly",
-          "salary": 8,
+          "id": 4869342,
+          "fullName": "Dyson Daniels",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.59118277,
+          "currentRater": 3.1732512,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0389955,
+            "FT": -1.9503306,
+            "3PM": 0.31771225,
+            "REB": 0.119622976,
+            "AST": 0.04261736,
+            "STL": 2.4843118,
+            "BLK": 0.55678123,
+            "TO": 0.21177648,
+            "PTS": 0.3517641
+          }
+        },
+        {
+          "id": 3995,
+          "fullName": "Jrue Holiday",
+          "salary": 16,
           "keeperHistory": ["2025"],
-          "gamesPlayed": 5,
-          "previousRater": -0.2063028,
-          "currentRater": 4.502823,
-          "injuredSpot": false
+          "gamesPlayed": 7,
+          "previousRater": 5.711561,
+          "currentRater": 2.3400242,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.2747493,
+            "FT": 0.1312724,
+            "3PM": 1.6911558,
+            "REB": 0.34501928,
+            "AST": 0.9309655,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": -0.886814,
+            "PTS": 0.80133504
+          }
         },
         {
-          "id": 5106258,
-          "fullName": "Gradey Dick",
+          "id": 3136193,
+          "fullName": "Devin Booker",
+          "salary": 47,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 10.241108,
+          "currentRater": 8.882605,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.09496358,
+            "FT": 2.1962311,
+            "3PM": 2.1489704,
+            "REB": 0.2886702,
+            "AST": 1.8193135,
+            "STL": 0.99444276,
+            "BLK": -0.11589478,
+            "TO": -0.886814,
+            "PTS": 2.342721
+          }
+        },
+        {
+          "id": 4432819,
+          "fullName": "Tre Mann",
           "salary": 1,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 7,
-          "previousRater": -1.3110998,
-          "currentRater": 7.550871,
-          "injuredSpot": false
-        },
-        {
-          "id": 6606,
-          "fullName": "Damian Lillard",
-          "salary": 40,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 10.030919,
-          "currentRater": 8.029185,
-          "injuredSpot": false
+          "previousRater": -0.9854613,
+          "currentRater": 4.9203334,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.19110563,
+            "FT": 1.7577404,
+            "3PM": 1.538551,
+            "REB": 0.006924826,
+            "AST": 0.7694476,
+            "STL": 0.10052129,
+            "BLK": 0.22044322,
+            "TO": -1.0437555,
+            "PTS": 1.3793548
+          }
         },
         {
-          "id": 2490149,
-          "fullName": "CJ McCollum",
-          "salary": 17,
-          "keeperHistory": [],
-          "gamesPlayed": 4,
-          "previousRater": 6.8701167,
-          "currentRater": 3.0724013,
-          "injuredSpot": true
-        },
-        {
-          "id": 6478,
-          "fullName": "Nikola Vucevic",
-          "salary": 26,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 7.887913,
-          "currentRater": 9.681503,
-          "injuredSpot": false
-        },
-        {
-          "id": 3134908,
-          "fullName": "Jakob Poeltl",
-          "salary": 11,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 1.9916596,
-          "currentRater": 7.7678633,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433218,
-          "fullName": "Jaden Ivey",
-          "salary": 6,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 0.7026336,
-          "currentRater": 3.1244752,
-          "injuredSpot": false
-        },
-        {
-          "id": 4395723,
-          "fullName": "Keldon Johnson",
-          "salary": 6,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 2.9143193,
-          "currentRater": 0.4272075,
-          "injuredSpot": false
-        },
-        {
-          "id": 2528426,
-          "fullName": "Jordan Clarkson",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 0.3294963,
-          "currentRater": -2.8141787,
-          "injuredSpot": false
-        },
-        {
-          "id": 4280151,
-          "fullName": "Corey Kispert",
+          "id": 4702177,
+          "fullName": "Keon Ellis",
           "salary": 1,
           "keeperHistory": [],
           "gamesPlayed": 5,
-          "previousRater": 2.164531,
-          "currentRater": -1.31465,
-          "injuredSpot": false
+          "previousRater": -0.072213694,
+          "currentRater": 2.0102358,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.35385272,
+            "FT": 0.3827908,
+            "3PM": -0.29270712,
+            "REB": -0.55656594,
+            "AST": -0.52269506,
+            "STL": 0.99444276,
+            "BLK": 1.5657952,
+            "TO": 0.5256595,
+            "PTS": -0.44033706
+          }
         },
         {
-          "id": 4683634,
-          "fullName": "Bennedict Mathurin",
-          "salary": 6,
+          "id": 4065731,
+          "fullName": "Jay Huff",
           "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0.22632624,
-          "currentRater": 0.9685234,
-          "injuredSpot": false
-        },
-        {
-          "id": 4610139,
-          "fullName": "Jeremy Sochan",
-          "salary": 5,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 2.2075045,
-          "currentRater": 2.7114043,
-          "injuredSpot": false
-        },
-        {
-          "id": 1966,
-          "fullName": "LeBron James",
-          "salary": 40,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 9.6989155,
-          "currentRater": 5.508478,
-          "injuredSpot": false
-        },
-        {
-          "id": 4278076,
-          "fullName": "Nick Richards",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 4.1021223,
-          "currentRater": 2.8519013,
-          "injuredSpot": false
-        },
-        {
-          "id": 3138161,
-          "fullName": "Cody Martin",
-          "salary": 5,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -3.183707,
-          "currentRater": 2.0920713,
-          "injuredSpot": false
-        },
-        {
-          "id": 5112087,
-          "fullName": "Jaylen Wells",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
+          "salary": 7,
           "previousRater": 0,
-          "currentRater": -0.9058761,
-          "injuredSpot": false
+          "currentRater": 6.5269566,
+          "gamesPlayed": 7,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.7396127,
+            "FT": 1.1389672,
+            "3PM": 1.3859462,
+            "REB": -0.04942425,
+            "AST": -0.52269506,
+            "STL": -0.49542636,
+            "BLK": 2.2384713,
+            "TO": 0.5256595,
+            "PTS": 0.5658455
+          }
         }
       ]
     },
@@ -1059,7 +718,18 @@
           "gamesPlayed": 0,
           "previousRater": 0.4793809,
           "currentRater": 0,
-          "injuredSpot": false
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.7396127,
+            "FT": 1.1389672,
+            "3PM": 1.3859462,
+            "REB": -0.04942425,
+            "AST": -0.52269506,
+            "STL": -0.49542636,
+            "BLK": 2.2384713,
+            "TO": 0.5256595,
+            "PTS": 0.5658455
+          }
         },
         {
           "id": 6583,
@@ -1068,8 +738,19 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 17.135033,
-          "currentRater": 13.492614,
-          "injuredSpot": false
+          "currentRater": 13.2803335,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.833884,
+            "FT": 0.42137662,
+            "3PM": -0.5979168,
+            "REB": 2.9370768,
+            "AST": 0.44641197,
+            "STL": 2.1863382,
+            "BLK": 3.2474852,
+            "TO": -1.200697,
+            "PTS": 3.0063734
+          }
         },
         {
           "id": 4432158,
@@ -1078,8 +759,19 @@
           "keeperHistory": ["2024", "2023", "2025"],
           "gamesPlayed": 7,
           "previousRater": 4.198726,
-          "currentRater": 10.426052,
-          "injuredSpot": false
+          "currentRater": 10.259225,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.094519,
+            "FT": 1.3160108,
+            "3PM": -0.14010228,
+            "REB": 2.2608879,
+            "AST": 0.60792977,
+            "STL": 0.99444276,
+            "BLK": 2.911147,
+            "TO": -1.3576385,
+            "PTS": 1.572028
+          }
         },
         {
           "id": 3032977,
@@ -1088,8 +780,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 9.31461,
-          "currentRater": 4.0676923,
-          "injuredSpot": false
+          "currentRater": 3.8836083,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 4.416293,
+            "FT": -5.9155426,
+            "3PM": -0.9031265,
+            "REB": 3.049775,
+            "AST": 2.1423492,
+            "STL": -0.19745255,
+            "BLK": 0.22044322,
+            "TO": -1.828463,
+            "PTS": 2.8993328
+          }
         },
         {
           "id": 4433192,
@@ -1098,8 +801,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": -2.4029863,
-          "currentRater": 6.00354,
-          "injuredSpot": false
+          "currentRater": 5.849427,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.2738128,
+            "FT": -0.5662435,
+            "3PM": 0.16510741,
+            "REB": 0.40136835,
+            "AST": -0.1996594,
+            "STL": 2.7822857,
+            "BLK": 1.2294571,
+            "TO": 0.36871797,
+            "PTS": 0.3945804
+          }
         },
         {
           "id": 4845374,
@@ -1108,18 +822,40 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 0,
-          "currentRater": 1.4507753,
-          "injuredSpot": false
+          "currentRater": 1.3623956,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.6481813,
+            "FT": 1.1709543,
+            "3PM": 0.012502565,
+            "REB": -0.10577333,
+            "AST": 0.85020655,
+            "STL": 0.3984951,
+            "BLK": -0.11589478,
+            "TO": -0.10210652,
+            "PTS": -0.097806826
+          }
         },
         {
           "id": 4065654,
           "fullName": "Jonathan Isaac",
           "salary": 1,
           "keeperHistory": [],
-          "gamesPlayed": 3,
+          "gamesPlayed": 4,
           "previousRater": 1.400619,
-          "currentRater": -2.4997463,
-          "injuredSpot": false
+          "currentRater": -2.2619436,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.9832134,
+            "FT": -1.0209794,
+            "3PM": -0.29270712,
+            "REB": -0.1621224,
+            "AST": -0.76497185,
+            "STL": 0.3984951,
+            "BLK": 0.55678123,
+            "TO": 0.682601,
+            "PTS": -0.6758266
+          }
         },
         {
           "id": 4395626,
@@ -1128,8 +864,19 @@
           "keeperHistory": [],
           "gamesPlayed": 1,
           "previousRater": 5.1578264,
-          "currentRater": -4.5624537,
-          "injuredSpot": true
+          "currentRater": -4.56902,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -0.2636131,
+            "FT": -0.05051591,
+            "3PM": -0.9031265,
+            "REB": -1.0637076,
+            "AST": -0.6842129,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.996484,
+            "PTS": -1.0183568
+          }
         },
         {
           "id": 4888725,
@@ -1138,8 +885,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 0,
-          "currentRater": 0.26208776,
-          "injuredSpot": false
+          "currentRater": 0.19238117,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.034213234,
+            "FT": 0,
+            "3PM": 0.77552676,
+            "REB": -0.3875187,
+            "AST": -0.52269506,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": 0.682601,
+            "PTS": -0.076398686
+          }
         },
         {
           "id": 4279888,
@@ -1148,8 +906,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": -3.3493001,
-          "currentRater": 3.4741135,
-          "injuredSpot": false
+          "currentRater": 3.3362913,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.091036886,
+            "FT": 1.0516902,
+            "3PM": -0.14010228,
+            "REB": 0.62676466,
+            "AST": 3.8382866,
+            "STL": 0.10052129,
+            "BLK": -0.45223278,
+            "TO": -3.0839949,
+            "PTS": 1.4863955
+          }
         },
         {
           "id": 3468,
@@ -1158,8 +927,19 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 0.2909972,
-          "currentRater": -1.3958247,
-          "injuredSpot": false
+          "currentRater": -1.4814802,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -3.1142943,
+            "FT": -1.29916,
+            "3PM": -0.29270712,
+            "REB": 0.006924826,
+            "AST": 1.2540011,
+            "STL": 2.4843118,
+            "BLK": 0.55678123,
+            "TO": -1.0437555,
+            "PTS": -0.033582408
+          }
         },
         {
           "id": 3936099,
@@ -1168,8 +948,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 1.2249113,
-          "currentRater": 1.4409862,
-          "injuredSpot": false
+          "currentRater": 1.3475434,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.06448966,
+            "FT": -0.05051591,
+            "3PM": 0.31771225,
+            "REB": 0.17597206,
+            "AST": -0.44193617,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": 0.22331527
+          }
         },
         {
           "id": 4278053,
@@ -1178,8 +969,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": -2.435835,
-          "currentRater": 1.0908421,
-          "injuredSpot": false
+          "currentRater": 0.9801898,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.6534922,
+            "FT": -0.38974935,
+            "3PM": 0.16510741,
+            "REB": -0.21847148,
+            "AST": 2.5461438,
+            "STL": 1.2924166,
+            "BLK": 0.55678123,
+            "TO": -2.456229,
+            "PTS": 0.1376827
+          }
         },
         {
           "id": 4432822,
@@ -1188,8 +990,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 7,
           "previousRater": 0.87106735,
-          "currentRater": -0.03136591,
-          "injuredSpot": false
+          "currentRater": -0.10662705,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.121677056,
+            "FT": -0.8774777,
+            "3PM": 0.012502565,
+            "REB": -0.10577333,
+            "AST": -0.2804183,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": 0.682601,
+            "PTS": -0.33329636
+          }
         },
         {
           "id": 4395628,
@@ -1198,8 +1011,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 4.4643006,
-          "currentRater": -1.0867308,
-          "injuredSpot": false
+          "currentRater": -1.1715165,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.31881097,
+            "FT": -3.1350865,
+            "3PM": -0.5979168,
+            "REB": 1.1339064,
+            "AST": 1.3347601,
+            "STL": -0.19745255,
+            "BLK": 1.2294571,
+            "TO": -1.828463,
+            "PTS": 1.2080897
+          }
         },
         {
           "id": 3062679,
@@ -1208,8 +1032,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 4.3790774,
-          "currentRater": 3.6331623,
-          "injuredSpot": false
+          "currentRater": 3.5112894,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1265548,
+            "FT": 0.39120954,
+            "3PM": 0.012502565,
+            "REB": 1.6973971,
+            "AST": 0.5271709,
+            "STL": 0.99444276,
+            "BLK": -0.78857076,
+            "TO": -0.886814,
+            "PTS": 0.43739668
+          }
         },
         {
           "id": 3150844,
@@ -1217,351 +1052,1088 @@
           "keeperHistory": [],
           "salary": 1,
           "previousRater": 3.395651,
-          "currentRater": 0.23947044,
-          "gamesPlayed": 6,
-          "injuredSpot": false
+          "currentRater": 0.63407934,
+          "gamesPlayed": 7,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.6744631,
+            "FT": 0.39826784,
+            "3PM": -0.14010228,
+            "REB": 0.7394628,
+            "AST": -0.603454,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": -0.7298725,
+            "PTS": 0.6086618
+          }
         }
       ]
     },
     {
-      "id": 10,
-      "name": "Chauvigny Eagles",
+      "id": 4,
+      "name": "Anaheim Ducks",
       "roster": [
         {
-          "id": 4432166,
-          "fullName": "Cade Cunningham",
-          "salary": 21,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 7,
-          "previousRater": 4.623802,
-          "currentRater": 7.5372524,
-          "injuredSpot": false
-        },
-        {
-          "id": 3936299,
-          "fullName": "Jamal Murray",
-          "salary": 19,
+          "id": 4395651,
+          "fullName": "Coby White",
+          "salary": 7,
           "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 6.4711785,
-          "currentRater": 1.9843531,
-          "injuredSpot": false
+          "gamesPlayed": 6,
+          "previousRater": 6.015134,
+          "currentRater": 4.041392,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.40110716,
+            "FT": 0.037328057,
+            "3PM": 2.3015752,
+            "REB": 0.34501928,
+            "AST": 1.1732422,
+            "STL": 0.99444276,
+            "BLK": -0.45223278,
+            "TO": -1.3576385,
+            "PTS": 1.4007629
+          }
         },
         {
-          "id": 3136195,
-          "fullName": "Karl-Anthony Towns",
-          "salary": 35,
+          "id": 4433627,
+          "fullName": "Keyonte George",
+          "salary": 3,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 0.084922545,
+          "currentRater": -2.8692217,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -3.1142051,
+            "FT": -0.087465934,
+            "3PM": 0.92813164,
+            "REB": -0.04942425,
+            "AST": 2.2231083,
+            "STL": -0.19745255,
+            "BLK": -0.78857076,
+            "TO": -2.456229,
+            "PTS": 0.6728862
+          }
+        },
+        {
+          "id": 4396971,
+          "fullName": "Naz Reid",
+          "salary": 6,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 5.1100225,
+          "currentRater": 4.4090133,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1560854,
+            "FT": 1.530406,
+            "3PM": 0.77552676,
+            "REB": 0.9648591,
+            "AST": -0.038141564,
+            "STL": -0.79340017,
+            "BLK": 0.55678123,
+            "TO": -0.41598952,
+            "PTS": 0.6728862
+          }
+        },
+        {
+          "id": 4251,
+          "fullName": "Paul George",
+          "salary": 33,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 0,
+          "previousRater": 11.578929,
+          "currentRater": 0,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1560854,
+            "FT": 1.530406,
+            "3PM": 0.77552676,
+            "REB": 0.9648591,
+            "AST": -0.038141564,
+            "STL": -0.79340017,
+            "BLK": 0.55678123,
+            "TO": -0.41598952,
+            "PTS": 0.6728862
+          }
+        },
+        {
+          "id": 4066259,
+          "fullName": "De'Aaron Fox",
+          "salary": 25,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 8.273686,
+          "currentRater": 6.910714,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.42855272,
+            "FT": 1.6619806,
+            "3PM": 0.77552676,
+            "REB": 0.62676466,
+            "AST": 1.8193135,
+            "STL": 3.3782334,
+            "BLK": -0.78857076,
+            "TO": -2.9270535,
+            "PTS": 1.9359664
+          }
+        },
+        {
+          "id": 4395725,
+          "fullName": "Tyler Herro",
+          "salary": 10,
           "keeperHistory": ["2025"],
           "gamesPlayed": 5,
-          "previousRater": 6.910035,
-          "currentRater": 8.314971,
-          "injuredSpot": false
+          "previousRater": 0.93437636,
+          "currentRater": 3.6358414,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.49251238,
+            "FT": 0.0825008,
+            "3PM": 1.8437607,
+            "REB": 0.2886702,
+            "AST": 0.85020655,
+            "STL": -0.19745255,
+            "BLK": -0.45223278,
+            "TO": -0.41598952,
+            "PTS": 1.1438652
+          }
         },
         {
-          "id": 4593803,
-          "fullName": "Jalen Williams",
-          "salary": 5,
-          "keeperHistory": ["2024", "2025"],
+          "id": 3202,
+          "fullName": "Kevin Durant",
+          "salary": 47,
+          "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 8.144674,
-          "currentRater": 4.545389,
-          "injuredSpot": false
+          "previousRater": 12.627656,
+          "currentRater": 7.8370466,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.3854045,
+            "FT": 0.56162024,
+            "3PM": 1.3859462,
+            "REB": 1.2466044,
+            "AST": 0.5271709,
+            "STL": 0.3984951,
+            "BLK": 2.2384713,
+            "TO": -2.142346,
+            "PTS": 2.2356803
+          }
         },
         {
-          "id": 6475,
-          "fullName": "Klay Thompson",
-          "salary": 9,
+          "id": 6430,
+          "fullName": "Jimmy Butler",
+          "salary": 30,
           "keeperHistory": [],
           "gamesPlayed": 5,
-          "previousRater": 5.8999224,
-          "currentRater": 2.7029877,
-          "injuredSpot": false
+          "previousRater": 7.0158935,
+          "currentRater": 1.9565814,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.33082804,
+            "FT": -1.0548779,
+            "3PM": -0.75052166,
+            "REB": 0.45771745,
+            "AST": 1.3347601,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -0.572931,
+            "PTS": 0.7371106
+          }
         },
         {
-          "id": 3102529,
-          "fullName": "Clint Capela",
-          "salary": 7,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.672139,
-          "currentRater": 3.4580288,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433247,
-          "fullName": "Jonathan Kuminga",
+          "id": 4066262,
+          "fullName": "Malik Monk",
           "salary": 8,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 2.9801219,
-          "currentRater": -0.74072975,
-          "injuredSpot": false
+          "previousRater": 3.6229782,
+          "currentRater": 2.5602028,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.1871422,
+            "FT": 0.1312724,
+            "3PM": 0.77552676,
+            "REB": 0.006924826,
+            "AST": 0.85020655,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": 0.36871797,
+            "PTS": 0.6300699
+          }
         },
         {
-          "id": 5105565,
-          "fullName": "Donovan Clingan",
-          "salary": 7,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 0,
-          "currentRater": 1.5014683,
-          "injuredSpot": false
-        },
-        {
-          "id": 4278078,
-          "fullName": "P.J. Washington",
-          "salary": 7,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 2.6510022,
-          "currentRater": 2.5733402,
-          "injuredSpot": false
-        },
-        {
-          "id": 2566769,
-          "fullName": "Malcolm Brogdon",
-          "salary": 6,
-          "keeperHistory": [],
-          "gamesPlayed": 0,
-          "previousRater": -0.13772796,
-          "currentRater": 0,
-          "injuredSpot": true
-        },
-        {
-          "id": 3032979,
-          "fullName": "Dennis Schroder",
-          "salary": 6,
-          "keeperHistory": [],
-          "gamesPlayed": 7,
-          "previousRater": 4.208451,
-          "currentRater": 9.725063,
-          "injuredSpot": false
-        },
-        {
-          "id": 4594327,
-          "fullName": "Keegan Murray",
-          "salary": 12,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 7.0203934,
-          "currentRater": 4.2387624,
-          "injuredSpot": false
-        },
-        {
-          "id": 4066383,
-          "fullName": "Miles Bridges",
-          "salary": 22,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 6.0647264,
-          "currentRater": 1.0617672,
-          "injuredSpot": false
-        },
-        {
-          "id": 4277961,
-          "fullName": "Jaren Jackson Jr.",
-          "salary": 27,
+          "id": 4277956,
+          "fullName": "Jordan Poole",
+          "salary": 8,
           "keeperHistory": [],
           "gamesPlayed": 5,
-          "previousRater": 6.1879773,
-          "currentRater": 3.1357172,
-          "injuredSpot": false
+          "previousRater": 4.404041,
+          "currentRater": 7.669364,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.061675303,
+            "FT": 1.7585665,
+            "3PM": 2.45418,
+            "REB": -0.7819622,
+            "AST": 1.2540011,
+            "STL": 3.0802596,
+            "BLK": 0.22044322,
+            "TO": -1.6715215,
+            "PTS": 1.2937223
+          }
         },
         {
-          "id": 2990962,
-          "fullName": "Taurean Prince",
+          "id": 3195,
+          "fullName": "Mike Conley",
           "salary": 3,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 1.7411413,
-          "currentRater": 3.4563282,
-          "injuredSpot": false
+          "previousRater": 6.9266763,
+          "currentRater": 1.5289755,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.1071532,
+            "FT": 1.2931576,
+            "3PM": 0.4703171,
+            "REB": -0.21847148,
+            "AST": 1.1732422,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": -0.14062311
+          }
         },
         {
-          "id": 4683692,
-          "fullName": "Cason Wallace",
-          "salary": 5,
+          "id": 2489663,
+          "fullName": "Kelly Olynyk",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 5.5106435,
+          "currentRater": 0,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -2.1071532,
+            "FT": 1.2931576,
+            "3PM": 0.4703171,
+            "REB": -0.21847148,
+            "AST": 1.1732422,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": -0.14062311
+          }
+        },
+        {
+          "id": 4277843,
+          "fullName": "Gary Trent Jr.",
+          "salary": 3,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 3.0049543,
-          "currentRater": 2.7448053,
-          "injuredSpot": false
+          "previousRater": 2.3764958,
+          "currentRater": -1.333905,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.9459548,
+            "FT": 1.0462672,
+            "3PM": 0.4703171,
+            "REB": -0.61291504,
+            "AST": -0.44193617,
+            "STL": 0.69646895,
+            "BLK": -0.78857076,
+            "TO": 0.21177648,
+            "PTS": 0.030642012
+          }
         },
         {
-          "id": 4433137,
-          "fullName": "Ziaire Williams",
-          "salary": 2,
+          "id": 4593125,
+          "fullName": "Santi Aldama",
+          "salary": 3,
           "keeperHistory": [],
           "gamesPlayed": 7,
-          "previousRater": -2.0315893,
-          "currentRater": 3.0589259,
-          "injuredSpot": false
+          "previousRater": 0.82060504,
+          "currentRater": 6.567076,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.72727185,
+            "FT": 1.1389672,
+            "3PM": 0.77552676,
+            "REB": 1.9791425,
+            "AST": 0.9309655,
+            "STL": 0.10052129,
+            "BLK": 0.8931192,
+            "TO": -0.886814,
+            "PTS": 0.90837574
+          }
+        },
+        {
+          "id": 3913180,
+          "fullName": "Garrison Mathews",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -1.6052599,
+          "currentRater": 3.3804996,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.13826746,
+            "FT": 0.65652543,
+            "3PM": 2.45418,
+            "REB": -0.6692641,
+            "AST": -0.1996594,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": 0.21177648,
+            "PTS": 0.54443735
+          }
+        },
+        {
+          "id": 4431687,
+          "fullName": "Patrick Williams",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -0.652148,
+          "currentRater": -1.1227018,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.1947007,
+            "FT": -0.24168262,
+            "3PM": 0.31771225,
+            "REB": 0.852161,
+            "AST": -0.038141564,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": -0.572931,
+            "PTS": -0.16203125
+          }
+        },
+        {
+          "id": 4433076,
+          "fullName": "Ben Sheppard",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -2.2768085,
+          "currentRater": 0.47059754,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7379029,
+            "FT": 0,
+            "3PM": 0.77552676,
+            "REB": -0.33116964,
+            "AST": -0.52269506,
+            "STL": -0.79340017,
+            "BLK": -0.11589478,
+            "TO": 0.83954245,
+            "PTS": -0.11921497
+          }
         }
       ]
     },
     {
-      "id": 12,
-      "name": "Dusk Lions",
+      "id": 5,
+      "name": "Almr",
       "roster": [
         {
-          "id": 4278049,
-          "fullName": "Daniel Gafford",
-          "salary": 6,
+          "id": 4432816,
+          "fullName": "LaMelo Ball",
+          "salary": 24,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": -0.58396065,
+          "currentRater": 8.653841,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.42185298,
+            "FT": 1.7600015,
+            "3PM": 3.6750188,
+            "REB": 0.5704156,
+            "AST": 2.1423492,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -4.1825852,
+            "PTS": 2.792292
+          }
+        },
+        {
+          "id": 4683678,
+          "fullName": "Scoot Henderson",
+          "salary": 17,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": -1.6513587,
+          "currentRater": 0.09939408,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.8678586,
+            "FT": 0.62828696,
+            "3PM": 0.16510741,
+            "REB": 0.119622976,
+            "AST": 1.8193135,
+            "STL": 0.10052129,
+            "BLK": -0.78857076,
+            "TO": -1.9854045,
+            "PTS": 0.90837574
+          }
+        },
+        {
+          "id": 4395625,
+          "fullName": "RJ Barrett",
+          "salary": 11,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 4,
+          "previousRater": 0.48542106,
+          "currentRater": 1.7245191,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.71393484,
+            "FT": -1.1724974,
+            "3PM": 0.92813164,
+            "REB": 0.17597206,
+            "AST": 1.415519,
+            "STL": -0.19745255,
+            "BLK": -0.78857076,
+            "TO": -0.7298725,
+            "PTS": 1.3793548
+          }
+        },
+        {
+          "id": 4432174,
+          "fullName": "Cam Thomas",
+          "salary": 11,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": 3.5078602,
+          "currentRater": 6.7637305,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.7410176,
+            "FT": 3.2907984,
+            "3PM": 1.9963655,
+            "REB": 0.17597206,
+            "AST": 0.60792977,
+            "STL": 0.99444276,
+            "BLK": -0.78857076,
+            "TO": -1.6715215,
+            "PTS": 2.8993328
+          }
+        },
+        {
+          "id": 3155942,
+          "fullName": "Domantas Sabonis",
+          "salary": 50,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.719338,
+          "currentRater": 8.928804,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.8401053,
+            "FT": 0.823444,
+            "3PM": 0.012502565,
+            "REB": 3.2751713,
+            "AST": 2.1423492,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": -1.828463,
+            "PTS": 1.6790688
+          }
+        },
+        {
+          "id": 3133603,
+          "fullName": "Kelly Oubre Jr.",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.3969343,
+          "currentRater": -0.37007153,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.0506957,
+            "FT": -0.3441554,
+            "3PM": 0.62292194,
+            "REB": 0.17597206,
+            "AST": -0.603454,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": -0.259048,
+            "PTS": 0.8441513
+          }
+        },
+        {
+          "id": 5211175,
+          "fullName": "Zaccharie Risacher",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": -1.4855703,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.3883276,
+            "FT": -1.0306134,
+            "3PM": 0.16510741,
+            "REB": 0.119622976,
+            "AST": -0.36117724,
+            "STL": 0.99444276,
+            "BLK": 1.2294571,
+            "TO": -0.41598952,
+            "PTS": 0.20190713
+          }
+        },
+        {
+          "id": 3064290,
+          "fullName": "Aaron Gordon",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.93571,
+          "currentRater": 6.4509244,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1555426,
+            "FT": 1.0332316,
+            "3PM": 0.77552676,
+            "REB": 1.5283499,
+            "AST": 0.7694476,
+            "STL": 0.3984951,
+            "BLK": -0.11589478,
+            "TO": -0.259048,
+            "PTS": 1.1652734
+          }
+        },
+        {
+          "id": 4914336,
+          "fullName": "Shaedon Sharpe",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": -1.9515059,
+          "currentRater": 0,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": 1.1555426,
+            "FT": 1.0332316,
+            "3PM": 0.77552676,
+            "REB": 1.5283499,
+            "AST": 0.7694476,
+            "STL": 0.3984951,
+            "BLK": -0.11589478,
+            "TO": -0.259048,
+            "PTS": 1.1652734
+          }
+        },
+        {
+          "id": 2583632,
+          "fullName": "Royce O'Neale",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.766145,
+          "currentRater": 4.908113,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.034213234,
+            "FT": 1.1389672,
+            "3PM": 0.77552676,
+            "REB": 1.1902554,
+            "AST": 0.44641197,
+            "STL": 0.10052129,
+            "BLK": 1.2294571,
+            "TO": -0.10210652,
+            "PTS": 0.09486643
+          }
+        },
+        {
+          "id": 4397227,
+          "fullName": "Vince Williams Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 1.1723232,
+          "currentRater": 0,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.034213234,
+            "FT": 1.1389672,
+            "3PM": 0.77552676,
+            "REB": 1.1902554,
+            "AST": 0.44641197,
+            "STL": 0.10052129,
+            "BLK": 1.2294571,
+            "TO": -0.10210652,
+            "PTS": 0.09486643
+          }
+        },
+        {
+          "id": 4431785,
+          "fullName": "Scotty Pippen Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.2910628,
+          "currentRater": 5.276419,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.57690835,
+            "FT": 0.5174077,
+            "3PM": 0.16510741,
+            "REB": 0.119622976,
+            "AST": 3.1922152,
+            "STL": 1.5903904,
+            "BLK": 0.22044322,
+            "TO": -1.6715215,
+            "PTS": 0.5658455
+          }
+        },
+        {
+          "id": 4397140,
+          "fullName": "Kevin Porter Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -3.3953586,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.5291721,
+            "FT": 0.09707943,
+            "3PM": -0.5979168,
+            "REB": 0.0632739,
+            "AST": 0.12337628,
+            "STL": 0.3984951,
+            "BLK": -0.45223278,
+            "TO": -1.3576385,
+            "PTS": -0.14062311
+          }
+        },
+        {
+          "id": 3149673,
+          "fullName": "Pascal Siakam",
+          "salary": 31,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.810149,
+          "currentRater": 5.7970824,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.7415838,
+            "FT": -1.3175855,
+            "3PM": 1.0807365,
+            "REB": 1.3029536,
+            "AST": 1.6577958,
+            "STL": 0.3984951,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": 1.4649874
+          }
+        },
+        {
+          "id": 4871145,
+          "fullName": "Josh Giddey",
+          "salary": 19,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 4.6076508,
+          "currentRater": 0.27809188,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.3398415,
+            "FT": -2.7432628,
+            "3PM": 0.62292194,
+            "REB": 1.5846989,
+            "AST": 2.0615904,
+            "STL": 0.10052129,
+            "BLK": -0.45223278,
+            "TO": -1.3576385,
+            "PTS": 0.80133504
+          }
+        },
+        {
+          "id": 4592691,
+          "fullName": "Jake LaRavia",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.139473,
+          "currentRater": -1.8583375,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.055489037,
+            "FT": -2.9555483,
+            "3PM": -0.14010228,
+            "REB": 1.2466044,
+            "AST": 0.7694476,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": -0.572931,
+            "PTS": 0.05205015
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Atlantic Titans",
+      "roster": [
+        {
+          "id": 4066457,
+          "fullName": "Austin Reaves",
+          "salary": 10,
           "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 9.425298,
-          "currentRater": 2.1357064,
-          "injuredSpot": false
-        },
-        {
-          "id": 4277811,
-          "fullName": "Collin Sexton",
-          "salary": 12,
-          "keeperHistory": ["2025"],
           "gamesPlayed": 6,
-          "previousRater": 6.376208,
-          "currentRater": -0.24576454,
-          "injuredSpot": false
+          "previousRater": 7.338732,
+          "currentRater": 5.3355117,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.47528636,
+            "FT": 0.51430064,
+            "3PM": 1.0807365,
+            "REB": 0.62676466,
+            "AST": 1.4962779,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -1.51458,
+            "PTS": 1.1438652
+          }
         },
         {
-          "id": 4432848,
-          "fullName": "Jaime Jaquez Jr.",
-          "salary": 2,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 5,
-          "previousRater": 3.1034884,
-          "currentRater": -2.7330403,
-          "injuredSpot": false
+          "id": 4397688,
+          "fullName": "Trey Murphy III",
+          "salary": 4,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 0,
+          "previousRater": 3.708579,
+          "currentRater": 0,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.47528636,
+            "FT": 0.51430064,
+            "3PM": 1.0807365,
+            "REB": 0.62676466,
+            "AST": 1.4962779,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -1.51458,
+            "PTS": 1.1438652
+          }
         },
         {
-          "id": 3945274,
-          "fullName": "Luka Doncic",
-          "salary": 58,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 5,
-          "previousRater": 13.208813,
-          "currentRater": 3.760261,
-          "injuredSpot": false
-        },
-        {
-          "id": 2779,
-          "fullName": "Chris Paul",
-          "salary": 7,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 6,
-          "previousRater": 2.484436,
-          "currentRater": 5.9271736,
-          "injuredSpot": false
-        },
-        {
-          "id": 4066320,
-          "fullName": "Desmond Bane",
-          "salary": 3,
+          "id": 3934672,
+          "fullName": "Jalen Brunson",
+          "salary": 17,
           "keeperHistory": ["2024", "2023", "2025"],
           "gamesPlayed": 5,
-          "previousRater": 3.2097073,
-          "currentRater": 4.460836,
-          "injuredSpot": false
+          "previousRater": 10.104794,
+          "currentRater": 2.4710636,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.5677993,
+            "FT": -0.004630275,
+            "3PM": 1.0807365,
+            "REB": -0.44386777,
+            "AST": 1.3347601,
+            "STL": -0.49542636,
+            "BLK": -0.78857076,
+            "TO": -0.41598952,
+            "PTS": 1.6362525
+          }
         },
         {
-          "id": 3975,
-          "fullName": "Stephen Curry",
-          "salary": 42,
-          "keeperHistory": [],
-          "gamesPlayed": 3,
-          "previousRater": 10.762677,
-          "currentRater": 1.8890867,
-          "injuredSpot": false
-        },
-        {
-          "id": 4432573,
-          "fullName": "Paolo Banchero",
-          "salary": 23,
-          "keeperHistory": [],
+          "id": 6477,
+          "fullName": "Jonas Valanciunas",
+          "salary": 17,
+          "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 5,
-          "previousRater": 3.379199,
-          "currentRater": 3.085468,
-          "injuredSpot": false
+          "previousRater": 6.466126,
+          "currentRater": 0.29161915,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1115443,
+            "FT": 0.45351902,
+            "3PM": -0.75052166,
+            "REB": 0.9648591,
+            "AST": 0.12337628,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": -0.886814,
+            "PTS": 0.22331527
+          }
         },
         {
-          "id": 5211176,
-          "fullName": "Tidjane Salaun",
+          "id": 4066336,
+          "fullName": "Lauri Markkanen",
+          "salary": 17,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 4,
+          "previousRater": 7.681113,
+          "currentRater": -0.41039515,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.95097136,
+            "FT": 1.1426425,
+            "3PM": 0.4703171,
+            "REB": 0.5140665,
+            "AST": -0.36117724,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": -0.10210652,
+            "PTS": 0.45880482
+          }
+        },
+        {
+          "id": 4278104,
+          "fullName": "Michael Porter Jr.",
+          "salary": 16,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.645083,
+          "currentRater": 3.9107776,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.22368021,
+            "FT": -0.5662435,
+            "3PM": 1.3859462,
+            "REB": 1.2466044,
+            "AST": 0.2848941,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": 0.05483498,
+            "PTS": 1.0368246
+          }
+        },
+        {
+          "id": 6440,
+          "fullName": "Tobias Harris",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 7.434708,
+          "currentRater": 5.5598063,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.46476188,
+            "FT": 1.6390153,
+            "3PM": -0.14010228,
+            "REB": 1.9791425,
+            "AST": 0.60792977,
+            "STL": 0.10052129,
+            "BLK": 1.9021332,
+            "TO": -0.886814,
+            "PTS": 0.8227432
+          }
+        },
+        {
+          "id": 4277813,
+          "fullName": "Herbert Jones",
           "salary": 8,
           "keeperHistory": [],
           "gamesPlayed": 4,
-          "previousRater": 0,
-          "currentRater": -3.5699105,
-          "injuredSpot": false
+          "previousRater": 7.322351,
+          "currentRater": -1.717543,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.14669126,
+            "FT": -0.3557226,
+            "3PM": -0.5979168,
+            "REB": -0.55656594,
+            "AST": -0.603454,
+            "STL": 0.99444276,
+            "BLK": -0.45223278,
+            "TO": 0.21177648,
+            "PTS": -0.5045615
+          }
         },
         {
-          "id": 3134907,
-          "fullName": "Kyle Kuzma",
-          "salary": 7,
-          "keeperHistory": [],
-          "gamesPlayed": 3,
-          "previousRater": 4.118329,
-          "currentRater": -3.3028805,
-          "injuredSpot": false
-        },
-        {
-          "id": 3102530,
-          "fullName": "Jusuf Nurkic",
-          "salary": 10,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 3.880816,
-          "currentRater": -2.8471537,
-          "injuredSpot": false
-        },
-        {
-          "id": 4845367,
-          "fullName": "Stephon Castle",
-          "salary": 10,
+          "id": 3908845,
+          "fullName": "John Collins",
+          "salary": 8,
           "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 0,
-          "currentRater": -4.7322807,
-          "injuredSpot": false
+          "previousRater": 5.4962487,
+          "currentRater": 4.700716,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.3398415,
+            "FT": 1.8693997,
+            "3PM": 0.012502565,
+            "REB": 1.1902554,
+            "AST": 0.2848941,
+            "STL": 0.69646895,
+            "BLK": 1.2294571,
+            "TO": -1.0437555,
+            "PTS": 0.80133504
+          }
         },
         {
-          "id": 4432808,
-          "fullName": "James Wiseman",
+          "id": 3064482,
+          "fullName": "Bobby Portis",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.9002447,
+          "currentRater": 1.080677,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.2747493,
+            "FT": 0.30406386,
+            "3PM": -0.29270712,
+            "REB": 1.4720008,
+            "AST": -0.44193617,
+            "STL": 0.10052129,
+            "BLK": 0.22044322,
+            "TO": -0.886814,
+            "PTS": 0.33035597
+          }
+        },
+        {
+          "id": 3112335,
+          "fullName": "Nikola Jokic",
+          "salary": 81,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 18.39955,
+          "currentRater": 15.029847,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.5135465,
+            "FT": 0.66271096,
+            "3PM": 1.538551,
+            "REB": 3.049775,
+            "AST": 3.8382866,
+            "STL": 1.5903904,
+            "BLK": 1.2294571,
+            "TO": -2.142346,
+            "PTS": 2.7494757
+          }
+        },
+        {
+          "id": 4395630,
+          "fullName": "Devin Vassell",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 5.3595777,
+          "currentRater": 0,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": 2.5135465,
+            "FT": 0.66271096,
+            "3PM": 1.538551,
+            "REB": 3.049775,
+            "AST": 3.8382866,
+            "STL": 1.5903904,
+            "BLK": 1.2294571,
+            "TO": -2.142346,
+            "PTS": 2.7494757
+          }
+        },
+        {
+          "id": 3155526,
+          "fullName": "Dillon Brooks",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.8327911,
+          "currentRater": 0.88111174,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.4161025,
+            "FT": 1.0462672,
+            "3PM": 0.62292194,
+            "REB": 0.2886702,
+            "AST": -0.52269506,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": 0.5256595,
+            "PTS": 0.3517641
+          }
+        },
+        {
+          "id": 2530530,
+          "fullName": "T.J. McConnell",
           "salary": 2,
           "keeperHistory": [],
-          "gamesPlayed": 1,
-          "previousRater": -0.42406824,
-          "currentRater": -4.375952,
-          "injuredSpot": false
+          "gamesPlayed": 6,
+          "previousRater": 3.3638518,
+          "currentRater": -0.25900504,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1115443,
+            "FT": -0.3557226,
+            "3PM": -0.9031265,
+            "REB": -0.33116964,
+            "AST": 1.1732422,
+            "STL": 0.3984951,
+            "BLK": -0.78857076,
+            "TO": -0.572931,
+            "PTS": 0.009233872
+          }
         },
         {
-          "id": 6585,
-          "fullName": "Andre Drummond",
+          "id": 4397002,
+          "fullName": "Ayo Dosunmu",
           "salary": 3,
           "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 0.9707323,
-          "currentRater": -1.1090873,
-          "injuredSpot": false
-        },
-        {
-          "id": 2581018,
-          "fullName": "Kentavious Caldwell-Pope",
-          "salary": 2,
-          "keeperHistory": [],
           "gamesPlayed": 6,
-          "previousRater": 5.336248,
-          "currentRater": 0.9162933,
-          "injuredSpot": false
+          "previousRater": 4.4111323,
+          "currentRater": -0.9584797,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.1997172,
+            "FT": -0.20141259,
+            "3PM": -0.14010228,
+            "REB": 0.7394628,
+            "AST": 1.0924833,
+            "STL": -1.091374,
+            "BLK": 0.22044322,
+            "TO": -0.259048,
+            "PTS": -0.11921497
+          }
         },
         {
-          "id": 4065732,
-          "fullName": "De'Andre Hunter",
-          "salary": 1,
+          "id": 4702382,
+          "fullName": "Tristan da Silva",
           "keeperHistory": [],
-          "gamesPlayed": 2,
-          "previousRater": 1.7142538,
-          "currentRater": -0.59627205,
-          "injuredSpot": false
+          "salary": 1,
+          "previousRater": 0,
+          "currentRater": -2.4438825,
+          "gamesPlayed": 3,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.18461533,
+            "FT": 0.09707943,
+            "3PM": -0.29270712,
+            "REB": -0.55656594,
+            "AST": -0.603454,
+            "STL": -1.091374,
+            "BLK": -0.45223278,
+            "TO": 0.83954245,
+            "PTS": -0.5687859
+          }
+        },
+        {
+          "id": 4683778,
+          "fullName": "Jared McCain",
+          "keeperHistory": [],
+          "salary": 1,
+          "previousRater": 0,
+          "currentRater": -1.8115027,
+          "gamesPlayed": 5,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.031070957,
+            "FT": 1.0072643,
+            "3PM": -0.5979168,
+            "REB": -0.44386777,
+            "AST": -0.44193617,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.5256595,
+            "PTS": -0.2476638
+          }
         }
       ]
     },
@@ -1576,8 +2148,19 @@
           "keeperHistory": ["2024", "2023", "2025"],
           "gamesPlayed": 6,
           "previousRater": 4.579932,
-          "currentRater": 3.1158066,
-          "injuredSpot": false
+          "currentRater": 2.9959087,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.3826847,
+            "FT": -0.9225174,
+            "3PM": -0.29270712,
+            "REB": 2.9370768,
+            "AST": 0.85020655,
+            "STL": 1.2924166,
+            "BLK": 0.55678123,
+            "TO": -0.886814,
+            "PTS": 0.8441513
+          }
         },
         {
           "id": 4684740,
@@ -1586,8 +2169,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 1.8106452,
-          "currentRater": -1.1943077,
-          "injuredSpot": false
+          "currentRater": -1.2443825,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.33148846,
+            "FT": -0.3441554,
+            "3PM": -0.5979168,
+            "REB": 0.68311375,
+            "AST": -0.11890048,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": -1.0437555,
+            "PTS": 0.15909085
+          }
         },
         {
           "id": 3133628,
@@ -1596,8 +2190,19 @@
           "keeperHistory": ["2024", "2023", "2025"],
           "gamesPlayed": 5,
           "previousRater": 8.659089,
-          "currentRater": 0.45719817,
-          "injuredSpot": false
+          "currentRater": 0.39221007,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.08474775,
+            "FT": -1.4509329,
+            "3PM": 0.31771225,
+            "REB": 0.5140665,
+            "AST": -0.1996594,
+            "STL": 0.10052129,
+            "BLK": 2.2384713,
+            "TO": -1.6715215,
+            "PTS": 0.45880482
+          }
         },
         {
           "id": 3992,
@@ -1606,8 +2211,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 9.548785,
-          "currentRater": 8.012414,
-          "injuredSpot": false
+          "currentRater": 7.820365,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.2632897,
+            "FT": 1.8513026,
+            "3PM": 1.3859462,
+            "REB": 1.8664443,
+            "AST": 4.32284,
+            "STL": 1.8883643,
+            "BLK": 1.2294571,
+            "TO": -4.1825852,
+            "PTS": 1.7218851
+          }
         },
         {
           "id": 4351851,
@@ -1616,8 +2232,19 @@
           "keeperHistory": ["2024", "2023", "2025"],
           "gamesPlayed": 7,
           "previousRater": 2.0517962,
-          "currentRater": 3.7505825,
-          "injuredSpot": false
+          "currentRater": 3.6185405,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -2.5450022,
+            "FT": 2.2491422,
+            "3PM": 1.8437607,
+            "REB": 0.006924826,
+            "AST": 2.0615904,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": -1.9854045,
+            "PTS": 1.7432932
+          }
         },
         {
           "id": 4065648,
@@ -1626,8 +2253,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 7,
           "previousRater": 10.859564,
-          "currentRater": 12.853339,
-          "injuredSpot": false
+          "currentRater": 12.59592,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.66818774,
+            "FT": 0.37667933,
+            "3PM": 3.2172043,
+            "REB": 1.8664443,
+            "AST": 1.6577958,
+            "STL": 2.7822857,
+            "BLK": 0.55678123,
+            "TO": -1.9854045,
+            "PTS": 3.4559443
+          }
         },
         {
           "id": 5160992,
@@ -1636,8 +2274,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 0,
-          "currentRater": 4.171719,
-          "injuredSpot": false
+          "currentRater": 4.091247,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.0034955,
+            "FT": 0.5211075,
+            "3PM": 0.012502565,
+            "REB": 0.62676466,
+            "AST": -0.2804183,
+            "STL": -0.19745255,
+            "BLK": 3.920161,
+            "TO": 0.5256595,
+            "PTS": -0.033582408
+          }
         },
         {
           "id": 3136776,
@@ -1646,8 +2295,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 7.1330457,
-          "currentRater": 3.2579155,
-          "injuredSpot": false
+          "currentRater": 3.1355433,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.8245079,
+            "FT": 1.7577404,
+            "3PM": 0.62292194,
+            "REB": -0.33116964,
+            "AST": 1.9000725,
+            "STL": 0.3984951,
+            "BLK": -0.45223278,
+            "TO": -0.41598952,
+            "PTS": 0.48021296
+          }
         },
         {
           "id": 3074752,
@@ -1656,8 +2316,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 5.1706367,
-          "currentRater": 3.1845055,
-          "injuredSpot": false
+          "currentRater": 3.074451,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.9652232,
+            "FT": 1.2931576,
+            "3PM": 1.6911558,
+            "REB": 0.17597206,
+            "AST": 0.85020655,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": 0.75851876
+          }
         },
         {
           "id": 3138196,
@@ -1666,8 +2337,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": 1.7739931,
-          "currentRater": 6.9229846,
-          "injuredSpot": false
+          "currentRater": 6.7585845,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.7289849,
+            "FT": 0.7626221,
+            "3PM": 2.3015752,
+            "REB": 0.45771745,
+            "AST": 0.85020655,
+            "STL": 0.69646895,
+            "BLK": 0.55678123,
+            "TO": 0.5256595,
+            "PTS": 1.3365386
+          }
         },
         {
           "id": 3059319,
@@ -1676,8 +2358,19 @@
           "keeperHistory": [],
           "gamesPlayed": 4,
           "previousRater": 1.1420395,
-          "currentRater": 1.913305,
-          "injuredSpot": false
+          "currentRater": 1.8226054,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.63983375,
+            "FT": -0.31269205,
+            "3PM": 1.0807365,
+            "REB": 0.17597206,
+            "AST": -0.1996594,
+            "STL": -0.49542636,
+            "BLK": 0.22044322,
+            "TO": 0.21177648,
+            "PTS": 0.50162107
+          }
         },
         {
           "id": 4066218,
@@ -1686,8 +2379,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 1.7837996,
-          "currentRater": 1.6890686,
-          "injuredSpot": false
+          "currentRater": 1.5899057,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.36433676,
+            "FT": 0.18409033,
+            "3PM": 0.92813164,
+            "REB": 0.119622976,
+            "AST": 0.5271709,
+            "STL": 0.69646895,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": 0.030642012
+          }
         },
         {
           "id": 4017844,
@@ -1696,8 +2400,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 0,
-          "currentRater": -0.27638927,
-          "injuredSpot": false
+          "currentRater": -0.34909078,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.045810536,
+            "FT": -0.38974935,
+            "3PM": 0.012502565,
+            "REB": -0.04942425,
+            "AST": -0.11890048,
+            "STL": 0.99444276,
+            "BLK": -0.11589478,
+            "TO": -0.41598952,
+            "PTS": -0.31188822
+          }
         },
         {
           "id": 4066372,
@@ -1706,18 +2421,40 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 1.4170865,
-          "currentRater": 2.6663306,
-          "injuredSpot": true
+          "currentRater": 2.5643444,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": 0.37007388,
+            "FT": 0,
+            "3PM": 0.92813164,
+            "REB": -0.33116964,
+            "AST": -0.1996594,
+            "STL": 0.3984951,
+            "BLK": 0.55678123,
+            "TO": 0.682601,
+            "PTS": 0.15909085
+          }
         },
         {
           "id": 4712849,
           "fullName": "Anthony Black",
           "salary": 5,
           "keeperHistory": [],
-          "gamesPlayed": 6,
+          "gamesPlayed": 7,
           "previousRater": -2.8277874,
-          "currentRater": 1.2572291,
-          "injuredSpot": false
+          "currentRater": 0.6849709,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.29442045,
+            "FT": -0.2786449,
+            "3PM": -0.14010228,
+            "REB": 0.119622976,
+            "AST": 1.415519,
+            "STL": -0.19745255,
+            "BLK": 1.5657952,
+            "TO": -1.51458,
+            "PTS": 0.009233872
+          }
         },
         {
           "id": 4397018,
@@ -1726,8 +2463,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": -0.9981958,
-          "currentRater": 6.137671,
-          "injuredSpot": false
+          "currentRater": 5.9869156,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.9556618,
+            "FT": -0.4209531,
+            "3PM": 0.62292194,
+            "REB": 0.7394628,
+            "AST": 0.04261736,
+            "STL": 1.5903904,
+            "BLK": 0.8931192,
+            "TO": -0.259048,
+            "PTS": 0.8227432
+          }
         },
         {
           "id": 4431714,
@@ -1735,175 +2483,20 @@
           "keeperHistory": [],
           "salary": 5,
           "previousRater": -3.0532713,
-          "currentRater": 0.6399883,
+          "currentRater": 0.5638562,
           "gamesPlayed": 7,
-          "injuredSpot": false
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Oberthur Ducks",
-      "roster": [
-        {
-          "id": 4396993,
-          "fullName": "Tyrese Haliburton",
-          "salary": 27,
-          "keeperHistory": ["2024", "2023", "2022", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 11.151643,
-          "currentRater": 3.009928,
-          "injuredSpot": false
-        },
-        {
-          "id": 3908809,
-          "fullName": "Donovan Mitchell",
-          "salary": 30,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 7,
-          "previousRater": 8.36131,
-          "currentRater": 7.840711,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433255,
-          "fullName": "Chet Holmgren",
-          "salary": 26,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 6,
-          "previousRater": 12.723011,
-          "currentRater": 10.789375,
-          "injuredSpot": false
-        },
-        {
-          "id": 3147657,
-          "fullName": "Mikal Bridges",
-          "salary": 23,
-          "keeperHistory": ["2024", "2023", "2022", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 6.1546717,
-          "currentRater": 4.558301,
-          "injuredSpot": false
-        },
-        {
-          "id": 3078576,
-          "fullName": "Derrick White",
-          "salary": 13,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 7,
-          "previousRater": 9.719748,
-          "currentRater": 11.281905,
-          "injuredSpot": false
-        },
-        {
-          "id": 3138160,
-          "fullName": "Caleb Martin",
-          "salary": 1,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 5,
-          "previousRater": 0.55833143,
-          "currentRater": -4.1682014,
-          "injuredSpot": false
-        },
-        {
-          "id": 3213,
-          "fullName": "Al Horford",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.7588844,
-          "currentRater": 3.264404,
-          "injuredSpot": false
-        },
-        {
-          "id": 4395712,
-          "fullName": "Andrew Nembhard",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 1.2897692,
-          "currentRater": -1.9754385,
-          "injuredSpot": false
-        },
-        {
-          "id": 4397189,
-          "fullName": "Jalen Smith",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 1.3906679,
-          "currentRater": -0.31864083,
-          "injuredSpot": false
-        },
-        {
-          "id": 4396909,
-          "fullName": "Aaron Nesmith",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.519699,
-          "currentRater": 1.4087927,
-          "injuredSpot": false
-        },
-        {
-          "id": 4869342,
-          "fullName": "Dyson Daniels",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 4,
-          "previousRater": 0.59118277,
-          "currentRater": 1.539034,
-          "injuredSpot": false
-        },
-        {
-          "id": 3995,
-          "fullName": "Jrue Holiday",
-          "salary": 16,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 7,
-          "previousRater": 5.711561,
-          "currentRater": 2.449389,
-          "injuredSpot": false
-        },
-        {
-          "id": 3136193,
-          "fullName": "Devin Booker",
-          "salary": 47,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 10.241108,
-          "currentRater": 9.072926,
-          "injuredSpot": false
-        },
-        {
-          "id": 4432819,
-          "fullName": "Tre Mann",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -0.9854613,
-          "currentRater": 5.0481677,
-          "injuredSpot": false
-        },
-        {
-          "id": 4702177,
-          "fullName": "Keon Ellis",
-          "salary": 1,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": -0.072213694,
-          "currentRater": 2.0926225,
-          "injuredSpot": false
-        },
-        {
-          "id": 4592479,
-          "fullName": "Julian Champagnie",
-          "keeperHistory": [],
-          "salary": 1,
-          "previousRater": 0.91583204,
-          "currentRater": 1.903326,
-          "gamesPlayed": 6,
-          "injuredSpot": false
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.15275995,
+            "FT": 0.8377368,
+            "3PM": 0.16510741,
+            "REB": 0.17597206,
+            "AST": 0.2041352,
+            "STL": -0.19745255,
+            "BLK": -0.78857076,
+            "TO": -0.10210652,
+            "PTS": 0.11627457
+          }
         }
       ]
     },
@@ -1918,18 +2511,40 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 2.1226,
-          "currentRater": -2.4208083,
-          "injuredSpot": false
+          "currentRater": -2.4673865,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.67376685,
+            "FT": -0.5662435,
+            "3PM": -0.75052166,
+            "REB": 0.17597206,
+            "AST": 0.04261736,
+            "STL": 0.10052129,
+            "BLK": -0.78857076,
+            "TO": 0.36871797,
+            "PTS": -0.37611264
+          }
         },
         {
           "id": 4566434,
           "fullName": "Franz Wagner",
           "salary": 11,
           "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 6,
+          "gamesPlayed": 7,
           "previousRater": 6.54141,
-          "currentRater": 4.7563295,
-          "injuredSpot": false
+          "currentRater": 5.931936,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.46509624,
+            "FT": 0.39120954,
+            "3PM": 0.92813164,
+            "REB": 0.852161,
+            "AST": 1.415519,
+            "STL": 1.8883643,
+            "BLK": -0.11589478,
+            "TO": -1.3576385,
+            "PTS": 1.4649874
+          }
         },
         {
           "id": 3448,
@@ -1938,8 +2553,19 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 9.79071,
-          "currentRater": 4.3592234,
-          "injuredSpot": false
+          "currentRater": 4.2732773,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.2279178,
+            "FT": 0.32018787,
+            "3PM": 0.62292194,
+            "REB": 0.62676466,
+            "AST": -0.11890048,
+            "STL": 0.10052129,
+            "BLK": 4.2564993,
+            "TO": -0.572931,
+            "PTS": 0.26613155
+          }
         },
         {
           "id": 3032976,
@@ -1948,8 +2574,19 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 8.274922,
-          "currentRater": 3.8912647,
-          "injuredSpot": false
+          "currentRater": 3.7941618,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.3374051,
+            "FT": -0.3733185,
+            "3PM": -0.9031265,
+            "REB": 2.373586,
+            "AST": -0.1996594,
+            "STL": 0.10052129,
+            "BLK": 1.5657952,
+            "TO": -0.41598952,
+            "PTS": 0.30894783
+          }
         },
         {
           "id": 4395724,
@@ -1958,8 +2595,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 1,
           "previousRater": 4.470139,
-          "currentRater": -3.9821236,
-          "injuredSpot": true
+          "currentRater": -3.9975815,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -0.034690864,
+            "FT": -0.05051591,
+            "3PM": -0.5979168,
+            "REB": -1.0073586,
+            "AST": -0.603454,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.682601,
+            "PTS": -0.80427545
+          }
         },
         {
           "id": 4066261,
@@ -1968,8 +2616,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 6.905771,
-          "currentRater": 2.4124393,
-          "injuredSpot": false
+          "currentRater": 2.3096066,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.3401336,
+            "FT": -0.9147801,
+            "3PM": -0.44531196,
+            "REB": 1.3029536,
+            "AST": 0.2041352,
+            "STL": 0.69646895,
+            "BLK": 0.8931192,
+            "TO": 0.36871797,
+            "PTS": 0.54443735
+          }
         },
         {
           "id": 3917376,
@@ -1978,8 +2637,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 4.6339407,
-          "currentRater": 5.543361,
-          "injuredSpot": false
+          "currentRater": 5.391496,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.5520865,
+            "FT": 0.80018175,
+            "3PM": 0.92813164,
+            "REB": 1.3029536,
+            "AST": 0.9309655,
+            "STL": 1.5903904,
+            "BLK": 0.22044322,
+            "TO": -1.0437555,
+            "PTS": 2.2142723
+          }
         },
         {
           "id": 2990984,
@@ -1988,8 +2658,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 5.272933,
-          "currentRater": 8.841055,
-          "injuredSpot": false
+          "currentRater": 8.654864,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1945827,
+            "FT": 0.7891337,
+            "3PM": 3.6750188,
+            "REB": 0.2886702,
+            "AST": 0.2848941,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": -0.259048,
+            "PTS": 1.7647014
+          }
         },
         {
           "id": 3135045,
@@ -1998,8 +2679,19 @@
           "keeperHistory": [],
           "gamesPlayed": 4,
           "previousRater": 7.6780252,
-          "currentRater": -0.012048725,
-          "injuredSpot": false
+          "currentRater": -0.07371139,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.6063875,
+            "FT": 0.30406386,
+            "3PM": 0.16510741,
+            "REB": -0.55656594,
+            "AST": -0.44193617,
+            "STL": 0.3984951,
+            "BLK": 0.55678123,
+            "TO": 0.5256595,
+            "PTS": -0.41892892
+          }
         },
         {
           "id": 2595516,
@@ -2008,18 +2700,40 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 3.5397873,
-          "currentRater": 6.2112813,
-          "injuredSpot": false
+          "currentRater": 6.0642233,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.3065169,
+            "FT": 0.8817731,
+            "3PM": 2.45418,
+            "REB": -0.1621224,
+            "AST": -0.11890048,
+            "STL": 0.3984951,
+            "BLK": -0.11589478,
+            "TO": -0.7298725,
+            "PTS": 2.1500478
+          }
         },
         {
           "id": 4683750,
           "fullName": "Jordan Hawkins",
           "salary": 6,
           "keeperHistory": [],
-          "gamesPlayed": 6,
+          "gamesPlayed": 7,
           "previousRater": -1.804651,
-          "currentRater": 2.6183603,
-          "injuredSpot": false
+          "currentRater": 3.4689465,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.66257185,
+            "FT": 1.9690337,
+            "3PM": 1.8437607,
+            "REB": 0.68311375,
+            "AST": -0.11890048,
+            "STL": -0.79340017,
+            "BLK": -0.11589478,
+            "TO": -0.886814,
+            "PTS": 1.55062
+          }
         },
         {
           "id": 5107897,
@@ -2028,8 +2742,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": 0,
-          "currentRater": 2.9191823,
-          "injuredSpot": false
+          "currentRater": 2.8167408,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.23116803,
+            "FT": 0.037328057,
+            "3PM": -0.75052166,
+            "REB": 0.62676466,
+            "AST": 0.12337628,
+            "STL": 1.5903904,
+            "BLK": 1.2294571,
+            "TO": -0.259048,
+            "PTS": -0.012174267
+          }
         },
         {
           "id": 4684793,
@@ -2038,8 +2763,19 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": 0,
-          "currentRater": -3.6033223,
-          "injuredSpot": false
+          "currentRater": -3.6277363,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.24935576,
+            "FT": -1.0155091,
+            "3PM": -0.29270712,
+            "REB": 0.006924826,
+            "AST": -0.52269506,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.05483498,
+            "PTS": -0.5259696
+          }
         },
         {
           "id": 4600663,
@@ -2048,8 +2784,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": 0,
-          "currentRater": -0.5556001,
-          "injuredSpot": false
+          "currentRater": -0.62379754,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.5239135,
+            "FT": -2.5102222,
+            "3PM": -0.75052166,
+            "REB": 1.1339064,
+            "AST": -0.6842129,
+            "STL": 0.10052129,
+            "BLK": 0.22044322,
+            "TO": 0.05483498,
+            "PTS": 0.2875397
+          }
         },
         {
           "id": 4433287,
@@ -2058,8 +2805,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 2,
           "previousRater": 4.4045095,
-          "currentRater": -2.6413586,
-          "injuredSpot": false
+          "currentRater": -2.678222,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.56286865,
+            "FT": -0.20141259,
+            "3PM": -0.29270712,
+            "REB": -0.8383113,
+            "AST": -0.36117724,
+            "STL": -0.19745255,
+            "BLK": -0.45223278,
+            "TO": 0.83954245,
+            "PTS": -0.6116022
+          }
         },
         {
           "id": 6580,
@@ -2068,8 +2826,19 @@
           "keeperHistory": [],
           "gamesPlayed": 4,
           "previousRater": 3.573586,
-          "currentRater": 2.8455882,
-          "injuredSpot": false
+          "currentRater": 2.7308054,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.17831516,
+            "FT": -0.2786449,
+            "3PM": 0.77552676,
+            "REB": -0.33116964,
+            "AST": 0.5271709,
+            "STL": 0.69646895,
+            "BLK": 0.55678123,
+            "TO": 0.21177648,
+            "PTS": 0.3945804
+          }
         },
         {
           "id": 4397020,
@@ -2078,8 +2847,1813 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 4.1295004,
-          "currentRater": 5.6117067,
-          "injuredSpot": false
+          "currentRater": 5.478469,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.63983375,
+            "FT": 0.7891337,
+            "3PM": 1.0807365,
+            "REB": 0.0632739,
+            "AST": -0.2804183,
+            "STL": 0.99444276,
+            "BLK": 0.8931192,
+            "TO": 0.83954245,
+            "PTS": 0.45880482
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chauvigny Eagles",
+      "roster": [
+        {
+          "id": 4432166,
+          "fullName": "Cade Cunningham",
+          "salary": 21,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 4.623802,
+          "currentRater": 7.3680425,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.93830395,
+            "FT": 0.808464,
+            "3PM": 1.6911558,
+            "REB": 1.1339064,
+            "AST": 2.9499385,
+            "STL": 0.3984951,
+            "BLK": 1.5657952,
+            "TO": -4.65341,
+            "PTS": 2.5353944
+          }
+        },
+        {
+          "id": 3936299,
+          "fullName": "Jamal Murray",
+          "salary": 19,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.4711785,
+          "currentRater": 1.884059,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.5166461,
+            "FT": 1.6515567,
+            "3PM": 0.16510741,
+            "REB": 0.119622976,
+            "AST": 0.85020655,
+            "STL": 0.69646895,
+            "BLK": -0.78857076,
+            "TO": 0.05483498,
+            "PTS": 0.65147805
+          }
+        },
+        {
+          "id": 3136195,
+          "fullName": "Karl-Anthony Towns",
+          "salary": 35,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 6.910035,
+          "currentRater": 8.161744,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.5311855,
+            "FT": 1.8651246,
+            "3PM": 0.77552676,
+            "REB": 2.0354915,
+            "AST": 0.2848941,
+            "STL": 0.10052129,
+            "BLK": 0.22044322,
+            "TO": 0.05483498,
+            "PTS": 1.2937223
+          }
+        },
+        {
+          "id": 4593803,
+          "fullName": "Jalen Williams",
+          "salary": 5,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 8.144674,
+          "currentRater": 4.3821707,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.66257185,
+            "FT": -1.0348761,
+            "3PM": 0.77552676,
+            "REB": 1.1339064,
+            "AST": 1.6577958,
+            "STL": 2.4843118,
+            "BLK": 0.22044322,
+            "TO": -1.3576385,
+            "PTS": 1.1652734
+          }
+        },
+        {
+          "id": 6475,
+          "fullName": "Klay Thompson",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.8999224,
+          "currentRater": 3.9276261,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.44652456,
+            "FT": 0.45099533,
+            "3PM": 2.1489704,
+            "REB": 0.006924826,
+            "AST": -0.11890048,
+            "STL": 0.69646895,
+            "BLK": -0.11589478,
+            "TO": 0.5256595,
+            "PTS": 0.7799269
+          }
+        },
+        {
+          "id": 3102529,
+          "fullName": "Clint Capela",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 4.672139,
+          "currentRater": 4.4978375,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.7505684,
+            "FT": -0.1392291,
+            "3PM": -0.9031265,
+            "REB": 1.5283499,
+            "AST": -0.36117724,
+            "STL": 0.10052129,
+            "BLK": 1.2294571,
+            "TO": -0.10210652,
+            "PTS": 0.3945804
+          }
+        },
+        {
+          "id": 4433247,
+          "fullName": "Jonathan Kuminga",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.9801219,
+          "currentRater": -0.80852854,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.22978474,
+            "FT": -0.9225174,
+            "3PM": -0.29270712,
+            "REB": 0.17597206,
+            "AST": -0.1996594,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": -0.886814,
+            "PTS": 0.6300699
+          }
+        },
+        {
+          "id": 5105565,
+          "fullName": "Donovan Clingan",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": 1.4495416,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.52009755,
+            "FT": -0.71461123,
+            "3PM": -0.75052166,
+            "REB": 1.1339064,
+            "AST": -0.92648965,
+            "STL": -0.49542636,
+            "BLK": 2.911147,
+            "TO": 0.21177648,
+            "PTS": -0.44033706
+          }
+        },
+        {
+          "id": 4278078,
+          "fullName": "P.J. Washington",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.6510022,
+          "currentRater": 3.5892563,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.048724096,
+            "FT": -1.3409013,
+            "3PM": 0.16510741,
+            "REB": 1.3029536,
+            "AST": -0.11890048,
+            "STL": 2.1863382,
+            "BLK": 1.2294571,
+            "TO": 0.05483498,
+            "PTS": 0.15909085
+          }
+        },
+        {
+          "id": 2566769,
+          "fullName": "Malcolm Brogdon",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": -0.13772796,
+          "currentRater": 0,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -0.048724096,
+            "FT": -1.3409013,
+            "3PM": 0.16510741,
+            "REB": 1.3029536,
+            "AST": -0.11890048,
+            "STL": 2.1863382,
+            "BLK": 1.2294571,
+            "TO": 0.05483498,
+            "PTS": 0.15909085
+          }
+        },
+        {
+          "id": 3032979,
+          "fullName": "Dennis Schroder",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 4.208451,
+          "currentRater": 9.492269,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.102248,
+            "FT": 1.2261578,
+            "3PM": 2.6067848,
+            "REB": 0.119622976,
+            "AST": 3.272974,
+            "STL": 1.8883643,
+            "BLK": -0.78857076,
+            "TO": -1.828463,
+            "PTS": 1.8931502
+          }
+        },
+        {
+          "id": 4594327,
+          "fullName": "Keegan Murray",
+          "salary": 12,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.0203934,
+          "currentRater": 4.125379,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.31850326,
+            "FT": 0.32018787,
+            "3PM": 0.92813164,
+            "REB": 1.5846989,
+            "AST": -0.038141564,
+            "STL": 0.10052129,
+            "BLK": 0.55678123,
+            "TO": 0.21177648,
+            "PTS": 0.7799269
+          }
+        },
+        {
+          "id": 4066383,
+          "fullName": "Miles Bridges",
+          "salary": 22,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 6.0647264,
+          "currentRater": 0.9851923,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.4893072,
+            "FT": 0.20923336,
+            "3PM": 0.4703171,
+            "REB": 1.1902554,
+            "AST": 0.2041352,
+            "STL": 0.10052129,
+            "BLK": 0.55678123,
+            "TO": -0.886814,
+            "PTS": 0.6300699
+          }
+        },
+        {
+          "id": 4277961,
+          "fullName": "Jaren Jackson Jr.",
+          "salary": 27,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 6.1879773,
+          "currentRater": 3.0163789,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.100144,
+            "FT": -1.8090205,
+            "3PM": 0.012502565,
+            "REB": 0.2886702,
+            "AST": -0.603454,
+            "STL": 1.2924166,
+            "BLK": 0.8931192,
+            "TO": -0.259048,
+            "PTS": 1.101049
+          }
+        },
+        {
+          "id": 2990962,
+          "fullName": "Taurean Prince",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.7411413,
+          "currentRater": 3.3312356,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0498102,
+            "FT": 0,
+            "3PM": 0.92813164,
+            "REB": 0.68311375,
+            "AST": -0.11890048,
+            "STL": 1.2924166,
+            "BLK": -0.78857076,
+            "TO": 0.21177648,
+            "PTS": 0.07345829
+          }
+        },
+        {
+          "id": 4683692,
+          "fullName": "Cason Wallace",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.0049543,
+          "currentRater": 2.6324735,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.040166195,
+            "FT": 0.15377098,
+            "3PM": 0.012502565,
+            "REB": 0.006924826,
+            "AST": -0.1996594,
+            "STL": 2.1863382,
+            "BLK": 0.22044322,
+            "TO": 0.36871797,
+            "PTS": -0.076398686
+          }
+        },
+        {
+          "id": 4433137,
+          "fullName": "Ziaire Williams",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -2.0315893,
+          "currentRater": 2.9471433,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1706119,
+            "FT": -0.24168262,
+            "3PM": 0.4703171,
+            "REB": 0.17597206,
+            "AST": -0.1996594,
+            "STL": 0.99444276,
+            "BLK": 0.22044322,
+            "TO": -0.10210652,
+            "PTS": 0.45880482
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Antigua  Boyz ",
+      "roster": [
+        {
+          "id": 4277905,
+          "fullName": "Trae Young",
+          "salary": 49,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 5.1133237,
+          "currentRater": 10.986269,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.2101287,
+            "FT": 3.2570674,
+            "3PM": 2.6067848,
+            "REB": 0.852161,
+            "AST": 5.6957417,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -4.65341,
+            "PTS": 2.9635572
+          }
+        },
+        {
+          "id": 2528210,
+          "fullName": "Tim Hardaway Jr.",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 2.2198954,
+          "currentRater": 2.8533156,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.007327077,
+            "FT": 1.530406,
+            "3PM": 2.3015752,
+            "REB": -0.7256132,
+            "AST": 0.12337628,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": 0.36871797,
+            "PTS": 0.8441513
+          }
+        },
+        {
+          "id": 4278129,
+          "fullName": "Deandre Ayton",
+          "salary": 15,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 5.2521267,
+          "currentRater": 5.1972485,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.5196309,
+            "FT": 0.24148078,
+            "3PM": -0.44531196,
+            "REB": 3.3315203,
+            "AST": -0.11890048,
+            "STL": 0.3984951,
+            "BLK": 0.55678123,
+            "TO": -0.259048,
+            "PTS": 0.97260016
+          }
+        },
+        {
+          "id": 4431680,
+          "fullName": "Onyeka Okongwu",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 3.247119,
+          "currentRater": 2.8250473,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.3090879,
+            "FT": 0.7626221,
+            "3PM": -0.5979168,
+            "REB": 0.34501928,
+            "AST": -0.2804183,
+            "STL": -0.19745255,
+            "BLK": 0.55678123,
+            "TO": 0.682601,
+            "PTS": 0.24472341
+          }
+        },
+        {
+          "id": 4431736,
+          "fullName": "Toumani Camara",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0.813281,
+          "currentRater": 4.3250074,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.09102127,
+            "FT": -0.24168262,
+            "3PM": 0.77552676,
+            "REB": 0.62676466,
+            "AST": 0.44641197,
+            "STL": 2.7822857,
+            "BLK": -0.11589478,
+            "TO": -0.10210652,
+            "PTS": 0.24472341
+          }
+        },
+        {
+          "id": 4277869,
+          "fullName": "Jose Alvarado",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -0.92370147,
+          "currentRater": 3.174063,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.2271912,
+            "FT": 0.5946768,
+            "3PM": 0.4703171,
+            "REB": -0.21847148,
+            "AST": 1.7385547,
+            "STL": 1.8883643,
+            "BLK": 0.22044322,
+            "TO": -0.259048,
+            "PTS": -0.033582408
+          }
+        },
+        {
+          "id": 2578185,
+          "fullName": "Dorian Finney-Smith",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 1.4403853,
+          "currentRater": 2.8526087,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.6057932,
+            "FT": -1.324726,
+            "3PM": 0.77552676,
+            "REB": 0.852161,
+            "AST": -0.038141564,
+            "STL": 2.1863382,
+            "BLK": 0.8931192,
+            "TO": -0.259048,
+            "PTS": 0.37317225
+          }
+        },
+        {
+          "id": 3948153,
+          "fullName": "Chris Boucher",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": -1.5472887,
+          "currentRater": 2.1637428,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.21750772,
+            "FT": -0.89754415,
+            "3PM": 0.4703171,
+            "REB": 0.45771745,
+            "AST": -0.52269506,
+            "STL": -0.19745255,
+            "BLK": 1.5657952,
+            "TO": 0.5256595,
+            "PTS": 0.54443735
+          }
+        },
+        {
+          "id": 3907822,
+          "fullName": "Malik Beasley",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 3.0577474,
+          "currentRater": -0.79412293,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.8702049,
+            "FT": -0.5662435,
+            "3PM": 2.1489704,
+            "REB": -0.33116964,
+            "AST": -0.2804183,
+            "STL": 0.10052129,
+            "BLK": -0.45223278,
+            "TO": -0.259048,
+            "PTS": 0.7157025
+          }
+        },
+        {
+          "id": 3059318,
+          "fullName": "Joel Embiid",
+          "salary": 54,
+          "keeperHistory": [],
+          "gamesPlayed": 0,
+          "previousRater": 8.461831,
+          "currentRater": 0,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -1.8702049,
+            "FT": -0.5662435,
+            "3PM": 2.1489704,
+            "REB": -0.33116964,
+            "AST": -0.2804183,
+            "STL": 0.10052129,
+            "BLK": -0.45223278,
+            "TO": -0.259048,
+            "PTS": 0.7157025
+          }
+        },
+        {
+          "id": 4066328,
+          "fullName": "Jarrett Allen",
+          "salary": 19,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 9.274776,
+          "currentRater": 9.7579155,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 3.7759504,
+            "FT": -0.30857223,
+            "3PM": -0.9031265,
+            "REB": 3.2751713,
+            "AST": -0.2804183,
+            "STL": 0.69646895,
+            "BLK": 2.574809,
+            "TO": -0.259048,
+            "PTS": 1.1866815
+          }
+        },
+        {
+          "id": 3913176,
+          "fullName": "Brandon Ingram",
+          "salary": 20,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 4.692515,
+          "currentRater": 9.481858,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.3342656,
+            "FT": 1.3160108,
+            "3PM": 1.9963655,
+            "REB": 1.4156517,
+            "AST": 1.415519,
+            "STL": 0.69646895,
+            "BLK": 0.8931192,
+            "TO": -2.142346,
+            "PTS": 2.5568025
+          }
+        },
+        {
+          "id": 4711272,
+          "fullName": "Reed Sheppard",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -3.499836,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.24107066,
+            "FT": 0,
+            "3PM": -0.44531196,
+            "REB": -0.8946604,
+            "AST": -0.2804183,
+            "STL": -0.79340017,
+            "BLK": -0.45223278,
+            "TO": 0.36871797,
+            "PTS": -0.7614592
+          }
+        },
+        {
+          "id": 2326307,
+          "fullName": "Seth Curry",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": -2.8502133,
+          "currentRater": -0.17497626,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.23116803,
+            "FT": -0.54105556,
+            "3PM": 0.77552676,
+            "REB": -0.27482057,
+            "AST": -0.44193617,
+            "STL": 0.10052129,
+            "BLK": -0.45223278,
+            "TO": 0.5256595,
+            "PTS": -0.097806826
+          }
+        },
+        {
+          "id": 3012,
+          "fullName": "Kyle Lowry",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 1.6041324,
+          "currentRater": 2.1049335,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.6648434,
+            "FT": -0.2786449,
+            "3PM": 0.92813164,
+            "REB": -0.44386777,
+            "AST": 0.12337628,
+            "STL": 1.2924166,
+            "BLK": -0.45223278,
+            "TO": 0.36871797,
+            "PTS": -0.097806826
+          }
+        },
+        {
+          "id": 5174563,
+          "fullName": "Kyshawn George",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0,
+          "currentRater": -0.5816013,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.5735635,
+            "FT": -0.38974935,
+            "3PM": -0.5979168,
+            "REB": -0.04942425,
+            "AST": 0.04261736,
+            "STL": 0.3984951,
+            "BLK": 1.9021332,
+            "TO": 0.21177648,
+            "PTS": -0.5259696
+          }
+        },
+        {
+          "id": 2596112,
+          "fullName": "Javonte Green",
+          "keeperHistory": [],
+          "salary": 5,
+          "previousRater": -3.2878149,
+          "currentRater": 3.6422205,
+          "gamesPlayed": 7,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.52009755,
+            "FT": 0.7891337,
+            "3PM": -0.29270712,
+            "REB": 0.2886702,
+            "AST": -0.52269506,
+            "STL": 1.8883643,
+            "BLK": 0.8931192,
+            "TO": 0.36871797,
+            "PTS": -0.29048008
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Dusk Lions",
+      "roster": [
+        {
+          "id": 4278049,
+          "fullName": "Daniel Gafford",
+          "salary": 6,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.425298,
+          "currentRater": 2.9871883,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.9938669,
+            "FT": -0.4209531,
+            "3PM": -0.9031265,
+            "REB": 0.90851,
+            "AST": -0.2804183,
+            "STL": -0.19745255,
+            "BLK": 1.5657952,
+            "TO": 0.05483498,
+            "PTS": 0.26613155
+          }
+        },
+        {
+          "id": 4277811,
+          "fullName": "Collin Sexton",
+          "salary": 12,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 6.376208,
+          "currentRater": -0.3024199,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.16133164,
+            "FT": 1.6619806,
+            "3PM": -0.44531196,
+            "REB": -0.33116964,
+            "AST": 0.2041352,
+            "STL": 0.3984951,
+            "BLK": -0.45223278,
+            "TO": -1.828463,
+            "PTS": 0.65147805
+          }
+        },
+        {
+          "id": 4432848,
+          "fullName": "Jaime Jaquez Jr.",
+          "salary": 2,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": 3.1034884,
+          "currentRater": -2.7839596,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.9168739,
+            "FT": -1.7629762,
+            "3PM": 0.012502565,
+            "REB": 1.0212082,
+            "AST": 0.04261736,
+            "STL": 0.10052129,
+            "BLK": -0.78857076,
+            "TO": -0.41598952,
+            "PTS": -0.076398686
+          }
+        },
+        {
+          "id": 3945274,
+          "fullName": "Luka Doncic",
+          "salary": 58,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 13.208813,
+          "currentRater": 5.6131287,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.5639457,
+            "FT": -0.25297216,
+            "3PM": 1.9963655,
+            "REB": 1.7537462,
+            "AST": 2.0615904,
+            "STL": 0.3984951,
+            "BLK": 0.22044322,
+            "TO": -1.51458,
+            "PTS": 2.513986
+          }
+        },
+        {
+          "id": 2779,
+          "fullName": "Chris Paul",
+          "salary": 7,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 2.484436,
+          "currentRater": 5.7513294,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.5235117,
+            "FT": 0.8727115,
+            "3PM": 1.2333413,
+            "REB": 0.23232113,
+            "AST": 3.272974,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": -1.0437555,
+            "PTS": 0.41598853
+          }
+        },
+        {
+          "id": 4066320,
+          "fullName": "Desmond Bane",
+          "salary": 3,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 3.2097073,
+          "currentRater": 4.340526,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.47528636,
+            "FT": 1.0462672,
+            "3PM": 1.0807365,
+            "REB": 0.40136835,
+            "AST": 0.2041352,
+            "STL": 0.3984951,
+            "BLK": 0.22044322,
+            "TO": -0.41598952,
+            "PTS": 0.9297839
+          }
+        },
+        {
+          "id": 3975,
+          "fullName": "Stephen Curry",
+          "salary": 42,
+          "keeperHistory": [],
+          "gamesPlayed": 3,
+          "previousRater": 10.762677,
+          "currentRater": 1.7918737,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.45727775,
+            "FT": 1.3941772,
+            "3PM": 0.77552676,
+            "REB": -0.21847148,
+            "AST": 0.6886887,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": -0.7298725,
+            "PTS": 0.09486643
+          }
+        },
+        {
+          "id": 4432573,
+          "fullName": "Paolo Banchero",
+          "salary": 23,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 3.379199,
+          "currentRater": 2.9395607,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7895249,
+            "FT": -2.9706087,
+            "3PM": 0.77552676,
+            "REB": 1.3593026,
+            "AST": 1.3347601,
+            "STL": -0.19745255,
+            "BLK": 0.55678123,
+            "TO": -0.7298725,
+            "PTS": 2.021599
+          }
+        },
+        {
+          "id": 5211176,
+          "fullName": "Tidjane Salaun",
+          "salary": 8,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 0,
+          "currentRater": -3.5926294,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.41778576,
+            "FT": -0.3557226,
+            "3PM": -0.44531196,
+            "REB": -0.50021684,
+            "AST": -0.603454,
+            "STL": -0.49542636,
+            "BLK": -0.78857076,
+            "TO": 0.83954245,
+            "PTS": -0.8256836
+          }
+        },
+        {
+          "id": 3134907,
+          "fullName": "Kyle Kuzma",
+          "salary": 7,
+          "keeperHistory": [],
+          "gamesPlayed": 3,
+          "previousRater": 4.118329,
+          "currentRater": -3.3290737,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.6972089,
+            "FT": -0.17838898,
+            "3PM": -0.14010228,
+            "REB": 0.0632739,
+            "AST": -0.038141564,
+            "STL": -0.79340017,
+            "BLK": -0.45223278,
+            "TO": -0.10210652,
+            "PTS": 0.009233872
+          }
+        },
+        {
+          "id": 3102530,
+          "fullName": "Jusuf Nurkic",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 3.880816,
+          "currentRater": -2.86784,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.8549717,
+            "FT": -0.9064774,
+            "3PM": -0.44531196,
+            "REB": 1.8100953,
+            "AST": -0.1996594,
+            "STL": -0.49542636,
+            "BLK": 0.55678123,
+            "TO": -2.2992876,
+            "PTS": -0.033582408
+          }
+        },
+        {
+          "id": 4845367,
+          "fullName": "Stephon Castle",
+          "salary": 10,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0,
+          "currentRater": -4.7575965,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.6570777,
+            "FT": -1.7629762,
+            "3PM": -0.5979168,
+            "REB": -0.33116964,
+            "AST": 0.2848941,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": -0.259048,
+            "PTS": -0.41892892
+          }
+        },
+        {
+          "id": 4432808,
+          "fullName": "James Wiseman",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 1,
+          "previousRater": -0.42406824,
+          "currentRater": -4.378975,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.047878135,
+            "FT": 0.30406386,
+            "3PM": -0.9031265,
+            "REB": -1.0637076,
+            "AST": -0.92648965,
+            "STL": -1.091374,
+            "BLK": -0.78857076,
+            "TO": 0.996484,
+            "PTS": -0.9541324
+          }
+        },
+        {
+          "id": 6585,
+          "fullName": "Andre Drummond",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.9707323,
+          "currentRater": -1.1696883,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.24657997,
+            "FT": -2.0043223,
+            "3PM": -0.9031265,
+            "REB": 2.2045388,
+            "AST": -0.6842129,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -0.886814,
+            "PTS": -0.16203125
+          }
+        },
+        {
+          "id": 2581018,
+          "fullName": "Kentavious Caldwell-Pope",
+          "salary": 2,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 5.336248,
+          "currentRater": 1.5084466,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.4828104,
+            "FT": 1.2679095,
+            "3PM": 0.16510741,
+            "REB": -0.61291504,
+            "AST": -0.1996594,
+            "STL": 1.2924166,
+            "BLK": 0.8931192,
+            "TO": 0.36871797,
+            "PTS": -0.18343939
+          }
+        },
+        {
+          "id": 4065732,
+          "fullName": "De'Andre Hunter",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 2,
+          "previousRater": 1.7142538,
+          "currentRater": -0.64366853,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.26787966,
+            "FT": 1.1709543,
+            "3PM": -0.29270712,
+            "REB": -0.3875187,
+            "AST": -0.603454,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": 0.996484,
+            "PTS": -0.31188822
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Venomous Vicious Vipers",
+      "roster": [
+        {
+          "id": 4709138,
+          "fullName": "Brandin Podziemski",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 6,
+          "previousRater": 1.5849606,
+          "currentRater": -0.28608546,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.3076926,
+            "FT": -1.0209794,
+            "3PM": 0.012502565,
+            "REB": 0.7394628,
+            "AST": 1.2540011,
+            "STL": 0.10052129,
+            "BLK": 0.55678123,
+            "TO": -0.886814,
+            "PTS": 0.26613155
+          }
+        },
+        {
+          "id": 4433621,
+          "fullName": "Jalen Duren",
+          "salary": 8,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 7,
+          "previousRater": 5.184985,
+          "currentRater": 4.542833,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 3.238251,
+            "FT": -2.4073598,
+            "3PM": -0.9031265,
+            "REB": 2.8243787,
+            "AST": 0.6886887,
+            "STL": -0.49542636,
+            "BLK": 2.574809,
+            "TO": -1.200697,
+            "PTS": 0.22331527
+          }
+        },
+        {
+          "id": 4701232,
+          "fullName": "Mark Williams",
+          "salary": 1,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 0,
+          "previousRater": -1.6940684,
+          "currentRater": 0,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 3.238251,
+            "FT": -2.4073598,
+            "3PM": -0.9031265,
+            "REB": 2.8243787,
+            "AST": 0.6886887,
+            "STL": -0.49542636,
+            "BLK": 2.574809,
+            "TO": -1.200697,
+            "PTS": 0.22331527
+          }
+        },
+        {
+          "id": 4594268,
+          "fullName": "Anthony Edwards",
+          "salary": 29,
+          "keeperHistory": ["2024", "2023", "2022", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 9.365874,
+          "currentRater": 4.249701,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.09084124,
+            "FT": -2.1823227,
+            "3PM": 3.9802284,
+            "REB": 0.7958119,
+            "AST": 0.6886887,
+            "STL": 0.3984951,
+            "BLK": 0.22044322,
+            "TO": -2.2992876,
+            "PTS": 2.5568025
+          }
+        },
+        {
+          "id": 4431678,
+          "fullName": "Tyrese Maxey",
+          "salary": 11,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 5,
+          "previousRater": 9.459175,
+          "currentRater": 4.2835007,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.9628189,
+            "FT": 1.1205528,
+            "3PM": 1.3859462,
+            "REB": -0.1621224,
+            "AST": 1.0117244,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -0.7298725,
+            "PTS": 2.1072316
+          }
+        },
+        {
+          "id": 4433134,
+          "fullName": "Scottie Barnes",
+          "salary": 18,
+          "keeperHistory": ["2024", "2023", "2025"],
+          "gamesPlayed": 4,
+          "previousRater": 7.053764,
+          "currentRater": 0.92824024,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": 0.03319918,
+            "FT": -0.3733185,
+            "3PM": -0.5979168,
+            "REB": 0.62676466,
+            "AST": 1.0117244,
+            "STL": 1.2924166,
+            "BLK": -0.11589478,
+            "TO": -1.51458,
+            "PTS": 0.5658455
+          }
+        },
+        {
+          "id": 6442,
+          "fullName": "Kyrie Irving",
+          "salary": 34,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 9.180393,
+          "currentRater": 8.258059,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.42855272,
+            "FT": 0.9987055,
+            "3PM": 2.1489704,
+            "REB": 0.2886702,
+            "AST": 1.5770369,
+            "STL": 1.5903904,
+            "BLK": -0.11589478,
+            "TO": -0.572931,
+            "PTS": 1.9145583
+          }
+        },
+        {
+          "id": 3064440,
+          "fullName": "Zach LaVine",
+          "salary": 16,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": -1.137019,
+          "currentRater": 4.9389486,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7597307,
+            "FT": 0.62828696,
+            "3PM": 2.45418,
+            "REB": 0.7394628,
+            "AST": 0.36565304,
+            "STL": 0.3984951,
+            "BLK": 0.22044322,
+            "TO": -2.456229,
+            "PTS": 1.8289257
+          }
+        },
+        {
+          "id": 2991230,
+          "fullName": "Fred VanVleet",
+          "salary": 27,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 9.891808,
+          "currentRater": 2.6701756,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -3.1916947,
+            "FT": 0.641189,
+            "3PM": 1.3859462,
+            "REB": 0.006924826,
+            "AST": 1.8193135,
+            "STL": 1.5903904,
+            "BLK": -0.45223278,
+            "TO": 0.36871797,
+            "PTS": 0.50162107
+          }
+        },
+        {
+          "id": 3934719,
+          "fullName": "OG Anunoby",
+          "salary": 9,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.2123053,
+          "currentRater": 1.6819793,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.17831516,
+            "FT": 0.045141246,
+            "3PM": 0.31771225,
+            "REB": -0.10577333,
+            "AST": 0.04261736,
+            "STL": 1.2924166,
+            "BLK": -0.45223278,
+            "TO": 0.05483498,
+            "PTS": 0.30894783
+          }
+        },
+        {
+          "id": 3978,
+          "fullName": "DeMar DeRozan",
+          "salary": 20,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.10147,
+          "currentRater": 8.443333,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.4775629,
+            "FT": 1.7622318,
+            "3PM": -0.14010228,
+            "REB": 0.40136835,
+            "AST": 0.85020655,
+            "STL": 3.0802596,
+            "BLK": -0.11589478,
+            "TO": -1.0437555,
+            "PTS": 2.1714559
+          }
+        },
+        {
+          "id": 4017837,
+          "fullName": "Ivica Zubac",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 5.233062,
+          "currentRater": 2.8079073,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.1445217,
+            "FT": -3.4066854,
+            "3PM": -0.9031265,
+            "REB": 3.2751713,
+            "AST": 0.2848941,
+            "STL": 0.3984951,
+            "BLK": 0.8931192,
+            "TO": -1.0437555,
+            "PTS": 1.1652734
+          }
+        },
+        {
+          "id": 4432165,
+          "fullName": "Jalen Suggs",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 4.567406,
+          "currentRater": 10.469435,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.35970464,
+            "FT": 1.3367943,
+            "3PM": 1.9963655,
+            "REB": 0.9648591,
+            "AST": 1.415519,
+            "STL": 3.3782334,
+            "BLK": 1.5657952,
+            "TO": -1.3576385,
+            "PTS": 1.5292118
+          }
+        },
+        {
+          "id": 4431684,
+          "fullName": "Trayce Jackson-Davis",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 1.3477879,
+          "currentRater": 2.0121403,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.712738,
+            "FT": -0.5662435,
+            "3PM": -0.9031265,
+            "REB": 0.45771745,
+            "AST": 0.2848941,
+            "STL": -0.79340017,
+            "BLK": 0.22044322,
+            "TO": 0.5256595,
+            "PTS": 0.07345829
+          }
+        },
+        {
+          "id": 4431823,
+          "fullName": "Miles McBride",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.7399621,
+          "currentRater": 1.4071823,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7397886,
+            "FT": -0.38974935,
+            "3PM": 0.92813164,
+            "REB": -0.50021684,
+            "AST": 0.04261736,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": 0.05483498,
+            "PTS": 0.2875397
+          }
+        },
+        {
+          "id": 2991139,
+          "fullName": "Kris Dunn",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.8801882,
+          "currentRater": 0.76197046,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0016482,
+            "FT": -1.3409013,
+            "3PM": 0.31771225,
+            "REB": 0.5140665,
+            "AST": 0.2848941,
+            "STL": 0.99444276,
+            "BLK": -0.78857076,
+            "TO": -0.10210652,
+            "PTS": -0.11921497
+          }
+        },
+        {
+          "id": 5061589,
+          "fullName": "Yves Missi",
+          "salary": 3,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": 1.5909365,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.22360857,
+            "FT": -1.6115557,
+            "3PM": -0.9031265,
+            "REB": 1.2466044,
+            "AST": 0.04261736,
+            "STL": 0.10052129,
+            "BLK": 2.911147,
+            "TO": 0.21177648,
+            "PTS": -0.18343939
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Cambrai City",
+      "roster": [
+        {
+          "id": 4278067,
+          "fullName": "Nic Claxton",
+          "salary": 10,
+          "keeperHistory": ["2024", "2025"],
+          "gamesPlayed": 6,
+          "previousRater": 5.7031436,
+          "currentRater": 0.89140815,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.3376894,
+            "FT": -3.8283186,
+            "3PM": -0.9031265,
+            "REB": 1.3029536,
+            "AST": 0.12337628,
+            "STL": 0.10052129,
+            "BLK": 1.5657952,
+            "TO": 0.05483498,
+            "PTS": 0.1376827
+          }
+        },
+        {
+          "id": 5104155,
+          "fullName": "Bilal Coulibaly",
+          "salary": 8,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 5,
+          "previousRater": -0.2063028,
+          "currentRater": 4.3718996,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.053389,
+            "FT": 0.2801337,
+            "3PM": 0.62292194,
+            "REB": 0.62676466,
+            "AST": 0.12337628,
+            "STL": 0.69646895,
+            "BLK": -0.45223278,
+            "TO": -0.572931,
+            "PTS": 0.9940083
+          }
+        },
+        {
+          "id": 5106258,
+          "fullName": "Gradey Dick",
+          "salary": 1,
+          "keeperHistory": ["2025"],
+          "gamesPlayed": 7,
+          "previousRater": -1.3110998,
+          "currentRater": 7.3917437,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.24598844,
+            "FT": 2.0710933,
+            "3PM": 1.9963655,
+            "REB": -0.04942425,
+            "AST": 0.12337628,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -0.572931,
+            "PTS": 2.0644152
+          }
+        },
+        {
+          "id": 6606,
+          "fullName": "Damian Lillard",
+          "salary": 40,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 10.030919,
+          "currentRater": 7.856329,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.35892388,
+            "FT": 2.279279,
+            "3PM": 2.45418,
+            "REB": 0.5704156,
+            "AST": 2.303867,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": -1.3576385,
+            "PTS": 2.2784967
+          }
+        },
+        {
+          "id": 2490149,
+          "fullName": "CJ McCollum",
+          "salary": 17,
+          "keeperHistory": [],
+          "gamesPlayed": 4,
+          "previousRater": 6.8701167,
+          "currentRater": 2.9494812,
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": -0.1871422,
+            "FT": -0.38974935,
+            "3PM": 1.0807365,
+            "REB": -0.33116964,
+            "AST": 0.36565304,
+            "STL": 1.5903904,
+            "BLK": 0.55678123,
+            "TO": -0.259048,
+            "PTS": 0.5230292
+          }
+        },
+        {
+          "id": 6478,
+          "fullName": "Nikola Vucevic",
+          "salary": 26,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 7.887913,
+          "currentRater": 9.516641,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.8499854,
+            "FT": 1.9781501,
+            "3PM": 1.2333413,
+            "REB": 2.5989823,
+            "AST": 0.6886887,
+            "STL": -0.49542636,
+            "BLK": 0.55678123,
+            "TO": -0.572931,
+            "PTS": 1.6790688
+          }
+        },
+        {
+          "id": 3134908,
+          "fullName": "Jakob Poeltl",
+          "salary": 11,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 1.9916596,
+          "currentRater": 7.63074,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 2.127044,
+            "FT": 0.037328057,
+            "3PM": -0.9031265,
+            "REB": 3.6132658,
+            "AST": 0.6886887,
+            "STL": 0.3984951,
+            "BLK": 2.574809,
+            "TO": -1.9854045,
+            "PTS": 1.0796409
+          }
+        },
+        {
+          "id": 4433218,
+          "fullName": "Jaden Ivey",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0.7026336,
+          "currentRater": 2.9955184,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.35892388,
+            "FT": 0.071150005,
+            "3PM": 1.3859462,
+            "REB": 0.68311375,
+            "AST": 1.0924833,
+            "STL": 0.99444276,
+            "BLK": -0.45223278,
+            "TO": -2.142346,
+            "PTS": 1.7218851
+          }
+        },
+        {
+          "id": 4395723,
+          "fullName": "Keldon Johnson",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.9143193,
+          "currentRater": 0.3528239,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.85877806,
+            "FT": 0.39120954,
+            "3PM": 0.16510741,
+            "REB": 0.90851,
+            "AST": -0.603454,
+            "STL": 0.69646895,
+            "BLK": -0.78857076,
+            "TO": -0.10210652,
+            "PTS": 0.54443735
+          }
+        },
+        {
+          "id": 2528426,
+          "fullName": "Jordan Clarkson",
+          "salary": 4,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 0.3294963,
+          "currentRater": -2.858291,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.98379946,
+            "FT": -0.76279306,
+            "3PM": -0.14010228,
+            "REB": -0.04942425,
+            "AST": 0.44641197,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": -0.7298725,
+            "PTS": 0.30894783
+          }
+        },
+        {
+          "id": 4280151,
+          "fullName": "Corey Kispert",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 2.164531,
+          "currentRater": -1.369156,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.9251332,
+            "FT": 0.24148078,
+            "3PM": 0.62292194,
+            "REB": -0.33116964,
+            "AST": -0.1996594,
+            "STL": -0.49542636,
+            "BLK": -0.78857076,
+            "TO": 0.36871797,
+            "PTS": 0.1376827
+          }
+        },
+        {
+          "id": 4683634,
+          "fullName": "Bennedict Mathurin",
+          "salary": 6,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 0.22632624,
+          "currentRater": 0.8908061,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.0985049,
+            "FT": 0.2950909,
+            "3PM": 0.31771225,
+            "REB": 0.5140665,
+            "AST": -0.038141564,
+            "STL": -0.79340017,
+            "BLK": -0.78857076,
+            "TO": -0.7298725,
+            "PTS": 1.0154164
+          }
+        },
+        {
+          "id": 4610139,
+          "fullName": "Jeremy Sochan",
+          "salary": 5,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 2.2075045,
+          "currentRater": 2.5968285,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.9121223,
+            "FT": -1.1724974,
+            "3PM": -0.44531196,
+            "REB": 1.7537462,
+            "AST": 0.6886887,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": -1.200697,
+            "PTS": 1.1438652
+          }
+        },
+        {
+          "id": 1966,
+          "fullName": "LeBron James",
+          "salary": 40,
+          "keeperHistory": [],
+          "gamesPlayed": 6,
+          "previousRater": 9.6989155,
+          "currentRater": 5.350321,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7746999,
+            "FT": -0.30857223,
+            "3PM": 1.3859462,
+            "REB": 1.1339064,
+            "AST": 2.5461438,
+            "STL": -0.49542636,
+            "BLK": 0.22044322,
+            "TO": -1.6715215,
+            "PTS": 1.7647014
+          }
+        },
+        {
+          "id": 4278076,
+          "fullName": "Nick Richards",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 5,
+          "previousRater": 4.1021223,
+          "currentRater": 2.7668154,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.542363,
+            "FT": -2.1149774,
+            "3PM": -0.9031265,
+            "REB": 1.6973971,
+            "AST": -0.1996594,
+            "STL": -0.49542636,
+            "BLK": 3.2474852,
+            "TO": -0.10210652,
+            "PTS": 0.09486643
+          }
+        },
+        {
+          "id": 5112087,
+          "fullName": "Jaylen Wells",
+          "salary": 1,
+          "keeperHistory": [],
+          "gamesPlayed": 7,
+          "previousRater": 0,
+          "currentRater": -0.9715207,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.90800184,
+            "FT": -0.7319772,
+            "3PM": 0.92813164,
+            "REB": 0.2886702,
+            "AST": 0.04261736,
+            "STL": -0.49542636,
+            "BLK": -0.45223278,
+            "TO": -0.10210652,
+            "PTS": 0.45880482
+          }
+        },
+        {
+          "id": 4397183,
+          "fullName": "Aaron Wiggins",
+          "keeperHistory": [],
+          "salary": 5,
+          "previousRater": 1.6511991,
+          "currentRater": 2.3276267,
+          "gamesPlayed": 6,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.7736124,
+            "FT": 0.30406386,
+            "3PM": 0.16510741,
+            "REB": 0.34501928,
+            "AST": -0.11890048,
+            "STL": 0.69646895,
+            "BLK": -0.11589478,
+            "TO": 0.05483498,
+            "PTS": 0.22331527
+          }
         }
       ]
     },
@@ -2095,7 +4669,18 @@
           "gamesPlayed": 0,
           "previousRater": 12.531162,
           "currentRater": 0,
-          "injuredSpot": true
+          "injuredSpot": true,
+          "categoriesRaters": {
+            "FG": 0.7736124,
+            "FT": 0.30406386,
+            "3PM": 0.16510741,
+            "REB": 0.34501928,
+            "AST": -0.11890048,
+            "STL": 0.69646895,
+            "BLK": -0.11589478,
+            "TO": 0.05483498,
+            "PTS": 0.22331527
+          }
         },
         {
           "id": 6578,
@@ -2104,8 +4689,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 3.0405242,
-          "currentRater": 2.6740837,
-          "injuredSpot": false
+          "currentRater": 2.5809863,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 1.1265548,
+            "FT": 0.91902006,
+            "3PM": 0.31771225,
+            "REB": -0.04942425,
+            "AST": -0.36117724,
+            "STL": -0.19745255,
+            "BLK": -0.11589478,
+            "TO": 0.5256595,
+            "PTS": 0.41598853
+          }
         },
         {
           "id": 2991070,
@@ -2114,8 +4710,19 @@
           "keeperHistory": ["2024", "2023", "2022", "2025"],
           "gamesPlayed": 7,
           "previousRater": 2.0807712,
-          "currentRater": 5.7902284,
-          "injuredSpot": false
+          "currentRater": 5.661904,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.9119189,
+            "FT": 0.39826784,
+            "3PM": 2.1489704,
+            "REB": 0.7958119,
+            "AST": 0.12337628,
+            "STL": 0.69646895,
+            "BLK": 2.911147,
+            "TO": -1.200697,
+            "PTS": 1.7004769
+          }
         },
         {
           "id": 4066648,
@@ -2124,8 +4731,19 @@
           "keeperHistory": ["2024", "2025"],
           "gamesPlayed": 6,
           "previousRater": 3.0146215,
-          "currentRater": 2.6069393,
-          "injuredSpot": false
+          "currentRater": 2.5091524,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.55266386,
+            "FT": 0.39120954,
+            "3PM": 0.62292194,
+            "REB": 1.1902554,
+            "AST": -0.11890048,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": 0.21177648,
+            "PTS": 0.7799269
+          }
         },
         {
           "id": 4278073,
@@ -2134,8 +4752,19 @@
           "keeperHistory": ["2024", "2023", "2022", "2025"],
           "gamesPlayed": 6,
           "previousRater": 17.61896,
-          "currentRater": 12.7068615,
-          "injuredSpot": false
+          "currentRater": 12.480283,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.32811564,
+            "FT": 2.5234475,
+            "3PM": 0.92813164,
+            "REB": 1.1339064,
+            "AST": 2.2231083,
+            "STL": 2.1863382,
+            "BLK": 1.5657952,
+            "TO": -0.7298725,
+            "PTS": 2.321313
+          }
         },
         {
           "id": 3934673,
@@ -2144,8 +4773,19 @@
           "keeperHistory": ["2025"],
           "gamesPlayed": 6,
           "previousRater": 6.8553,
-          "currentRater": -0.6127387,
-          "injuredSpot": false
+          "currentRater": -0.69809973,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.391733,
+            "FT": -0.5662435,
+            "3PM": 1.0807365,
+            "REB": -0.10577333,
+            "AST": 0.7694476,
+            "STL": 0.69646895,
+            "BLK": -0.78857076,
+            "TO": -0.572931,
+            "PTS": 0.18049899
+          }
         },
         {
           "id": 4396907,
@@ -2154,8 +4794,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": 2.4838128,
-          "currentRater": 8.231628,
-          "injuredSpot": false
+          "currentRater": 8.036887,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.6709993,
+            "FT": 1.6390153,
+            "3PM": 1.9963655,
+            "REB": -0.33116964,
+            "AST": 2.6269028,
+            "STL": 1.2924166,
+            "BLK": 0.22044322,
+            "TO": -1.6715215,
+            "PTS": 1.5934362
+          }
         },
         {
           "id": 4432639,
@@ -2164,8 +4815,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 5.693314,
-          "currentRater": 2.860748,
-          "injuredSpot": false
+          "currentRater": 2.7715538,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.77577,
+            "FT": 0.7626221,
+            "3PM": 0.77552676,
+            "REB": 1.6410481,
+            "AST": -0.36117724,
+            "STL": -0.19745255,
+            "BLK": 0.22044322,
+            "TO": 0.05483498,
+            "PTS": 0.65147805
+          }
         },
         {
           "id": 2991350,
@@ -2174,8 +4836,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 6.3458743,
-          "currentRater": -0.17832388,
-          "injuredSpot": false
+          "currentRater": -0.25421873,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.314261,
+            "FT": -0.5135633,
+            "3PM": -0.5979168,
+            "REB": -0.1621224,
+            "AST": -0.038141564,
+            "STL": 2.1863382,
+            "BLK": 0.55678123,
+            "TO": 0.36871797,
+            "PTS": -0.74005103
+          }
         },
         {
           "id": 2990992,
@@ -2184,18 +4857,40 @@
           "keeperHistory": [],
           "gamesPlayed": 5,
           "previousRater": -2.7570124,
-          "currentRater": -2.0269701,
-          "injuredSpot": false
+          "currentRater": -2.0707824,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -1.981229,
+            "FT": 0.32018787,
+            "3PM": -0.44531196,
+            "REB": -0.50021684,
+            "AST": 0.2041352,
+            "STL": 0.69646895,
+            "BLK": 0.22044322,
+            "TO": -0.10210652,
+            "PTS": -0.48315334
+          }
         },
         {
           "id": 4277847,
           "fullName": "Wendell Carter Jr.",
           "salary": 7,
           "keeperHistory": [],
-          "gamesPlayed": 5,
+          "gamesPlayed": 6,
           "previousRater": 0.62633663,
-          "currentRater": 2.0232852,
-          "injuredSpot": false
+          "currentRater": 3.0586233,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.1057884,
+            "FT": 0.0825008,
+            "3PM": -0.5979168,
+            "REB": 1.8664443,
+            "AST": 0.12337628,
+            "STL": 1.2924166,
+            "BLK": -0.11589478,
+            "TO": 0.5256595,
+            "PTS": -0.012174267
+          }
         },
         {
           "id": 4431671,
@@ -2204,8 +4899,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 1.7844776,
-          "currentRater": 0.9123949,
-          "injuredSpot": false
+          "currentRater": 0.84305805,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.11251568,
+            "FT": 0.30406386,
+            "3PM": -0.14010228,
+            "REB": -0.33116964,
+            "AST": 0.04261736,
+            "STL": 0.10052129,
+            "BLK": 1.2294571,
+            "TO": -0.259048,
+            "PTS": 0.009233872
+          }
         },
         {
           "id": 4432810,
@@ -2214,8 +4920,19 @@
           "keeperHistory": [],
           "gamesPlayed": 7,
           "previousRater": -0.06964228,
-          "currentRater": 3.1381495,
-          "injuredSpot": false
+          "currentRater": 3.0631275,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.11476699,
+            "FT": 1.2679095,
+            "3PM": -0.9031265,
+            "REB": 1.4156517,
+            "AST": 0.12337628,
+            "STL": 0.3984951,
+            "BLK": 2.2384713,
+            "TO": -0.7298725,
+            "PTS": -0.6330103
+          }
         },
         {
           "id": 3913174,
@@ -2225,7 +4942,18 @@
           "gamesPlayed": 0,
           "previousRater": -0.80187356,
           "currentRater": 0,
-          "injuredSpot": false
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.11476699,
+            "FT": 1.2679095,
+            "3PM": -0.9031265,
+            "REB": 1.4156517,
+            "AST": 0.12337628,
+            "STL": 0.3984951,
+            "BLK": 2.2384713,
+            "TO": -0.7298725,
+            "PTS": -0.6330103
+          }
         },
         {
           "id": 4897943,
@@ -2234,8 +4962,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 0,
-          "currentRater": -0.87136155,
-          "injuredSpot": false
+          "currentRater": -0.9249118,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.12815726,
+            "FT": 0.8727115,
+            "3PM": 0.31771225,
+            "REB": -0.61291504,
+            "AST": -0.36117724,
+            "STL": -0.49542636,
+            "BLK": -0.78857076,
+            "TO": 0.36871797,
+            "PTS": -0.097806826
+          }
         },
         {
           "id": 4278355,
@@ -2244,8 +4983,19 @@
           "keeperHistory": [],
           "gamesPlayed": 6,
           "previousRater": 4.783956,
-          "currentRater": 1.7353327,
-          "injuredSpot": false
+          "currentRater": 1.648767,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": 0.84140784,
+            "FT": 0.5841678,
+            "3PM": 0.16510741,
+            "REB": 0.006924826,
+            "AST": -0.11890048,
+            "STL": 0.10052129,
+            "BLK": -0.11589478,
+            "TO": -0.10210652,
+            "PTS": 0.2875397
+          }
         },
         {
           "id": 4396991,
@@ -2254,184 +5004,19 @@
           "keeperHistory": [],
           "gamesPlayed": 4,
           "previousRater": -1.0238394,
-          "currentRater": -5.547612,
-          "injuredSpot": false
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Venomous Vicious Vipers",
-      "roster": [
-        {
-          "id": 4709138,
-          "fullName": "Brandin Podziemski",
-          "salary": 1,
-          "keeperHistory": ["2025"],
-          "gamesPlayed": 6,
-          "previousRater": 1.5849606,
-          "currentRater": -0.20723577,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433621,
-          "fullName": "Jalen Duren",
-          "salary": 8,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 7,
-          "previousRater": 5.184985,
-          "currentRater": 4.6627374,
-          "injuredSpot": false
-        },
-        {
-          "id": 4701232,
-          "fullName": "Mark Williams",
-          "salary": 1,
-          "keeperHistory": ["2024", "2025"],
-          "gamesPlayed": 0,
-          "previousRater": -1.6940684,
-          "currentRater": 0,
-          "injuredSpot": false
-        },
-        {
-          "id": 4594268,
-          "fullName": "Anthony Edwards",
-          "salary": 29,
-          "keeperHistory": ["2024", "2023", "2022", "2025"],
-          "gamesPlayed": 6,
-          "previousRater": 9.365874,
-          "currentRater": 4.4082975,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431678,
-          "fullName": "Tyrese Maxey",
-          "salary": 11,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 5,
-          "previousRater": 9.459175,
-          "currentRater": 4.4244504,
-          "injuredSpot": false
-        },
-        {
-          "id": 4433134,
-          "fullName": "Scottie Barnes",
-          "salary": 18,
-          "keeperHistory": ["2024", "2023", "2025"],
-          "gamesPlayed": 4,
-          "previousRater": 7.053764,
-          "currentRater": 1.0271605,
-          "injuredSpot": true
-        },
-        {
-          "id": 6442,
-          "fullName": "Kyrie Irving",
-          "salary": 34,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 9.180393,
-          "currentRater": 6.854735,
-          "injuredSpot": false
-        },
-        {
-          "id": 3064440,
-          "fullName": "Zach LaVine",
-          "salary": 16,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": -1.137019,
-          "currentRater": 5.070933,
-          "injuredSpot": false
-        },
-        {
-          "id": 2991230,
-          "fullName": "Fred VanVleet",
-          "salary": 27,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 9.891808,
-          "currentRater": 2.8073688,
-          "injuredSpot": false
-        },
-        {
-          "id": 3934719,
-          "fullName": "OG Anunoby",
-          "salary": 9,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 2.2123053,
-          "currentRater": 1.7861339,
-          "injuredSpot": false
-        },
-        {
-          "id": 3978,
-          "fullName": "DeMar DeRozan",
-          "salary": 20,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 10.10147,
-          "currentRater": 8.628811,
-          "injuredSpot": false
-        },
-        {
-          "id": 4017837,
-          "fullName": "Ivica Zubac",
-          "salary": 11,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 5.233062,
-          "currentRater": 2.9288623,
-          "injuredSpot": false
-        },
-        {
-          "id": 4432165,
-          "fullName": "Jalen Suggs",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 4.567406,
-          "currentRater": 9.702466,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431684,
-          "fullName": "Trayce Jackson-Davis",
-          "salary": 4,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 1.3477879,
-          "currentRater": 2.1057885,
-          "injuredSpot": false
-        },
-        {
-          "id": 4431823,
-          "fullName": "Miles McBride",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 5,
-          "previousRater": 0.7399621,
-          "currentRater": 1.509665,
-          "injuredSpot": false
-        },
-        {
-          "id": 2991139,
-          "fullName": "Kris Dunn",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0.8801882,
-          "currentRater": 0.86449903,
-          "injuredSpot": false
-        },
-        {
-          "id": 5061589,
-          "fullName": "Yves Missi",
-          "salary": 3,
-          "keeperHistory": [],
-          "gamesPlayed": 6,
-          "previousRater": 0,
-          "currentRater": 0.7015945,
-          "injuredSpot": false
+          "currentRater": -5.5430694,
+          "injuredSpot": false,
+          "categoriesRaters": {
+            "FG": -0.10738113,
+            "FT": -0.69570863,
+            "3PM": -0.75052166,
+            "REB": -0.8946604,
+            "AST": -0.76497185,
+            "STL": -1.091374,
+            "BLK": -0.78857076,
+            "TO": 0.5256595,
+            "PTS": -0.9755405
+          }
         }
       ]
     }

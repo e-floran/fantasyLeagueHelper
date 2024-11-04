@@ -4,6 +4,20 @@ export enum AcquisitionTypeEnum {
   TRADE = "TRADE",
 }
 
+export enum StatsCategories {
+  FG = "FG",
+  FT = "FT",
+  "3PM" = "3PM",
+  REB = "REB",
+  AST = "AST",
+  STL = "STL",
+  BLK = "BLK",
+  TO = "TO",
+  PTS = "PTS",
+}
+
+export type PlayerCategoriesRaters = { [key in StatsCategories]: number };
+
 export interface Player {
   id: number;
   fullName: string;
@@ -13,6 +27,7 @@ export interface Player {
   currentRater: number;
   injuredSpot: boolean;
   gamesPlayed: number;
+  categoriesRaters: PlayerCategoriesRaters;
 }
 
 export interface Team {
@@ -33,15 +48,18 @@ export interface TeamDetailsData {
   };
 }
 
+export interface PlayerRatings {
+  totalRating: number;
+  statRankings: { forStat: number; rating: number }[];
+}
+
 export interface RatedRawPlayer {
   id: number;
   keeperValue: number;
   keeperValueFuture: number;
   onteamId: number;
   ratings: {
-    "0": {
-      totalRating: number;
-    };
+    "0": PlayerRatings;
   };
   player: {
     fullName: string;
