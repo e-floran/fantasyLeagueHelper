@@ -1,8 +1,16 @@
-import { CSSProperties, ReactElement, useMemo } from "react";
+import {
+  CSSProperties,
+  ReactElement,
+  useCallback,
+  useMemo,
+  useState,
+} from "react";
 import rosters from "../assets/teams/rosters.json";
-import { Player } from "../utils/types";
+import { Player, StatsCategories } from "../utils/types";
 import { createStyles } from "../utils/style";
 import { useSortColumns } from "../hooks/useSortColumns";
+import { CustomCheckbox } from "../components/generic/CustomCheckbox";
+import { CustomButton } from "../components/generic/CustomButton";
 
 export interface PlayerWithAdvancedStats extends Player {
   raterBySalary: number;
@@ -11,9 +19,27 @@ export interface PlayerWithAdvancedStats extends Player {
 }
 
 export const AdvancedStats = (): ReactElement => {
+  const [categoriesToOmit, setCategoriesToOmit] = useState<StatsCategories[]>(
+    []
+  );
+  const [openFilters, setOpenFilters] = useState(false);
+
   const styles = createStyles<CSSProperties>()({
     columnHeader: {
       cursor: "pointer",
+    },
+    filtersContainer: {
+      display: "flex",
+      flexFlow: "row wrap",
+      justifyContent: "space-between",
+      alignItems: "center",
+      gap: "0.25rem",
+    },
+    filtersTitle: {
+      width: "fit-content",
+    },
+    tableCell: {
+      maxWidth: "calc(100% / 9)",
     },
   });
 
@@ -25,31 +51,72 @@ export const AdvancedStats = (): ReactElement => {
     return gamesPlayed.reduce((a, b) => a + b) / gamesPlayed.length;
   }, []);
 
+  const parsePlayerToAdvanced = useCallback(
+    (player: Player): PlayerWithAdvancedStats => {
+      let newCurrentRater = player.currentRater;
+      if (categoriesToOmit.length) {
+        categoriesToOmit.forEach((category) => {
+          newCurrentRater -= player.categoriesRaters[category];
+        });
+      }
+      return {
+        ...player,
+        currentRater: newCurrentRater,
+        raterBySalary: newCurrentRater / player.salary,
+        oldRaterBySalary: player.previousRater / player.salary,
+        raterByGames: player.gamesPlayed
+          ? (newCurrentRater / player.gamesPlayed) * averageGamesPlayed
+          : 0,
+      };
+    },
+    [averageGamesPlayed, categoriesToOmit]
+  );
+
   const flatPlayers = useMemo(() => {
     return rosters.teams
       .map((team) => team.roster)
       .flat()
       .map((player) => {
-        return {
-          ...player,
-          raterBySalary: player.currentRater / player.salary,
-          oldRaterBySalary: player.previousRater / player.salary,
-          raterByGames: player.gamesPlayed
-            ? (player.currentRater / player.gamesPlayed) * averageGamesPlayed
-            : 0,
-        };
+        return parsePlayerToAdvanced(player);
       });
-  }, [averageGamesPlayed]);
+  }, [parsePlayerToAdvanced]);
 
   const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
 
+  const handleCategoryToggle = useCallback(
+    (category: StatsCategories) => {
+      if (categoriesToOmit.includes(category)) {
+        setCategoriesToOmit((prev) => prev.filter((cat) => cat !== category));
+        return;
+      }
+      setCategoriesToOmit((prev) => [...prev, category]);
+    },
+    [categoriesToOmit]
+  );
+
   return (
     <main>
       <section>
         <h2>Statistiques avancées</h2>
+        <article style={styles.filtersContainer}>
+          <CustomButton
+            buttonText="Exclure"
+            onClickButton={() => setOpenFilters(!openFilters)}
+          />
+          {openFilters &&
+            (Object.keys(StatsCategories) as Array<StatsCategories>).map(
+              (category) => (
+                <CustomCheckbox
+                  labelText={category}
+                  onChange={() => handleCategoryToggle(category)}
+                  isChecked={categoriesToOmit.includes(category)}
+                />
+              )
+            )}
+        </article>
         <table>
           <thead>
             <th
@@ -111,18 +178,28 @@ export const AdvancedStats = (): ReactElement => {
             {sortedOptions.map((player) => {
               return (
                 <tr>
-                  <td>{player.fullName}</td>
-                  <td>{player.currentRater.toFixed(2)}</td>
-                  <td>{player.salary}</td>
-                  <td>{player.raterBySalary.toFixed(2)}</td>
+                  <td style={styles.tableCell}>{player.fullName}</td>
+                  <td style={styles.tableCell}>
+                    {player.currentRater.toFixed(2)}
+                  </td>
+                  <td style={styles.tableCell}>{player.salary}</td>
+                  <td style={styles.tableCell}>
+                    {player.raterBySalary.toFixed(2)}
+                  </td>
                   {isLocal && (
                     <>
-                      <td>{player.previousRater.toFixed(2)}</td>
-                      <td>{player.oldRaterBySalary.toFixed(2)}</td>
+                      <td style={styles.tableCell}>
+                        {player.previousRater.toFixed(2)}
+                      </td>
+                      <td style={styles.tableCell}>
+                        {player.oldRaterBySalary.toFixed(2)}
+                      </td>
                     </>
                   )}
-                  <td>{player.gamesPlayed}</td>
-                  <td>{player.raterByGames.toFixed(2)}</td>
+                  <td style={styles.tableCell}>{player.gamesPlayed}</td>
+                  <td style={styles.tableCell}>
+                    {player.raterByGames.toFixed(2)}
+                  </td>
                 </tr>
               );
             })}

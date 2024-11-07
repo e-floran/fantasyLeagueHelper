@@ -77,7 +77,7 @@ export const TradeTeam = ({
     <article style={styles.article}>
       <h3>{title}</h3>
       <select
-        name="equipe_1"
+        name={`team_${teamId}`}
         onChange={(event) => setTeam(Number(event.target.value))}
         value={teamId}
         style={styles.select}

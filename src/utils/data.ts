@@ -46,6 +46,7 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
     gamesPlayed: 0,
     injuredSpot: rawPlayer.lineupSlotId === 13,
     categoriesRaters: basePlayerRaters,
+    previousCategoriesRaters: basePlayerRaters,
   };
 };
 
@@ -72,13 +73,14 @@ const addFreeAgent = (
   gamesPlayed: number
 ) => {
   const parsedPlayer = filterPlayerKeys(newPlayer);
-  const lastRater = lastSeasonRaters.find(
+  const previousRaters = lastSeasonRaters.find(
     (ratedPlayer) => ratedPlayer.id === parsedPlayer.id
-  )?.ratings["0"].totalRating;
-  parsedPlayer.previousRater = typeof lastRater === "number" ? lastRater : 0;
+  )?.ratings["0"];
+  parsedPlayer.previousRater = previousRaters ? previousRaters.totalRating : 0;
   parsedPlayer.currentRater = currentRater?.totalRating ?? 0;
   parsedPlayer.gamesPlayed = gamesPlayed;
   parsedPlayer.categoriesRaters = buildPlayerRaters(currentRater);
+  parsedPlayer.previousCategoriesRaters = buildPlayerRaters(previousRaters);
   rosterToBuild.push(parsedPlayer);
 };
 
@@ -184,12 +186,17 @@ export const addNewPlayers = (
           (oldPlayer) => oldPlayer.id === newPlayer.playerId
         );
         if (previousPlayer) {
+          const previousRaters = lastSeasonRaters.find(
+            (ratedPlayer) => ratedPlayer.id === previousPlayer.id
+          )?.ratings["0"];
+
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,
             currentRater: currentRater?.ratings[0].totalRating ?? 0,
             gamesPlayed,
             categoriesRaters: buildPlayerRaters(currentRater?.ratings[0]),
+            previousCategoriesRaters: buildPlayerRaters(previousRaters),
           });
         }
       }
