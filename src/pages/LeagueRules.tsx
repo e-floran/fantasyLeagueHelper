@@ -16,15 +16,19 @@ export const LeagueRules = (): ReactElement => {
   });
 
   const renderParagraphs = (paragraphs: string[]) => {
-    return paragraphs.map((paragraph) => {
-      return <p style={styles.rulesText}>{paragraph}</p>;
+    return paragraphs.map((paragraph, index) => {
+      return (
+        <p style={styles.rulesText} key={index}>
+          {paragraph}
+        </p>
+      );
     });
   };
 
   const renderSection = () => {
-    return rulesText.map((section) => {
+    return rulesText.map((section, index) => {
       return (
-        <section style={styles.rulesSection}>
+        <section style={styles.rulesSection} key={index}>
           <h2>{section.title}</h2>
           {renderParagraphs(section.paragraphs)}
         </section>

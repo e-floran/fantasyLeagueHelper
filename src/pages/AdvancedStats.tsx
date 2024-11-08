@@ -54,14 +54,17 @@ export const AdvancedStats = (): ReactElement => {
   const parsePlayerToAdvanced = useCallback(
     (player: Player): PlayerWithAdvancedStats => {
       let newCurrentRater = player.currentRater;
+      let newPreviousRater = player.previousRater;
       if (categoriesToOmit.length) {
         categoriesToOmit.forEach((category) => {
           newCurrentRater -= player.categoriesRaters[category];
+          newPreviousRater -= player.previousCategoriesRaters[category];
         });
       }
       return {
         ...player,
         currentRater: newCurrentRater,
+        previousRater: newPreviousRater,
         raterBySalary: newCurrentRater / player.salary,
         oldRaterBySalary: player.previousRater / player.salary,
         raterByGames: player.gamesPlayed
@@ -113,6 +116,7 @@ export const AdvancedStats = (): ReactElement => {
                   labelText={category}
                   onChange={() => handleCategoryToggle(category)}
                   isChecked={categoriesToOmit.includes(category)}
+                  key={category}
                 />
               )
             )}
@@ -177,7 +181,7 @@ export const AdvancedStats = (): ReactElement => {
           <tbody>
             {sortedOptions.map((player) => {
               return (
-                <tr>
+                <tr key={player.id}>
                   <td style={styles.tableCell}>{player.fullName}</td>
                   <td style={styles.tableCell}>
                     {player.currentRater.toFixed(2)}

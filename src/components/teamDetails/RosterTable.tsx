@@ -10,6 +10,7 @@ import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
 import { useSortColumns } from "../../hooks/useSortColumns";
+import { CustomCheckbox } from "../generic/CustomCheckbox";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
@@ -126,9 +127,8 @@ export const RosterTable = ({
                 <td>{player.salary}</td>
                 <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
                 <td>
-                  <input
-                    type="checkbox"
-                    checked={selectedKeepers.includes(player.id)}
+                  <CustomCheckbox
+                    isChecked={selectedKeepers.includes(player.id)}
                     onChange={() => handleCheckboxClick(player.id)}
                   />
                 </td>

@@ -28,7 +28,7 @@ export interface Player {
   injuredSpot: boolean;
   gamesPlayed: number;
   categoriesRaters: PlayerCategoriesRaters;
-  previousCategoriesRaters?: PlayerCategoriesRaters;
+  previousCategoriesRaters: PlayerCategoriesRaters;
 }
 
 export interface Team {

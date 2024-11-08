@@ -4,7 +4,7 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 
 interface CheckboxProps {
-  labelText: string;
+  labelText?: string;
   isChecked: boolean;
   onChange: () => void;
 }
@@ -18,10 +18,10 @@ export const CustomCheckbox = ({
       display: "block",
       cursor: "pointer",
       userSelect: "none",
-      paddingLeft: "2rem",
+      paddingLeft: labelText ? "2rem" : "0",
       position: "relative",
       overflow: "hidden",
-      minWidth: "4rem",
+      minWidth: labelText ? "4rem" : "0",
     },
     checkbox: {
       opacity: 0,
@@ -29,7 +29,7 @@ export const CustomCheckbox = ({
       position: "absolute",
     },
     icon: {
-      position: "absolute",
+      position: labelText ? "absolute" : "static",
       fontSize: "1.25rem",
       left: 0,
     },

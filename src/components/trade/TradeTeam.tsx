@@ -7,6 +7,7 @@ import {
 } from "react";
 import { createStyles } from "../../utils/style";
 import { TeamDetailsData } from "../../utils/types";
+import { CustomCheckbox } from "../generic/CustomCheckbox";
 
 interface TradeTeamProps {
   dataByTeamId: Map<number, TeamDetailsData>;
@@ -95,13 +96,12 @@ export const TradeTeam = ({
         <tbody>
           {activeTeamPlayers?.map((player) => {
             return (
-              <tr>
+              <tr key={player.id}>
                 <td>{player.fullName}</td>
                 <td>{player.salary}</td>
                 <td>
-                  <input
-                    type="checkbox"
-                    checked={selectedPlayers.includes(player.id)}
+                  <CustomCheckbox
+                    isChecked={selectedPlayers.includes(player.id)}
                     onChange={() => handleCheckboxClick(player.id)}
                   />
                 </td>
