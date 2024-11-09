@@ -99,5 +99,5 @@ export interface SeasonRanking {
 export interface HistoryRanking {
   totalPoints: number;
   ownerName: string;
-  seasonsRakings: SeasonRanking[];
+  seasonsRankings: SeasonRanking[];
 }

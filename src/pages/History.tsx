@@ -1,11 +1,15 @@
 import { CSSProperties, useMemo } from "react";
 import { buildHistoryMap } from "../utils/data";
 import { createStyles } from "../utils/style";
+import { parseRanking } from "../utils/utils";
 
 export const History = () => {
   const styles = createStyles<CSSProperties>()({
     historyTable: {
       margin: "0 auto",
+    },
+    totalCells: {
+      border: "1px solid #e45e04",
     },
   });
 
@@ -15,12 +19,18 @@ export const History = () => {
       ownerName: string;
       seasons: number;
       totalPoints: number;
+      average: number;
+      bestSeason: number;
     }[] = [];
     historyByOwnerId.forEach((value) => {
       ownersArray.push({
         ownerName: value.ownerName,
-        seasons: value.seasonsRakings.length,
+        seasons: value.seasonsRankings.length,
         totalPoints: value.totalPoints,
+        average: value.totalPoints / value.seasonsRankings.length,
+        bestSeason: Math.min(
+          ...value.seasonsRankings.map((season) => season.ranking)
+        ),
       });
     });
     return ownersArray
@@ -32,11 +42,13 @@ export const History = () => {
           <tr key={owner.ownerName}>
             <td>{owner.ownerName}</td>
             <td>{owner.seasons}</td>
-            <td>{owner.totalPoints}</td>
+            <td style={styles.totalCells}>{owner.totalPoints}</td>
+            <td>{owner.average.toFixed(2)}</td>
+            <td>{parseRanking(owner.bestSeason)}</td>
           </tr>
         );
       });
-  }, [historyByOwnerId]);
+  }, [historyByOwnerId, styles.totalCells]);
 
   return (
     <main>
@@ -47,7 +59,9 @@ export const History = () => {
             <tr>
               <th>Manager</th>
               <th>Saisons</th>
-              <th>Total points*</th>
+              <th style={styles.totalCells}>Total points*</th>
+              <th>Moyenne</th>
+              <th>Meilleure saison</th>
             </tr>
           </thead>
           <tbody>{tableContent}</tbody>

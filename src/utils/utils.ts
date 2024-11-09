@@ -123,3 +123,13 @@ export const getTeamTotals = (
     projectedKeepersSalaries,
   };
 };
+
+export const parseRanking = (ranking: number) => {
+  if (ranking < 1) {
+    return "erreur";
+  } else if (ranking === 1) {
+    return "1er";
+  } else {
+    return `${ranking}e`;
+  }
+};

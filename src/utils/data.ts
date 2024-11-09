@@ -268,7 +268,7 @@ const buildSeasonRankingPoint = (ranking: number) => {
 
 const historyUsersMap = new Map([
   ["{D4FECFB1-F07A-4F75-BECF-B1F07A3F7549}", "Captain Teemo"],
-  ["{5C013B45-8513-47C4-81B5-26066376781B}", "Cougars de BK"],
+  ["{5C013B45-8513-47C4-81B5-26066376781B}", "BK"],
   ["{04294649-19F7-4D19-BADC-920F4DF3C3B5}", "RBC"],
   ["{30DF025F-A7EE-43D4-9F02-5FA7EED3D475}", "Jumping Othello"],
   ["{24C076F8-363B-45DF-8076-F8363B85DF78}", "Piebar"],
@@ -282,7 +282,7 @@ const historyUsersMap = new Map([
   ["{4694F412-284D-44D1-B6BB-3BF0660197DB}", "Laow"],
   ["{1961241D-50EC-464F-A124-1D50EC864F65}", "Gotham Ballers"],
   ["{4C49A5AB-4A6E-47BC-AFD2-627657AE2BF3}", "Lagiggz"],
-  ["{E2E54577-06C7-4092-8049-DE0F0FFA8151}", "Wabaki Falcons"],
+  ["{E2E54577-06C7-4092-8049-DE0F0FFA8151}", "Yohann"],
   ["{C64D0C89-0439-4251-BADE-811DEA058414}", "Slamdunk"],
   ["{F68FE751-C8C6-4B24-B062-8AE15738F52E}", "Taggart BC"],
   ["{474A5D21-8C15-4640-9860-3934F2E7DD76}", "Toronto Dutchie"],
@@ -304,31 +304,35 @@ export const buildHistoryMap = () => {
   historyData.forEach((season) => {
     season.teams.forEach((team) => {
       team.owners.forEach((owner) => {
-        let data = historyByOwnerId.get(owner);
-        const seasonPoints = buildSeasonRankingPoint(team.rankCalculatedFinal);
-        if (data) {
-          data.seasonsRakings.push({
-            season: season.seasonId,
-            ranking: team.rankCalculatedFinal,
-            teamName: team.name,
-            points: seasonPoints,
-          });
-          data.totalPoints += seasonPoints;
-        } else {
-          data = {
-            ownerName: historyUsersMap.get(owner) ?? "",
-            totalPoints: seasonPoints,
-            seasonsRakings: [
-              {
-                season: season.seasonId,
-                ranking: team.rankCalculatedFinal,
-                teamName: team.name,
-                points: buildSeasonRankingPoint(team.rankCalculatedFinal),
-              },
-            ],
-          };
+        if (historyUsersMap.has(owner)) {
+          let data = historyByOwnerId.get(owner);
+          const seasonPoints = buildSeasonRankingPoint(
+            team.rankCalculatedFinal
+          );
+          if (data) {
+            data.seasonsRankings.push({
+              season: season.seasonId,
+              ranking: team.rankCalculatedFinal,
+              teamName: team.name,
+              points: seasonPoints,
+            });
+            data.totalPoints += seasonPoints;
+          } else {
+            data = {
+              ownerName: historyUsersMap.get(owner) ?? "",
+              totalPoints: seasonPoints,
+              seasonsRankings: [
+                {
+                  season: season.seasonId,
+                  ranking: team.rankCalculatedFinal,
+                  teamName: team.name,
+                  points: buildSeasonRankingPoint(team.rankCalculatedFinal),
+                },
+              ],
+            };
+          }
+          historyByOwnerId.set(owner, data);
         }
-        historyByOwnerId.set(owner, data);
       });
     });
   });
