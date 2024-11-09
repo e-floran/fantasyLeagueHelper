@@ -1,5 +1,6 @@
 import {
   AcquisitionTypeEnum,
+  HistoryRanking,
   Player,
   PlayerCategoriesRaters,
   PlayerRatings,
@@ -10,6 +11,7 @@ import {
   Team,
   UnpickablePlayer,
 } from "./types";
+import historyData from "../assets/history/history.json";
 
 const RaterCategories = new Map([
   [19, StatsCategories.FG],
@@ -251,4 +253,84 @@ export const checkUnpickablePlayersStatus = async (
       .catch((error) => console.log(error));
   }
   return outputPlayers;
+};
+
+const buildSeasonRankingPoint = (ranking: number) => {
+  let rankingPoints = 15 - ranking;
+  if (ranking < 4) {
+    rankingPoints += 3;
+  }
+  if (ranking === 1) {
+    rankingPoints += 5;
+  }
+  return rankingPoints;
+};
+
+const historyUsersMap = new Map([
+  ["{D4FECFB1-F07A-4F75-BECF-B1F07A3F7549}", "Captain Teemo"],
+  ["{5C013B45-8513-47C4-81B5-26066376781B}", "Cougars de BK"],
+  ["{04294649-19F7-4D19-BADC-920F4DF3C3B5}", "RBC"],
+  ["{30DF025F-A7EE-43D4-9F02-5FA7EED3D475}", "Jumping Othello"],
+  ["{24C076F8-363B-45DF-8076-F8363B85DF78}", "Piebar"],
+  ["{EC71D7EF-A963-4FEB-982D-792C3546A88C}", "PacificBeardMan"],
+  ["{38F0AA49-CFB8-4C73-B0AA-49CFB8DC733F}", "gpolin"],
+  ["{3BA10345-1472-40B5-A103-45147230B51F}", "Nemausus"],
+  ["{9E7C628C-D9AE-4B1D-BC62-8CD9AEBB1D6A}", "Hans Gruber"],
+  ["{7CF55C66-844A-4428-B55C-66844A542839}", "Power RennesGers"],
+  ["{5D7F50B5-D1B9-4E2E-BF50-B5D1B9EE2E52}", "Kevince Carter"],
+  ["{6A45E5C1-C0CA-4105-BBF2-C62A10D33D3D}", "Recto"],
+  ["{4694F412-284D-44D1-B6BB-3BF0660197DB}", "Laow"],
+  ["{1961241D-50EC-464F-A124-1D50EC864F65}", "Gotham Ballers"],
+  ["{4C49A5AB-4A6E-47BC-AFD2-627657AE2BF3}", "Lagiggz"],
+  ["{E2E54577-06C7-4092-8049-DE0F0FFA8151}", "Wabaki Falcons"],
+  ["{C64D0C89-0439-4251-BADE-811DEA058414}", "Slamdunk"],
+  ["{F68FE751-C8C6-4B24-B062-8AE15738F52E}", "Taggart BC"],
+  ["{474A5D21-8C15-4640-9860-3934F2E7DD76}", "Toronto Dutchie"],
+  ["{27C3600E-723C-495F-8360-0E723C695F07}", "Buster Keaton"],
+  ["{FA794109-3032-415A-91F9-7ADD0680175A}", "Makun"],
+  ["{90996E98-4623-4E68-9AFE-EE2CDB96841E}", "OJ Mayo"],
+  ["{DF803A2C-833A-4749-B635-0FAFDEC2AB79}", "Straka"],
+  ["{C8B88300-53A5-4E37-B01C-0A4953EA5852}", "Evgeni Flowsky"],
+  ["{B20FF95F-6C77-465C-801E-948B93D5DD53}", "Alcuin"],
+  ["{1AD77E1C-58E5-42B1-9B82-A909162D7193}", "Real Mateus"],
+  ["{7DB34B70-7989-4236-BB39-17513B492270}", "Phoenix"],
+  ["{479E4B9D-C9CC-4E83-882D-40FB9C400D85}", "Eagle Warriors"],
+  ["{06BBF389-1B6C-44FD-99D5-53B74C478194}", "Dkeuss"],
+  ["{B9BDB736-3D7C-47F7-B833-075FCBE7FA08}", "Coyen"],
+]);
+
+export const buildHistoryMap = () => {
+  const historyByOwnerId = new Map<string, HistoryRanking>();
+  historyData.forEach((season) => {
+    season.teams.forEach((team) => {
+      team.owners.forEach((owner) => {
+        let data = historyByOwnerId.get(owner);
+        const seasonPoints = buildSeasonRankingPoint(team.rankCalculatedFinal);
+        if (data) {
+          data.seasonsRakings.push({
+            season: season.seasonId,
+            ranking: team.rankCalculatedFinal,
+            teamName: team.name,
+            points: seasonPoints,
+          });
+          data.totalPoints += seasonPoints;
+        } else {
+          data = {
+            ownerName: historyUsersMap.get(owner) ?? "",
+            totalPoints: seasonPoints,
+            seasonsRakings: [
+              {
+                season: season.seasonId,
+                ranking: team.rankCalculatedFinal,
+                teamName: team.name,
+                points: buildSeasonRankingPoint(team.rankCalculatedFinal),
+              },
+            ],
+          };
+        }
+        historyByOwnerId.set(owner, data);
+      });
+    });
+  });
+  return historyByOwnerId;
 };

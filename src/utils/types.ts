@@ -88,3 +88,16 @@ export interface UnpickablePlayer {
   id: number;
   outForSeason?: boolean | undefined;
 }
+
+export interface SeasonRanking {
+  season: number;
+  ranking: number;
+  teamName: string;
+  points: number;
+}
+
+export interface HistoryRanking {
+  totalPoints: number;
+  ownerName: string;
+  seasonsRakings: SeasonRanking[];
+}

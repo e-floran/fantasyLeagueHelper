@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PlayerWithAdvancedStats } from "../pages/AdvancedStats";
+import { PlayerWithAdvancedStats } from "../components/advancedStats/AdvancedTable";
 import { PlayerWithProjection } from "../components/teamDetails/RosterTable";
 import { TeamSortableData } from "../components/teamsSummary/SummaryTable";
 

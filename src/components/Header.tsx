@@ -8,6 +8,7 @@ import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GavelIcon from "@mui/icons-material/Gavel";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 
 interface HeaderProps {
   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
@@ -40,6 +41,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
     { icon: LeaderboardIcon, navigateTo: "/teams" },
     { icon: AssistWalkerIcon, navigateTo: "/injuries" },
     { icon: QueryStatsIcon, navigateTo: "/advanced" },
+    { icon: AutoStoriesIcon, navigateTo: "history" },
     { icon: GavelIcon, navigateTo: "/rules" },
   ];
 

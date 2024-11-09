@@ -15,6 +15,7 @@ import { dailyUpdate } from "./scripts/dailyUpdate";
 import { CustomButton } from "./components/generic/CustomButton";
 import { LeagueRules } from "./pages/LeagueRules";
 import { AdvancedStats } from "./pages/AdvancedStats";
+import { History } from "./pages/History";
 
 function App() {
   const [activeTeamId, setActiveTeamId] = useState(0);
@@ -64,6 +65,7 @@ function App() {
         />
         <Route path="/rules" element={<LeagueRules />} />
         <Route path="/advanced" element={<AdvancedStats />} />
+        <Route path="/history" element={<History />} />
       </Routes>
       {isLocal && (
         <CustomButton buttonText="Mettre à jour" onClickButton={dailyUpdate} />
