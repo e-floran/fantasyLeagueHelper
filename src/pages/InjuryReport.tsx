@@ -23,11 +23,16 @@ export const InjuryReport = ({
               })
               .map((player) => (
                 <tr key={player.id}>
-                  <td>{player.name}</td>
+                  <td
+                    style={player.outForSeason ? { color: "red" } : undefined}
+                  >
+                    {player.name}
+                  </td>
                 </tr>
               ))}
           </tbody>
         </table>
+        <p>Les joueurs blessés jusqu'à la fin de la saison sont en rouge.</p>
       </section>
     </main>
   );
