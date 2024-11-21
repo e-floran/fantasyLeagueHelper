@@ -17,19 +17,13 @@ export const InjuryReport = ({
             </tr>
           </thead>
           <tbody>
-            {injuredPlayers
-              .sort((a, b) => {
-                return a.name.localeCompare(b.name);
-              })
-              .map((player) => (
-                <tr key={player.id}>
-                  <td
-                    style={player.outForSeason ? { color: "red" } : undefined}
-                  >
-                    {player.name}
-                  </td>
-                </tr>
-              ))}
+            {injuredPlayers.map((player) => (
+              <tr key={player.id}>
+                <td style={player.outForSeason ? { color: "red" } : undefined}>
+                  {player.name}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
         <p>Les joueurs blessés jusqu'à la fin de la saison sont en rouge.</p>

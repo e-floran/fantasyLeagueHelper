@@ -205,7 +205,9 @@ export const addNewPlayers = (
     });
     outputRosters.push({ ...oldTeam, roster: rosterToBuild });
   });
-  return outputRosters;
+  return outputRosters.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
 };
 
 export const checkUnpickablePlayersStatus = async (
@@ -252,7 +254,9 @@ export const checkUnpickablePlayersStatus = async (
       })
       .catch((error) => console.log(error));
   }
-  return outputPlayers;
+  return outputPlayers.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
 };
 
 const buildSeasonRankingPoint = (ranking: number) => {
