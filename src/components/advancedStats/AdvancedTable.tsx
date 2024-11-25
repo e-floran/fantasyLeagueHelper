@@ -61,7 +61,7 @@ export const AdvancedTable = ({
       });
   }, [parsePlayerToAdvanced]);
 
-  const isLocal = location.hostname === "localhost";
+  // const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
@@ -69,6 +69,7 @@ export const AdvancedTable = ({
   return (
     <table>
       <thead>
+        <th>Rank</th>
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("fullName")}
@@ -90,7 +91,7 @@ export const AdvancedTable = ({
         >
           Rater/salaire {sortColumn === "raterBySalary" ? columnIcon : null}
         </th>
-        {isLocal && (
+        {/* {isLocal && (
           <>
             <th
               style={headerStyle}
@@ -106,7 +107,7 @@ export const AdvancedTable = ({
               {sortColumn === "oldRaterBySalary" ? columnIcon : null}
             </th>
           </>
-        )}
+        )} */}
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("gamesPlayed")}
@@ -121,21 +122,22 @@ export const AdvancedTable = ({
         </th>
       </thead>
       <tbody>
-        {sortedOptions.map((player) => {
+        {sortedOptions.map((player, index) => {
           return (
             <tr key={player.id}>
+              <td>{index + 1}</td>
               <td style={cellStyle}>{player.fullName}</td>
               <td style={cellStyle}>{player.currentRater.toFixed(2)}</td>
               <td style={cellStyle}>{player.salary}</td>
               <td style={cellStyle}>{player.raterBySalary.toFixed(2)}</td>
-              {isLocal && (
+              {/* {isLocal && (
                 <>
                   <td style={cellStyle}>{player.previousRater.toFixed(2)}</td>
                   <td style={cellStyle}>
                     {player.oldRaterBySalary.toFixed(2)}
                   </td>
                 </>
-              )}
+              )} */}
               <td style={cellStyle}>{player.gamesPlayed}</td>
               <td style={cellStyle}>{player.raterByGames.toFixed(2)}</td>
             </tr>
