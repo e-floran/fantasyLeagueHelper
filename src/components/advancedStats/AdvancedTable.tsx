@@ -7,6 +7,7 @@ export interface PlayerWithAdvancedStats extends Player {
   raterBySalary: number;
   oldRaterBySalary: number;
   raterByGames: number;
+  team: string;
 }
 
 interface AdvancedTableProps {
@@ -29,7 +30,7 @@ export const AdvancedTable = ({
   }, []);
 
   const parsePlayerToAdvanced = useCallback(
-    (player: Player): PlayerWithAdvancedStats => {
+    (player: Player, teamName: string): PlayerWithAdvancedStats => {
       let newCurrentRater = player.currentRater;
       let newPreviousRater = player.previousRater;
       if (categoriesToOmit.length) {
@@ -47,6 +48,7 @@ export const AdvancedTable = ({
         raterByGames: player.gamesPlayed
           ? (newCurrentRater / player.gamesPlayed) * averageGamesPlayed
           : 0,
+        team: teamName,
       };
     },
     [averageGamesPlayed, categoriesToOmit]
@@ -54,14 +56,18 @@ export const AdvancedTable = ({
 
   const flatPlayers = useMemo(() => {
     return rosters.teams
-      .map((team) => team.roster)
-      .flat()
-      .map((player) => {
-        return parsePlayerToAdvanced(player);
-      });
+      .map((team) =>
+        team.roster.map((player) => {
+          return parsePlayerToAdvanced(player, team.name);
+        })
+      )
+      .flat();
+    // .map((player) => {
+    //   return parsePlayerToAdvanced(player);
+    // });
   }, [parsePlayerToAdvanced]);
 
-  // const isLocal = location.hostname === "localhost";
+  const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
@@ -70,6 +76,7 @@ export const AdvancedTable = ({
     <table>
       <thead>
         <th>Rank</th>
+        {isLocal && <th>Team</th>}
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("fullName")}
@@ -126,6 +133,7 @@ export const AdvancedTable = ({
           return (
             <tr key={player.id}>
               <td>{index + 1}</td>
+              {isLocal && <td>{player.team}</td>}
               <td style={cellStyle}>{player.fullName}</td>
               <td style={cellStyle}>{player.currentRater.toFixed(2)}</td>
               <td style={cellStyle}>{player.salary}</td>
