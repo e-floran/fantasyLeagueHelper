@@ -34,6 +34,7 @@ export interface Player {
 export interface Team {
   id: number;
   name: string;
+  abbreviation: string;
   roster: Player[];
 }
 

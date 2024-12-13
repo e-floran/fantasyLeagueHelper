@@ -58,16 +58,13 @@ export const AdvancedTable = ({
     return rosters.teams
       .map((team) =>
         team.roster.map((player) => {
-          return parsePlayerToAdvanced(player, team.name);
+          return parsePlayerToAdvanced(player, team.abbreviation);
         })
       )
       .flat();
-    // .map((player) => {
-    //   return parsePlayerToAdvanced(player);
-    // });
   }, [parsePlayerToAdvanced]);
 
-  const isLocal = location.hostname === "localhost";
+  // const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
@@ -75,8 +72,8 @@ export const AdvancedTable = ({
   return (
     <table>
       <thead>
-        <th>Rank</th>
-        {isLocal && <th>Team</th>}
+        <th>Rk</th>
+        <th>Team</th>
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("fullName")}
@@ -96,7 +93,7 @@ export const AdvancedTable = ({
           style={headerStyle}
           onClick={() => sortColumnByArgument("raterBySalary")}
         >
-          Rater/salaire {sortColumn === "raterBySalary" ? columnIcon : null}
+          R / salaire {sortColumn === "raterBySalary" ? columnIcon : null}
         </th>
         {/* {isLocal && (
           <>
@@ -125,7 +122,7 @@ export const AdvancedTable = ({
           style={headerStyle}
           onClick={() => sortColumnByArgument("raterByGames")}
         >
-          Rater/matchs *
+          R / match
         </th>
       </thead>
       <tbody>
@@ -133,7 +130,7 @@ export const AdvancedTable = ({
           return (
             <tr key={player.id}>
               <td>{index + 1}</td>
-              {isLocal && <td>{player.team}</td>}
+              <td>{player.team}</td>
               <td style={cellStyle}>{player.fullName}</td>
               <td style={cellStyle}>{player.currentRater.toFixed(2)}</td>
               <td style={cellStyle}>{player.salary}</td>
