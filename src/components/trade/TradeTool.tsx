@@ -2,6 +2,7 @@ import { CSSProperties, ReactElement, useMemo, useState } from "react";
 import { SummaryProps } from "../../pages/TeamsSummary";
 import { createStyles } from "../../utils/style";
 import { TradeTeam } from "./TradeTeam";
+import { TradeResults } from "./TradeResults";
 
 export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
   const styles = createStyles<CSSProperties>()({
@@ -86,6 +87,13 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
           salariesAfterTrade={salariesAfterTrade?.secondTeam}
         />
       </div>
+      <TradeResults
+        dataByTeamId={dataByTeamId}
+        firstTeam={firstTeam}
+        secondTeam={secondTeam}
+        selectedFirstTeamPlayers={selectedFirstTeamPlayers}
+        selectedSecondTeamPlayers={selectedSecondTeamPlayers}
+      />
     </section>
   );
 };

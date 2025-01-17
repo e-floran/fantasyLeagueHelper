@@ -16,7 +16,23 @@ export enum StatsCategories {
   PTS = "PTS",
 }
 
+export enum DetailedStatsCategories {
+  FGA = "FGA",
+  FGM = "FGM",
+  FTA = "FTA",
+  FTM = "FTM",
+  "3PM" = "3PM",
+  REB = "REB",
+  AST = "AST",
+  STL = "STL",
+  BLK = "BLK",
+  TO = "TO",
+  PTS = "PTS",
+}
+
 export type PlayerCategoriesRaters = { [key in StatsCategories]: number };
+
+export type PlayerDetailedStats = { [key in DetailedStatsCategories]: number };
 
 export interface Player {
   id: number;
@@ -29,6 +45,7 @@ export interface Player {
   gamesPlayed: number;
   categoriesRaters: PlayerCategoriesRaters;
   previousCategoriesRaters: PlayerCategoriesRaters;
+  detailedStats?: PlayerDetailedStats;
 }
 
 export interface Team {
@@ -47,12 +64,28 @@ export interface TeamDetailsData {
     currentSalary: number;
     projectedSalary: number;
     projectedKeepersSalaries: number;
+    stats: PlayerDetailedStats;
   };
 }
 
 export interface PlayerRatings {
   totalRating: number;
   statRankings: { forStat: number; rating: number }[];
+}
+
+export interface RawPlayerStats {
+  "13": number; // FGM
+  "14": number; // FGA
+  "15": number; // FTM
+  "16": number; // FTA
+  "26": number; // AST
+  "27": number; // BLK
+  "29": number; // PTS
+  "30": number; // REB
+  "31": number; // STL
+  "32": number; // TO
+  "33": number; // 3PM
+  "42": number; // games played
 }
 
 export interface RatedRawPlayer {
@@ -66,7 +99,10 @@ export interface RatedRawPlayer {
   player: {
     fullName: string;
     id: number;
-    stats: { id: string; stats: { "42": number } }[];
+    stats: {
+      id: string;
+      stats: RawPlayerStats;
+    }[];
     injured: boolean;
   };
 }

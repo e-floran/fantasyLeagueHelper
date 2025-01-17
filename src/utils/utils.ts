@@ -1,4 +1,4 @@
-import { Team } from "./types";
+import { PlayerCategoriesRaters, PlayerDetailedStats, Team } from "./types";
 
 export const parseNegativeValue = (value: number, limit?: number): number => {
   const trueLimit = limit ?? 0;
@@ -93,6 +93,39 @@ const getTeamKeepersSalaries = (
   return salaries.reduce((partialSum, a) => partialSum + a, 0);
 };
 
+export const reduceStats = (stats: PlayerDetailedStats[]) => {
+  return stats.reduce(
+    (partialSum, a) => {
+      return {
+        FGA: partialSum.FGA + a.FGA,
+        FGM: partialSum.FGM + a.FGM,
+        FTA: partialSum.FTA + a.FTA,
+        FTM: partialSum.FTM + a.FTM,
+        "3PM": partialSum["3PM"] + a["3PM"],
+        REB: partialSum.REB + a.REB,
+        AST: partialSum.AST + a.AST,
+        STL: partialSum.STL + a.STL,
+        BLK: partialSum.BLK + a.BLK,
+        TO: partialSum.TO + a.TO,
+        PTS: partialSum.PTS + a.PTS,
+      };
+    },
+    {
+      FGA: 0,
+      FGM: 0,
+      FTA: 0,
+      FTM: 0,
+      "3PM": 0,
+      REB: 0,
+      AST: 0,
+      STL: 0,
+      BLK: 0,
+      TO: 0,
+      PTS: 0,
+    }
+  );
+};
+
 export const getTeamTotals = (
   team: Team,
   newSalariesByPlayerId: Map<number, number>,
@@ -109,6 +142,10 @@ export const getTeamTotals = (
     .map((player) => player.salary)
     .reduce((partialSum, a) => partialSum + a, 0);
 
+  const stats: PlayerDetailedStats = reduceStats(
+    team.roster.map((player) => player.detailedStats!)
+  );
+
   const projectedSalary = getTeamTotalProjectedSalary(newSalariesByPlayerId);
   const projectedKeepersSalaries = getTeamKeepersSalaries(
     newSalariesByPlayerId,
@@ -121,6 +158,7 @@ export const getTeamTotals = (
     currentSalary,
     projectedSalary,
     projectedKeepersSalaries,
+    stats,
   };
 };
 
@@ -132,4 +170,31 @@ export const parseRanking = (ranking: number) => {
   } else {
     return `${ranking}e`;
   }
+};
+
+export const getTeamStatsAfterTrade = (
+  teamStats: PlayerDetailedStats,
+  outStats: PlayerDetailedStats,
+  inStats: PlayerDetailedStats
+): PlayerCategoriesRaters => {
+  const fg =
+    teamStats.FGM / teamStats.FGA -
+    (teamStats.FGM - outStats.FGM + inStats.FGM) /
+      (teamStats.FGA - outStats.FGA + inStats.FGA);
+  const ft =
+    teamStats.FTM / teamStats.FTA -
+    (teamStats.FTM - outStats.FTM + inStats.FTM) /
+      (teamStats.FTA - outStats.FTA + inStats.FTA);
+
+  return {
+    FG: fg,
+    FT: ft,
+    "3PM": inStats["3PM"] - outStats["3PM"],
+    REB: inStats.REB - outStats.REB,
+    AST: inStats.AST - outStats.AST,
+    STL: inStats.STL - outStats.STL,
+    BLK: inStats.BLK - outStats.BLK,
+    TO: inStats.TO - outStats.TO,
+    PTS: inStats.PTS - outStats.PTS,
+  };
 };

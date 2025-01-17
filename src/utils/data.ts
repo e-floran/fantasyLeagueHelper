@@ -1,9 +1,12 @@
 import {
   AcquisitionTypeEnum,
+  DetailedStatsCategories,
   HistoryRanking,
   Player,
   PlayerCategoriesRaters,
+  PlayerDetailedStats,
   PlayerRatings,
+  RawPlayerStats,
   RatedRawPlayer,
   RawPlayer,
   RawTeam,
@@ -37,6 +40,47 @@ const basePlayerRaters: PlayerCategoriesRaters = {
   [StatsCategories.PTS]: 0,
 };
 
+const RawStatsCategories = new Map([
+  ["13", DetailedStatsCategories.FGM],
+  ["14", DetailedStatsCategories.FGA],
+  ["15", DetailedStatsCategories.FTM],
+  ["16", DetailedStatsCategories.FTA],
+  ["33", DetailedStatsCategories["3PM"]],
+  ["30", DetailedStatsCategories.REB],
+  ["26", DetailedStatsCategories.AST],
+  ["31", DetailedStatsCategories.STL],
+  ["27", DetailedStatsCategories.BLK],
+  ["32", DetailedStatsCategories.TO],
+  ["29", DetailedStatsCategories.PTS],
+]);
+const rawStatsKeys = [
+  "13",
+  "14",
+  "15",
+  "16",
+  "26",
+  "27",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+];
+
+const basePlayerStats: PlayerDetailedStats = {
+  [DetailedStatsCategories.FGA]: 0,
+  [DetailedStatsCategories.FGM]: 0,
+  [DetailedStatsCategories.FTM]: 0,
+  [DetailedStatsCategories.FTA]: 0,
+  [DetailedStatsCategories["3PM"]]: 0,
+  [DetailedStatsCategories.REB]: 0,
+  [DetailedStatsCategories.AST]: 0,
+  [DetailedStatsCategories.STL]: 0,
+  [DetailedStatsCategories.BLK]: 0,
+  [DetailedStatsCategories.TO]: 0,
+  [DetailedStatsCategories.PTS]: 0,
+};
+
 const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
   return {
     id: rawPlayer.playerId,
@@ -49,6 +93,7 @@ const filterPlayerKeys = (rawPlayer: RawPlayer): Player => {
     injuredSpot: rawPlayer.lineupSlotId === 13,
     categoriesRaters: basePlayerRaters,
     previousCategoriesRaters: basePlayerRaters,
+    detailedStats: basePlayerStats,
   };
 };
 
@@ -67,12 +112,34 @@ const buildPlayerRaters = (
   return { ...output };
 };
 
+const buildPlayerStats = (
+  rawStats: RawPlayerStats | undefined
+): PlayerDetailedStats => {
+  const output = basePlayerStats;
+  if (rawStats) {
+    for (const [key, value] of Object.entries(rawStats)) {
+      console.log(key, value);
+      if (rawStatsKeys.includes(key)) {
+        console.log(key);
+        const parsedKey = RawStatsCategories.get(key);
+        if (parsedKey) {
+          console.log(parsedKey);
+          output[parsedKey] = value;
+        }
+      }
+    }
+  }
+  console.log(output);
+  return { ...output };
+};
+
 const addFreeAgent = (
   newPlayer: RawPlayer,
   lastSeasonRaters: RatedRawPlayer[],
   rosterToBuild: Player[],
   currentRater: PlayerRatings | undefined,
-  gamesPlayed: number
+  gamesPlayed: number,
+  rawStats: RawPlayerStats | undefined
 ) => {
   const parsedPlayer = filterPlayerKeys(newPlayer);
   const previousRaters = lastSeasonRaters.find(
@@ -83,6 +150,7 @@ const addFreeAgent = (
   parsedPlayer.gamesPlayed = gamesPlayed;
   parsedPlayer.categoriesRaters = buildPlayerRaters(currentRater);
   parsedPlayer.previousCategoriesRaters = buildPlayerRaters(previousRaters);
+  parsedPlayer.detailedStats = buildPlayerStats(rawStats);
   rosterToBuild.push(parsedPlayer);
 };
 
@@ -104,7 +172,8 @@ const addTradedPlayer = (
   rosterToBuild: Player[],
   lastSeasonRaters: RatedRawPlayer[],
   currentRater: PlayerRatings | undefined,
-  gamesPlayed: number
+  gamesPlayed: number,
+  rawStats: RawPlayerStats | undefined
 ) => {
   if (playersByPlayerId.size === 0) {
     initPlayersMap(playersByPlayerId, previousRosters);
@@ -116,7 +185,8 @@ const addTradedPlayer = (
       lastSeasonRaters,
       rosterToBuild,
       currentRater,
-      gamesPlayed
+      gamesPlayed,
+      rawStats
     );
     return;
   }
@@ -126,6 +196,7 @@ const addTradedPlayer = (
     currentRater: currentRater?.totalRating ?? 0,
     gamesPlayed,
     categoriesRaters: buildPlayerRaters(currentRater),
+    detailedStats: buildPlayerStats(rawStats),
   });
 };
 
@@ -153,13 +224,14 @@ export const addNewPlayers = (
       const currentRater = currentRaters.find(
         (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
       );
-      if (newPlayer.playerId === 3112335) {
-        console.log(newPlayer, currentRater);
-      }
+
       const gamesPlayed =
         newPlayer.playerPoolEntry.player.stats.find(
           (statsEntry) => statsEntry.id === "002025"
         )?.stats[42] ?? 0;
+      const rawStats = newPlayer.playerPoolEntry.player.stats.find(
+        (statsEntry) => statsEntry.id === "002025"
+      )?.stats;
       if (
         !oldTeam.roster.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
       ) {
@@ -169,7 +241,8 @@ export const addNewPlayers = (
             lastSeasonRaters,
             rosterToBuild,
             currentRater?.ratings[0],
-            gamesPlayed
+            gamesPlayed,
+            rawStats
           );
         }
         if (newPlayer.acquisitionType === AcquisitionTypeEnum.TRADE) {
@@ -180,7 +253,8 @@ export const addNewPlayers = (
             rosterToBuild,
             lastSeasonRaters,
             currentRater?.ratings[0],
-            gamesPlayed
+            gamesPlayed,
+            rawStats
           );
         }
       } else {
@@ -191,7 +265,7 @@ export const addNewPlayers = (
           const previousRaters = lastSeasonRaters.find(
             (ratedPlayer) => ratedPlayer.id === previousPlayer.id
           )?.ratings["0"];
-
+          console.log(newPlayer.playerPoolEntry.player.fullName, rawStats);
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,
@@ -199,6 +273,7 @@ export const addNewPlayers = (
             gamesPlayed,
             categoriesRaters: buildPlayerRaters(currentRater?.ratings[0]),
             previousCategoriesRaters: buildPlayerRaters(previousRaters),
+            detailedStats: buildPlayerStats(rawStats),
           });
         }
       }
