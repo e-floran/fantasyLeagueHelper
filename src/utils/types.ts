@@ -45,7 +45,7 @@ export interface Player {
   gamesPlayed: number;
   categoriesRaters: PlayerCategoriesRaters;
   previousCategoriesRaters: PlayerCategoriesRaters;
-  detailedStats?: PlayerDetailedStats;
+  detailedStats: PlayerDetailedStats;
 }
 
 export interface Team {
