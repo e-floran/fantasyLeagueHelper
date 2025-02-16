@@ -18,6 +18,7 @@ export const History = () => {
     const ownersArray: {
       ownerName: string;
       seasons: number;
+      titles: number;
       totalPoints: number;
       average: number;
       bestSeason: number;
@@ -26,6 +27,8 @@ export const History = () => {
       ownersArray.push({
         ownerName: value.ownerName,
         seasons: value.seasonsRankings.length,
+        titles: value.seasonsRankings.filter((season) => season.ranking === 1)
+          .length,
         totalPoints: value.totalPoints,
         average: value.totalPoints / value.seasonsRankings.length,
         bestSeason: Math.min(
@@ -42,6 +45,7 @@ export const History = () => {
           <tr key={owner.ownerName}>
             <td>{owner.ownerName}</td>
             <td>{owner.seasons}</td>
+            <td>{owner.titles}</td>
             <td style={styles.totalCells}>{owner.totalPoints}</td>
             <td>{owner.average.toFixed(2)}</td>
             <td>{parseRanking(owner.bestSeason)}</td>
@@ -59,6 +63,7 @@ export const History = () => {
             <tr>
               <th>Manager</th>
               <th>Saisons</th>
+              <th>Titres</th>
               <th style={styles.totalCells}>Total points*</th>
               <th>Moyenne</th>
               <th>Meilleure saison</th>
