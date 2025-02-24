@@ -81,7 +81,7 @@ export async function dailyUpdate() {
     type: "application/json",
   });
   element.href = URL.createObjectURL(textFile);
-  element.download = "rostersNew.json";
+  element.download = "rosters.json";
   document.body.appendChild(element);
   element.click();
 }
