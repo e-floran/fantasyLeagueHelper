@@ -1,10 +1,16 @@
-import { CSSProperties, ReactElement } from "react";
+import { CSSProperties, ReactElement, useContext, useMemo } from "react";
 import { createStyles } from "../utils/style";
+import rosters from "../assets/teams/rosters.json";
+import { DataContext } from "../context/DataContext";
 
-interface FooterProps {
-  lastUpdate: Date;
-}
-export const Footer = ({ lastUpdate }: FooterProps): ReactElement => {
+// interface FooterProps {
+//   lastUpdate: Date;
+// }
+export const Footer = (): ReactElement => {
+  const { leagueId } = useContext(DataContext);
+  const lastUpdate = useMemo(() => {
+    return new Date(rosters.lastUpdate);
+  }, []);
   const styles = createStyles<CSSProperties>()({
     footer: {
       display: "flex",
@@ -20,7 +26,9 @@ export const Footer = ({ lastUpdate }: FooterProps): ReactElement => {
 
   return (
     <footer style={styles.footer}>
-      <a href="https://fantasy.espn.com/basketball/league?leagueId=3409">
+      <a
+        href={`https://fantasy.espn.com/basketball/league?leagueId=${leagueId}`}
+      >
         Fantasy league BBF
       </a>
       <p>Mise à jour des données : {lastUpdate.toLocaleString()}</p>

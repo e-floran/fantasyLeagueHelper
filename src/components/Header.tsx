@@ -1,4 +1,10 @@
-import { CSSProperties, Dispatch, ReactElement, SetStateAction } from "react";
+import {
+  CSSProperties,
+  // Dispatch,
+  ReactElement,
+  // SetStateAction,
+  useContext,
+} from "react";
 import { createStyles, rootColors } from "../utils/style";
 import { useNavigate } from "react-router-dom";
 import { NavButton } from "./NavButton";
@@ -9,12 +15,13 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GavelIcon from "@mui/icons-material/Gavel";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { DataContext } from "../context/DataContext";
 
-interface HeaderProps {
-  setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
-}
+// interface HeaderProps {
+//   setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
+// }
 
-export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
+export const Header = (): ReactElement => {
   const styles = createStyles<CSSProperties>()({
     header: {
       height: "5.5rem",
@@ -34,6 +41,7 @@ export const Header = ({ setSelectedKeepers }: HeaderProps): ReactElement => {
       justifyContent: "space-evenly",
     },
   });
+  const { setSelectedKeepers } = useContext(DataContext);
 
   const navButtonsProps = [
     { icon: GroupsIcon, navigateTo: "/" },

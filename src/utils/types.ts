@@ -138,3 +138,14 @@ export interface HistoryRanking {
   ownerName: string;
   seasonsRankings: SeasonRanking[];
 }
+
+export interface RawInitTeam extends Omit<RawTeam, "roster"> {
+  abbrev: string;
+  primaryOwner: string;
+}
+
+// export interface RawInitMember {
+//   firstName: string;
+//   lastName: string;
+//   id: string;
+// }

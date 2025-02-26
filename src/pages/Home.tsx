@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { CustomButton } from "../components/generic/CustomButton";
 import { CustomInput } from "../components/generic/CustomInput";
+import { DataContext } from "../context/DataContext";
+import { leagueInit } from "../scripts/leagueInit";
 
 export const Home = () => {
-  const [leagueId, setLeagueId] = useState("");
+  const { leagueId, handleLeagueIdChange } = useContext(DataContext);
+  const [newLeagueId, setNewLeagueId] = useState("");
   return (
     <main>
       <form
@@ -15,12 +18,21 @@ export const Home = () => {
         }}
       >
         <CustomInput
-          value={leagueId}
-          onChange={setLeagueId}
+          value={newLeagueId}
+          onChange={setNewLeagueId}
           placeholder="Enter league id"
         />
-        <CustomButton buttonText="Load league info" onClickButton={() => {}} />
+        <CustomButton
+          buttonText="Load league info"
+          onClickButton={() => {
+            handleLeagueIdChange(newLeagueId);
+          }}
+        />
       </form>
+      <CustomButton
+        buttonText="Init test"
+        onClickButton={() => leagueInit(leagueId)}
+      />
     </main>
   );
 };

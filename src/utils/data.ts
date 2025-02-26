@@ -118,22 +118,22 @@ const buildPlayerStats = (
   const output = basePlayerStats;
   if (rawStats) {
     for (const [key, value] of Object.entries(rawStats)) {
-      console.log(key, value);
+      // console.log(key, value);
       if (rawStatsKeys.includes(key)) {
-        console.log(key);
+        // console.log(key);
         const parsedKey = RawStatsCategories.get(key);
         if (parsedKey) {
-          console.log(parsedKey);
+          // console.log(parsedKey);
           output[parsedKey] = value;
         }
       }
     }
   }
-  console.log(output);
+  // console.log(output);
   return { ...output };
 };
 
-const addFreeAgent = (
+export const addFreeAgent = (
   newPlayer: RawPlayer,
   lastSeasonRaters: RatedRawPlayer[],
   rosterToBuild: Player[],
@@ -265,7 +265,7 @@ export const addNewPlayers = (
           const previousRaters = lastSeasonRaters.find(
             (ratedPlayer) => ratedPlayer.id === previousPlayer.id
           )?.ratings["0"];
-          console.log(newPlayer.playerPoolEntry.player.fullName, rawStats);
+          // console.log(newPlayer.playerPoolEntry.player.fullName, rawStats);
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,

@@ -1,4 +1,9 @@
-import { PlayerCategoriesRaters, PlayerDetailedStats, Team } from "./types";
+import {
+  PlayerCategoriesRaters,
+  PlayerDetailedStats,
+  Team,
+  TeamDetailsData,
+} from "./types";
 
 export const parseNegativeValue = (value: number, limit?: number): number => {
   const trueLimit = limit ?? 0;
@@ -197,4 +202,18 @@ export const getTeamStatsAfterTrade = (
     TO: inStats.TO - outStats.TO,
     PTS: inStats.PTS - outStats.PTS,
   };
+};
+
+export const getDataByTeamId = (teams: Team[], selectedKeepers: number[]) => {
+  const dataMap = new Map<number, TeamDetailsData>();
+  teams.forEach((team) => {
+    const newSalariesByPlayerId = getNewSalariesByPlayerId(team);
+    const teamData = getTeamTotals(
+      team,
+      newSalariesByPlayerId,
+      selectedKeepers
+    );
+    dataMap.set(team.id, { newSalariesByPlayerId, totals: teamData, team });
+  });
+  return dataMap;
 };
