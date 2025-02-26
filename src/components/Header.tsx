@@ -41,10 +41,10 @@ export const Header = (): ReactElement => {
       justifyContent: "space-evenly",
     },
   });
-  const { setSelectedKeepers } = useContext(DataContext);
+  const { setSelectedKeepers, isReady } = useContext(DataContext);
 
   const navButtonsProps = [
-    { icon: GroupsIcon, navigateTo: "/" },
+    { icon: GroupsIcon, navigateTo: "/teamDetails" },
     { icon: CompareArrowsIcon, navigateTo: "/trade" },
     { icon: LeaderboardIcon, navigateTo: "/teams" },
     { icon: AssistWalkerIcon, navigateTo: "/injuries" },
@@ -57,19 +57,21 @@ export const Header = (): ReactElement => {
 
   return (
     <header style={styles.header}>
-      <h1 style={styles.h1}>🏀 Fantasy league BBF 🏀</h1>
-      <nav style={styles.nav}>
-        {navButtonsProps.map((navButton, index) => (
-          <NavButton
-            buttonIcon={navButton.icon}
-            onClickButton={() => {
-              setSelectedKeepers([]);
-              navigate(navButton.navigateTo);
-            }}
-            key={index}
-          />
-        ))}
-      </nav>
+      <h1 style={styles.h1}>🏀 ESPN Fantasy Helper 🏀</h1>
+      {isReady && (
+        <nav style={styles.nav}>
+          {navButtonsProps.map((navButton, index) => (
+            <NavButton
+              buttonIcon={navButton.icon}
+              onClickButton={() => {
+                setSelectedKeepers([]);
+                navigate(navButton.navigateTo);
+              }}
+              key={index}
+            />
+          ))}
+        </nav>
+      )}
     </header>
   );
 };

@@ -14,7 +14,7 @@ import {
   Team,
   UnpickablePlayer,
 } from "./types";
-import historyData from "../assets/history/history.json";
+// import historyData from "../assets/history/history.json";
 
 const RaterCategories = new Map([
   [19, StatsCategories.FG],
@@ -378,7 +378,7 @@ const historyUsersMap = new Map([
   ["{B9BDB736-3D7C-47F7-B833-075FCBE7FA08}", "Coyen"],
 ]);
 
-export const buildHistoryMap = () => {
+export const buildHistoryMap = (historyData) => {
   const historyByOwnerId = new Map<string, HistoryRanking>();
   historyData.forEach((season) => {
     season.teams.forEach((team) => {

@@ -1,6 +1,6 @@
-import { CSSProperties, ReactElement, useContext, useMemo } from "react";
+import { CSSProperties, ReactElement, useContext } from "react";
 import { createStyles } from "../utils/style";
-import rosters from "../assets/teams/rosters.json";
+// import rosters from "../assets/teams/rosters.json";
 import { DataContext } from "../context/DataContext";
 
 // interface FooterProps {
@@ -8,9 +8,9 @@ import { DataContext } from "../context/DataContext";
 // }
 export const Footer = (): ReactElement => {
   const { leagueId } = useContext(DataContext);
-  const lastUpdate = useMemo(() => {
-    return new Date(rosters.lastUpdate);
-  }, []);
+  // const lastUpdate = useMemo(() => {
+  //   return new Date(rosters.lastUpdate);
+  // }, []);
   const styles = createStyles<CSSProperties>()({
     footer: {
       display: "flex",
@@ -29,9 +29,9 @@ export const Footer = (): ReactElement => {
       <a
         href={`https://fantasy.espn.com/basketball/league?leagueId=${leagueId}`}
       >
-        Fantasy league BBF
+        Your ESPN Fantasy league
       </a>
-      <p>Mise à jour des données : {lastUpdate.toLocaleString()}</p>
+      {/* <p>Mise à jour des données : {lastUpdate.toLocaleString()}</p> */}
     </footer>
   );
 };

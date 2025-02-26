@@ -13,7 +13,7 @@ import { Footer } from "./components/Footer";
 import { Trade } from "./pages/Trade";
 // import { dailyUpdate } from "./scripts/dailyUpdate";
 // import { CustomButton } from "./components/generic/CustomButton";
-import { LeagueRules } from "./pages/LeagueRules";
+// import { LeagueRules } from "./pages/LeagueRules";
 import { AdvancedStats } from "./pages/AdvancedStats";
 import { History } from "./pages/History";
 import { Home } from "./pages/Home";
@@ -53,7 +53,7 @@ function App() {
           path="/injuries"
           element={<InjuryReport injuredPlayers={unpickablePlayers} />}
         /> */}
-          <Route path="/rules" element={<LeagueRules />} />
+          {/* <Route path="/rules" element={<LeagueRules />} /> */}
           <Route path="/advanced" element={<AdvancedStats />} />
           <Route path="/history" element={<History />} />
         </Routes>

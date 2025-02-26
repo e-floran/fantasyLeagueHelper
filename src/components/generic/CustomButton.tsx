@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import { ButtonHTMLAttributes, CSSProperties } from "react";
 import { createStyles } from "../../utils/style";
 import { merge } from "lodash";
 
@@ -7,12 +7,14 @@ interface ButtonProps {
   isDisabled?: boolean;
   onClickButton: () => void;
   customStyle?: CSSProperties;
+  buttonType?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
 }
 export const CustomButton = ({
   buttonText,
   isDisabled,
   onClickButton,
   customStyle,
+  buttonType = "button",
 }: ButtonProps) => {
   const styles = createStyles<CSSProperties>()({
     button: {
@@ -36,7 +38,12 @@ export const CustomButton = ({
     : styles.button;
 
   return (
-    <button style={mergedStyle} disabled={isDisabled} onClick={onClickButton}>
+    <button
+      type={buttonType}
+      style={mergedStyle}
+      disabled={isDisabled}
+      onClick={onClickButton}
+    >
       {buttonText}
     </button>
   );

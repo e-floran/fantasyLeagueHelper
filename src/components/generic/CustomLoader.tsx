@@ -1,0 +1,39 @@
+import { CSSProperties } from "react";
+import { createStyles, rootColors } from "../../utils/style";
+import "./customLoader.css";
+
+export const CustomLoader = () => {
+  const styles = createStyles<CSSProperties>()({
+    container: {
+      width: "100%",
+      padding: "1rem",
+      display: "flex",
+      flexFlow: "column nowrap",
+      alignItems: "center",
+      gap: "3rem",
+    },
+    progressContainer: {
+      width: "100%",
+      height: "2rem",
+      backgroundColor: rootColors.fontColor,
+    },
+    progressBar: {
+      height: "2rem",
+      width: "0%",
+      background: rootColors.primary,
+      animation: "progress 10s 1 linear",
+    },
+    ball: {
+      fontSize: "4rem",
+      animation: "ballRotation 5s infinite linear",
+    },
+  });
+  return (
+    <section style={styles.container}>
+      <article style={styles.progressContainer}>
+        <div style={styles.progressBar} />
+      </article>
+      <p style={styles.ball}>🏀</p>
+    </section>
+  );
+};
