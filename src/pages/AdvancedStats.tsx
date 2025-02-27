@@ -1,13 +1,15 @@
 import { CSSProperties, ReactElement, useCallback, useState } from "react";
-import { StatsCategories } from "../utils/types";
+import { FilterCategories, FiltersType, StatsCategories } from "../utils/types";
 import { createStyles } from "../utils/style";
 import { RaterFilters } from "../components/advancedStats/RaterFilters";
 import { AdvancedTable } from "../components/advancedStats/AdvancedTable";
+import { AdvancedFilters } from "../components/advancedStats/AdvancedFilters";
 
 export const AdvancedStats = (): ReactElement => {
   const [categoriesToOmit, setCategoriesToOmit] = useState<StatsCategories[]>(
     []
   );
+  const [advancedFilters, setAdvancedFilters] = useState<FiltersType>({});
 
   const styles = createStyles<CSSProperties>()({
     columnHeader: {
@@ -19,6 +21,7 @@ export const AdvancedStats = (): ReactElement => {
       justifyContent: "space-between",
       alignItems: "center",
       gap: "0.25rem",
+      margin: "0.5rem 0",
     },
     filtersTitle: {
       width: "fit-content",
@@ -39,6 +42,32 @@ export const AdvancedStats = (): ReactElement => {
     [categoriesToOmit]
   );
 
+  const handleFilterChange = useCallback(
+    (filterName: FilterCategories, filterValue?: string) => {
+      if (filterName === FilterCategories.TEAM) {
+        setAdvancedFilters((prev) => {
+          return { ...prev, team: filterValue };
+        });
+      } else if (filterValue) {
+        const parsedValue = filterValue.split(":");
+        setAdvancedFilters((prev) => {
+          return {
+            ...prev,
+            [filterName]: {
+              ...prev[filterName],
+              [parsedValue[0]]: parsedValue[1],
+            },
+          };
+        });
+      } else {
+        setAdvancedFilters((prev) => {
+          return { ...prev, [filterName]: filterValue };
+        });
+      }
+    },
+    [setAdvancedFilters]
+  );
+
   return (
     <main>
       <section>
@@ -48,10 +77,15 @@ export const AdvancedStats = (): ReactElement => {
           handleCategoryToggle={handleCategoryToggle}
           categoriesToOmit={categoriesToOmit}
         />
+        <AdvancedFilters
+          advancedFilters={advancedFilters}
+          handleFilterChange={handleFilterChange}
+        />
         <AdvancedTable
           headerStyle={styles.columnHeader}
           cellStyle={styles.tableCell}
           categoriesToOmit={categoriesToOmit}
+          advancedFilters={advancedFilters}
         />
       </section>
       <section>

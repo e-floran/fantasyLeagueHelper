@@ -1,6 +1,6 @@
 import { CSSProperties, useCallback, useMemo } from "react";
 import rosters from "../../assets/teams/rosters.json";
-import { Player, StatsCategories } from "../../utils/types";
+import { FiltersType, Player, StatsCategories } from "../../utils/types";
 import { useSortColumns } from "../../hooks/useSortColumns";
 
 export interface PlayerWithAdvancedStats extends Player {
@@ -14,12 +14,14 @@ interface AdvancedTableProps {
   headerStyle: CSSProperties;
   cellStyle: CSSProperties;
   categoriesToOmit: StatsCategories[];
+  advancedFilters: FiltersType;
 }
 
 export const AdvancedTable = ({
   headerStyle,
   cellStyle,
   categoriesToOmit,
+  advancedFilters,
 }: AdvancedTableProps) => {
   const averageGamesPlayed = useMemo(() => {
     const gamesPlayed = rosters.teams
@@ -61,14 +63,39 @@ export const AdvancedTable = ({
           return parsePlayerToAdvanced(player, team.abbreviation);
         })
       )
-      .flat();
-  }, [parsePlayerToAdvanced]);
+      .flat()
+      .filter((player) => {
+        return (
+          (advancedFilters.team
+            ? advancedFilters.team === player.team
+            : true) &&
+          (advancedFilters.rater?.min
+            ? advancedFilters.rater.min <= player.currentRater
+            : true) &&
+          (advancedFilters.rater?.max
+            ? advancedFilters.rater.max >= player.currentRater
+            : true) &&
+          (advancedFilters.salary?.min
+            ? advancedFilters.salary.min <= player.salary
+            : true) &&
+          (advancedFilters.salary?.max
+            ? advancedFilters.salary.max >= player.salary
+            : true) &&
+          (advancedFilters.games?.min
+            ? advancedFilters.games.min <= player.gamesPlayed
+            : true) &&
+          (advancedFilters.games?.max
+            ? advancedFilters.games.max >= player.gamesPlayed
+            : true)
+        );
+      });
+  }, [advancedFilters, parsePlayerToAdvanced]);
 
   // const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
-
+  console.log(advancedFilters);
   return (
     <table>
       <thead>

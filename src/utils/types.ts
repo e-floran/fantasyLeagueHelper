@@ -16,6 +16,13 @@ export enum StatsCategories {
   PTS = "PTS",
 }
 
+export enum FilterCategories {
+  TEAM = "team",
+  RATER = "rater",
+  SALARY = "salary",
+  GAMES = "games",
+}
+
 export enum DetailedStatsCategories {
   FGA = "FGA",
   FGM = "FGM",
@@ -137,4 +144,15 @@ export interface HistoryRanking {
   totalPoints: number;
   ownerName: string;
   seasonsRankings: SeasonRanking[];
+}
+
+interface FilterMinMax {
+  min?: number;
+  max?: number;
+}
+export interface FiltersType {
+  team?: string;
+  rater?: FilterMinMax;
+  salary?: FilterMinMax;
+  games?: FilterMinMax;
 }

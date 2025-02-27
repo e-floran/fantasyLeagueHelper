@@ -36,3 +36,7 @@ article > h3 {
   color: #e45e04;
   width: 100%;
 }
+
+input[type="number"] {
+  appearance: textfield;
+}
