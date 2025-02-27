@@ -1,16 +1,10 @@
 import { CSSProperties, ReactElement, useContext } from "react";
 import { createStyles } from "../utils/style";
-// import rosters from "../assets/teams/rosters.json";
 import { DataContext } from "../context/DataContext";
+import { Link } from "react-router-dom";
 
-// interface FooterProps {
-//   lastUpdate: Date;
-// }
 export const Footer = (): ReactElement => {
-  const { leagueId } = useContext(DataContext);
-  // const lastUpdate = useMemo(() => {
-  //   return new Date(rosters.lastUpdate);
-  // }, []);
+  const { leagueId, leagueName, isReady } = useContext(DataContext);
   const styles = createStyles<CSSProperties>()({
     footer: {
       display: "flex",
@@ -26,12 +20,14 @@ export const Footer = (): ReactElement => {
 
   return (
     <footer style={styles.footer}>
-      <a
-        href={`https://fantasy.espn.com/basketball/league?leagueId=${leagueId}`}
-      >
-        Your ESPN Fantasy league
-      </a>
-      {/* <p>Mise à jour des données : {lastUpdate.toLocaleString()}</p> */}
+      {leagueName && isReady && (
+        <a
+          href={`https://fantasy.espn.com/basketball/league?leagueId=${leagueId}`}
+        >
+          {leagueName} on ESPN
+        </a>
+      )}
+      {leagueName && isReady && <Link to={"/"}>Change league</Link>}
     </footer>
   );
 };

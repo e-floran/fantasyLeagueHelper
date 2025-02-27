@@ -13,9 +13,9 @@ import { useNavigate } from "react-router-dom";
 
 interface ContextData {
   leagueId: string;
+  leagueName: string;
   handleLeagueIdChange: (newId: string) => void;
   teams: Team[];
-  setTeams: Dispatch<SetStateAction<Team[]>>;
   activeTeamId: number;
   setActiveTeamId: Dispatch<SetStateAction<number>>;
   selectedKeepers: number[];
@@ -29,7 +29,8 @@ export const DataContext = createContext<ContextData>({} as ContextData);
 export const DataProvider = ({ children }: { children: ReactElement }) => {
   const navigate = useNavigate();
 
-  const [leagueId, setLeagueId] = useState("3409");
+  const [leagueId, setLeagueId] = useState("");
+  const [leagueName, setLeagueName] = useState("");
   const [activeTeamId, setActiveTeamId] = useState(0);
   const [selectedKeepers, setSelectedKeepers] = useState<number[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
@@ -39,7 +40,7 @@ export const DataProvider = ({ children }: { children: ReactElement }) => {
 
   const handleLeagueIdChange = async (newId: string) => {
     setLeagueId(newId);
-    await leagueInit(newId, setTeams).then(() => {
+    await leagueInit(newId, setTeams, setLeagueName).then(() => {
       navigate(`/teamDetails`);
     });
   };
@@ -52,9 +53,9 @@ export const DataProvider = ({ children }: { children: ReactElement }) => {
     <DataContext.Provider
       value={{
         leagueId,
+        leagueName,
         handleLeagueIdChange,
         teams,
-        setTeams,
         activeTeamId,
         setActiveTeamId,
         selectedKeepers,

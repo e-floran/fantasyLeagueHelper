@@ -10,7 +10,8 @@ import {
 
 export async function leagueInit(
   leagueId: string,
-  setTeams: Dispatch<SetStateAction<Team[]>>
+  setTeams: Dispatch<SetStateAction<Team[]>>,
+  setLeagueName: Dispatch<SetStateAction<string>>
 ) {
   // INIT
   // let members: RawInitMember[] = [];
@@ -25,6 +26,7 @@ export async function leagueInit(
       // members = [...json.members];
       teamsBase = [...json.teams];
       // previousSeasons = [...json.status.previousSeasons];
+      setLeagueName(json.settings.name);
     })
     .catch((error) => console.error(error));
 

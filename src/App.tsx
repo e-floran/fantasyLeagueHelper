@@ -55,7 +55,7 @@ function App() {
         /> */}
           {/* <Route path="/rules" element={<LeagueRules />} /> */}
           <Route path="/advanced" element={<AdvancedStats />} />
-          <Route path="/history" element={<History />} />
+          {/* <Route path="/history" element={<History />} /> */}
         </Routes>
         {/* {isLocal && (
         <CustomButton buttonText="Mettre à jour" onClickButton={dailyUpdate} />

@@ -4,6 +4,7 @@ import {
   ReactElement,
   // SetStateAction,
   useContext,
+  useMemo,
 } from "react";
 import { createStyles, rootColors } from "../utils/style";
 import { useNavigate } from "react-router-dom";
@@ -41,23 +42,30 @@ export const Header = (): ReactElement => {
       justifyContent: "space-evenly",
     },
   });
-  const { setSelectedKeepers, isReady } = useContext(DataContext);
+  const { setSelectedKeepers, isReady, leagueName } = useContext(DataContext);
 
   const navButtonsProps = [
     { icon: GroupsIcon, navigateTo: "/teamDetails" },
     { icon: CompareArrowsIcon, navigateTo: "/trade" },
     { icon: LeaderboardIcon, navigateTo: "/teams" },
-    { icon: AssistWalkerIcon, navigateTo: "/injuries" },
+    // { icon: AssistWalkerIcon, navigateTo: "/injuries" },
     { icon: QueryStatsIcon, navigateTo: "/advanced" },
-    { icon: AutoStoriesIcon, navigateTo: "history" },
-    { icon: GavelIcon, navigateTo: "/rules" },
+    // { icon: AutoStoriesIcon, navigateTo: "/history" },
+    // { icon: GavelIcon, navigateTo: "/rules" },
   ];
 
   const navigate = useNavigate();
 
+  const title = useMemo(() => {
+    if (leagueName) {
+      return leagueName + " helper";
+    }
+    return "ESPN Fantasy Helper";
+  }, [leagueName]);
+
   return (
     <header style={styles.header}>
-      <h1 style={styles.h1}>🏀 ESPN Fantasy Helper 🏀</h1>
+      <h1 style={styles.h1}>🏀 {title} 🏀</h1>
       {isReady && (
         <nav style={styles.nav}>
           {navButtonsProps.map((navButton, index) => (
