@@ -44,7 +44,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
 
   return (
     <section>
-      <h2>Masses salariales</h2>
+      <h2>Salaries</h2>
       <table>
         <thead>
           <tr>

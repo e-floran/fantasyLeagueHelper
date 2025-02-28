@@ -62,7 +62,7 @@ export const ButtonsGroup = ({
 
   return (
     <section style={styles.buttonsGroup}>
-      <h2 style={styles.h2}>Effectif</h2>
+      <h2 style={styles.h2}>Rosters</h2>
       {buttons}
     </section>
   );

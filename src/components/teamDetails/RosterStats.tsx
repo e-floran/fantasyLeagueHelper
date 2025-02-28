@@ -42,7 +42,7 @@ export const RosterStats = ({
 
   return (
     <section style={styles.section}>
-      <h2>Statistiques du roster actuel</h2>
+      <h2>Current roster stats</h2>
       {Object.entries(teamStats).map((stat, index) => {
         return (
           <article key={index} style={styles.article}>

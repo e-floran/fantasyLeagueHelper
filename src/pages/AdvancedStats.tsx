@@ -42,7 +42,7 @@ export const AdvancedStats = (): ReactElement => {
   return (
     <main>
       <section>
-        <h2>Statistiques avancées</h2>
+        <h2>Advanced stats</h2>
         <RaterFilters
           containerStyle={styles.filtersContainer}
           handleCategoryToggle={handleCategoryToggle}
@@ -53,12 +53,6 @@ export const AdvancedStats = (): ReactElement => {
           cellStyle={styles.tableCell}
           categoriesToOmit={categoriesToOmit}
         />
-      </section>
-      <section>
-        <p>
-          * : Les chiffres pour le rater par matchs joués sont multipliés par le
-          nombre moyen de matchs joués, pour avoir des chiffres plus lisibles.
-        </p>
       </section>
     </main>
   );

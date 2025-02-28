@@ -9,7 +9,7 @@ export const InjuryReport = ({
   return (
     <main>
       <section>
-        <h2>Joueurs blessés à ne pas drafter/pick</h2>
+        <h2>Unpickable players</h2>
         <table style={{ width: "100%" }}>
           <thead>
             <tr>
@@ -26,7 +26,7 @@ export const InjuryReport = ({
             ))}
           </tbody>
         </table>
-        <p>Les joueurs blessés jusqu'à la fin de la saison sont en rouge.</p>
+        <p>Players injured until the end of the season are in red.</p>
       </section>
     </main>
   );
