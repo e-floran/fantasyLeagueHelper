@@ -11,11 +11,11 @@ import { useNavigate } from "react-router-dom";
 import { NavButton } from "./NavButton";
 import GroupsIcon from "@mui/icons-material/Groups";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
-import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
+// import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
-import GavelIcon from "@mui/icons-material/Gavel";
+// import GavelIcon from "@mui/icons-material/Gavel";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+// import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import { DataContext } from "../context/DataContext";
 
 // interface HeaderProps {

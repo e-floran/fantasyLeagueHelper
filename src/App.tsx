@@ -15,7 +15,7 @@ import { Trade } from "./pages/Trade";
 // import { CustomButton } from "./components/generic/CustomButton";
 // import { LeagueRules } from "./pages/LeagueRules";
 import { AdvancedStats } from "./pages/AdvancedStats";
-import { History } from "./pages/History";
+// import { History } from "./pages/History";
 import { Home } from "./pages/Home";
 import { DataProvider } from "./context/DataContext";
 
