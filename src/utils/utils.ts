@@ -55,7 +55,7 @@ export const getNewSalariesByPlayerId = (team?: Team) => {
         computeNewSalary(
           player.salary,
           player.keeperHistory.length,
-          player.previousRater === 0,
+          !!player.hasNotPlayedLastSeason,
           player.currentRater - parseNegativeValue(player.previousRater)
         ),
         1
@@ -216,4 +216,15 @@ export const getDataByTeamId = (teams: Team[], selectedKeepers: number[]) => {
     dataMap.set(team.id, { newSalariesByPlayerId, totals: teamData, team });
   });
   return dataMap;
+};
+
+export const downloadElement = (data: unknown, fileName: string) => {
+  const element = document.createElement("a");
+  const textFile = new Blob([JSON.stringify(data)], {
+    type: "application/json",
+  });
+  element.href = URL.createObjectURL(textFile);
+  element.download = fileName + ".json";
+  document.body.appendChild(element);
+  element.click();
 };

@@ -2,6 +2,7 @@ import { addNewPlayers, checkUnpickablePlayersStatus } from "../utils/data";
 import { RatedRawPlayer, RawTeam } from "../utils/types";
 import rosters from "../assets/teams/rosters.json";
 import rater2024 from "../assets/rater/rater2024.json";
+import { downloadElement } from "../utils/utils";
 
 const raterUrl =
   "https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?scoringPeriodId=7&view=kona_player_info&view=mStatRatings";
@@ -76,12 +77,5 @@ export async function dailyUpdate() {
     teams: outputRosters,
     unpickablePlayers,
   };
-  const element = document.createElement("a");
-  const textFile = new Blob([JSON.stringify(output)], {
-    type: "application/json",
-  });
-  element.href = URL.createObjectURL(textFile);
-  element.download = "rosters.json";
-  document.body.appendChild(element);
-  element.click();
+  downloadElement(output, "rosters");
 }

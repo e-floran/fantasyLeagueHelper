@@ -1,5 +1,5 @@
 import { CSSProperties, ReactElement, useContext, useMemo } from "react";
-import { createStyles } from "../../utils/style";
+import { createStyles, rootColors } from "../../utils/style";
 import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
@@ -114,7 +114,15 @@ export const RosterTable = ({
                 key={player.id}
               >
                 <td>{player.fullName}</td>
-                <td>{parseNegativeValue(player.previousRater).toFixed(2)}</td>
+                <td
+                  style={
+                    player.hasNotPlayedLastSeason
+                      ? { color: rootColors.primary }
+                      : undefined
+                  }
+                >
+                  {player.previousRater.toFixed(2)}
+                </td>
                 <td>{player.currentRater.toFixed(2)}</td>
                 <td>{player.keeperHistory.length}</td>
                 <td>{player.salary}</td>

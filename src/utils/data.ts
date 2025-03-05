@@ -265,7 +265,6 @@ export const addNewPlayers = (
           const previousRaters = lastSeasonRaters.find(
             (ratedPlayer) => ratedPlayer.id === previousPlayer.id
           )?.ratings["0"];
-          console.log(newPlayer.playerPoolEntry.player.fullName, rawStats);
           rosterToBuild.push({
             ...previousPlayer,
             injuredSpot: newPlayer.lineupSlotId === 13,

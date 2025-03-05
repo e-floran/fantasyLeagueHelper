@@ -12,6 +12,7 @@ import { LeagueRules } from "./pages/LeagueRules";
 import { AdvancedStats } from "./pages/AdvancedStats";
 import { History } from "./pages/History";
 import { DataProvider } from "./context/DataContext";
+// import { getLastSeasonRaters } from "./scripts/getLastSeasonRaters";
 
 function App() {
   const isLocal = location.hostname === "localhost";
