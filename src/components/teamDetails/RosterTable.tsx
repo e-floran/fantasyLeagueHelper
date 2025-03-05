@@ -155,6 +155,10 @@ export const RosterTable = ({
           onClickButton={() => setSelectedKeepers([])}
         />
       )}
+      <p>
+        Les joueurs dont le rater de la saison dernière est en orange n'ont pas
+        joué et n'auront donc pas d'évolution du salaire liée au rater.
+      </p>
     </section>
   );
 };
