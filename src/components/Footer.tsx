@@ -1,10 +1,10 @@
-import { CSSProperties, ReactElement } from "react";
+import { CSSProperties, ReactElement, useContext } from "react";
 import { createStyles } from "../utils/style";
+import { DataContext } from "../context/DataContext";
 
-interface FooterProps {
-  lastUpdate: Date;
-}
-export const Footer = ({ lastUpdate }: FooterProps): ReactElement => {
+export const Footer = (): ReactElement => {
+  const { lastUpdate } = useContext(DataContext);
+
   const styles = createStyles<CSSProperties>()({
     footer: {
       display: "flex",

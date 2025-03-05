@@ -64,6 +64,8 @@ export const AdvancedFilters = ({
   const [openFilters, setOpenFilters] = useState(false);
   const [activeFilters, setActiveFilters] = useState<FilterCategories[]>([]);
 
+  const isLocal = location.hostname === "localhost";
+
   const handleFilterToggle = useCallback(
     (newFilter: FilterCategories) => {
       if (activeFilters.includes(newFilter)) {
@@ -87,16 +89,21 @@ export const AdvancedFilters = ({
       {openFilters && (
         <>
           <div style={styles.checkBoxesContainer}>
-            {(Object.values(FilterCategories) as Array<FilterCategories>).map(
-              (filter) => (
+            {(Object.values(FilterCategories) as Array<FilterCategories>)
+              .filter((filter) => {
+                if (isLocal) {
+                  return filter;
+                }
+                return filter !== FilterCategories.PROJECTION;
+              })
+              .map((filter) => (
                 <CustomCheckbox
                   labelText={filter}
                   onChange={() => handleFilterToggle(filter)}
                   isChecked={activeFilters.includes(filter)}
                   key={filter}
                 />
-              )
-            )}
+              ))}
           </div>
           <div style={styles.subFiltersContainer}>
             {activeFilters.includes(FilterCategories.TEAM) && (
@@ -171,6 +178,35 @@ export const AdvancedFilters = ({
                   onChange={(event) =>
                     handleFilterChange(
                       FilterCategories.SALARY,
+                      "max:" + event.currentTarget.value
+                    )
+                  }
+                  placeholder="max"
+                />
+              </div>
+            )}
+            {isLocal && activeFilters.includes(FilterCategories.PROJECTION) && (
+              <div style={styles.inputContainer}>
+                <p style={styles.inputLabel}>projection</p>
+                <input
+                  type="number"
+                  style={styles.input}
+                  value={advancedFilters.projection?.min}
+                  onChange={(event) =>
+                    handleFilterChange(
+                      FilterCategories.PROJECTION,
+                      "min:" + event.currentTarget.value
+                    )
+                  }
+                  placeholder="min"
+                />
+                <input
+                  type="number"
+                  style={styles.input}
+                  value={advancedFilters.projection?.max}
+                  onChange={(event) =>
+                    handleFilterChange(
+                      FilterCategories.PROJECTION,
                       "max:" + event.currentTarget.value
                     )
                   }

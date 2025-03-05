@@ -1,6 +1,7 @@
 import { ReactElement, useMemo } from "react";
-import { SummaryProps } from "../../pages/TeamsSummary";
 import { useSortColumns } from "../../hooks/useSortColumns";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
 export interface TeamSortableData {
   id: number;
@@ -11,7 +12,9 @@ export interface TeamSortableData {
   currentRaters: number;
 }
 
-export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
+export const SummaryTable = (): ReactElement => {
+  const { dataByTeamId } = useContext(DataContext);
+
   const sortableTeams = useMemo(() => {
     const sortableTeamsData: TeamSortableData[] = [];
     dataByTeamId.forEach((team) => {

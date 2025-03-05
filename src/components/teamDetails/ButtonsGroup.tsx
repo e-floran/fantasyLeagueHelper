@@ -1,14 +1,11 @@
-import { CSSProperties, ReactElement, useMemo } from "react";
+import { CSSProperties, ReactElement, useContext, useMemo } from "react";
 import { createStyles } from "../../utils/style";
 import { CustomButton } from "../generic/CustomButton";
-import { DetailsProps } from "../../pages/TeamDetails";
+import { DataContext } from "../../context/DataContext";
 
-export const ButtonsGroup = ({
-  activeTeamId,
-  setActiveTeamId,
-  setSelectedKeepers,
-  dataByTeamId,
-}: Omit<DetailsProps, "selectedKeepers">): ReactElement => {
+export const ButtonsGroup = (): ReactElement => {
+  const { activeTeamId, setActiveTeamId, setSelectedKeepers, dataByTeamId } =
+    useContext(DataContext);
   const styles = createStyles<CSSProperties>()({
     buttonsGroup: {
       display: "flex",

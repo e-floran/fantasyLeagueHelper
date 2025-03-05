@@ -1,14 +1,9 @@
 import { SummaryTable } from "../components/teamsSummary/SummaryTable";
-import { TeamDetailsData } from "../utils/types";
 
-export interface SummaryProps {
-  dataByTeamId: Map<number, TeamDetailsData>;
-}
-
-export const TeamsSummary = ({ dataByTeamId }: SummaryProps) => {
+export const TeamsSummary = () => {
   return (
     <main>
-      <SummaryTable dataByTeamId={dataByTeamId} />
+      <SummaryTable />
     </main>
   );
 };

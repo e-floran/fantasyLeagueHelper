@@ -21,6 +21,7 @@ export enum FilterCategories {
   RATER = "rater",
   SALARY = "salary",
   GAMES = "games",
+  PROJECTION = "projection",
 }
 
 export enum DetailedStatsCategories {
@@ -53,6 +54,7 @@ export interface Player {
   categoriesRaters: PlayerCategoriesRaters;
   previousCategoriesRaters: PlayerCategoriesRaters;
   detailedStats: PlayerDetailedStats;
+  hasNotPlayedLastSeason?: boolean;
 }
 
 export interface Team {
@@ -155,4 +157,5 @@ export interface FiltersType {
   rater?: FilterMinMax;
   salary?: FilterMinMax;
   games?: FilterMinMax;
+  projection?: FilterMinMax;
 }

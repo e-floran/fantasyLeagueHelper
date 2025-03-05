@@ -1,10 +1,11 @@
 import { CSSProperties, ReactElement, useMemo } from "react";
-import { SummaryProps } from "../../pages/TeamsSummary";
 import { createStyles } from "../../utils/style";
 import { getTeamStatsAfterTrade, reduceStats } from "../../utils/utils";
 import { TradeStatItem } from "./TradeStatItem";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
-interface TradeProps extends SummaryProps {
+interface TradeProps {
   firstTeam: number;
   secondTeam: number;
   selectedFirstTeamPlayers: number[];
@@ -12,12 +13,13 @@ interface TradeProps extends SummaryProps {
 }
 
 export const TradeResults = ({
-  dataByTeamId,
   firstTeam,
   secondTeam,
   selectedFirstTeamPlayers,
   selectedSecondTeamPlayers,
 }: TradeProps): ReactElement => {
+  const { dataByTeamId } = useContext(DataContext);
+
   const styles = createStyles<CSSProperties>()({
     container: {
       marginTop: "1rem",

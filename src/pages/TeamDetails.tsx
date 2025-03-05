@@ -1,8 +1,15 @@
-import { Dispatch, ReactElement, SetStateAction, useMemo } from "react";
+import {
+  Dispatch,
+  ReactElement,
+  SetStateAction,
+  useContext,
+  useMemo,
+} from "react";
 import { TeamDetailsData } from "../utils/types";
 import { ButtonsGroup } from "../components/teamDetails/ButtonsGroup";
 import { RosterTable } from "../components/teamDetails/RosterTable";
 import { RosterStats } from "../components/teamDetails/RosterStats";
+import { DataContext } from "../context/DataContext";
 
 export interface DetailsProps {
   selectedKeepers: number[];
@@ -12,32 +19,16 @@ export interface DetailsProps {
   dataByTeamId: Map<number, TeamDetailsData>;
 }
 
-export const TeamDetails = ({
-  selectedKeepers,
-  activeTeamId,
-  setActiveTeamId,
-  setSelectedKeepers,
-  dataByTeamId,
-}: DetailsProps): ReactElement => {
+export const TeamDetails = (): ReactElement => {
+  const { activeTeamId, dataByTeamId } = useContext(DataContext);
   const activeTeamData = useMemo(() => {
     return dataByTeamId.get(activeTeamId);
   }, [activeTeamId, dataByTeamId]);
 
   return (
     <main>
-      <ButtonsGroup
-        activeTeamId={activeTeamId}
-        setActiveTeamId={setActiveTeamId}
-        setSelectedKeepers={setSelectedKeepers}
-        dataByTeamId={dataByTeamId}
-      />
-      {activeTeamData && (
-        <RosterTable
-          activeTeamData={activeTeamData}
-          selectedKeepers={selectedKeepers}
-          setSelectedKeepers={setSelectedKeepers}
-        />
-      )}
+      <ButtonsGroup />
+      {activeTeamData && <RosterTable activeTeamData={activeTeamData} />}
       {activeTeamData && <RosterStats activeTeamData={activeTeamData} />}
     </main>
   );

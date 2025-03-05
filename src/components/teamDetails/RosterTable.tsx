@@ -1,21 +1,14 @@
-import {
-  CSSProperties,
-  Dispatch,
-  ReactElement,
-  SetStateAction,
-  useMemo,
-} from "react";
+import { CSSProperties, ReactElement, useContext, useMemo } from "react";
 import { createStyles } from "../../utils/style";
 import { Player, TeamDetailsData } from "../../utils/types";
 import { CustomButton } from "../generic/CustomButton";
 import { parseNegativeValue } from "../../utils/utils";
 import { useSortColumns } from "../../hooks/useSortColumns";
 import { CustomCheckbox } from "../generic/CustomCheckbox";
+import { DataContext } from "../../context/DataContext";
 
 interface RosterTableProps {
   activeTeamData: TeamDetailsData;
-  selectedKeepers: number[];
-  setSelectedKeepers: Dispatch<SetStateAction<number[]>>;
 }
 
 export interface PlayerWithProjection extends Player {
@@ -24,9 +17,9 @@ export interface PlayerWithProjection extends Player {
 
 export const RosterTable = ({
   activeTeamData,
-  selectedKeepers,
-  setSelectedKeepers,
 }: RosterTableProps): ReactElement => {
+  const { selectedKeepers, setSelectedKeepers } = useContext(DataContext);
+
   const styles = createStyles<CSSProperties>()({
     section: {
       display: "flex",

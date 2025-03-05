@@ -1,10 +1,13 @@
 import { CSSProperties, ReactElement, useMemo, useState } from "react";
-import { SummaryProps } from "../../pages/TeamsSummary";
 import { createStyles } from "../../utils/style";
 import { TradeTeam } from "./TradeTeam";
 import { TradeResults } from "./TradeResults";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
-export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
+export const TradeTool = (): ReactElement => {
+  const { dataByTeamId } = useContext(DataContext);
+
   const styles = createStyles<CSSProperties>()({
     section: {
       width: "100%",
@@ -88,7 +91,6 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
         />
       </div>
       <TradeResults
-        dataByTeamId={dataByTeamId}
         firstTeam={firstTeam}
         secondTeam={secondTeam}
         selectedFirstTeamPlayers={selectedFirstTeamPlayers}
