@@ -54,7 +54,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
                 cursor: "pointer",
               }}
             >
-              Équipe {sortColumn === "name" ? columnIcon : null}
+              Team {sortColumn === "name" ? columnIcon : null}
             </th>
             <th
               onClick={() => sortColumnByArgument("currentSalaries")}
@@ -62,7 +62,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
                 cursor: "pointer",
               }}
             >
-              Salaires {sortColumn === "currentSalaries" ? columnIcon : null}
+              Salaries {sortColumn === "currentSalaries" ? columnIcon : null}
             </th>
             <th
               onClick={() => sortColumnByArgument("currentMargin")}
@@ -70,7 +70,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
                 cursor: "pointer",
               }}
             >
-              Marge {sortColumn === "currentMargin" ? columnIcon : null}
+              Margin {sortColumn === "currentMargin" ? columnIcon : null}
             </th>
             <th
               onClick={() => sortColumnByArgument("previousRaters")}
@@ -78,7 +78,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
                 cursor: "pointer",
               }}
             >
-              PR passé {sortColumn === "previousRaters" ? columnIcon : null}
+              Last PR {sortColumn === "previousRaters" ? columnIcon : null}
             </th>
             <th
               onClick={() => sortColumnByArgument("currentRaters")}
@@ -86,7 +86,7 @@ export const SummaryTable = ({ dataByTeamId }: SummaryProps): ReactElement => {
                 cursor: "pointer",
               }}
             >
-              PR actuel {sortColumn === "currentRaters" ? columnIcon : null}
+              Current PR {sortColumn === "currentRaters" ? columnIcon : null}
             </th>
           </tr>
         </thead>

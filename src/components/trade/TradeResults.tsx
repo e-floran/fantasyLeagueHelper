@@ -81,7 +81,7 @@ export const TradeResults = ({
 
   return (
     <article style={styles.container}>
-      <h3>Évolutions statistiques par match</h3>
+      <h3>Average stats impact</h3>
       <ul style={styles.list}>
         {Object.entries(statsAfterTrade.firstTeam).map((value, index) => {
           return <TradeStatItem name={value[0]} value={value[1]} key={index} />;

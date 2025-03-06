@@ -80,7 +80,7 @@ export const AdvancedTable = ({
           style={headerStyle}
           onClick={() => sortColumnByArgument("fullName")}
         >
-          Nom {sortColumn === "fullName" ? columnIcon : null}
+          Name {sortColumn === "fullName" ? columnIcon : null}
         </th>
         <th
           style={headerStyle}
@@ -89,13 +89,13 @@ export const AdvancedTable = ({
           Rater {sortColumn === "currentRater" ? columnIcon : null}
         </th>
         <th style={headerStyle} onClick={() => sortColumnByArgument("salary")}>
-          Salaire {sortColumn === "salary" ? columnIcon : null}
+          Salary {sortColumn === "salary" ? columnIcon : null}
         </th>
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("raterBySalary")}
         >
-          R / salaire {sortColumn === "raterBySalary" ? columnIcon : null}
+          R / salary {sortColumn === "raterBySalary" ? columnIcon : null}
         </th>
         {/* {isLocal && (
           <>
@@ -118,13 +118,13 @@ export const AdvancedTable = ({
           style={headerStyle}
           onClick={() => sortColumnByArgument("gamesPlayed")}
         >
-          Matchs joués
+          Games played
         </th>
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("raterByGames")}
         >
-          R / match
+          R / game
         </th>
       </thead>
       <tbody>

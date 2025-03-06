@@ -18,7 +18,7 @@ export const RaterFilters = ({
   return (
     <article style={containerStyle}>
       <CustomButton
-        buttonText="Exclure"
+        buttonText="Exclude"
         onClickButton={() => setOpenFilters(!openFilters)}
       />
       {openFilters &&

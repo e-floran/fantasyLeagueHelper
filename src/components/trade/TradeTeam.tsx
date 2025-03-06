@@ -88,9 +88,9 @@ export const TradeTeam = ({
       <table>
         <thead>
           <tr>
-            <th>Nom</th>
-            <th>Salaire</th>
-            <th>Choisir</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Pick</th>
           </tr>
         </thead>
         <tbody>
@@ -111,7 +111,7 @@ export const TradeTeam = ({
         </tbody>
         {salariesAfterTrade !== undefined && (
           <tfoot>
-            <td>Résultat</td>
+            <td>Results</td>
             <td>{salariesAfterTrade}</td>
             <td> - </td>
           </tfoot>

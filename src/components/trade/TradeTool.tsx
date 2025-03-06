@@ -72,7 +72,7 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
           dataByTeamId={dataByTeamId}
           setTeam={setFirstTeam}
           teamId={firstTeam}
-          title="Équipe 1"
+          title="Team 1"
           selectedPlayers={selectedFirstTeamPlayers}
           setSelectedPlayers={setSelectedFirstTeamPlayers}
           salariesAfterTrade={salariesAfterTrade?.firstTeam}
@@ -81,7 +81,7 @@ export const TradeTool = ({ dataByTeamId }: SummaryProps): ReactElement => {
           dataByTeamId={dataByTeamId}
           setTeam={setSecondTeam}
           teamId={secondTeam}
-          title="Équipe 2"
+          title="Team 2"
           selectedPlayers={selectedSecondTeamPlayers}
           setSelectedPlayers={setSelectedSecondTeamPlayers}
           salariesAfterTrade={salariesAfterTrade?.secondTeam}

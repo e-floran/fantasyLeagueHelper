@@ -23,17 +23,12 @@ export const CustomLoader = () => {
       background: rootColors.primary,
       animation: "progress 10s 1 linear",
     },
-    ball: {
-      fontSize: "4rem",
-      animation: "ballRotation 5s infinite linear",
-    },
   });
   return (
     <section style={styles.container}>
       <article style={styles.progressContainer}>
         <div style={styles.progressBar} />
       </article>
-      <p style={styles.ball}>🏀</p>
     </section>
   );
 };

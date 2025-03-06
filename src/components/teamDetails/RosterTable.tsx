@@ -75,7 +75,7 @@ export const RosterTable = ({
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("fullName")}
             >
-              {"Nom"} {sortColumn === "fullName" ? columnIcon : null}
+              Name {sortColumn === "fullName" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
@@ -90,24 +90,24 @@ export const RosterTable = ({
             >
               {"Rater 2025"} {sortColumn === "currentRater" ? columnIcon : null}
             </th>
-            <th
+            {/* <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("keeperHistory")}
             >
               {"Saisons keeper"}
               {sortColumn === "keeperHistory" ? columnIcon : null}
-            </th>
+            </th> */}
             <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("salary")}
             >
-              Salaire {sortColumn === "salary" ? columnIcon : null}
+              Salary {sortColumn === "salary" ? columnIcon : null}
             </th>
             <th
               style={styles.columnHeader}
               onClick={() => sortColumnByArgument("projectedSalary")}
             >
-              Saison prochaine{" "}
+              Projected salary
               {sortColumn === "projectedSalary" ? columnIcon : null}
             </th>
             <th>Test keepers</th>
@@ -123,7 +123,7 @@ export const RosterTable = ({
                 <td>{player.fullName}</td>
                 <td>{parseNegativeValue(player.previousRater).toFixed(2)}</td>
                 <td>{player.currentRater.toFixed(2)}</td>
-                <td>{player.keeperHistory.length}</td>
+                {/* <td>{player.keeperHistory.length}</td> */}
                 <td>{player.salary}</td>
                 <td>{activeTeamData?.newSalariesByPlayerId.get(player.id)}</td>
                 <td>
@@ -138,10 +138,10 @@ export const RosterTable = ({
         </tbody>
         <tfoot>
           <tr>
-            <td>Totaux</td>
+            <td>Totals</td>
             <td>{activeTeamData?.totals?.rater2024.toFixed(2)}</td>
             <td>{activeTeamData?.totals?.rater2025.toFixed(2)}</td>
-            <td>-</td>
+            {/* <td>-</td> */}
             <td>{activeTeamData?.totals?.currentSalary}</td>
             <td>{activeTeamData?.totals?.projectedSalary}</td>
             <td>{activeTeamData?.totals?.projectedKeepersSalaries}</td>

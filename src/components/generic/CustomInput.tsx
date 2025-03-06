@@ -15,6 +15,7 @@ export const CustomInput = ({ value, onChange, placeholder }: ButtonProps) => {
       fontSize: "1rem",
       fontFamily: "inherit",
       width: "15rem",
+      margin: "0.2rem",
     },
   });
 
