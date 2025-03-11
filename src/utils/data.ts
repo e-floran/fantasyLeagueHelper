@@ -118,18 +118,14 @@ const buildPlayerStats = (
   const output = basePlayerStats;
   if (rawStats) {
     for (const [key, value] of Object.entries(rawStats)) {
-      console.log(key, value);
       if (rawStatsKeys.includes(key)) {
-        console.log(key);
         const parsedKey = RawStatsCategories.get(key);
         if (parsedKey) {
-          console.log(parsedKey);
           output[parsedKey] = value;
         }
       }
     }
   }
-  console.log(output);
   return { ...output };
 };
 

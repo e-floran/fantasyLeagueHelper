@@ -61,8 +61,8 @@ export async function dailyUpdate() {
       })
       .catch((error) => console.log(error));
   }
-  const ratedPlayers = (rater2024 as unknown as { players: RatedRawPlayer[] })
-    .players;
+  const ratedPlayers = rater2024 as unknown as RatedRawPlayer[];
+
   const outputRosters = addNewPlayers(
     rosters.teams,
     newRosters,
