@@ -1,13 +1,27 @@
 import { addNewPlayers, checkUnpickablePlayersStatus } from "../utils/data";
-import { RatedRawPlayer, RawTeam } from "../utils/types";
+import {
+  RatedRawPlayer,
+  RawTeam,
+  Team,
+  UnpickablePlayer,
+} from "../utils/types";
 import rosters from "../assets/teams/rosters.json";
 import rater2024 from "../assets/rater/rater2024.json";
 import { downloadElement } from "../utils/utils";
+import { Dispatch, SetStateAction } from "react";
 
 const raterUrl =
   "https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?scoringPeriodId=7&view=kona_player_info&view=mStatRatings";
 
-export async function dailyUpdate() {
+export async function dailyUpdate(
+  setIsUpdating: Dispatch<SetStateAction<boolean>>,
+  handleDataRefresh?: (
+    newTeams: Team[],
+    newUnpickables: UnpickablePlayer[],
+    newUpdate: Date
+  ) => void
+) {
+  setIsUpdating(true);
   const newRosters: RawTeam[] = [];
   let newRaters: RatedRawPlayer[] = [];
   const ratersHeaders = {
@@ -77,5 +91,9 @@ export async function dailyUpdate() {
     teams: outputRosters,
     unpickablePlayers,
   };
-  downloadElement(output, "rosters");
+  if (handleDataRefresh) {
+    handleDataRefresh(outputRosters, unpickablePlayers, output.lastUpdate);
+    return;
+  }
+  downloadElement(output, "rosters", setIsUpdating);
 }

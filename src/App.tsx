@@ -6,17 +6,14 @@ import { TeamsSummary } from "./pages/TeamsSummary";
 import { InjuryReport } from "./pages/InjuryReport";
 import { Footer } from "./components/Footer";
 import { Trade } from "./pages/Trade";
-import { dailyUpdate } from "./scripts/dailyUpdate";
-import { CustomButton } from "./components/generic/CustomButton";
 import { LeagueRules } from "./pages/LeagueRules";
 import { AdvancedStats } from "./pages/AdvancedStats";
 import { History } from "./pages/History";
 import { DataProvider } from "./context/DataContext";
+import { Updater } from "./components/Updater";
 // import { getLastSeasonRaters } from "./scripts/getLastSeasonRaters";
 
 function App() {
-  const isLocal = location.hostname === "localhost";
-
   return (
     <DataProvider>
       <>
@@ -30,13 +27,8 @@ function App() {
           <Route path="/advanced" element={<AdvancedStats />} />
           <Route path="/history" element={<History />} />
         </Routes>
-        {isLocal && (
-          <CustomButton
-            buttonText="Mettre à jour"
-            onClickButton={dailyUpdate}
-          />
-        )}
         <Footer />
+        <Updater />
       </>
     </DataProvider>
   );

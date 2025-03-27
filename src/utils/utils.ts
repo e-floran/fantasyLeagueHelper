@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import {
   PlayerCategoriesRaters,
   PlayerDetailedStats,
@@ -218,7 +219,11 @@ export const getDataByTeamId = (teams: Team[], selectedKeepers: number[]) => {
   return dataMap;
 };
 
-export const downloadElement = (data: unknown, fileName: string) => {
+export const downloadElement = (
+  data: unknown,
+  fileName: string,
+  setIsUpdating?: Dispatch<SetStateAction<boolean>>
+) => {
   const element = document.createElement("a");
   const textFile = new Blob([JSON.stringify(data)], {
     type: "application/json",
@@ -227,4 +232,7 @@ export const downloadElement = (data: unknown, fileName: string) => {
   element.download = fileName + ".json";
   document.body.appendChild(element);
   element.click();
+  if (setIsUpdating) {
+    setIsUpdating(false);
+  }
 };
