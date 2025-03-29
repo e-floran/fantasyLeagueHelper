@@ -21,7 +21,7 @@ export const CustomLoader = () => {
       height: "2rem",
       width: "0%",
       background: rootColors.primary,
-      animation: "progress 10s 1 linear",
+      animation: "progress 20s 1 linear",
     },
   });
   return (
