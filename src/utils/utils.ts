@@ -56,7 +56,7 @@ export const getNewSalariesByPlayerId = (team?: Team) => {
         computeNewSalary(
           player.salary,
           player.keeperHistory.length,
-          !!player.hasNotPlayedLastSeason,
+          player.previousRater === 0,
           player.currentRater - parseNegativeValue(player.previousRater)
         ),
         1

@@ -115,7 +115,7 @@ export const RosterTable = ({
                 <td>{player.fullName}</td>
                 <td
                   style={
-                    player.hasNotPlayedLastSeason
+                    player.previousRater === 0
                       ? { color: rootColors.primary }
                       : undefined
                   }
