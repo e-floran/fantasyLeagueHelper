@@ -64,7 +64,12 @@ export const History = () => {
               <th>Manager</th>
               <th>Saisons</th>
               <th>Titres</th>
-              <th style={styles.totalCells}>Total points*</th>
+              <th
+                style={styles.totalCells}
+                title="Un point est attribué pour chaque place au classement (1 point pour la 14e place, 2 pour la 13e place...) plus 3 points bonus pour le podium et encore 5 points bonus pour le titre."
+              >
+                Total points*
+              </th>
               <th>Moyenne</th>
               <th>Meilleure saison</th>
             </tr>

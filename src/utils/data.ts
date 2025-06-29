@@ -371,6 +371,8 @@ const historyUsersMap = new Map([
   ["{479E4B9D-C9CC-4E83-882D-40FB9C400D85}", "Eagle Warriors"],
   ["{06BBF389-1B6C-44FD-99D5-53B74C478194}", "Dkeuss"],
   ["{B9BDB736-3D7C-47F7-B833-075FCBE7FA08}", "Coyen"],
+  ["{4F6331EB-6FAE-4C6C-9C41-BD3E20AE5F74}", "Barbenoir"],
+  ["{759DE964-CA02-4EE7-ACFD-62EE77A059B1}", "Grand Tatou"],
 ]);
 
 export const buildHistoryMap = () => {
