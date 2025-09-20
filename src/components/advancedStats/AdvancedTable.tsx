@@ -120,7 +120,7 @@ export const AdvancedTable = ({
       });
   }, [advancedFilters, parsePlayerToAdvanced, dataByTeamId]);
 
-  const isLocal = location.hostname === "localhost";
+  // const isLocal = location.hostname === "localhost";
 
   const { columnIcon, sortColumn, sortedOptions, sortColumnByArgument } =
     useSortColumns({ options: flatPlayers });
@@ -151,9 +151,9 @@ export const AdvancedTable = ({
         >
           R / salaire {sortColumn === "raterBySalary" ? columnIcon : null}
         </th>
-        {isLocal && (
-          <>
-            {/* <th
+        {/* {isLocal && ( */}
+        <>
+          {/* <th
               style={headerStyle}
               onClick={() => sortColumnByArgument("previousRater")}
             >
@@ -166,21 +166,20 @@ export const AdvancedTable = ({
               Ancien rater/salaire{" "}
               {sortColumn === "oldRaterBySalary" ? columnIcon : null}
             </th> */}
-            <th
-              style={headerStyle}
-              onClick={() => sortColumnByArgument("projectedSalary")}
-            >
-              Projection {sortColumn === "projectedSalary" ? columnIcon : null}
-            </th>
-            <th
-              style={headerStyle}
-              onClick={() => sortColumnByArgument("raterByProjectedSalary")}
-            >
-              R / projection{" "}
-              {sortColumn === "raterByProjectedSalary" ? columnIcon : null}
-            </th>
-          </>
-        )}
+          <th
+            style={headerStyle}
+            onClick={() => sortColumnByArgument("projectedSalary")}
+          >
+            Projection {sortColumn === "projectedSalary" ? columnIcon : null}
+          </th>
+          <th
+            style={headerStyle}
+            onClick={() => sortColumnByArgument("raterByProjectedSalary")}
+          >
+            R / projection{" "}
+            {sortColumn === "raterByProjectedSalary" ? columnIcon : null}
+          </th>
+        </>
         <th
           style={headerStyle}
           onClick={() => sortColumnByArgument("gamesPlayed")}
@@ -204,18 +203,18 @@ export const AdvancedTable = ({
               <td style={cellStyle}>{player.currentRater.toFixed(2)}</td>
               <td style={cellStyle}>{player.salary}</td>
               <td style={cellStyle}>{player.raterBySalary.toFixed(2)}</td>
-              {isLocal && (
-                <>
-                  {/* <td style={cellStyle}>{player.previousRater.toFixed(2)}</td>
+              {/* {isLocal && ( */}
+              <>
+                {/* <td style={cellStyle}>{player.previousRater.toFixed(2)}</td>
                   <td style={cellStyle}>
                     {player.oldRaterBySalary.toFixed(2)}
                   </td> */}
-                  <td style={cellStyle}>{player.projectedSalary}</td>
-                  <td style={cellStyle}>
-                    {player.raterByProjectedSalary.toFixed(2)}
-                  </td>
-                </>
-              )}
+                <td style={cellStyle}>{player.projectedSalary}</td>
+                <td style={cellStyle}>
+                  {player.raterByProjectedSalary.toFixed(2)}
+                </td>
+              </>
+              {/* )} */}
               <td style={cellStyle}>{player.gamesPlayed}</td>
               <td style={cellStyle}>{player.raterByGames.toFixed(2)}</td>
             </tr>
