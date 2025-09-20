@@ -64,7 +64,7 @@ export const AdvancedFilters = ({
   const [openFilters, setOpenFilters] = useState(false);
   const [activeFilters, setActiveFilters] = useState<FilterCategories[]>([]);
 
-  const isLocal = location.hostname === "localhost";
+  // const isLocal = location.hostname === "localhost";
 
   const handleFilterToggle = useCallback(
     (newFilter: FilterCategories) => {
@@ -91,10 +91,10 @@ export const AdvancedFilters = ({
           <div style={styles.checkBoxesContainer}>
             {(Object.values(FilterCategories) as Array<FilterCategories>)
               .filter((filter) => {
-                if (isLocal) {
-                  return filter;
-                }
-                return filter !== FilterCategories.PROJECTION;
+                // if (isLocal) {
+                return filter;
+                // }
+                // return filter !== FilterCategories.PROJECTION;
               })
               .map((filter) => (
                 <CustomCheckbox
@@ -185,7 +185,7 @@ export const AdvancedFilters = ({
                 />
               </div>
             )}
-            {isLocal && activeFilters.includes(FilterCategories.PROJECTION) && (
+            {activeFilters.includes(FilterCategories.PROJECTION) && (
               <div style={styles.inputContainer}>
                 <p style={styles.inputLabel}>projection</p>
                 <input
