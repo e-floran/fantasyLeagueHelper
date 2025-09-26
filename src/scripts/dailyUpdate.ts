@@ -66,7 +66,7 @@ export async function dailyUpdate(
     .catch((error) => console.log(error));
 
   for (let i = 1; i < 17; i++) {
-    const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?rosterForTeamId=${i}&view=mRoster`;
+    const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2026/segments/0/leagues/3409?rosterForTeamId=${i}&view=mRoster`;
     await fetch(url)
       .then((response) => response.json())
       .then((json: { teams: RawTeam[] }) => {
