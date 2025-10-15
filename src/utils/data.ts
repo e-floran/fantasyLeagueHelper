@@ -202,21 +202,47 @@ export const addNewPlayers = (
   lastSeasonRaters: RatedRawPlayer[],
   currentRaters: RatedRawPlayer[]
 ): Team[] => {
+  console.log(
+    `🔄 Processing ${newRosters.length} new rosters against ${previousRosters.length} previous rosters`
+  );
   const outputRosters: Team[] = [];
 
   const playersByPlayerId: Map<number, Player> = new Map();
 
   newRosters.forEach((newTeam) => {
+    console.log(`🏀 Processing team ${newTeam.id}:`, {
+      hasRoster: !!newTeam.roster,
+      hasEntries: !!newTeam.roster?.entries,
+      entriesLength: newTeam.roster?.entries?.length || 0,
+    });
+
     const newRoster = newTeam.roster.entries;
     const oldTeam: Team | undefined = previousRosters.find(
       (team) => team.id === newTeam.id
     );
     if (!oldTeam) {
+      console.warn(`⚠️ No matching previous team found for team ${newTeam.id}`);
       return;
     }
+
+    console.log(`📊 Team ${newTeam.id} (${oldTeam.name}):`, {
+      newRosterSize: newRoster?.length || 0,
+      oldRosterSize: oldTeam.roster?.length || 0,
+      oldTeamPlayers:
+        oldTeam.roster?.map((p) => ({ id: p.id, name: p.fullName })) || [],
+    });
+
     const rosterToBuild: Player[] = [];
 
     newRoster.forEach((newPlayer) => {
+      console.log(`👤 Processing player ${newPlayer.playerId}:`, {
+        fullName: newPlayer.playerPoolEntry?.player?.fullName,
+        acquisitionType: newPlayer.acquisitionType,
+        isInOldTeam: oldTeam.roster.some(
+          (oldPlayer) => oldPlayer.id === newPlayer.playerId
+        ),
+      });
+
       const currentRater = currentRaters.find(
         (ratedPlayer) => ratedPlayer.id === newPlayer.playerId
       );
@@ -228,10 +254,20 @@ export const addNewPlayers = (
       const rawStats = newPlayer.playerPoolEntry.player.stats.find(
         (statsEntry) => statsEntry.id === "002025"
       )?.stats;
-      if (
-        !oldTeam.roster.some((oldPlayer) => oldPlayer.id === newPlayer.playerId)
-      ) {
+
+      const isPlayerInOldTeam = oldTeam.roster.some(
+        (oldPlayer) => oldPlayer.id === newPlayer.playerId
+      );
+
+      if (!isPlayerInOldTeam) {
+        console.log(
+          `🆕 New player ${newPlayer.playerId} (${newPlayer.playerPoolEntry?.player?.fullName}) - acquisition type: ${newPlayer.acquisitionType}`
+        );
+
         if (newPlayer.acquisitionType === AcquisitionTypeEnum.ADD) {
+          console.log(
+            `➕ Adding as free agent: ${newPlayer.playerPoolEntry?.player?.fullName}`
+          );
           addFreeAgent(
             newPlayer,
             lastSeasonRaters,
@@ -240,8 +276,10 @@ export const addNewPlayers = (
             gamesPlayed,
             rawStats
           );
-        }
-        if (newPlayer.acquisitionType === AcquisitionTypeEnum.TRADE) {
+        } else if (newPlayer.acquisitionType === AcquisitionTypeEnum.TRADE) {
+          console.log(
+            `↔️ Adding as traded player: ${newPlayer.playerPoolEntry?.player?.fullName}`
+          );
           addTradedPlayer(
             newPlayer,
             playersByPlayerId,
@@ -252,8 +290,27 @@ export const addNewPlayers = (
             gamesPlayed,
             rawStats
           );
+        } else if (newPlayer.acquisitionType === AcquisitionTypeEnum.DRAFT) {
+          console.log(
+            `🎯 Adding drafted player: ${newPlayer.playerPoolEntry?.player?.fullName}`
+          );
+          addFreeAgent(
+            newPlayer,
+            lastSeasonRaters,
+            rosterToBuild,
+            currentRater?.ratings[0],
+            gamesPlayed,
+            rawStats
+          );
+        } else {
+          console.log(
+            `❓ Unknown acquisition type for ${newPlayer.playerPoolEntry?.player?.fullName}: ${newPlayer.acquisitionType}`
+          );
         }
       } else {
+        console.log(
+          `♻️ Existing keeper: ${newPlayer.playerPoolEntry?.player?.fullName}`
+        );
         const previousPlayer = oldTeam.roster.find(
           (oldPlayer) => oldPlayer.id === newPlayer.playerId
         );
@@ -273,8 +330,13 @@ export const addNewPlayers = (
         }
       }
     });
+    console.log(
+      `✅ Team ${newTeam.id} final roster: ${rosterToBuild.length} players`
+    );
     outputRosters.push({ ...oldTeam, roster: rosterToBuild });
   });
+
+  console.log(`🎯 Final output: ${outputRosters.length} teams processed`);
   return outputRosters.sort((a, b) => {
     return a.name.localeCompare(b.name);
   });
@@ -283,12 +345,21 @@ export const addNewPlayers = (
 export const checkUnpickablePlayersStatus = async (
   players: UnpickablePlayer[]
 ) => {
+  console.log(`🏥 Checking status of ${players.length} unpickable players...`);
   let outputPlayers = [...players];
   const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?scoringPeriodId=12&view=kona_playercard`;
+
   for (const player of outputPlayers) {
     if (player.outForSeason) {
+      console.log(`⏭️ Skipping ${player.name} (out for season)`);
       continue;
     }
+
+    console.log(
+      `🔍 Checking injury status for ${player.name} (ID: ${player.id})`
+    );
+    const checkStartTime = Date.now();
+
     const ratersHeaders = {
       "X-Fantasy-Filter": {
         players: {
@@ -313,17 +384,44 @@ export const checkUnpickablePlayersStatus = async (
       "X-Fantasy-Filter",
       JSON.stringify(ratersHeaders["X-Fantasy-Filter"])
     );
+
     await fetch(req)
-      .then((response) => response.json())
+      .then((response) => {
+        console.log(
+          `✅ Player ${player.name} response (${
+            Date.now() - checkStartTime
+          }ms):`,
+          response.status,
+          response.statusText
+        );
+        return response.json();
+      })
       .then((json: { players: RatedRawPlayer[] }) => {
         if (!json.players[0].player.injured) {
+          console.log(
+            `🎉 ${player.name} is no longer injured - removing from unpickable list`
+          );
           outputPlayers = outputPlayers.filter(
             (injuredPlayer) => injuredPlayer.id !== player.id
           );
+        } else {
+          console.log(`🏥 ${player.name} is still injured`);
         }
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.error(`❌ Failed to check ${player.name}:`, error);
+        console.error("🔍 Error details:", {
+          message: error.message,
+          stack: error.stack,
+          playerId: player.id,
+          playerName: player.name,
+        });
+      });
   }
+
+  console.log(
+    `✅ Unpickable players check completed - ${outputPlayers.length} players remaining`
+  );
   return outputPlayers.sort((a, b) => {
     return a.name.localeCompare(b.name);
   });

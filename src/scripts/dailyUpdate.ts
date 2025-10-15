@@ -22,8 +22,11 @@ export async function dailyUpdate(
   ) => void
 ) {
   setIsUpdating(true);
+  console.log("🚀 Starting daily update...");
+
   const newRosters: RawTeam[] = [];
   let newRaters: RatedRawPlayer[] = [];
+
   const ratersHeaders = {
     "X-Fantasy-Filter": {
       players: {
@@ -53,28 +56,102 @@ export async function dailyUpdate(
       },
     },
   };
+
+  console.log("📊 Fetching rater data from:", raterUrl);
+  const raterStartTime = Date.now();
+
   const req = new Request(raterUrl);
   req.headers.set(
     "X-Fantasy-Filter",
     JSON.stringify(ratersHeaders["X-Fantasy-Filter"])
   );
+
+  console.log("📋 Rater request headers:", req.headers.get("X-Fantasy-Filter"));
+
   await fetch(req)
-    .then((response) => response.json())
+    .then((response) => {
+      console.log(
+        `✅ Rater response received (${Date.now() - raterStartTime}ms):`,
+        response.status,
+        response.statusText
+      );
+      return response.json();
+    })
     .then((json: { players: RatedRawPlayer[] }) => {
       newRaters = [...json.players];
+      console.log(`📈 Retrieved ${newRaters.length} rater entries`);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => {
+      console.error("❌ Rater fetch failed:", error);
+      console.error("🔍 Error details:", {
+        message: error.message,
+        stack: error.stack,
+        url: raterUrl,
+      });
+    });
 
+  console.log("🏀 Starting team rosters fetch...");
   for (let i = 1; i < 17; i++) {
     const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2026/segments/0/leagues/3409?rosterForTeamId=${i}&view=mRoster`;
+    console.log(`📥 Fetching team ${i} roster...`);
+    const teamStartTime = Date.now();
+
     await fetch(url)
-      .then((response) => response.json())
-      .then((json: { teams: RawTeam[] }) => {
-        const teamRoster = json.teams.find((team) => team.id === i);
-        if (teamRoster) newRosters.push(teamRoster);
+      .then((response) => {
+        console.log(
+          `✅ Team ${i} response (${Date.now() - teamStartTime}ms):`,
+          response.status,
+          response.statusText
+        );
+        return response.json();
       })
-      .catch((error) => console.log(error));
+      .then((json: { teams: RawTeam[] }) => {
+        console.log(`🔍 Team ${i} API response structure:`, {
+          hasTeams: !!json.teams,
+          teamsLength: json.teams?.length || 0,
+          teamIds: json.teams?.map((t) => t.id) || [],
+          fullResponse: json,
+        });
+
+        const teamRoster = json.teams.find((team) => team.id === i);
+        if (teamRoster) {
+          console.log(`📊 Team ${i} details:`, {
+            id: teamRoster.id,
+            hasRoster: !!teamRoster.roster,
+            entriesCount: teamRoster.roster?.entries?.length || 0,
+            rosterStructure: teamRoster.roster,
+          });
+          newRosters.push(teamRoster);
+          console.log(
+            `📋 Team ${i} roster added (${
+              teamRoster.roster?.entries?.length || 0
+            } players)`
+          );
+        } else {
+          console.warn(`⚠️ Team ${i} not found in response`);
+          console.log(
+            `🔍 Available teams in response:`,
+            json.teams?.map((t) => ({ id: t.id, name: t.name }))
+          );
+        }
+      })
+      .catch((error) => {
+        console.error(`❌ Team ${i} fetch failed:`, error);
+        console.error("🔍 Error details:", {
+          message: error.message,
+          stack: error.stack,
+          url: url,
+          teamId: i,
+        });
+      });
   }
+
+  console.log(`📊 Processing data - ${newRosters.length} teams fetched`);
+  console.log(
+    `🔍 Team IDs successfully fetched:`,
+    newRosters.map((team) => team.id)
+  );
+
   const ratedPlayers = rater2024 as unknown as RatedRawPlayer[];
 
   const outputRosters = addNewPlayers(
@@ -83,9 +160,13 @@ export async function dailyUpdate(
     ratedPlayers,
     newRaters
   );
+
+  console.log("🔄 Checking unpickable players status...");
   const unpickablePlayers = await checkUnpickablePlayersStatus(
     rosters.unpickablePlayers
   );
+  console.log(`📋 ${unpickablePlayers.length} unpickable players after check`);
+
   const output = {
     lastUpdate: new Date(),
     teams: outputRosters,
@@ -96,4 +177,5 @@ export async function dailyUpdate(
     return;
   }
   downloadElement(output, "rosters", setIsUpdating);
+  console.log("✅ Daily update completed successfully");
 }
