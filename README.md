@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+This application is an helper tool for ESPN NBA fantasy leagues. On the main branch, it is set on a specific league with auction draft and dynasty mode.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Index
 
-Currently, two official plugins are available:
+On the index page, all teams are listed. When clicking a team, the user can see the list of its players with the following informations : name, last season player rater, current season player rater, current streak of keeps between seasons, current salary, estimated salary for next season. It can aalso select potential keepers for next season to see how much total salary it would cost.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Trade
 
-## Expanding the ESLint configuration
+The trade page allow the user to test trade scenario and check if it would fit in the salary restrictions : teams can not go higher than $220 during season.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Teams
 
-- Configure the top-level `parserOptions` property like this:
+The teams page is a table with summed up data for each team : salaries, current margin under salary cap ($220), total player rater of its current roster based on last season raters and total player rater of its current roster based on current season raters.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Injuries
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The injuries page list the players with injuries long enough to be banned from being picked as a free agent.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Advanced
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The advanced page compute advanced statistics for all players based on salaries, raters and games played.
+
+## History
+
+The history page ranks managers based on all previous seasons success.
+
+## Rules
+
+The rules page explains all the specific rules of this fantasy league.
+
+## Stored data
+
+- the data is stored in json fils in the src/assets folder. The src/assets/history/history.json file stores data for the history page, the src/assets/rater folder stores json files for each past season players rater, the src/assets/teams/rosters.json file stores both the injured players for the injuries page but mainly all the current rosters of the fantasy league with all the data for each player.
+
+## Scripts
+
+- the src/scripts/dailyUpdate.ts file is a script that needs to be manually launched every day to update the fantasy league rosters, tracking potential rosters moves (trades, free agents picks...).
