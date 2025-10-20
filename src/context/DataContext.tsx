@@ -1,7 +1,9 @@
+"use client";
+
 import {
   createContext,
   Dispatch,
-  ReactElement,
+  ReactNode,
   SetStateAction,
   useCallback,
   useMemo,
@@ -32,7 +34,7 @@ interface ContextData {
 
 export const DataContext = createContext<ContextData>({} as ContextData);
 
-export const DataProvider = ({ children }: { children: ReactElement }) => {
+export const DataProvider = ({ children }: { children: ReactNode }) => {
   const [activeTeamId, setActiveTeamId] = useState(0);
   const [selectedKeepers, setSelectedKeepers] = useState<number[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);

@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactElement } from "react";
 import { CSSProperties } from "react";
 import { createStyles } from "../utils/style";

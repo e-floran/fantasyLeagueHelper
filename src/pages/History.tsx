@@ -1,3 +1,5 @@
+"use client";
+
 import { CSSProperties, useMemo } from "react";
 import { buildHistoryMap } from "../utils/data";
 import { createStyles } from "../utils/style";

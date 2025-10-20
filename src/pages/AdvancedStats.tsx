@@ -1,3 +1,5 @@
+"use client";
+
 import { CSSProperties, ReactElement, useCallback, useState } from "react";
 import { FilterCategories, FiltersType, StatsCategories } from "../utils/types";
 import { createStyles } from "../utils/style";

@@ -1,0 +1,46 @@
+/* [project]/src/App.css [app-client] (css) */
+main {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+main > section {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+tr {
+  background-color: rgba(0, 0, 0, 0);
+  height: 2rem;
+  transition: background-color .5s;
+}
+
+table > tbody > tr:hover {
+  background-color: #e45e04;
+}
+
+th, td {
+  text-align: center;
+  width: 20rem;
+}
+
+button:hover {
+  background-color: #e45e04;
+}
+
+section > h2, article > h3 {
+  text-align: center;
+  color: #e45e04;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/*# sourceMappingURL=src_App_css_e59ae46c._.single.css.map*/

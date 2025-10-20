@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { PlayerWithAdvancedStats } from "../components/advancedStats/AdvancedTable";
 import { PlayerWithProjection } from "../components/teamDetails/RosterTable";

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 69, "column": 0}, "map": {"version":3,"sources":["file:///home/floran/Documents/travail/real/fantasyLeagueHelper/app/api/rosters/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\nimport { Team, UnpickablePlayer } from \"../../../src/utils/types\";\nimport rosters from \"../../../src/assets/teams/rosters.json\";\n\nexport interface RostersResponse {\n  teams: Team[];\n  unpickablePlayers: UnpickablePlayer[];\n  lastUpdate: string;\n}\n\nexport async function GET() {\n  try {\n    const data: RostersResponse = {\n      teams: rosters.teams as Team[],\n      unpickablePlayers: rosters.unpickablePlayers as UnpickablePlayer[],\n      lastUpdate: rosters.lastUpdate,\n    };\n\n    return NextResponse.json(data);\n  } catch (error) {\n    console.error(\"Error loading rosters:\", error);\n    return NextResponse.json(\n      { error: \"Failed to load rosters\" },\n      { status: 500 }\n    );\n  }\n}\n"],"names":[],"mappings":";;;AAAA;AAEA;;;AAQO,eAAe;IACpB,IAAI;QACF,MAAM,OAAwB;YAC5B,OAAO,yGAAA,CAAA,UAAO,CAAC,KAAK;YACpB,mBAAmB,yGAAA,CAAA,UAAO,CAAC,iBAAiB;YAC5C,YAAY,yGAAA,CAAA,UAAO,CAAC,UAAU;QAChC;QAEA,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC3B,EAAE,OAAO,OAAO;QACd,QAAQ,KAAK,CAAC,0BAA0B;QACxC,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CACtB;YAAE,OAAO;QAAyB,GAClC;YAAE,QAAQ;QAAI;IAElB;AACF","debugId":null}}]
+}

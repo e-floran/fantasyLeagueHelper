@@ -1,3 +1,5 @@
+"use client";
+
 import { CSSProperties, ReactElement, useContext } from "react";
 import { createStyles } from "../utils/style";
 import { DataContext } from "../context/DataContext";

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/App.css"],"sourcesContent":["main {\n  display: flex;\n  flex-flow: column nowrap;\n  justify-content: flex-start;\n  align-items: center;\n  /* max-height: calc(100vh - 9rem);\n  overflow-y: scroll; */\n}\n\nmain > section {\n  margin-bottom: 1rem;\n  width: 100%;\n}\ntr {\n  height: 2rem;\n  background-color: transparent;\n  transition: background-color 0.5s;\n}\ntable > tbody > tr:hover {\n  background-color: #e45e04;\n}\n\nth,\ntd {\n  width: 20rem;\n  text-align: center;\n}\n\nbutton:hover {\n  background-color: #e45e04;\n}\nsection > h2,\narticle > h3 {\n  text-align: center;\n  margin-bottom: 0.5rem;\n  color: #e45e04;\n  width: 100%;\n}\n\ninput[type=\"number\"] {\n  appearance: textfield;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AASA;;;;;AAIA;;;;;;AAKA;;;;AAIA;;;;;AAMA;;;;AAGA;;;;;;;AAQA"}}]
+}

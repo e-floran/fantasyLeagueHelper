@@ -1,6 +1,8 @@
+"use client";
+
 import { CSSProperties, ReactElement, useContext } from "react";
 import { createStyles, rootColors } from "../utils/style";
-import { useNavigate } from "react-router-dom";
+import { useRouter, usePathname } from "next/navigation";
 import { NavButton } from "./NavButton";
 import GroupsIcon from "@mui/icons-material/Groups";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
@@ -12,6 +14,8 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import { DataContext } from "../context/DataContext";
 
 export const Header = (): ReactElement => {
+  const router = useRouter();
+  const pathname = usePathname();
   const { setSelectedKeepers } = useContext(DataContext);
 
   const styles = createStyles<CSSProperties>()({
@@ -44,7 +48,9 @@ export const Header = (): ReactElement => {
     { icon: GavelIcon, navigateTo: "/rules" },
   ];
 
-  const navigate = useNavigate();
+  const handleNavigation = (path: string) => {
+    router.push(path);
+  };
 
   return (
     <header style={styles.header}>
@@ -55,7 +61,7 @@ export const Header = (): ReactElement => {
             buttonIcon={navButton.icon}
             onClickButton={() => {
               setSelectedKeepers([]);
-              navigate(navButton.navigateTo);
+              handleNavigation(navButton.navigateTo);
             }}
             key={index}
           />
