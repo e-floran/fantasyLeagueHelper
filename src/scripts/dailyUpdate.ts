@@ -5,10 +5,28 @@ import {
   Team,
   UnpickablePlayer,
 } from "../utils/types";
-import rosters from "../assets/teams/rosters.json";
-import rater2024 from "../assets/rater/rater2024.json";
 import { downloadElement } from "../utils/utils";
 import { Dispatch, SetStateAction } from "react";
+
+// Server-side version that loads rosters from API
+const loadRostersData = async () => {
+  if (typeof window === "undefined") {
+    // Server-side: import directly
+    const rosters = await import("../assets/teams/rosters.json");
+    const rater2024 = await import("../assets/rater/rater2024.json");
+    return {
+      rosters: rosters.default,
+      rater2024: rater2024.default,
+    };
+  } else {
+    // Client-side: fetch from API
+    const response = await fetch("/api/rosters");
+    const rosters = await response.json();
+    const rater2024Response = await fetch("/api/rater/2024");
+    const rater2024 = await rater2024Response.json();
+    return { rosters, rater2024 };
+  }
+};
 
 const raterUrl =
   "https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2025/segments/0/leagues/3409?scoringPeriodId=7&view=kona_player_info&view=mStatRatings";
@@ -23,6 +41,8 @@ export async function dailyUpdate(
 ) {
   setIsUpdating(true);
   console.log("🚀 Starting daily update...");
+
+  const { rosters, rater2024 } = await loadRostersData();
 
   const newRosters: RawTeam[] = [];
   let newRaters: RatedRawPlayer[] = [];
